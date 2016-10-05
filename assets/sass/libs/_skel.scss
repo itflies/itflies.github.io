@@ -228,9 +228,11 @@
 			.container {
 				@if $lock {
 					width: $width !important;
+                    
 				}
 				@else {
 					width: $width;
+                    
 				}
 			}
 
