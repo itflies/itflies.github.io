@@ -106,7 +106,12 @@
 				<article id="contact" class="container 75%">
 					<header>
 						<a  onClick="fdcnt()" class="button big scrolly">Weitere Fragen? Hier gehts zum Kontakt</a>
-                        <h3 id="cnt"></h3>
+                        <div id ="cnt1" style="visibility:hidden">
+                            <h5>Über eine eMail an:</h5>
+                            <a href="#" id="cnt2"></a>
+                            <h5>Würden wir uns sehr freuen</h5>
+                        </div>
+                        
 					</header>
 				</article>
 			</div>
@@ -122,7 +127,9 @@
             <script>
                 function fdcnt()
                 {
-                    document.getElementById("cnt").innerHTML   = ("s" + "ales" + "@hamsters" + ".ch").replace("sal","inf").replace("hamsters","flies").replace("es@","o@it");
+                    document.getElementById("cnt2").innerHTML   = ("s" + "ales" + "@hamsters" + ".ch").replace("sal","inf").replace("hamsters","flies").replace("es@","o@it");
+                    document.getElementById("cnt2").href   = "mailto:" + document.getElementById("cnt2").innerHTML
+                    document.getElementById("cnt1").style.visibility="visible"
                 }
             </script>
 
