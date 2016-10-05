@@ -26,7 +26,7 @@
 			</nav>
 
 		<!-- Home -->
-			<div class="wrapper style1 first" style="height:50%">
+			<div class="wrapper style1 first">
 				<article class="container" id="top">
 					<div class="row">
 						<div class="4u 12u(mobile)">
@@ -100,7 +100,7 @@
 			<div class="wrapper style4">
 				<article id="contact" class="container 75%">
 					<header>
-						<a  onClick="fdcnt()" class="button big scrolly">Weitere Fragen? Hier gehts zum Kontakt</a>
+						<a id="cnt0"  onClick="fdcnt()" class="button big scrolly">Weitere Fragen? Hier gehts zum Kontakt</a>
                         <div id ="cnt1" style="visibility:hidden">
                             <h6>Über eine eMail an:</h6>
                             <a style ="font-size: 40px" href="#" id="cnt2"></a>
@@ -125,6 +125,7 @@
                     document.getElementById("cnt2").innerHTML   = ("s" + "ales" + "@hamsters" + ".ch").replace("sal","inf").replace("hamsters","flies").replace("es@","o@it");
                     document.getElementById("cnt2").href   = "mailto:" + document.getElementById("cnt2").innerHTML
                     document.getElementById("cnt1").style.visibility="visible"
+                    document.getElementById("cnt0").style.visibility = "hidden"
                 }
             </script>
 
