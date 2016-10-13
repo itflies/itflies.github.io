@@ -1693,7 +1693,7 @@
 		position: fixed;
 		top:0;
         right:5px;
-		width: 20%;
+		width: 18%;
 		z-index: 10001;
 		cursor: default;
 	}
@@ -2142,7 +2142,7 @@
 			}
         
         	#nav2 a {
-				padding: 0.5em;
+				padding-top: 0.5em;
 			}
 
 		/* Articles */
