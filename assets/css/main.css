@@ -1692,8 +1692,8 @@
 		text-align: right;
 		position: fixed;
 		top:0;
-        right:50px;
-		width: 18%;
+        right:5px;
+		width: 100%;
 		z-index: 10001;
 		cursor: default;
 	}
