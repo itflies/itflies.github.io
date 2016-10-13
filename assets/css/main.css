@@ -1693,7 +1693,7 @@
 		position: fixed;
 		top:0;
         right:5px;
-		width: 100%;
+		width: 16%;
 		z-index: 10001;
 		cursor: default;
 	}
