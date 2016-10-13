@@ -1688,7 +1688,7 @@
 			}
 
 	#nav2 {
-		background-color: #282828;
+		opacity: 100;
 		text-align: right;
 		position: fixed;
 		top:0;
