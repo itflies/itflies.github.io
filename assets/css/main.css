@@ -5,6 +5,7 @@
 	Miniport by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	04.09.2024 kom: angepasst für itflies
 */
 
 /* Reset */
@@ -851,7 +852,7 @@
 
 	}
 
-	@media screen and (max-width: 736px) {
+	   @media screen and (max-width: 736px) {
 
 		.row > * {
 			padding: 15px 0 0 15px;
@@ -1064,7 +1065,7 @@
 			margin-left: 8.33333%;
 		}
 
-	}
+	} 
 
 /* Basic */
 
@@ -1190,7 +1191,7 @@
 		-webkit-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 		-ms-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 		transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
-		-webkit-appearance: none;
+		/* -webkit-appearance: none; */
 		display: block;
 		border: 0;
 		padding: 0.75em;
@@ -1320,10 +1321,15 @@
 			margin: 0 0 2em 0;
 		}
 
-			.image.centered img {
+		.image.centered img {
 				margin: 0 auto;
 				width: auto;
-			}
+		}
+
+	.image.linkedin{
+		width: 2px !important;
+		height: 2px !important;
+ 	}
 
 /* Button */
 
@@ -1340,7 +1346,7 @@
 		-webkit-transition: background-color .2s ease-in-out;
 		-ms-transition: background-color .2s ease-in-out;
 		transition: background-color .2s ease-in-out;
-		-webkit-appearance: none;
+		/* -webkit-appearance: none; */
 		position: relative;
 		display: inline-block;
 		color: #fff !important;
@@ -1608,7 +1614,7 @@
 		}
 
 		.wrapper.style2 {
-			background-color: #fafafa;
+			background-color: #ffffff;
 			text-shadow: 1px 1px 0px #fff;
 		}
 
@@ -1785,6 +1791,11 @@
 				letter-spacing: -0.015em;
 			}
 
+			li {
+				font-size: 1.2em;
+				letter-spacing: -0.015em;
+			}
+
 			h1, h2, h3, h4, h5, h6 {
 				margin: 0 0 0.75em 0;
 			}
@@ -1842,11 +1853,14 @@
 				padding: 2em;
 			}
 
-				.box.style1 {
+				.box.services {
+					background-color: #ffffff;
+					height: 55ch;
+					/* padding: 3em 2em 3.5em 2em;*/
 					padding: 3em 2em 3.5em 2em;
 				}
 
-					.box.style1 h3 {
+					.box.services h3 {
 						margin-bottom: 0.5em;
 					}
 
@@ -1860,6 +1874,76 @@
 					top: 2em;
 					margin: -4em 0 4em -4em;
 					width: auto;
+				}
+
+				.box.references { /* Beispiel am 02.09.2024 gemeinsam mit Philipp erstellt*/
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-between; /* This will evenly position the child elements vertically */
+					height: 40ch;
+					width: 100%;
+					box-sizing: border-box;
+					& img {
+					width: 100%; /* The image will take the full width of the parent */
+					height: auto; /* Maintain the aspect ratio of the image */
+					/* max-height: 20ch; */
+					}
+					& .description {
+					text-align: left; /* Center the description text */
+					padding: 0.5rem; /* Optional: Add padding to the description for better spacing */
+					/* margin-top: 1rem; */
+					list-style: circle;
+					}
+					& .image.fit {
+					max-height: 5ch;	
+					}
+				}
+
+				.box.partner {
+					background-color: #ffffff;
+					height: 45ch;
+					align-items: center;
+
+						}
+				}
+
+				.box.about {
+					background-color: #ffffff;
+					height: 100ch;
+					align-items: center;
+					& img {
+						width: 100%; /* The image will take the full width of the parent */
+						/* align: center; */
+						height: auto; /* Maintain the aspect ratio of the image */
+						}
+					& .description {
+					text-align: left; /* Center the description text */
+					list-style: circle;
+						}
+				}
+				.box.technologies { /* Beispiel am 02.09.2024 gemeinsam mit Philipp erstellt*/
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-between; /* This will evenly position the child elements vertically */
+					height: 40ch;
+					width: 100%;
+					box-sizing: border-box;
+					& img {
+					width: 100%; /* The image will take the full width of the parent */
+					height: auto; /* Maintain the aspect ratio of the image */
+					/* max-height: 20ch; */
+					}
+					& .description {
+					text-align: left; /* Center the description text */
+					padding: 0.5rem; /* Optional: Add padding to the description for better spacing */
+					/* margin-top: 1rem; */
+					list-style: circle;
+					}
+					& .image.fit {
+					max-height: 5ch;	
+					}
 				}
 
 		/* Wrappers */
@@ -1962,7 +2046,7 @@
 						margin-left: 0;
 					}
 
-	}
+	
 
 /* Tablet */
 
@@ -2029,6 +2113,16 @@
 			h1 {
 				font-size: 2.25em;
 				line-height: 1.25em;
+			}
+
+			h4 {
+				font-size: 1em;
+				line-height: 1.25em;
+			}
+
+			li {
+				font-size: 1.2em;
+				letter-spacing: -0.015em;
 			}
 
 			header {
@@ -2123,6 +2217,88 @@
 					margin: -50px 0 50px -40px;
 					width: auto;
 				}
+				/* 04.09.2024 kom: ergänzt für mobile*/
+				.box.services {
+					background-color: #ffffff;
+					height: 45ch;
+					/* padding: 3em 2em 3.5em 2em;*/
+					padding: 3em 2em 3.5em 2em;
+				}
+
+					.box.services h3 {
+						margin-bottom: 0.5em;
+					}
+				.box.references { /* Beispiel am 02.09.2024 gemeinsam mit Philipp erstellt*/
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-between; /* This will evenly position the child elements vertically */
+					height: 50ch;
+					width: 100%;
+					box-sizing: border-box;
+					& img {
+					width: 100%; /* The image will take the full width of the parent */
+					height: auto; /* Maintain the aspect ratio of the image */
+					/* max-height: 20ch; */
+					}
+					& .description {
+					text-align: left; /* Center the description text */
+					padding: 0.5rem; /* Optional: Add padding to the description for better spacing */
+					/* margin-top: 1rem; */
+					list-style: circle;
+					}
+					& .image.fit {
+					max-height: 5ch;	
+					}
+				}
+				
+
+				.box.partner {
+					background-color: #ffffff;
+					height: 45ch;
+					align-items: center;
+
+						}
+				}
+
+				.box.about {
+					background-color: #ffffff;
+					height: 92ch;
+					align-items: center;
+					& img {
+						width: 100%; /* The image will take the full width of the parent */
+						/* align: center; */
+						height: auto; /* Maintain the aspect ratio of the image */
+						}
+					& .description {
+					text-align: left; /* Center the description text */
+					list-style: circle;
+						}
+				}
+				/* 04.09.2024 kom: ergänzt für mobile*/
+				.box.technologies { /* Beispiel am 02.09.2024 gemeinsam mit Philipp erstellt*/
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-between; /* This will evenly position the child elements vertically */
+					height: 40ch;
+					width: 100%;
+					box-sizing: border-box;
+					& img {
+					width: 100%; /* The image will take the full width of the parent */
+					height: auto; /* Maintain the aspect ratio of the image */
+					/* max-height: 20ch; */
+					}
+					& .description {
+					text-align: left; /* Center the description text */
+					padding: 0.5rem; /* Optional: Add padding to the description for better spacing */
+					/* margin-top: 1rem; */
+					list-style: circle;
+					}
+					& .image.fit {
+					max-height: 5ch;	
+					}
+				}
 
 		/* Wrappers */
 
@@ -2167,5 +2343,3 @@
 				#copyright li {
 					display: block;
 				}
-
-	}
