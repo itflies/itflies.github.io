@@ -1,0 +1,362 @@
+/*
+	CSS for Desktop
+	itflies.ch
+	06.09.2024 kom: created new
+*/
+
+@media (min-width: 769px) {
+  .container.\31 25\25 {
+    width: 100%;
+    max-width: 1500px;
+    min-width: 1200px;
+  }
+
+  .container.\37 5\25 {
+    width: 900px;
+  }
+
+  .container.\35 0\25 {
+    width: 600px;
+  }
+
+  .container.\32 5\25 {
+    width: 300px;
+  }
+
+  .container {
+    width: 1200px;
+  }
+
+  /* }
+
+	
+	@media screen and (min-width: 768px) { */
+
+  .row > * {
+    padding: 25px 0 0 25px;
+  }
+
+  .row {
+    margin: -25px 0 -1px -25px;
+  }
+
+  .row.uniform > * {
+    padding: 25px 0 0 25px;
+  }
+
+  .row.uniform {
+    margin: -25px 0 -1px -25px;
+  }
+
+  .row.\32 00\25 > * {
+    padding: 50px 0 0 50px;
+  }
+
+  .row.\32 00\25 {
+    margin: -50px 0 -1px -50px;
+  }
+
+  .row.uniform.\32 00\25 > * {
+    padding: 50px 0 0 50px;
+  }
+
+  .row.uniform.\32 00\25 {
+    margin: -50px 0 -1px -50px;
+  }
+
+  .row.\31 50\25 > * {
+    padding: 37.5px 0 0 37.5px;
+  }
+
+  .row.\31 50\25 {
+    margin: -37.5px 0 -1px -37.5px;
+  }
+
+  .row.uniform.\31 50\25 > * {
+    padding: 37.5px 0 0 37.5px;
+  }
+
+  .row.uniform.\31 50\25 {
+    margin: -37.5px 0 -1px -37.5px;
+  }
+
+  .row.\35 0\25 > * {
+    padding: 12.5px 0 0 12.5px;
+  }
+
+  .row.\35 0\25 {
+    margin: -12.5px 0 -1px -12.5px;
+  }
+
+  .row.uniform.\35 0\25 > * {
+    padding: 12.5px 0 0 12.5px;
+  }
+
+  .row.uniform.\35 0\25 {
+    margin: -12.5px 0 -1px -12.5px;
+  }
+
+  .row.\32 5\25 > * {
+    padding: 6.25px 0 0 6.25px;
+  }
+
+  .row.\32 5\25 {
+    margin: -6.25px 0 -1px -6.25px;
+  }
+
+  .row.uniform.\32 5\25 > * {
+    padding: 6.25px 0 0 6.25px;
+  }
+
+  .row.uniform.\32 5\25 {
+    margin: -6.25px 0 -1px -6.25px;
+  }
+
+  body,
+  input,
+  textarea,
+  select {
+    font-size: 13pt;
+  }
+
+  h1 {
+    font-size: 3.25em;
+    color: #303030;
+    /* letter-spacing: -0.025em; */
+  }
+
+  h2 {
+    font-size: 2em;
+    color: #303030;
+    /* letter-spacing: -0.015em; */
+  }
+
+  h3 {
+    font-size: 1.5em;
+    color: #303030;
+    /* letter-spacing: -0.015em; */
+  }
+
+  h5 {
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: none;
+    /* letter-spacing: -0.015em; */
+  }
+
+  h6 {
+    font-size: 1.15em;
+    font-weight: normal;
+    color: #ffffff;
+    text-shadow: none;
+    /* letter-spacing: -0.015em; */
+  }
+
+  li {
+    font-size: 1.15em;
+    color: #303030;
+    /* letter-spacing: -0.015em; */
+  }
+
+  p {
+    font-size: 1.15em;
+    color: #303030;
+    /* letter-spacing: -0.015em; */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 0.75em 0;
+  }
+
+  header {
+    margin: 0 0 3em 0;
+  }
+
+  header > p {
+    /* text in wrapper */
+    font-size: 1.25em;
+    margin: 0;
+  }
+
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  button,
+  .button {
+    padding: 1em 2.35em 1em 2.35em;
+    font-size: 1.1em;
+  }
+
+  input[type="button"].big,
+  input[type="submit"].big,
+  input[type="reset"].big,
+  button.big,
+  .button.big {
+    font-size: 1.5em;
+    /* letter-spacing: -0.025em; */
+  }
+
+  /* Box */
+
+  .box {
+    padding: 2em;
+  }
+
+  .box.services h3 {
+    margin-bottom: 0.5em;
+    color: #303030;
+  }
+
+  .box.style2 h3 {
+    margin-bottom: 0.25em;
+  }
+
+  .box.style2 .image {
+    position: relative;
+    left: 2em;
+    top: 2em;
+    margin: -4em 0 4em -4em;
+    width: auto;
+  }
+
+  .box.services {
+    background-color: #ffffff;
+    width: 100%;
+    height: 60ch; /*greift nicht!*/
+    /* padding: 3em 2em 3.5em 2em;*/
+    padding: 3em 2em 3.5em 2em;
+  }
+
+  .box.technologies {
+    /* Beispiel am 02.09.2024 gemeinsam mit Philipp erstellt*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* This will evenly position the child elements vertically */
+    height: 40ch;
+    width: 100%;
+    box-sizing: border-box;
+    & img {
+      width: 100%; /* The image will take the full width of the parent */
+      height: auto; /* Maintain the aspect ratio of the image */
+    }
+    */ & .image.fit {
+      max-height: 5ch;
+    }
+  }
+
+  .box.references {
+    /* Beispiel am 02.09.2024 gemeinsam mit Philipp erstellt*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* This will evenly position the child elements vertically */
+    height: 40ch;
+    width: 100%;
+    box-sizing: border-box;
+    & img {
+      width: 100%; /* The image will take the full width of the parent */
+      /* max-height: 20ch; */
+    }
+    & .description {
+      text-align: left; /* Center the description text */
+      padding: 0.5rem; /* Optional: Add padding to the description for better spacing */
+      /* margin-top: 1rem; */
+      list-style-type: circle;
+    }
+    & .image.fit {
+      max-height: 5ch;
+    }
+  }
+
+  .box.partner {
+    background-color: #ffffff;
+    height: 50ch;
+    align-items: center;
+  }
+
+  .box.about {
+    background-color: #ffffff;
+    height: 100ch;
+    align-items: center;
+    & img {
+      width: 100%; /* The image will take the full width of the parent */
+      /* align: center; */
+      height: auto; /* Maintain the aspect ratio of the image */
+    }
+  }
+
+  .box.contact {
+    background-color: #303030;
+    height: 45ch;
+    align-items: center;
+  }
+
+  /* Wrappers */
+
+  .wrapper {
+    padding: 8em 0 8em 0;
+    text-align: center;
+  }
+
+  .wrapper.first {
+    padding-top: 12em;
+  }
+
+  /* Nav */
+
+  .hamburger {
+    display: none; /* Hamburger-Menü auf Desktops ausblenden */
+  }
+  #nav a {
+    -moz-transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    padding: 0.2em 1em 0.2em 1em;
+    margin: 0.6em 0.2em 0.6em 0.2em;
+    font-weight: 600;
+    border-radius: 8px;
+    color: #ffffff;
+  }
+
+  /* #nav a:hover {
+    background: #d636c8;
+  }
+
+  #nav a:active {
+    background: #31ba61; */
+}
+
+#nav .container {
+  font-size: 1em;
+}
+
+/* Articles */
+
+#top {
+  text-align: center;
+}
+
+#top .image {
+  width: 20em;
+}
+
+#top h1 {
+  margin-top: 0.35em;
+}
+
+#top p {
+  /* Ihre Experten... */
+  font-size: 1.5em;
+  line-height: 1.75em;
+}
+
+#contact footer {
+  font-size: 0.9em;
+}

@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE HTML>
 <!--
-	itFlies GmbH
-	Version 2.0
-	Datum:  04.09.2024/kom
+	index.html
+	itflies.ch
+	06.09.2024 kom: created new
 	-->
 <html>
 
@@ -12,6 +12,8 @@
 	<meta name="description" content="Softwareentwicklung, Projektmanagement und Beratung" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/mobile.css" />
+	<link rel="stylesheet" href="assets/css/desktop.css" />
 	<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
@@ -34,27 +36,50 @@
 <body>
 	<!-- Navigation Menu -->
 	<nav id="nav">
-		<ul class="container">
-			<li><a href="#top">Home</a></li>
-			<li><a href="#services">Dienstleistungen</a></li>
-			<li><a href="#technologies">Technologien</a></li>
-			<li><a href="#references">Referenzen</a></li>
-			<li><a href="#partner">Partner</a></li>
-			<li><a href="#about">Über uns</a></li>
-			<li><a href="#contact">Kontakt</a></li>
+		<!-- Hamburger Navigation Menu für Mobile-->
+		<div class="hamburger" id="hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- Navigation Menu für Desktop-->
+		<ul class="container" id="menu">
+			<li id="desktop"><a href="#top">Home</a></li>
+			<li id="desktop"><a href="#services">Dienstleistungen</a></li>
+			<li id="desktop"><a href="#technologies">Technologien</a></li>
+			<li id="desktop"><a href="#references">Referenzen</a></li>
+			<li id="desktop"><a href="#partner">Partner</a></li>
+			<li id="desktop"><a href="#about">Über uns</a></li>
+			<li id="desktop"><a href="#contact">Kontakt</a></li>
+			<li></li>
 		</ul>
 	</nav>
-	<!-- Navigation Language
-	<ul id="nav2">
-		<li><a href="./index.html">DE</a></li>
-		<li><a href="./EN.html">EN</a></li>
-	</ul> -->
+	<script>
+		const hamburger = document.getElementById('hamburger');
+		const menu = document.getElementById('menu');
+
+		// Funktion zum Ein- und Ausblenden des Menüs
+		function toggleMenu() {
+			menu.classList.toggle('active');
+		}
+
+		// Event-Listener für den Hamburger-Button
+		hamburger.addEventListener('click', toggleMenu);
+
+		// Event-Listener für alle Links im Menü
+		document.querySelectorAll('#menu a').forEach(link => {
+			link.addEventListener('click', () => {
+				if (window.innerWidth <= 768) { // Nur auf mobilen Geräten
+					menu.classList.remove('active');
+				}
+			});
+		});
+	</script>
 
 	<!-- Home -->
 	<div class="wrapper style1 first">
 		<article class="container" id="top">
 			<div class="row">
-				<br />
 				<br />
 				<br />
 				<div class="4u 12u(mobile)">
@@ -67,7 +92,7 @@
 						<p>Ihre Experten für Softwareentwicklung und Projektmanagement!</p>
 						<p></p>
 						<blockquote class="row">
-							<h3>Mit verantwortungsvoller Digitalisierung, beschleunigen wir Geschäftsprozesse
+							<h3>Mit verantwortungsvoller Digitalisierung beschleunigen wir Geschäftsprozesse
 								nachhaltig.</h3>
 						</blockquote>
 					</header>
@@ -83,8 +108,6 @@
 	<div class="wrapper style2">
 		<article id="services">
 			<header>
-				<br />
-				<br />
 				<h2>Dienstleistungen</h2>
 				<p>Profitieren Sie von unserer Erfahrung und Kompetenz in der IT-Welt und lassen Sie uns gemeinsam Ihre
 					digitalen Herausforderungen meistern.</p>
@@ -103,7 +126,7 @@
 					</div>
 					<div class="4u 12u(mobile)">
 						<section class="box services">
-							<span class="icon featured fa-trello">"</span>
+							<span class="icon featured fa-trello"></span>
 							<h3>Projektmanagement</h3>
 							<p>Wir begleiten Ihr Informatikvorhaben von der ersten Idee bis zum erfolgreichen Abschluss.
 								Ob in der Vorstudie, während der Umsetzung oder bei der Inbetriebnahme – wir stehen
@@ -127,8 +150,6 @@
 	<div class="wrapper style3">
 		<article id="technologies">
 			<header>
-				<br />
-				<br />
 				<h2>Technologien</h2>
 				<p>Unsere höchste Produktivität erreichen wir durch den Einsatz folgender Technologien und
 					Programmierprachen: </p>
@@ -149,7 +170,7 @@
 					</div>
 					<div class="4u 12u(mobile)">
 						<section class="box technologies">
-							<span class="icon featured fa-server">"</span>
+							<span class="icon featured fa-server"></span>
 							<h3>Backend</h3>
 							<ul>
 								<li>MS SQL Server&trade;</li>
@@ -181,8 +202,6 @@
 	<div class="wrapper style2">
 		<article id="references">
 			<header>
-				<br />
-				<br />
 				<h2>Referenzen</h2>
 				<p>Die folgenden Kunden profitieren bereits von unseren Lösungen: </p>
 			</header>
@@ -207,7 +226,6 @@
 					</div>
 					<!-- DiaHem-->
 					<div class="4u 12u(mobile)">
-
 						<section class="box references">
 							<span class="image fit">
 								<br>
@@ -332,8 +350,6 @@
 	<div class="wrapper style3">
 		<article id="partner">
 			<header>
-				<br />
-				<br />
 				<h2>Partner</h2>
 				<p>Wir kooperieren mit den folgenden Partnerfirmen:</p>
 			</header>
@@ -343,7 +359,7 @@
 					<div class="4u 12u(mobile)">
 						<section class="box partner">
 							<span class="image centered">
-								<a href="https://www.data-unit.ch/" target="_blank">
+								<a href="https://www.dataunit.ch/" target="_blank">
 									<img src="images/partner/logo data unit.png"
 										style="width: auto; height: 20ch;  alt:Data-Unit AG" />
 									<br>
@@ -356,7 +372,7 @@
 						<section class="box partner">
 							<span class="image centered">
 								<a href="https://www.mtf.ch/" target="_blank">
-									<img src="images/partner/Logo MTF trans.png "
+									<img src="images/partner/logo mtf.png "
 										style="width: auto; height: 22ch; alt:MTF Solutions AG" />
 									<br>
 								</a>
@@ -365,6 +381,7 @@
 									Schweiz und im Fürstentum Liechtenstein.</p>
 						</section>
 					</div>
+					<div class="2u 12u(mobile)"></div> <!--Zentrieren -->
 				</div>
 			</div>
 	</div>
@@ -372,8 +389,6 @@
 	<div class="wrapper style2">
 		<article id="about">
 			<header>
-				<br />
-				<br />
 				<h2>Über uns</h2>
 				<p>Wir sind itFlies GmbH, ein engagiertes Team von IT-Experten, das sich darauf spezialisiert hat,
 					massgeschneiderte Lösungen für Ihre technologischen Herausforderungen zu entwickeln. Mit einem
@@ -397,8 +412,11 @@
 							<p>Philipp, Gründer der itFlies GmbH, bringt jahrzehntelange Erfahrung in
 								Softwareentwicklung und Geschäftsprozessoptimierung mit. Seine Leidenschaft für
 								innovative Technologien und umfassende Fachkenntnis bilden die Grundlage für unsere
-								maßgeschneiderten Lösungen. Mit praktischer Erfahrung meistern wir Ihre
-								IT-Herausforderungen effizient und wirkungsvoll.</p>
+								massgeschneiderten Lösungen.
+								<br>
+								Mit praktischer Erfahrung meistern wir Ihre
+								IT-Herausforderungen effizient und wirkungsvoll.
+							</p>
 						</section>
 					</div>
 					<div class="4u 12u(mobile)">
@@ -412,40 +430,47 @@
 							<br>
 							<p> Marco ist ein erfahrener IT-Projektleiter, der IT-Projekte effizient und erfolgreich
 								steuert. Mit tiefem Fachwissen und flexibler Herangehensweise führt er Ihre Projekte
-								zielgerichtet zum Erfolg. Durch sorgfältige Planung, flexible Umsetzung und
-								erfolgreichen Abschluss gewährleistet er, dass alle Projektphasen reibungslos
-								verlaufen und Ihre Anforderungen optimal erfüllt werden</p>
+								zielgerichtet zum Erfolg.
+								<br>
+								Durch sorgfältige Planung, flexible Umsetzung und
+								erfolgreichen Abschluss gewährleistet wir, dass alle Projektphasen reibungslos
+								verlaufen und Ihre Anforderungen optimal erfüllt werden.
+							</p>
 							<a href="https://ch.linkedin.com/in/marco-koster-7b418619" target="_blank">
 								<img src="images/about/linkedin.svg" alt="LinkedIn Marco Koster"
 									style="width: 10ch; height: auto; " />
 							</a>
 						</section>
 					</div>
+					<div class="2u 12u(mobile)"></div> <!--Zentrieren -->
 				</div>
 			</div>
 	</div>
 	<!-- Contact -->
 	<div class=" wrapper style4">
-		<!-- <article id="contact" class="container 75%"> -->
-		<article id="contact">
+		<article id="contact" class="container 60%">
 			<header>
+				<h5>Kontakt</h5>
+				<br>
+				<h6>Für Rückfragen oder weitere Informationen stehen wir Ihnen gerne zur Verfügung.
+					Kontaktieren Sie uns über nachfolgenden Button.</h6>
 				<div id="cnt1" style="visibility:hidden">
-					<h6>Über eine Email an:</h6>
-					<a style="font-size: 40px" href="#" id="cnt2"></a>
-					<h6>Würden wir uns sehr freuen</h6>
+					<h6>Wir freuen uns über Ihre Nachricht per E-Mail an:</h6>
+					<br>
+					<a style="font-size: 40px; color:#b4201f;text-shadow: none;" href="#" id="cnt2"></a>
 				</div>
 				<div>
-					<a id="cnt0" onClick="fdcnt()" class="button big scrolly">Weitere Fragen? Hier
-						gehts zum Kontakt</a>
+					<a id="cnt0" onClick="fdcnt()" class="button big scrolly">Fragen? Nehmen Sie hier
+						Kontakt mit uns</a>
 				</div>
 				<div>
+
 
 					<script src="assets/js/jquery.min.js"></script>
 					<script src="assets/js/jquery.scrolly.min.js"></script>
 					<script src="assets/js/skel.min.js"></script>
 					<script src="assets/js/skel-viewport.min.js"></script>
 					<script src="assets/js/util.js"></script>
-					<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 					<script src="assets/js/main.js"></script>
 					<script>
 						function fdcnt() {
