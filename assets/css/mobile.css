@@ -3,11 +3,11 @@
 	itflies.ch
 	06.09.2024 kom: created new
 */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container.\31 25\25 {
     width: 100%;
-    max-width: 125%;
-    min-width: 100%;
+    /* max-width: 125%;
+    min-width: 100%; */
   }
 
   .container.\37 5\25 {
@@ -25,10 +25,6 @@
   .container {
     width: 100%;
   }
-
-  /* }
-
-	   @media screen and (max-width: 768px) { */
 
   .row > * {
     padding: 15px 0 0 15px;
@@ -253,14 +249,6 @@
     margin-left: 8.33333%;
   }
 
-  /* } 
-
-/* Mobile */
-
-  /*	@media screen and (max-width: 768px) { */
-
-  /* Basic */
-
   body,
   input,
   textarea,
@@ -278,6 +266,11 @@
   h2 {
     font-size: 1.6em;
     line-height: 1.25em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    color: #303030;
   }
 
   h4 {
@@ -323,6 +316,13 @@
   hr {
     margin: 1.5em 0 2em 0;
   }
+
+  blockquote {
+    /* border-left: solid 0.75em #eee; */
+    /* padding: 1em 0 1em 1.5em; */
+    font-style: italic;
+    font-size: 1.1em;
+  }
   /* nav {
 				display: none;
 			} */
@@ -361,12 +361,35 @@
     text-align: center;
     /* background-color: #303030; */
   }
-  .hamburger {
-    display: flex;
+
+  #menu {
+    display: none; /* Menü auf mobilen Geräten ausblenden */
   }
+
+  #menu.active {
+    display: block; /* Menü anzeigen, wenn aktiv */
+    top: 45px;
+    right: 0; /* Menü sichtbar machen, wenn aktiv */
+    text-align: right;
+  }
+
+  .hamburger {
+    display: flex; /* Hamburger-Menü auf mobilen Geräten anzeigen */
+  }
+
   #nav .container {
     display: none;
   }
+}
+
+.home {
+  display: flex;
+  justify-content: flex-start; /* Inhalt nach links ausrichten */
+}
+
+.home img {
+  margin-top: -20px;
+  margin-left: -20px; /* Optional: Abstand rechts */
 }
 
 /* Section/Article */
@@ -451,6 +474,8 @@ ul.actions li:first-child {
 }
 .box.services h3 {
   margin-bottom: 0.5em;
+  font-size: 1.5em;
+  color: #303030;
 }
 
 .box.technologies {

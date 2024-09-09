@@ -112,10 +112,6 @@ nav2 section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
 ol,
 ul {
   list-style: none;
@@ -156,31 +152,36 @@ body {
 /* Containers */
 
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .container.\31 25\25 {
   width: 100%;
-  max-width: 1200px;
-  min-width: 960px;
+  /* max-width: 1200px;
+  min-width: 960px; */
 }
 
 .container.\37 5\25 {
-  width: 720px;
+  width: 100%;
+  /* width: 720px; kom 09.09.24*/
 }
 
 .container.\35 0\25 {
-  width: 480px;
+  width: 100%;
+  /* width: 480px; kom 09.09.24*/
 }
 
 .container.\32 5\25 {
-  width: 240px;
+  width: 100%;
+  /* width: 240px; kom 09.09.24*/
 }
 
-.container {
-  width: 960px;
-}
+/* .container {
+  width: 100%;
+  /* width: 960px; kom 09.09.24
+}*/
 
 /* Grid */
 
@@ -523,6 +524,7 @@ blockquote {
   /* border-left: solid 0.75em #eee; */
   /* padding: 1em 0 1em 1.5em; */
   font-style: italic;
+  /* font-size: 1.3em; */
 }
 
 h1,
@@ -771,7 +773,10 @@ button.alt:active,
 /* Wrappers */
 
 .wrapper {
-  background-image: url("images/bg.png");
+  display: flex; /*MKO 09.09.24 test*/
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
   box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05),
     inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 }
