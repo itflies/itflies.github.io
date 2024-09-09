@@ -10,6 +10,19 @@
     min-width: 100%; */
   }
 
+  .home {
+    display: flex;
+    align-items: flex-start; /* Elemente oben im Container ausrichten */
+    justify-content: flex-start; /* Optional: Horizontal linksbündig ausrichten */
+  }
+
+  .home img {
+    height: 30px;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+
   .container.\37 5\25 {
     width: 75%;
   }
@@ -380,16 +393,6 @@
   #nav .container {
     display: none;
   }
-}
-
-.home {
-  display: flex;
-  justify-content: flex-start; /* Inhalt nach links ausrichten */
-}
-
-.home img {
-  margin-top: -20px;
-  margin-left: -20px; /* Optional: Abstand rechts */
 }
 
 /* Section/Article */
