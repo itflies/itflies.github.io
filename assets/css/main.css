@@ -240,12 +240,12 @@ article {
   margin-bottom: 3em;
 }
 
-section > :last-child,
+/* section > :last-child,
 article > :last-child,
 section:last-child,
 article:last-child {
   margin-bottom: 0;
-}
+} */
 
 /* Image */
 
@@ -347,7 +347,7 @@ button:hover,
 /* Wrappers */
 
 .wrapper {
-  display: flex; /*MKO 09.09.24 test*/
+  display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
