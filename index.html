@@ -10,7 +10,7 @@
 	<title>itFlies GmbH, Experten für Softwareentwicklung und Projektmanagement</title>
 	<meta charset="utf-8" />
 	<meta name="description" content="Softwareentwicklung, Projektmanagement und Beratung" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/mobile.css" />
 	<link rel="stylesheet" href="assets/css/tablet.css" />
@@ -32,6 +32,15 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+	<script>
+		window.addEventListener('orientationchange', function () {
+			// Erzwingt ein Redraw oder Neuladen des Layouts
+			document.body.style.display = 'none';
+			setTimeout(function () {
+				document.body.style.display = 'block';
+			}, 10);
+		});
+	</script>
 </head>
 
 <body>
@@ -57,7 +66,7 @@
 			<li id="desktop"><a href="#partner">Partner</a></li>
 			<li id="desktop"><a href="#about">Über uns</a></li>
 			<li id="desktop"><a href="#contact">Kontakt</a></li>
-			<!-- <li></li> -->
+			<li></li>
 		</ul>
 	</nav>
 	<script>
@@ -482,7 +491,6 @@
 							document.getElementById("cnt0").style.visibility = "hidden"
 						}
 					</script>
-
 </body>
 
 </html>

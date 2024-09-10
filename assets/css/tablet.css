@@ -3,8 +3,8 @@
 	itflies.ch
 	10.09.2024 kom: created new
 */
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
+@media (min-width: 768px) and (max-width: 1025px) {
+  .body {
     font-size: 13pt;
   }
 
