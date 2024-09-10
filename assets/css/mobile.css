@@ -1,19 +1,17 @@
 /*
 	CSS for Mobile
 	itflies.ch
-	06.09.2024 kom: created new
+	10.09.2024 kom: created new
 */
 @media (max-width: 767px) {
-  .container.\31 25\25 {
+  .container {
     width: 100%;
-    /* max-width: 125%;
-    min-width: 100%; */
   }
 
   .home {
     display: flex;
-    align-items: flex-start; /* Elemente oben im Container ausrichten */
-    justify-content: flex-start; /* Optional: Horizontal linksbündig ausrichten */
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .home img {
@@ -21,18 +19,6 @@
     position: absolute;
     margin-top: -20px;
     margin-left: -20px;
-  }
-
-  .container.\37 5\25 {
-    width: 75%;
-  }
-
-  .container.\35 0\25 {
-    width: 50%;
-  }
-
-  .container.\32 5\25 {
-    width: 25%;
   }
 
   .container {
@@ -47,225 +33,19 @@
     margin: -15px 0 -1px -15px;
   }
 
-  .row.uniform > * {
-    padding: 15px 0 0 15px;
-  }
-
-  .row.uniform {
-    margin: -15px 0 -1px -15px;
-  }
-
-  .row.\32 00\25 > * {
-    padding: 30px 0 0 30px;
-  }
-
-  .row.\32 00\25 {
-    margin: -30px 0 -1px -30px;
-  }
-
-  .row.uniform.\32 00\25 > * {
-    padding: 30px 0 0 30px;
-  }
-
-  .row.uniform.\32 00\25 {
-    margin: -30px 0 -1px -30px;
-  }
-
-  .row.\31 50\25 > * {
-    padding: 22.5px 0 0 22.5px;
-  }
-
-  .row.\31 50\25 {
-    margin: -22.5px 0 -1px -22.5px;
-  }
-
-  .row.uniform.\31 50\25 > * {
-    padding: 22.5px 0 0 22.5px;
-  }
-
-  .row.uniform.\31 50\25 {
-    margin: -22.5px 0 -1px -22.5px;
-  }
-
-  .row.\35 0\25 > * {
-    padding: 7.5px 0 0 7.5px;
-  }
-
-  .row.\35 0\25 {
-    margin: -7.5px 0 -1px -7.5px;
-  }
-
-  .row.uniform.\35 0\25 > * {
-    padding: 7.5px 0 0 7.5px;
-  }
-
-  .row.uniform.\35 0\25 {
-    margin: -7.5px 0 -1px -7.5px;
-  }
-
-  .row.\32 5\25 > * {
-    padding: 3.75px 0 0 3.75px;
-  }
-
-  .row.\32 5\25 {
-    margin: -3.75px 0 -1px -3.75px;
-  }
-
-  .row.uniform.\32 5\25 > * {
-    padding: 3.75px 0 0 3.75px;
-  }
-
-  .row.uniform.\32 5\25 {
-    margin: -3.75px 0 -1px -3.75px;
-  }
-
-  .\31 2u\28mobile\29,
-  .\31 2u\24\28mobile\29 {
+  .tile {
     width: 100%;
     clear: none;
     margin-left: 0;
   }
 
-  .\31 1u\28mobile\29,
-  .\31 1u\24\28mobile\29 {
-    width: 91.6666666667%;
+  .tile2 {
+    width: 100%;
     clear: none;
     margin-left: 0;
   }
 
-  .\31 0u\28mobile\29,
-  .\31 0u\24\28mobile\29 {
-    width: 83.3333333333%;
-    clear: none;
-    margin-left: 0;
-  }
-
-  .\39 u\28mobile\29,
-  .\39 u\24\28mobile\29 {
-    width: 75%;
-    clear: none;
-    margin-left: 0;
-  }
-
-  .\38 u\28mobile\29,
-  .\38 u\24\28mobile\29 {
-    width: 66.6666666667%;
-    clear: none;
-    margin-left: 0;
-  }
-
-  .\37 u\28mobile\29,
-  .\37 u\24\28mobile\29 {
-    width: 58.3333333333%;
-    clear: none;
-    margin-left: 0;
-  }
-
-  .\36 u\28mobile\29,
-  .\36 u\24\28mobile\29 {
-    width: 50%;
-    clear: none;
-    margin-left: 0;
-  }
-
-  .\35 u\28mobile\29,
-  .\35 u\24\28mobile\29 {
-    width: 41.6666666667%;
-    clear: none;
-    margin-left: 0;
-  }
-
-  .\34 u\28mobile\29,
-  .\34 u\24\28mobile\29 {
-    width: 33.3333333333%;
-    clear: none;
-    margin-left: 0;
-  }
-
-  .\33 u\28mobile\29,
-  .\33 u\24\28mobile\29 {
-    width: 25%;
-    clear: none;
-    margin-left: 0;
-  }
-
-  .\32 u\28mobile\29,
-  .\32 u\24\28mobile\29 {
-    width: 16.6666666667%;
-    clear: none;
-    margin-left: 0;
-  }
-
-  .\31 u\28mobile\29,
-  .\31 u\24\28mobile\29 {
-    width: 8.3333333333%;
-    clear: none;
-    margin-left: 0;
-  }
-
-  .\31 2u\24\28mobile\29 + *,
-  .\31 1u\24\28mobile\29 + *,
-  .\31 0u\24\28mobile\29 + *,
-  .\39 u\24\28mobile\29 + *,
-  .\38 u\24\28mobile\29 + *,
-  .\37 u\24\28mobile\29 + *,
-  .\36 u\24\28mobile\29 + *,
-  .\35 u\24\28mobile\29 + *,
-  .\34 u\24\28mobile\29 + *,
-  .\33 u\24\28mobile\29 + *,
-  .\32 u\24\28mobile\29 + *,
-  .\31 u\24\28mobile\29 + * {
-    clear: left;
-  }
-
-  .\-11u\28mobile\29 {
-    margin-left: 91.66667%;
-  }
-
-  .\-10u\28mobile\29 {
-    margin-left: 83.33333%;
-  }
-
-  .\-9u\28mobile\29 {
-    margin-left: 75%;
-  }
-
-  .\-8u\28mobile\29 {
-    margin-left: 66.66667%;
-  }
-
-  .\-7u\28mobile\29 {
-    margin-left: 58.33333%;
-  }
-
-  .\-6u\28mobile\29 {
-    margin-left: 50%;
-  }
-
-  .\-5u\28mobile\29 {
-    margin-left: 41.66667%;
-  }
-
-  .\-4u\28mobile\29 {
-    margin-left: 33.33333%;
-  }
-
-  .\-3u\28mobile\29 {
-    margin-left: 25%;
-  }
-
-  .\-2u\28mobile\29 {
-    margin-left: 16.66667%;
-  }
-
-  .\-1u\28mobile\29 {
-    margin-left: 8.33333%;
-  }
-
-  body,
-  input,
-  textarea,
-  select {
+  body {
     line-height: 1.75em;
     font-size: 10pt;
     letter-spacing: 0;
@@ -294,7 +74,6 @@
     font-size: 2em;
     color: #ffffff;
     text-shadow: none;
-    /* letter-spacing: -0.015em; */
   }
 
   h6 {
@@ -302,28 +81,14 @@
     font-weight: normal;
     color: #ffffff;
     text-shadow: none;
-    /* letter-spacing: -0.015em; */
   }
 
   li {
     font-size: 1.2em;
-    /* letter-spacing: -0.015em; */
   }
 
   header {
     margin: 0 0 2em 0;
-  }
-
-  /* header > p {
-					font-size: 1.25em;
-				} */
-
-  footer {
-    margin: 2.5em 0 0 0;
-  }
-
-  footer > p {
-    font-size: 1.25em;
   }
 
   hr {
@@ -331,23 +96,19 @@
   }
 
   blockquote {
-    /* border-left: solid 0.75em #eee; */
-    /* padding: 1em 0 1em 1.5em; */
     font-style: italic;
     font-size: 1.1em;
   }
-  /* nav {
-				display: none;
-			} */
+  /* Navigation */
   #nav {
+    height: 50px;
     background-color: #303030;
     padding: 22px;
-    position: fixed; /* Menü fixiert oben */
-    top: 0; /* Abstand vom oberen Rand */
-    left: 0; /* Abstand vom linken Rand */
-    width: 100%; /* Breite des Menüs auf 100% setzen */
-    z-index: 1000; /* Sicherstellen, dass es über anderen Inhalten liegt */
-    /* display: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
   }
   #nav ul {
     display: none;
@@ -372,7 +133,6 @@
   #nav ul li a {
     padding: 15px;
     text-align: center;
-    /* background-color: #303030; */
   }
 
   #menu {
@@ -410,40 +170,9 @@ input[type="reset"],
 button,
 .button {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
   width: 100%;
   padding: 1em 0 1em 0;
-}
-
-/* List */
-
-ul.social {
-  padding: 1em 0.5em 0 0.5em;
-}
-
-ul.social li {
-  margin: 0.5em 0.5em 0.5em 0.5em;
-}
-
-ul.social li a {
-  top: 0;
-}
-
-ul.social li a:before {
-  background-color: transparent;
-}
-
-ul.actions {
-  margin: 0;
-}
-
-ul.actions li {
-  display: block;
-  margin: 10px 0 0 0;
-}
-
-ul.actions li:first-child {
-  margin-top: 0;
 }
 
 /* Box */
@@ -468,11 +197,10 @@ ul.actions li:first-child {
   margin: -50px 0 50px -40px;
   width: auto;
 }
-/* 04.09.2024 kom: ergänzt für mobile*/
+
 .box.services {
   background-color: #ffffff;
   height: 52ch;
-  /* padding: 3em 2em 3.5em 2em;*/
   padding: 3em 2em 3.5em 2em;
 }
 .box.services h3 {
@@ -482,23 +210,20 @@ ul.actions li:first-child {
 }
 
 .box.technologies {
-  /* Beispiel am 02.09.2024 gemeinsam mit Philipp erstellt*/
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* This will evenly position the child elements vertically */
+  justify-content: space-between;
   height: 40ch;
   width: 100%;
   box-sizing: border-box;
   & img {
-    width: 100%; /* The image will take the full width of the parent */
-    height: auto; /* Maintain the aspect ratio of the image */
-    /* max-height: 20ch; */
+    width: 100%;
+    height: auto;
   }
   & .description {
-    text-align: left; /* Center the description text */
-    padding: 0.5rem; /* Optional: Add padding to the description for better spacing */
-    /* margin-top: 1rem; */
+    text-align: left;
+    padding: 0.5rem;
     list-style: circle;
   }
   & .image.fit {
@@ -507,23 +232,20 @@ ul.actions li:first-child {
 }
 
 .box.references {
-  /* Beispiel am 02.09.2024 gemeinsam mit Philipp erstellt*/
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* This will evenly position the child elements vertically */
+  justify-content: space-between;
   height: 50ch;
   width: 100%;
   box-sizing: border-box;
   & img {
-    width: 100%; /* The image will take the full width of the parent */
-    height: auto; /* Maintain the aspect ratio of the image */
-    /* max-height: 20ch; */
+    width: 100%;
+    height: auto;
   }
   & .description {
-    text-align: left; /* Center the description text */
-    padding: 0.5rem; /* Optional: Add padding to the description for better spacing */
-    /* margin-top: 1rem; */
+    text-align: left;
+    padding: 0.5rem;
     list-style: circle;
   }
   & .image.fit {
@@ -542,12 +264,11 @@ ul.actions li:first-child {
   height: 92ch;
   align-items: center;
   & img {
-    width: 100%; /* The image will take the full width of the parent */
-    /* align: center; */
-    height: auto; /* Maintain the aspect ratio of the image */
+    width: 100%;
+    height: auto;
   }
   & .description {
-    text-align: left; /* Center the description text */
+    text-align: left;
     list-style: circle;
   }
 }
@@ -569,10 +290,6 @@ ul.actions li:first-child {
   padding: 0.5em;
 }
 
-/* #nav2 a {
-				padding-top: 0.5em;
-			} */
-
 /* Articles */
 
 #top .image {
@@ -580,18 +297,3 @@ ul.actions li:first-child {
   height: auto;
   margin: 0 auto 1.75em auto;
 }
-
-#contact footer {
-  margin: 0;
-}
-
-/* Copyright */
-
-/* #copyright {
-				font-size: 1em;
-				margin: 0;
-			}
-
-				#copyright li {
-					display: block;
-				} */
