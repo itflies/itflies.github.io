@@ -57,8 +57,9 @@
   }
 
   h2 {
-    font-size: 1.6em;
-    line-height: 1.25em;
+    font-size: 2em;
+    color: #303030;
+    line-height: 2.25em;
   }
 
   h3 {
@@ -77,14 +78,20 @@
   }
 
   h6 {
-    font-size: 1em;
+    font-size: 1.15em;
     font-weight: normal;
     color: #ffffff;
     text-shadow: none;
+    /* letter-spacing: -0.015em; */
   }
 
   li {
     font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1.15em;
+    line-height: 1.7em;
   }
 
   header {
@@ -101,7 +108,7 @@
   }
   /* Navigation */
   #nav {
-    height: 50px;
+    height: 45px;
     background-color: #303030;
     padding: 22px;
     position: fixed;
@@ -261,7 +268,7 @@ button,
 
 .box.about {
   background-color: #ffffff;
-  height: 92ch;
+  height: 104ch;
   align-items: center;
   & img {
     width: 100%;
