@@ -4,17 +4,17 @@
 	itflies.ch
 	10.09.2024 kom: created new
 	-->
-<html>
+<html lang="de">
 
 <head>
 	<title>itFlies GmbH, Experten für Softwareentwicklung und Projektmanagement</title>
-	<meta charset="utf-8" />
-	<meta name="description" content="Softwareentwicklung, Projektmanagement und Beratung" />
+	<meta charset="utf-8">
+	<meta name="description" content="Softwareentwicklung, Projektmanagement und Beratung">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/mobile.css" />
-	<link rel="stylesheet" href="assets/css/tablet.css" />
-	<link rel="stylesheet" href="assets/css/desktop.css" />
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/mobile.css">
+	<link rel="stylesheet" href="assets/css/tablet.css">
+	<!-- <link rel="stylesheet" href="assets/css/desktop.css" /> -->
 	<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
@@ -32,20 +32,11 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	<script>
-		window.addEventListener('orientationchange', function () {
-			// Erzwingt ein Redraw oder Neuladen des Layouts
-			document.body.style.display = 'none';
-			setTimeout(function () {
-				document.body.style.display = 'block';
-			}, 10);
-		});
-	</script>
 </head>
 
 <body>
 	<!-- Navigation Menu -->
-	<nav id="nav">
+	<nav class="navbar" id="nav">
 		<!-- Hamburger Navigation Menu für Mobile-->
 		<div class="hamburger" id="hamburger">
 			<span></span>
@@ -69,425 +60,431 @@
 			<li></li>
 		</ul>
 	</nav>
-	<script>
-		const hamburger = document.getElementById('hamburger');
-		const menu = document.getElementById('menu');
+	<main class="content">
+		<!-- Home -->
+		<section id="top">
+			<div class="wrapper style1 first">
+				<article class="container">
+					<div class="row">
+						<header>
+							<img src="images/pic00.png" class="head-logo" />
+							<br />
+							<br />
+							<h1>Willkommen bei itFlies GmbH</h1>
+							<p>Ihre Experten für Softwareentwicklung und Projektmanagement!</p>
+							<blockquote>
+								<h3>«Mit verantwortungsvoller Digitalisierung beschleunigen wir Geschäftsprozesse
+									nachhaltig.»
+								</h3>
+							</blockquote>
+						</header>
+				</article>
+			</div>
+		</section>
 
-		// Funktion zum Ein- und Ausblenden des Menüs
-		function toggleMenu() {
-			menu.classList.toggle('active');
-		}
-
-		// Event-Listener für den Hamburger-Button
-		hamburger.addEventListener('click', toggleMenu);
-
-		// Event-Listener für alle Links im Menü
-		document.querySelectorAll('#menu a').forEach(link => {
-			link.addEventListener('click', () => {
-				if (window.innerWidth <= 768) { // Nur auf mobilen Geräten
-					menu.classList.remove('active');
-				}
-			});
-		});
-	</script>
-
-	<!-- Home -->
-	<div class="wrapper style1 first">
-		<article class="container" id="top">
-			<div class="row">
-				<br />
-				<br />
-				<div class="tile">
-					<span class="image fit"><img src="images/pic00.png" alt="" /></span>
-				</div>
-				<div class="tile2">
-					<br />
+		<!-- Services -->
+		<section id="services">
+			<div class="wrapper style2">
+				<article class="container">
 					<header>
-						<h2>Willkommen bei itFlies GmbH</h2>
-						<br />
-						<p>Ihre Experten für Softwareentwicklung und Projektmanagement!</p>
-						<br />
-						<br />
-						<br />
-						<blockquote>
-							<h3>Mit verantwortungsvoller Digitalisierung beschleunigen wir Geschäftsprozesse
-								nachhaltig.</h3>
-						</blockquote>
+						<h2>Dienstleistungen</h2>
+						<p>Profitieren Sie von unserer Erfahrung und Kompetenz in der IT-Welt und lassen Sie uns
+							gemeinsam
+							Ihre
+							digitalen Herausforderungen meistern.</p>
 					</header>
-					<br />
-					<br />
-				</div>
+					<div>
+						<div class="row">
+							<div class="tile">
+								<section class="box services">
+									<span class="icon featured fa-code"></span>
+									<h3>Softwareentwicklung</h3>
+									<p>Wir entwickeln performante Softwarelösungen die auf Desktop-PC
+										und mobilen Geräten (Handy, Tablet) effizient laufen – auch offline. Unsere
+										Anwendungen
+										integrieren sich nahtlos in Ihre bestehende IT-Landschaft, einschliesslich
+										Schnittstellen zu Ihrem ERP-System.</p>
+								</section>
+							</div>
+							<div class="tile">
+								<section class="box services">
+									<span class="icon featured fa-trello"></span>
+									<h3>Projektmanagement</h3>
+									<p>Wir begleiten Ihr Informatikvorhaben von der ersten Idee bis zum erfolgreichen
+										Abschluss.
+										Ob in der Vorstudie, während der Umsetzung oder bei der Inbetriebnahme – wir
+										stehen
+										Ihnen
+										in jeder Phase Ihres Projekts zur Seite.</p>
+								</section>
+							</div>
+							<div class="tile">
+								<section class="box services">
+									<span class="icon featured fa-lightbulb-o"></span>
+									<h3>Beratung</h3>
+									<p>Mit unserem Know-how verhelfen wir Ihnen zu entscheidenden
+										Wettbewerbsvorteilen und unterstützen Sie bei der durchgängigen Digitalisierung
+										Ihrer
+										Geschäftsprozesse und optimaler Nutzung Ihrer Ressourcen.</p>
+								</section>
+							</div>
+						</div>
+					</div>
+				</article>
 			</div>
-		</article>
-	</div>
+		</section>
 
-	<!-- Services -->
-	<div class="wrapper style2">
-		<article id="services">
-			<header>
-				<h2>Dienstleistungen</h2>
-				<p>Profitieren Sie von unserer Erfahrung und Kompetenz in der IT-Welt und lassen Sie uns gemeinsam Ihre
-					digitalen Herausforderungen meistern.</p>
-			</header>
-			<div class="container">
-				<div class="row">
-					<div class="tile">
-						<section class="box services">
-							<span class="icon featured fa-code"></span>
-							<h3>Softwareentwicklung</h3>
-							<p>Wir entwickeln performante Softwarelösungen die auf Desktop-PC
-								und mobilen Geräten (Handy, Tablet) effizient laufen – auch offline. Unsere Anwendungen
-								integrieren sich nahtlos in Ihre bestehende IT-Landschaft, einschliesslich
-								Schnittstellen zu Ihrem ERP-System.</p>
-						</section>
+		<!-- Technologie -->
+		<section id="technologies">
+			<div class="wrapper style3">
+				<article class="container">
+					<header>
+						<h2>Technologien</h2>
+						<p>Unsere höchste Produktivität erreichen wir durch den Einsatz folgender Technologien und
+							Programmierprachen: </p>
+					</header>
+					<div>
+						<div class="row">
+							<div class="tile">
+								<section class="box technologies">
+									<span class="icon featured fa-television"></span>
+									<h3>Frontend</h3>
+									<ul>
+										<li>Javascript</li>
+										<li>Typescript</li>
+										<li>HTML</li>
+										<li>CSS</li>
+									</ul>
+								</section>
+							</div>
+							<div class="tile">
+								<section class="box technologies">
+									<span class="icon featured fa-server"></span>
+									<h3>Backend</h3>
+									<ul>
+										<li>MS SQL Server&trade;</li>
+										<li>C#</li>
+										<li>.NET Core</li>
+										<li>REST API</li>
+									</ul>
+								</section>
+							</div>
+							<div class="tile">
+								<section class="box technologies">
+									<span class="icon featured fa-list-alt"></span>
+									<h3>SAP Business One&trade;</h3>
+									<ul>
+										<li>AddOn Entwicklung auf Basis des <a
+												href="https://helpdesk.coresystems.ch/hc/en-us/articles/201845082-Coresuite-Country-Package"
+												target="_blank">
+												coresuite country package</a>&trade;</li>
+										<li>Customizing & Reporting & Printing</li>
+										<br />
+									</ul>
+								</section>
+							</div>
+						</div>
 					</div>
-					<div class="tile">
-						<section class="box services">
-							<span class="icon featured fa-trello"></span>
-							<h3>Projektmanagement</h3>
-							<p>Wir begleiten Ihr Informatikvorhaben von der ersten Idee bis zum erfolgreichen Abschluss.
-								Ob in der Vorstudie, während der Umsetzung oder bei der Inbetriebnahme – wir stehen
-								Ihnen
-								in jeder Phase Ihres Projekts zur Seite.</p>
-						</section>
-					</div>
-					<div class="tile">
-						<section class="box services">
-							<span class="icon featured fa-lightbulb-o"></span>
-							<h3>Beratung</h3>
-							<p>Mit unserem Know-how verhelfen wir Ihnen zu entscheidenden
-								Wettbewerbsvorteilen und unterstützen Sie bei der durchgängigen Digitalisierung Ihrer
-								Geschäftsprozesse und optimaler Nutzung Ihrer Ressourcen.</p>
-						</section>
-					</div>
-				</div>
+				</article>
 			</div>
-	</div>
+		</section>
 
-
-	<!-- Technologie -->
-	<div class="wrapper style3">
-		<article id="technologies">
-			<header>
-				<h2>Technologien</h2>
-				<p>Unsere höchste Produktivität erreichen wir durch den Einsatz folgender Technologien und
-					Programmierprachen: </p>
-			</header>
-			<div class="container">
-				<div class="row">
-					<div class="tile">
-						<section class="box technologies">
-							<span class="icon featured fa-television"></span>
-							<h3>Frontend</h3>
-							<ul>
-								<li>Javascript</li>
-								<li>Typescript</li>
-								<li>HTML</li>
-								<li>CSS</li>
-							</ul>
-						</section>
-					</div>
-					<div class="tile">
-						<section class="box technologies">
-							<span class="icon featured fa-server"></span>
-							<h3>Backend</h3>
-							<ul>
-								<li>MS SQL Server&trade;</li>
-								<li>C#</li>
-								<li>.NET Core</li>
-								<li>REST API</li>
-							</ul>
-						</section>
-					</div>
-					<div class="tile">
-						<section class="box technologies">
-							<span class="icon featured fa-list-alt"></span>
-							<h3>SAP Business One&trade;</h3>
-							<ul>
-								<li>AddOn Entwicklung auf Basis des <a
-										href="https://helpdesk.coresystems.ch/hc/en-us/articles/201845082-Coresuite-Country-Package"
-										target="_blank">
-										coresuite country package</a>&trade;</li>
-								<li>Customizing & Reporting & Printing</li>
-								<br />
-							</ul>
-						</section>
-					</div>
-				</div>
-			</div>
-	</div>
-
-	<!-- References -->
-	<div class="wrapper style2">
-		<article id="references">
-			<header>
-				<h2>Referenzen</h2>
-				<p>Die folgenden Kunden profitieren bereits von unseren Lösungen: </p>
-			</header>
-			<div class="container">
-				<div class="row">
-					<!-- Bardini-->
-					<div class="tile">
-						<section class="box references">
-							<span class="image fit">
-								<a href="https://bardiniverde.ch/" target="_blank">
-									<img src="images/references/logo bardini.png" alt="Logo Bardini&Verde" />
-								</a>
-							</span>
-							<br>
-							<ul class="description">
-								<li>Aktivitätsverwaltung</li>
-								<li>Zertifikatsverwaltung</li>
-								<li>Kampagnen Tool</li>
-							</ul>
-						</section>
-					</div>
-					<!-- DiaHem-->
-					<div class="tile">
-						<section class="box references">
-							<span class="image fit">
-								<a href="https://diahem.com/" target="_blank">
-									<img src="images/references/logo diahem.png" alt="Logo DiaHem AG" />
-								</a>
-							</span>
-							<br>
-							<ul class="description">
-								<li>Kommissionierungssystem</li> <!-- Verpackungsmanager mit Scanner und Tablets -->
-								<li>Chargenverwaltung</li>
-								<li>Materialbedarfsplanung</li>
-							</ul>
-						</section>
-					</div>
-					<!-- Emmenegger-->
-					<div class="tile">
-						<section class="box references">
-							<span class="image fit">
-								<a href="https://www.emmeneggerag.ch/" target="_blank">
-									<img src="images/references/logo emmenegger.png" alt="Logo Felix Emmenegger AG" />
-								</a>
-							</span>
-							<br>
-							<ul class="description">
-								<li>Provisionssystem</li>
-								<li>Produktionsdashboard</li>
-							</ul>
-						</section>
-					</div>
-				</div>
-				<div class="row">
-					<!-- Hedin-->
-					<div class="tile">
-						<section class="box references">
-							<span class="image fit">
-								<a href="https://hedinautomotive.ch/" target="_blank">
-									<img src="images/references/logo hedin.png"
-										alt="Logo Hedin Automotive Schweiz AG" />
-								</a>
-							</span>
-							<br>
-							<ul class="description">
-								<li>Provisionssystem</li>
-								<li>Retail Planning Tool</li>
-							</ul>
-						</section>
-					</div>
-					<!-- Jungheinrich-->
-					<div class="tile">
-						<section class="box references">
-							<span class="image fit">
-								<a href="https://www.jungheinrich.ch/" target="_blank">
-									<img src="images/references/logo jungheinrich.png" alt="Jungheinrich AG" />
-								</a>
-							</span>
-							<br>
-							<ul class="description">
-								<li>Produktekonfigurator</li>
-							</ul>
-						</section>
-					</div>
-					<!-- Kalt AG-->
-					<div class="tile">
-						<section class="box references">
-							<span class="image fit">
-								<a href="https://www.kaltag.ch/" target="_blank">
-									<img src="images/references/logo kalt.png" alt="Kalt AG" />
-								</a>
-							</span>
-							<br>
-							<ul class="description">
-								<li><a href=https://www.youtube.com/watch?v=iyF_B9d9l1Q target="_blank">
-										CAD-Angebots-Kalkulator</a>
-								</li>
-								<li>Zuschnitt-Angebots-Kalkulator</li>
-								<li>Zeiterfassung</li>
-								<li>Rechnungsportal</li>
-							</ul>
-						</section>
-					</div>
-				</div>
-				<div class="row">
-					<!-- Otto Rohrunterhalt GmbH-->
-					<div class="tile">
-						<section class="box references">
-							<span class="image fit">
-								<a href="https://www.otto-rohrunterhalt.ch/" target="_blank">
-									<img src="images/references/logo otto rohrunterhalt.png "
-										alt="Otto Rohrunterhalt GmbH" />
-								</a>
-							</span>
-							<br>
-							<ul class="description">
-								<li>Online Serviceanfragen</li>
-							</ul>
-						</section>
-					</div>
-					<!-- Ruedersäge AG-->
-					<div class="tile">
-						<section class="box references">
-							<span class="image fit">
-								<a href="https://www.ruedersaege.ch/" target="_blank">
-									<img src="images/references/logo ruedersaege.png " alt="Ruedersäge AG" />
-								</a>
-							</span>
-							<br>
-							<ul class="description">
-								<li>Rundholz Import</li>
-								<li>Anbindung Telefonanlage</li>
-							</ul>
-						</section>
-					</div>
-				</div>
-			</div>
-	</div>
-	<!-- Partner -->
-	<div class="wrapper style3">
-		<article id="partner">
-			<header>
-				<h2>Partner</h2>
-				<p>Wir kooperieren mit den folgenden Partnerfirmen:</p>
-			</header>
-			<div class="container">
-				<div class="row">
-					<div class="tile">
-						<section class="box partner">
-							<span class="image centered">
-								<a href="https://www.dataunit.ch/" target="_blank">
-									<img src="images/partner/logo data unit.png"
-										style="width: auto; height: 20ch;  alt:Data-Unit AG" />
+		<!-- References -->
+		<section id="references">
+			<div class="wrapper style2">
+				<article class="container">
+					<header>
+						<h2>Referenzen</h2>
+						<p>Die folgenden Kunden profitieren bereits von unseren Lösungen: </p>
+					</header>
+					<div>
+						<div class="row">
+							<!-- Bardini-->
+							<div class="tile">
+								<section class="box references">
+									<span class="image">
+										<a href="https://bardiniverde.ch/" target="_blank">
+											<img src="images/references/logo bardini.png" alt="Logo Bardini&Verde" />
+										</a>
+									</span>
 									<br>
-								</a>
-							</span>
-							<p>Die DATA UNIT AG ist das führende Competence Center für SAP ERP-Lösungen für KMU</p>
-						</section>
-					</div>
-					<div class="tile">
-						<section class="box partner">
-							<span class="image centered">
-								<a href="https://www.mtf.ch/" target="_blank">
-									<img src="images/partner/logo mtf.png "
-										style="width: auto; height: 22ch; alt:MTF Solutions AG" />
+									<ul class="solutions">
+										<li>Aktivitätsverwaltung</li>
+										<li>Zertifikatsverwaltung</li>
+										<li>Kampagnen Tool</li>
+									</ul>
+								</section>
+							</div>
+							<!-- DiaHem-->
+							<div class="tile">
+								<section class="box references">
+									<span class="image">
+										<a href="https://diahem.com/" target="_blank">
+											<img src="images/references/logo diahem.png" alt="Logo DiaHem AG" />
+										</a>
+									</span>
 									<br>
-								</a>
-								<p> MTF ist eines der grössten IT-Gesamtlösungsanbieter für KMU und Enterprise-Kunden in
-									der
-									Schweiz und im Fürstentum Liechtenstein.</p>
-						</section>
+									<ul class="solutions">
+										<li>Kommissionierungssystem</li>
+										<!-- Verpackungsmanager mit Scanner und Tablets -->
+										<li>Chargenverwaltung</li>
+										<li>Materialbedarfsplanung</li>
+									</ul>
+								</section>
+							</div>
+							<!-- Emmenegger-->
+							<div class="tile">
+								<section class="box references">
+									<span class="image">
+										<a href="https://www.emmeneggerag.ch/" target="_blank">
+											<img src="images/references/logo emmenegger.png"
+												alt="Logo Felix Emmenegger AG" />
+										</a>
+									</span>
+									<br>
+									<ul class="solutions">
+										<li>Provisionssystem</li>
+										<li>Produktionsdashboard</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+						<div class="row">
+							<!-- Hedin-->
+							<div class="tile">
+								<section class="box references">
+									<span class="image">
+										<a href="https://hedinautomotive.ch/" target="_blank">
+											<img src="images/references/logo hedin.png"
+												alt="Logo Hedin Automotive Schweiz AG" />
+										</a>
+									</span>
+									<br>
+									<ul class="solutions">
+										<li>Provisionssystem</li>
+										<li>Retail Planning Tool</li>
+									</ul>
+								</section>
+							</div>
+							<!-- Jungheinrich-->
+							<div class="tile">
+								<section class="box references">
+									<span class="image">
+										<a href="https://www.jungheinrich.ch/" target="_blank">
+											<img src="images/references/logo jungheinrich.png" alt="Jungheinrich AG" />
+										</a>
+									</span>
+									<br>
+									<ul class="solutions">
+										<li>Produktekonfigurator</li>
+									</ul>
+								</section>
+							</div>
+							<!-- Kalt AG-->
+							<div class="tile">
+								<section class="box references">
+									<span class="image">
+										<a href="https://www.kaltag.ch/" target="_blank">
+											<img src="images/references/logo kalt.png" alt="Kalt AG" />
+										</a>
+									</span>
+									<br>
+									<ul class="solutions">
+										<li><a href=https://www.youtube.com/watch?v=iyF_B9d9l1Q target="_blank">
+												CAD-Angebots-Kalkulator</a>
+										</li>
+										<li>Zuschnitt-Angebots-Kalkulator</li>
+										<li>Zeiterfassung</li>
+										<li>Rechnungsportal</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+						<div class="row">
+							<!-- Otto Rohrunterhalt GmbH-->
+							<div class="tile">
+								<section class="box references">
+									<span class="image">
+										<a href="https://www.otto-rohrunterhalt.ch/" target="_blank">
+											<img src="images/references/logo otto rohrunterhalt.png "
+												alt="Otto Rohrunterhalt GmbH" />
+										</a>
+									</span>
+									<br>
+									<ul class="solutions">
+										<li>Online Serviceanfragen</li>
+									</ul>
+								</section>
+							</div>
+							<!-- Ruedersäge AG-->
+							<div class="tile">
+								<section class="box references">
+									<span class="image">
+										<a href="https://www.ruedersaege.ch/" target="_blank">
+											<img src="images/references/logo ruedersaege.png " alt="Ruedersäge AG" />
+										</a>
+									</span>
+									<br>
+									<ul class="solutions">
+										<li>Rundholz Import</li>
+										<li>Anbindung Telefonanlage</li>
+									</ul>
+								</section>
+							</div>
+						</div>
 					</div>
-				</div>
+				</article>
 			</div>
-	</div>
-	<!-- about -->
-	<div class="wrapper style2">
-		<article id="about">
-			<header>
-				<h2>Über uns</h2>
-				<p>Wir sind itFlies GmbH, ein engagiertes Team von IT-Experten, das sich darauf spezialisiert hat,
-					massgeschneiderte Lösungen für Ihre technologischen Herausforderungen zu entwickeln. Mit einem
-					tiefen
-					Verständnis für die neuesten Technologien und einem klaren Fokus auf Ihre Bedürfnisse bieten wir
-					Ihnen umfassende Unterstützung in den Bereichen Softwareentwicklung, Projektmanagement und
-					Beratung.</p>
-			</header>
-			<div class="container">
-				<div class="row">
-					<div class="tile">
-						<section class="box about">
-							<span class="image fit"> </span>
-							<img src="images/about/knp.png" alt="Philipp Knecht" />
-							<br>
-							</a>
-							<h3>Philipp Knecht</h3>
-							<h4>Gründer und Lead Developer</h4>
-							<br>
-							<p>Philipp, Gründer der itFlies GmbH, bringt jahrzehntelange Erfahrung in
-								Softwareentwicklung und Geschäftsprozessoptimierung mit. Seine Leidenschaft für
-								innovative Technologien und umfassende Fachkenntnis bilden die Grundlage für unsere
-								massgeschneiderten Lösungen.
-								<br>
-								Mit langjähriger Erfahrung lösen wir Ihre IT-Herausforderungen – effizient,
-								zielgerichtet und wirkungsvoll.
-							</p>
-						</section>
+		</section>
+		<!-- Partner -->
+		<section id="partner">
+			<div class="wrapper style3">
+				<article class="container">
+					<header>
+						<h2>Partner</h2>
+						<p>Wir kooperieren mit den folgenden Partnerfirmen:</p>
+					</header>
+					<div>
+						<div class="row">
+							<!-- DATA-UNIT-->
+							<div class="tile">
+								<section class="box partner">
+									<span class="image">
+										<a href="https://www.dataunit.ch/" target="_blank">
+											<img src="images/partner/logo data unit.png" />
+											<br>
+										</a>
+									</span>
+									<p>Die DATA UNIT AG ist das führende Competence Center für SAP ERP-Lösungen für KMU
+									</p>
+								</section>
+							</div>
+							<!-- MTF-->
+							<div class="tile">
+								<section class="box partner">
+									<span class="image">
+										<a href="https://www.mtf.ch/" target="_blank">
+											<img src="images/partner/logo mtf.png" />
+											<br>
+										</a>
+									</span>
+									<p> MTF ist eines der grössten IT-Gesamtlösungsanbieter für KMU und
+										Enterprise-Kunden in
+										der
+										Schweiz und im Fürstentum Liechtenstein.</p>
+								</section>
+							</div>
+						</div>
 					</div>
-					<div class="tile">
-						<section class="box about">
-							<span class="image fit"> </span>
-							<img src="images/about/kom.png" alt="Marco Koster" />
-							<br>
-							</a>
-							<h3>Marco Koster</h3>
-							<h4> Projektleitung und Administration</h4>
-							<br>
-							<p> Marco ist ein erfahrener IT-Projektleiter, der IT-Projekte effizient und erfolgreich
-								steuert. Mit tiefem Fachwissen und flexibler Herangehensweise führt er Ihre Projekte
-								zielgerichtet zum Erfolg.
-								<br>
-								Durch sorgfältige Planung, flexible Umsetzung und
-								erfolgreichen Abschluss gewährleisten wir, dass alle Projektphasen reibungslos
-								verlaufen und Ihre Anforderungen optimal erfüllt werden.
-							</p>
-							<a href="https://ch.linkedin.com/in/marco-koster-7b418619" target="_blank">
-								<img src="images/about/LI-Bug.svg.original.svg" alt="LinkedIn Marco Koster"
-									style="width: 40px; height: auto; " />
-							</a>
-						</section>
-					</div>
-				</div>
+				</article>
 			</div>
-	</div>
-	<!-- Contact -->
-	<div class=" wrapper style4">
-		<article id="contact" class="container">
-			<header>
-				<h5>Kontakt</h5>
-				<br>
-				<h6>Für Rückfragen oder weitere Informationen stehen wir Ihnen gerne zur Verfügung.
-					Kontaktieren Sie uns über nachfolgenden Button.</h6>
-				<div id="cnt1" style="visibility:hidden">
+		</section>
+		<!-- Über Uns-->
+		<section id="about">
+			<div class="wrapper style2">
+				<article class="container">
+					<header>
+						<h2>Über uns</h2>
+						<p>Wir sind itFlies GmbH, ein engagiertes Team von IT-Experten, das sich darauf spezialisiert
+							hat,
+							massgeschneiderte Lösungen für Ihre technologischen Herausforderungen zu entwickeln. Mit
+							einem
+							tiefen
+							Verständnis für die neuesten Technologien und einem klaren Fokus auf Ihre Bedürfnisse bieten
+							wir
+							Ihnen umfassende Unterstützung in den Bereichen Softwareentwicklung, Projektmanagement und
+							Beratung.</p>
+					</header>
+					<div>
+						<div class="row">
+							<!-- Philipp -->
+							<div class="tile">
+								<section class="box about">
+									<span class="image">
+										<img src="images/about/knp.png" />
+										<br>
+									</span>
+									<h3>Philipp Knecht</h3>
+									<h4>Gründer und Lead Developer</h4>
+									<br>
+									<p>Philipp, Gründer der itFlies GmbH, bringt jahrzehntelange Erfahrung in
+										Softwareentwicklung und Geschäftsprozessoptimierung mit. Seine Leidenschaft für
+										innovative Technologien und umfassende Fachkenntnis bilden die Grundlage für
+										unsere
+										massgeschneiderten Lösungen.
+										<br>
+										Mit langjähriger Erfahrung lösen wir Ihre IT-Herausforderungen – effizient,
+										zielgerichtet und wirkungsvoll.
+									</p>
+								</section>
+							</div>
+							<!-- Marco -->
+							<div class="tile">
+								<section class="box about">
+									<span class="image">
+										<img src="images/about/kom.png" />
+										<br>
+									</span>
+									<h3>Marco Koster</h3>
+									<h4> Projektleitung und Administration</h4>
+									<br>
+									<p> Marco ist ein erfahrener IT-Projektleiter, der IT-Projekte effizient und
+										erfolgreich
+										steuert. Mit tiefem Fachwissen und flexibler Herangehensweise führt er Ihre
+										Projekte
+										zielgerichtet zum Erfolg.
+										<br>
+										Durch sorgfältige Planung, flexible Umsetzung und
+										erfolgreichen Abschluss gewährleisten wir, dass alle Projektphasen reibungslos
+										verlaufen und Ihre Anforderungen optimal erfüllt werden.
+									</p>
+									<a href="https://ch.linkedin.com/in/marco-koster-7b418619" target="_blank">
+										<img src="images/about/LI-Bug.svg.original.svg" alt="LinkedIn Marco Koster"
+											style="width: 35px; height: auto; " />
+									</a>
+								</section>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section id="contact">
+			<div class="wrapper style4">
+				<article class="container">
+					<header>
+						<h5>Kontakt</h5>
+						<h6>Für Rückfragen oder weitere Informationen stehen wir Ihnen gerne zur Verfügung.
+							Kontaktieren Sie uns über nachfolgenden Button.</h6>
+					</header>
+					<div id="cnt1" style="visibility:hidden">
+						<br>
+						<h6>Wir freuen uns über Ihre Nachricht per E-Mail an:</h6>
+						<br>
+						<a style="font-size: 40px; color:#b4201f;text-shadow: none;" href="#" id="cnt2"></a>
+					</div>
+					<div>
+						<a id="cnt0" onClick="fdcnt()" class="button big">Fragen? Nehmen Sie hier
+							Kontakt mit uns auf</a>
+					</div>
 					<br>
-					<h6>Wir freuen uns über Ihre Nachricht per E-Mail an:</h6>
 					<br>
-					<a style="font-size: 40px; color:#b4201f;text-shadow: none;" href="#" id="cnt2"></a>
-				</div>
-				<div>
-					<a id="cnt0" onClick="fdcnt()" class="button big scrolly">Fragen? Nehmen Sie hier
-						Kontakt mit uns auf</a>
-				</div>
-				<div>
-					<!-- <script src="assets/js/jquery.min.js"></script>
-					<script src="assets/js/jquery.scrolly.min.js"></script>
-					<script src="assets/js/skel.min.js"></script>
-					<script src="assets/js/skel-viewport.min.js"></script>
-					<script src="assets/js/util.js"></script>
-					<script src="assets/js/main.js"></script>-->
-					<script>
-						function fdcnt() {
-							document.getElementById("cnt2").innerHTML = ("s" + "ales" + "@hamsters" + ".ch").replace("sal", "inf").replace("hamsters", "flies").replace("es@", "o@it");
-							document.getElementById("cnt2").href = "mailto:" + document.getElementById("cnt2").innerHTML
-							document.getElementById("cnt1").style.visibility = "visible"
-							document.getElementById("cnt0").style.visibility = "hidden"
-						}
-					</script>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div>
+		</section>
+	</main>
 </body>
+<script src="assets/js/navigation.menu.js"></script>
+<script src="assets/js/contactmail.js"></script>
 
 </html>

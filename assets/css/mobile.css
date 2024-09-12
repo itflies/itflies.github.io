@@ -1,11 +1,15 @@
 /*
 	CSS for Mobile
 	itflies.ch
-	10.09.2024 kom: created new
+	12.09.2024 kom: created new
 */
+
 @media (max-width: 767px) {
-  .container {
-    width: 100%;
+  body {
+    /* background-color: rgb(247, 52, 4) !important; */
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.85em;
+    color: #535353;
   }
 
   .home {
@@ -14,45 +18,33 @@
     justify-content: flex-start;
   }
 
-  .home img {
-    height: 30px;
-    position: absolute;
-    margin-top: -20px;
-    margin-left: -20px;
+  .head-logo {
+    width: 15em;
+    height: auto;
+  }
+
+  .content {
+    padding-top: 10px; /* Höhe des Navigationsmenüs + etwas Puffer */
   }
 
   .container {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
-
-  .row > * {
-    padding: 15px 0 0 15px;
-  }
-
   .row {
-    margin: -15px 0 -1px -15px;
+    display: block;
+    justify-content: center;
+    align-items: center;
   }
 
   .tile {
     width: 100%;
-    clear: none;
     margin-left: 0;
-  }
-
-  .tile2 {
-    width: 100%;
-    clear: none;
-    margin-left: 0;
-  }
-
-  body {
-    line-height: 1.75em;
-    font-size: 10pt;
-    letter-spacing: 0;
   }
 
   h1 {
-    font-size: 2.2em;
+    font-size: 2em;
     line-height: 1.25em;
   }
 
@@ -63,7 +55,7 @@
   }
 
   h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #303030;
   }
 
@@ -82,7 +74,6 @@
     font-weight: normal;
     color: #ffffff;
     text-shadow: none;
-    /* letter-spacing: -0.015em; */
   }
 
   li {
@@ -90,27 +81,13 @@
   }
 
   p {
-    font-size: 1.15em;
+    font-size: 1em;
     line-height: 1.7em;
   }
 
-  header {
-    margin: 0 0 2em 0;
-  }
-
-  hr {
-    margin: 1.5em 0 2em 0;
-  }
-
-  blockquote {
-    font-style: italic;
-    font-size: 1.1em;
-  }
-  /* Navigation */
   #nav {
     height: 45px;
     background-color: #303030;
-    padding: 22px;
     position: fixed;
     top: 0;
     left: 0;
@@ -121,7 +98,7 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 50px;
     right: 10px;
     background-color: #303030;
@@ -160,147 +137,120 @@
   #nav .container {
     display: none;
   }
-}
 
-/* Section/Article */
+  article {
+    margin-bottom: 3em;
+  }
 
-section,
+  /* Wrappers */
+
+  .wrapper {
+    padding: 3.5em 0 3.5em 0; /*vergrössert wrapper*/
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+
+  .wrapper.first {
+    padding-top: 5em;
+  }
+
+  /* Section/Article kom braucht es das?*/
+
+  /* section,
 article {
   clear: both;
-}
+} */
 
-/* Button */
+  /* Button */
 
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-button,
-.button {
-  text-align: center;
-  font-size: 1em;
-  width: 100%;
-  padding: 1em 0 1em 0;
-}
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  button,
+  .button {
+    text-align: center;
+    font-size: 0.8em;
+    width: 100%;
+    padding: 1em 0 1em 0;
+  }
 
-/* Box */
+  /* Box */
 
-.box {
-  padding: 30px 20px 30px 20px;
-  margin: 0 0 20px 0;
-}
+  .box {
+    padding: 30px 20px 30px 20px;
+    margin: 0 0 20px 0;
+  }
 
-.box h3 {
-  margin-bottom: 0.25em;
-}
+  .box h3 {
+    margin-bottom: 0.25em;
+  }
 
-.box .image.centered {
+  /* .box .image.centered {
   margin-bottom: 1em;
-}
+} */
 
-.box .image.featured {
+  /* .box .image.featured {
   position: relative;
   left: 20px;
   top: 20px;
   margin: -50px 0 50px -40px;
   width: auto;
-}
+} */
 
-.box.services {
-  background-color: #ffffff;
-  height: auto;
-  padding: 3em 2em 3.5em 2em;
-}
-.box.services h3 {
-  margin-bottom: 0.5em;
-  font-size: 1.5em;
-  color: #303030;
-}
-
-.box.technologies {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: auto;
-  width: 100%;
-  box-sizing: border-box;
-  /* & img {
-    width: 100%;
+  .box.services {
+    background-color: #ffffff;
     height: auto;
+    padding: 3em 2em 3.5em 2em;
   }
-  & .description {
-    text-align: left;
-    padding: 0.5rem;
-    list-style: circle;
+  .box.services h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    color: #303030;
   }
-  & .image.fit {
-    max-height: 5ch;
+
+  .box.technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .box.references {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .box.partner {
+    background-color: #ffffff;
+    height: auto;
+    align-items: center;
+  }
+
+  .box.about {
+    background-color: #ffffff;
+    height: auto;
+    align-items: center;
+  }
+
+  /* Nav */
+  /* 
+  #nav a {
+    padding: 0.5em;
   } */
-}
 
-.box.references {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: auto;
-  width: 100%;
-  box-sizing: border-box;
-  /* & img {
-    width: 100%;
+  /* Articles */
+
+  #top .image {
+    width: 10%;
     height: auto;
+    margin: 0 auto 1.75em auto;
   }
-  & .description {
-    text-align: left;
-    padding: 0.5rem;
-    list-style: circle;
-  }
-  & .image.fit {
-    max-height: 5ch;
-  } */
-}
-
-.box.partner {
-  background-color: #ffffff;
-  height: auto;
-  align-items: center;
-}
-
-.box.about {
-  background-color: #ffffff;
-  height: 104ch;
-  align-items: center;
-  & img {
-    width: 100%;
-    height: auto;
-  }
-  & .description {
-    text-align: left;
-    list-style: circle;
-  }
-}
-
-/* Wrappers */
-
-.wrapper {
-  padding: 3em 15px 3em 15px;
-  text-align: center;
-}
-
-.wrapper.first {
-  padding-top: 5em;
-}
-
-/* Nav */
-
-#nav a {
-  padding: 0.5em;
-}
-
-/* Articles */
-
-#top .image {
-  width: 70%;
-  height: auto;
-  margin: 0 auto 1.75em auto;
 }
