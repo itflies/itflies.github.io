@@ -92,6 +92,12 @@ video,
 aside,
 details,
 /*DEFINITION*/
+
+/* Redlines for Analysis */
+/* * {
+  outline: 1px solid red;
+} */
+
 body {
   /* background-color: rgb(16, 185, 53) !important; */
   font-family: "Open Sans", sans-serif;
@@ -99,12 +105,6 @@ body {
   line-height: 1.85em;
   color: #535353;
 }
-
-/* .container {
-  width: 70em;
-  margin-left: auto;
-  margin-right: auto;
-} */
 
 /* Navigation */
 .navbar {
@@ -161,24 +161,11 @@ header {
   text-align: center;
 }
 
-/* blockquote,
-q {
-  quotes: none;
-} */
-
 ul {
   list-style: none;
   padding-left: 0em; /* Fügt einen Abstand von der linken Seite hinzu */
   list-style-position: inside;
 }
-
-/* Box Model */
-
-/* *,
-*:before,
-*:after {
-  box-sizing: border-box;
-} */
 
 .row {
   display: flex;
@@ -515,7 +502,7 @@ button:hover,
   justify-content: space-between;
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 2.8em;
 }
 
 .hamburger span {
