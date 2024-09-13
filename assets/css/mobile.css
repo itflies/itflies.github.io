@@ -19,7 +19,7 @@
   }
 
   .head-logo {
-    width: 15em;
+    width: 10em;
     height: auto;
   }
 
@@ -70,7 +70,7 @@
   }
 
   h6 {
-    font-size: 1.15em;
+    font-size: 1em;
     font-weight: normal;
     color: #ffffff;
     text-shadow: none;
@@ -86,7 +86,7 @@
   }
 
   #nav {
-    height: 45px;
+    height: 3.2em;
     background-color: #303030;
     position: fixed;
     top: 0;
@@ -115,7 +115,7 @@
   }
 
   #nav ul li a {
-    padding: 15px;
+    padding: 2px;
     text-align: center;
   }
 
@@ -125,10 +125,14 @@
 
   #menu.active {
     display: block; /* Menü anzeigen, wenn aktiv */
-    top: 45px;
-    right: 0; /* Menü sichtbar machen, wenn aktiv */
+    top: 3.3em;
+    right: 0;
     text-align: right;
   }
+  /*TEST*/
+  /* #menu a {
+    font-size: small;
+  } */
 
   .hamburger {
     display: flex; /* Hamburger-Menü auf mobilen Geräten anzeigen */
@@ -136,6 +140,18 @@
 
   #nav .container {
     display: none;
+  }
+
+  .navbar .container li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0em;
+    display: block;
+  }
+
+  header {
+    padding: 1em 1em 1em 1em;
+    text-align: center;
   }
 
   article {
@@ -147,7 +163,7 @@
   .wrapper {
     padding: 3.5em 0 3.5em 0; /*vergrössert wrapper*/
     text-align: center;
-    margin: 0 0 20px 0;
+    /* margin: 0 0 2000px 0; */
   }
 
   .wrapper.first {
@@ -170,15 +186,15 @@ article {
   .button {
     text-align: center;
     font-size: 0.8em;
-    width: 100%;
+    width: 90%;
     padding: 1em 0 1em 0;
   }
 
   /* Box */
 
   .box {
-    padding: 30px 20px 30px 20px;
-    margin: 0 0 20px 0;
+    padding: 1em 1em 1em 1em;
+    /* margin: 0 0 200px 0; */
   }
 
   .box h3 {

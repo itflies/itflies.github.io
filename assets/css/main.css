@@ -99,6 +99,12 @@ body {
   color: #535353;
 }
 
+/* .container {
+  width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
 /* Navigation */
 .navbar {
   background-color: #303030;
@@ -140,18 +146,17 @@ body {
   background-color: #b4201f;
 }
 
+main {
+  padding-top: 5em; /* Platz für das fixe Menü schaffen */
+}
+
 .head-logo {
-  width: 30rem;
+  width: 20em;
   height: auto;
 }
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 header {
+  padding: 1em 1em 1em 1em;
   text-align: center;
 }
 
@@ -162,6 +167,8 @@ q {
 
 ul {
   list-style: none;
+  padding-left: 0em; /* Fügt einen Abstand von der linken Seite hinzu */
+  list-style-position: inside;
 }
 
 /* Box Model */
@@ -188,7 +195,7 @@ ul {
 /* Kacheln */
 .tile {
   width: 30%;
-  clear: none;
+  /* clear: none; */
   margin: 1rem;
 }
 
@@ -272,10 +279,6 @@ p {
   color: #303030;
 }
 
-ul {
-  padding-left: 0em; /* Fügt einen Abstand von der linken Seite hinzu */
-  list-style-position: inside;
-}
 .solutions {
   list-style: circle; /* Entfernt die Standard-Aufzählungszeichen */
   padding-left: 100; /* Entfernt den Standard-Abstand links */
@@ -381,17 +384,18 @@ button:hover,
   align-items: center;
   background-color: #ffffff;
   box-sizing: border-box;
-  height: 42em;
-  padding: 3em 2em 3.5em 2em;
+  height: 40em;
+  /* padding: 3em 2em 3.5em 2em; */
 }
 
 .box.technologies {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 30em;
+  background-color: #ffffff;
+  /* justify-content: space-between; */
   box-sizing: border-box;
+  height: 27em;
 }
 
 .box.references {
@@ -400,19 +404,19 @@ button:hover,
   align-items: center;
   justify-content: space-between;
   height: 22.5em;
-  width: 100%;
+  /* width: 100%; */
   box-sizing: border-box;
 }
 
 .box.partner {
   background-color: #ffffff;
-  height: 29em;
+  height: 27em;
   align-items: center;
 }
 
 .box.about {
   background-color: #ffffff;
-  height: 63em;
+  height: 61em;
   align-items: center;
 }
 
@@ -449,14 +453,14 @@ button:hover,
   color: #ea8a95;
   font-size: 5em;
   display: block;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0 0;
   cursor: default;
 }
 
 /* Wrappers */
 
 .wrapper {
-  padding: 10em 0 10em 0; /*vergrössert wrapper*/
+  padding: 7em 0 7em 0; /*vergrössert wrapper*/
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -493,7 +497,7 @@ button:hover,
 
 /*Home-Logo auf Mobile Menu*/
 .home img {
-  height: 30px;
+  height: 2.5em;
   position: absolute;
   /* margin-top: -20px;
   margin-left: -20px; */
@@ -503,8 +507,8 @@ button:hover,
   display: none;
   flex-direction: column;
   cursor: pointer;
-  width: 30px;
-  height: 25px;
+  width: 2.5em;
+  height: 1.8em;
   justify-content: space-between;
   position: absolute;
   top: 10px;
@@ -528,7 +532,7 @@ button:hover,
 }
 
 #top .image {
-  width: 20em;
+  width: 30em;
 }
 
 #top h1 {
