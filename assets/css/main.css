@@ -95,6 +95,7 @@ details,
 body {
   /* background-color: rgb(16, 185, 53) !important; */
   font-family: "Open Sans", sans-serif;
+  margin: 0;
   line-height: 1.85em;
   color: #535353;
 }
@@ -194,7 +195,7 @@ ul {
 
 /* Kacheln */
 .tile {
-  width: 30%;
+  width: 25em;
   /* clear: none; */
   margin: 1rem;
 }
@@ -464,7 +465,7 @@ button:hover,
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
   align-items: center;
   /* box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05); */
   /* inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1); */
