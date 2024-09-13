@@ -266,6 +266,7 @@ h6 {
   font-size: 1.15rem;
   color: #ffffff;
   font-weight: normal;
+  padding: 0em 1em 0em 1em;
   margin: 0 0 0.75em 0;
   text-shadow: none;
   & a {
@@ -300,6 +301,10 @@ li {
 article {
   margin-bottom: 3em;
 }
+
+/* section {
+  width: 100%;
+} */
 
 /* Für Darstellung mit Zeilenumbruch - bei Referenzen verwende */
 section > :last-child,
@@ -487,7 +492,7 @@ button:hover,
 }
 
 .wrapper.style3 {
-  background-color: #ffffff;
+  background-color: #fafafa;
   text-shadow: 1px 1px 0px #f4f4f4;
 }
 
@@ -498,7 +503,7 @@ button:hover,
 
 /*Home-Logo auf Mobile Menu*/
 .home img {
-  height: 2.5em;
+  height: 2.3em;
   position: absolute;
   /* margin-top: -20px;
   margin-left: -20px; */

@@ -4,7 +4,9 @@
 	12.09.2024 kom: created new
 */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  /* Reset */
+
   body {
     /* background-color: rgb(247, 52, 4) !important; */
     font-family: "Open Sans", sans-serif;
@@ -41,6 +43,7 @@
   .tile {
     width: 100%;
     margin-left: 0;
+    padding: 0em 1em 0em 1em;
   }
 
   h1 {
@@ -120,14 +123,35 @@
   }
 
   #menu {
-    display: none; /* Menü auf mobilen Geräten ausblenden */
+    /*display: none; /* Menü auf mobilen Geräten ausblenden */
+    position: fixed; /* Menü bleibt immer sichtbar, auch beim Scrollen der Seite */
+    height: 75vh; /* Höhe des Menüs auf die volle Höhe des Viewports */
+    background-color: #333; /* Hintergrundfarbe des Menüs */
+    color: white; /* Textfarbe */
+    overflow-y: scroll; /* Scrollbar immer anzeigen */
+    box-sizing: border-box; /* Padding und Border in die Höhe einbeziehen */
+    transform: translateX(-100%); /* Menü standardmäßig ausblenden */
+    transition: transform 0.3s ease; /* Übergangseffekt für das Einblenden */
+    z-index: 1001; /* Sicherstellen, dass das Menü über dem Hauptinhalt liegt */
   }
 
   #menu.active {
     display: block; /* Menü anzeigen, wenn aktiv */
-    top: 3.3em;
+    top: 3.2em;
     right: 0;
     text-align: right;
+    transform: translateX(0); /* Menü einblenden */
+  }
+  #menu a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box; /* Padding und Border in die Höhe einbeziehen */
+  }
+
+  #menu a:hover {
+    background-color: #555; /* Hover-Effekt für Links */
   }
   /*TEST*/
   /* #menu a {
