@@ -36,7 +36,7 @@
   }
   .row {
     display: block;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
   }
 
@@ -153,10 +153,6 @@
   #menu a:hover {
     background-color: #555; /* Hover-Effekt für Links */
   }
-  /*TEST*/
-  /* #menu a {
-    font-size: small;
-  } */
 
   .hamburger {
     display: flex; /* Hamburger-Menü auf mobilen Geräten anzeigen */
@@ -174,6 +170,7 @@
   }
 
   header {
+    width: 100%;
     padding: 1em 1em 1em 1em;
     text-align: center;
   }
