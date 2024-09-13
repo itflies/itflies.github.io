@@ -302,9 +302,9 @@ article {
   margin-bottom: 3em;
 }
 
-/* section {
+section {
   width: 100%;
-} */
+}
 
 /* Für Darstellung mit Zeilenumbruch - bei Referenzen verwende */
 section > :last-child,
@@ -320,11 +320,6 @@ article:last-child {
   display: inline-block;
   position: relative;
 }
-
-/* .image.fit {
-  width: 100%;
-  height: 100%;
-} */
 
 .image img {
   display: block;
@@ -346,6 +341,7 @@ button,
   position: relative;
   display: inline-block;
   color: #ffffff;
+  width: 75%;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 700;
@@ -361,7 +357,7 @@ button,
 
 .big {
   padding: 1em 1em;
-  width: 50em;
+  /* width: 500em; */
   height: 2em;
 }
 
@@ -388,19 +384,19 @@ button:hover,
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffffff;
+  /* justify-content: space-between; */
   box-sizing: border-box;
+  background-color: #ffffff;
   height: 40em;
-  /* padding: 3em 2em 3.5em 2em; */
 }
 
 .box.technologies {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffffff;
   /* justify-content: space-between; */
   box-sizing: border-box;
+  background-color: #ffffff;
   height: 27em;
 }
 
@@ -408,30 +404,31 @@ button:hover,
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 22.5em;
-  /* width: 100%; */
+  /* justify-content: space-between; */
   box-sizing: border-box;
+  background-color: #ffffff;
+  height: 22.5em;
 }
 
 .box.partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  box-sizing: border-box;
   background-color: #ffffff;
   height: 27em;
-  align-items: center;
 }
 
 .box.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  box-sizing: border-box;
   background-color: #ffffff;
   height: 61em;
-  align-items: center;
 }
-
-/* .box.contact {
-  background-color: #303030;
-  height: 45em;
-  align-items: center;
-  width: 100%;
-} */
 
 /* Icons */
 

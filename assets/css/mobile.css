@@ -187,19 +187,11 @@
   .wrapper {
     padding: 3.5em 0 3.5em 0; /*vergrössert wrapper*/
     text-align: center;
-    /* margin: 0 0 2000px 0; */
   }
 
   .wrapper.first {
     padding-top: 5em;
   }
-
-  /* Section/Article kom braucht es das?*/
-
-  /* section,
-article {
-  clear: both;
-} */
 
   /* Button */
 
