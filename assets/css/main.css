@@ -229,7 +229,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #303030;
   font-weight: 600;
   margin: 0 0 0 0;
@@ -251,7 +251,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   color: #ffffff;
   font-weight: normal;
   padding: 0em 1em 0em 1em;
@@ -265,7 +265,7 @@ h6 {
 
 p {
   margin-bottom: 2rem;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   color: #303030;
 }
 
@@ -405,7 +405,7 @@ button:hover,
   /* justify-content: space-between; */
   box-sizing: border-box;
   background-color: #ffffff;
-  height: 27em;
+  height: 30em;
 }
 
 .box.about {
@@ -415,7 +415,7 @@ button:hover,
   /* justify-content: space-between; */
   box-sizing: border-box;
   background-color: #ffffff;
-  height: 61em;
+  height: 68em;
 }
 
 /* Icons */
