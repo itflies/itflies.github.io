@@ -63,7 +63,7 @@
   }
 
   h3 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #303030;
   }
 
@@ -78,7 +78,7 @@
   }
 
   h6 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: normal;
     color: #ffffff;
     text-shadow: none;
@@ -89,8 +89,17 @@
   }
 
   p {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.7em;
+  }
+
+  li {
+    font-size: 1.15rem;
+    /* margin-bottom: 0.5rem; */
+    color: #303030;
+    /* text-align: left; */
+    /* list-style-type: circle; */
+    /* list-style-position: outside; */
   }
 
   #nav {
@@ -203,7 +212,7 @@
   button,
   .button {
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1em;
     width: 90%;
     padding: 1em 0 1em 0;
   }
