@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /images/
+Disallow: /scripts/
+
+# Erlaube das Crawlen der Startseite und relevanter Inhalte
+Allow: /index.html
+Allow: /services
+Allow: /technologies
+Allow: /references
+Allow: /partner
+Allow: /about
+Allow: /contact

@@ -97,6 +97,7 @@ details,
   outline: 1px solid red;
 } */
 
+
 /*DEFINITION*/
 body {
   /* background-color: rgb(16, 185, 53) !important; */
@@ -104,6 +105,11 @@ body {
   margin: 0;
   line-height: 1.85em;
   color: #535353;
+  /* background-color: #ffffff; */
+}
+
+main {
+  background-color: #ffffff;
 }
 
 /* Navigation */

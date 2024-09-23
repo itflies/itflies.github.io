@@ -12,6 +12,7 @@
     font-family: "Open Sans", sans-serif;
     line-height: 1.85em;
     color: #535353;
+    /* background-color: #ffffff; */
   }
 
   .home {
@@ -86,6 +87,19 @@
 
   li {
     font-size: 1.2em;
+  }
+
+  p1 {
+    font-size: 1.3rem;
+    color: #303030;
+    line-height: 1.8em;
+  }
+
+  p2 {
+    margin-bottom: 30.2rem;
+    font-size: 1.3rem;
+    color: #ffffff;
+    text-shadow: none;
   }
 
   p {
