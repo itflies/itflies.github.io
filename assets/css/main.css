@@ -292,17 +292,12 @@ p {
   padding-left: 100; /* Entfernt den Standard-Abstand links */
   & li {
     text-align: left;
-    /* text- */
   }
 }
 
 li {
   font-size: 1.2rem;
-  /* margin-bottom: 0.5rem; */
   color: #303030;
-  /* text-align: left; */
-  /* list-style-type: circle; */
-  /* list-style-position: outside; */
 }
 
 article {

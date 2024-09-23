@@ -11,3 +11,4 @@ Allow: /references
 Allow: /partner
 Allow: /about
 Allow: /contact
+Sitemap: https://www.itflies.ch/sitemap.xml
