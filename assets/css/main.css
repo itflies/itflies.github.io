@@ -91,9 +91,8 @@ audio,
 video,
 aside,
 details,
-/*ANALYSIS*/
 
-/* Redlines for Analysis */
+/*ANALYSIS - Redlines for Analysis */
 /* * {
   outline: 1px solid red;
 } */
@@ -263,6 +262,19 @@ h6 {
   }
 }
 
+p1 {
+  font-size: 1.4rem;
+  color: #303030;
+  line-height: 1.8em;
+}
+
+p2 {
+  margin-bottom: 30.2rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-shadow: none;
+}
+
 p {
   margin-bottom: 2rem;
   font-size: 1.3rem;
@@ -274,11 +286,12 @@ p {
   padding-left: 100; /* Entfernt den Standard-Abstand links */
   & li {
     text-align: left;
+    /* text- */
   }
 }
 
 li {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   /* margin-bottom: 0.5rem; */
   color: #303030;
   /* text-align: left; */
@@ -314,9 +327,9 @@ article:last-child {
   width: 100%;
 }
 
-.image.linkedin {
-  width: 2px;
-  height: 2px;
+.image-linkedin {
+  width: 2.5em;
+  height: auto;
 }
 
 /* Button */
