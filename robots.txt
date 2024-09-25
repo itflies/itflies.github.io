@@ -1,7 +1,6 @@
 User-agent: *
 Disallow: /assets/
 Disallow: /images/
-Disallow: /scripts/
 
 # Erlaube das Crawlen der Startseite und relevanter Inhalte
 Allow: /index.html

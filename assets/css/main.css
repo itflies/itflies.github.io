@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
-@import url("font-awesome.min.css");
-
 /*
 	Main CSS
 	itflies.ch
 	16.09.2024 kom: created new
 */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+@import url("font-awesome.min.css");
 
 /* Reset */
 html,
@@ -281,6 +281,12 @@ p2 {
   text-shadow: none;
 }
 
+a1 {
+  font-size: 2.8rem;
+  color:#b4201f;
+  text-shadow: none;"
+}
+
 p {
   margin-bottom: 2rem;
   font-size: 1.3rem;
@@ -456,6 +462,7 @@ button:hover,
 
 .icon.featured {
   color: #ea8a95;
+  /* color: #b4201f; */
   font-size: 5em;
   display: block;
   margin: 0 0 0 0;
