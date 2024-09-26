@@ -287,6 +287,23 @@ p2 {
   text-shadow: none;
 } */
 
+/* .test {
+  font-size: 2.8rem;
+  color: #b4201f;
+  text-shadow: none;
+}
+&a {
+  font-size: 12.8rem;
+  color: #b4201f;
+  text-shadow: none;
+}*/
+
+.cnt2 {
+  font-size: 2.8rem;
+  color: #b4201f;
+  text-shadow: none;
+}
+
 p {
   margin-bottom: 2rem;
   font-size: 1.3rem;
