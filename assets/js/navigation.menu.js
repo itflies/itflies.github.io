@@ -12,9 +12,8 @@ hamburger.addEventListener('click', toggleMenu);
 // Event-Listener für alle Links im Menü
 document.querySelectorAll('#menu a').forEach(link => {
     link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) { // Nur auf mobilen Geräten
-            menu.classList.remove('active');
-        }
+        // Menü einklappen, wenn ein Link angeklickt wird
+        menu.classList.remove('active');
     });
 });
 

@@ -540,15 +540,22 @@ button:hover,
 }
 
 /* Mail Icon auf Mobile Menu*/
-.email-icon {
+/* .email-icon {
   display: none;
+} */
+
+.email-icon {
+  display: flex;
+  position: absolute;
+  right: 0em;
+  top: 1em;
 }
 
 .icon.email {
   font-size: 1.8em;
   position: absolute;
   top: 0em;
-  right: 3em;
+  right: 1em;
   color: #ffffff;
   /* cursor: default; */
 }

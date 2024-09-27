@@ -30,8 +30,10 @@
 
   .email-icon {
     display: flex;
+    position: absolute;
+    right: 3em;
+    top: 0em;
   }
-
   .content {
     padding-top: 10px; /* Höhe des Navigationsmenüs + etwas Puffer */
   }
