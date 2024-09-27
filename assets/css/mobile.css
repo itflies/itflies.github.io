@@ -17,6 +17,8 @@
 
   .home {
     display: flex;
+    left: 0em;
+    top: 0em;
     /* align-items: flex-start;
     justify-content: flex-start; */
   }
