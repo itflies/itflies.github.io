@@ -187,14 +187,6 @@ ul {
   box-sizing: border-box;
 }
 
-.column {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Kacheln */
 .tile {
   width: 25em;
@@ -317,7 +309,7 @@ p2 {
 } */
 
 p {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.3rem;
   color: #303030;
 }
