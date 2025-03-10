@@ -187,6 +187,14 @@ ul {
   box-sizing: border-box;
 }
 
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Kacheln */
 .tile {
   width: 25em;
@@ -194,6 +202,11 @@ ul {
   margin: 1rem;
 }
 
+.tile-big {
+  width: 75em;
+  /* clear: none; */
+  margin: 1rem;
+}
 a:hover {
   color: #a7caff;
 }
@@ -235,7 +248,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #303030;
   font-weight: 600;
   margin: 0 0 0 0;
@@ -257,12 +270,10 @@ h5 {
 }
 
 h6 {
-  font-size: 1.3rem;
-  color: #ffffff;
-  font-weight: normal;
-  padding: 0em 1em 0em 1em;
-  margin: 0 0 0.75em 0;
-  text-shadow: none;
+  font-size: 1.2rem;
+  color: #303030;
+  font-weight: 600;
+  margin: 0 0 0 0;
   & a {
     text-decoration: none;
     color: inherit;
@@ -414,6 +425,15 @@ button:hover,
   box-sizing: border-box;
   background-color: #ffffff;
   height: 40em;
+}
+
+.box.portal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  box-sizing: border-box;
+  background-color: #ffffff;
 }
 
 .box.technologies {

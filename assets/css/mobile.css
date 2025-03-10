@@ -50,7 +50,19 @@
     align-items: center;
   }
 
+  .column {
+    display: block;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
   .tile {
+    width: 100%;
+    margin-left: 0;
+    padding: 0em 1em 0em 1em;
+  }
+
+  .tile-big {
     width: 100%;
     margin-left: 0;
     padding: 0em 1em 0em 1em;
@@ -73,7 +85,7 @@
   }
 
   h4 {
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.25em;
   }
   h5 {
@@ -84,8 +96,8 @@
 
   h6 {
     font-size: 1.2em;
-    font-weight: normal;
-    color: #ffffff;
+    font-weight: 600;
+    color: #303030;
     text-shadow: none;
   }
 
@@ -255,6 +267,12 @@
     margin-bottom: 0.5em;
     font-size: 1.5em;
     color: #303030;
+  }
+
+  .box.portal {
+    background-color: #ffffff;
+    height: auto;
+    padding: 3em 2em 3.5em 2em;
   }
 
   .box.technologies {

@@ -41,13 +41,29 @@
 		  }
 	</script>
 	<!-- Skript für Emailadresse -->
-	<script>
+	<!-- <script>
 		document.addEventListener("DOMContentLoaded", function () {
 			var email = "info" + "@" + "itflies.ch";
 			var emailLinks = document.querySelectorAll(".email-link"); // Alle Elemente mit der Klasse 'email-link' holen
 
 			emailLinks.forEach(function (link) {
 				link.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
+			});
+		});
+	</script> -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var email = "info" + "@" + "itflies.ch";
+			var emailLinks = document.querySelectorAll(".email-link"); // Alle E-Mail-Elemente holen
+
+			emailLinks.forEach(function (link) {
+				if (link.classList.contains("contact-email")) {
+					// Falls es sich um die E-Mail unter "Kontakt" handelt
+					link.innerHTML = '<a href="mailto:' + email + '" style="color: #b4201f;">' + email + '</a>';
+				} else {
+					// Standardfarbe für alle anderen E-Mail-Adressen
+					link.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
+				}
 			});
 		});
 	</script>
@@ -77,6 +93,7 @@
 			<li></li>
 			<li id="desktop"><a href="#top">Home</a></li>
 			<li id="desktop"><a href="#services">Dienstleistungen</a></li>
+			<li id="desktop"><a href="#portal">Portallösungen</a></li>
 			<li id="desktop"><a href="#technologies">Technologien</a></li>
 			<li id="desktop"><a href="#references">Referenzen</a></li>
 			<li id="desktop"><a href="#partner">Partner</a></li>
@@ -178,9 +195,137 @@
 			</div>
 		</section>
 
+
+
+		<!-- Portallösungen -->
+		<section id="portal">
+			<div class="wrapper style3">
+				<article class="container">
+					<header>
+						<h2>Portallösungen</h2>
+						<p1>
+							Unsere Portallösungen bieten Unternehmen eine zentrale Plattform zur Digitalisierung und
+							Verwaltung von Geschäftsprozessen.
+							Sie vereinen Systeme, Anwendungen und Nutzer in einer benutzerfreundlichen Oberfläche für
+							Desktop und mobile Geräte.<br><br>
+
+							Basierend auf unserem leistungsstarken, selbstentwickelten OVL-Framework ermöglichen sie
+							maximale Flexibilität, Skalierbarkeit
+							und Effizienz. Durch den modularen Aufbau lassen sie sich individuell anpassen und
+							optimieren Prozesse, senken Kosten
+							und verbessern die Benutzerfreundlichkeit – online und offline, auf jedem Gerät.
+						</p1>
+
+
+					</header>
+					<div>
+						<div class="column">
+							<!-- Vorteile Portallösung -->
+							<div class="tile-big">
+								<section class="box portal">
+									<!-- <span class="icon featured fa-code"></span> -->
+									<h3>Ihre Vorteile mit unseren Portallösungen</h3>
+									<ul>
+										<h4>Zentrale Steuerung</h4>
+										<p>Alle relevanten Informationen und Funktionen an einem Ort</p>
+										<h4>Integration bestehender Systeme</h4>
+										<p>Nahtlose Anbindung an ERP, CRM und weitere Softwarelösungen</p>
+										<h4>Benutzerverwaltung & Rollensteuerung</h4>
+										<p>Massgeschneiderter Zugriff für Kunden, Mitarbeiter und
+											Partner</p>
+										<h4>Mehrsprachigkeit</h4>
+										<p>Individuelle Sprachoptionen und massgeschneiderte
+											Übersetzungen</p>
+										<h4>Erhöhte Effizienz</h4>
+										<p>Automatisierte Prozesse und Self-Service-Funktionen reduzieren den
+											manuellen Aufwand</p>
+										<h4>Sicherheit & Datenschutz</h4>
+										<p>Modernste Sicherheitsstandards für den Schutz Ihrer Daten</p>
+										<h4>Offline nutzbar dank PWA</h4>
+										<p>Arbeiten auch ohne Internetverbindung möglich</p>
+										<h4>App-ähnliche Nutzung</h4>
+										<p>Installierbar auf Smartphones, Tablets und PCs</p>
+										<h4>Mit unserem OVL-Framework</h4>
+										<p>Massgeschneiderte Lösungen mit hoher Flexibilität</p>
+									</ul>
+								</section>
+							</div>
+							<br>
+							<!-- Einsatzmöglichkeiten Portallösungen -->
+							<div class="tile-big">
+								<section class="box portal">
+									<!-- <span class="icon featured fa-trello"></p> -->
+									<h3>Einsatzmöglichkeiten unserer Portallösungen</h3>
+									<ul>
+										<h4>Partnerportale</h4>
+										<p>Effiziente Zusammenarbeit mit Lieferanten &
+											Dienstleistern</p>
+										<h4>Kundenportale</h4>
+										<p>Bestellungen, Rechnungen & Support an einem Ort</p>
+										<h4>Mitarbeiterportale</h4>
+										<p>Zugriff auf interne Systeme & Dokumente</p>
+										<h4>Branchenlösungen</h4>
+										<p>Individuelle Portale für spezifische
+											Geschäftsmodelle</p>
+										<h4>Progressive Web Apps (PWAs)</h4>
+										<p>Plattformunabhängige Apps mit
+											<em>Push-Benachrichtigungen, Offline-Funktionalität und schneller
+												Ladezeit</em>
+										</p>
+									</ul>
+								</section>
+							</div>
+							<!-- Beispiele -->
+							<div class="tile-big">
+								<section class="box portal">
+									<!-- <span class="icon featured fa-lightbulb-o"></span> -->
+									<h3>Portal - Demo</h3>
+									<p1>Die Portal-Demo veranschaulicht, wie der für die Kalt AG entwickelte
+										CAD-Angebots-Kalkulator die Erstellung individueller Angebote schneller
+										und effizienter macht. Dank der nahtlosen Integration in SAP Business
+										One werden Berechnungen automatisiert und der Angebotsprozess
+										optimiert – für präzisere und schnellere Ergebnisse. Die "SAP Business
+										One"-Integration wurde gemeinsam mit unserem Partner DATA UNIT AG
+										realisiert.
+										<br>
+										<br>
+										Das Video zur Demo wurde von DATA UNIT AG erstellt und steht uns zur
+										Nutzung zur Verfügung.
+									</p1>
+									<br>
+
+									<!-- Eingebettetes YouTube-Video -->
+									<!-- <div class="video-container"> -->
+									<iframe width="100%" style="aspect-ratio: 16/9;"
+										src="https://www.youtube.com/embed/iyF_B9d9l1Q" title="CAD-Angebots-Kalkulator"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen>
+									</iframe>
+									<!-- </div> -->
+								</section>
+							</div>
+						</div>
+					</div>
+
+					<br>
+					<br>
+					<!-- <p>Unsere massgeschneiderten Portallösungen mit PWA-Technologie und
+						OVL-Framework helfen Ihnen, digitale Prozesse zu optimieren,
+						Kosten zu senken und die Benutzerfreundlichkeit für Ihre Kunden und Mitarbeiter zu
+						verbessern – <strong>online und offline, auf jedem Gerät!</strong></p> -->
+		</section>
+
+		</div>
+		</div>
+		</div>
+		</article>
+		</div>
+		</section>
+
 		<!-- Technologie -->
 		<section id="technologies">
-			<div class="wrapper style3">
+			<div class="wrapper style2">
 				<article class="container">
 					<header>
 						<h2>Technologien</h2>
@@ -238,7 +383,7 @@
 
 		<!-- Referenzen -->
 		<section id="references">
-			<div class="wrapper style2">
+			<div class="wrapper style3">
 				<article class="container">
 					<header>
 						<h2>Referenzen</h2>
@@ -391,7 +536,7 @@
 		</section>
 		<!-- Partner -->
 		<section id="partner">
-			<div class="wrapper style3">
+			<div class="wrapper style2">
 				<article class="container">
 					<header>
 						<h2>Partner</h2>
@@ -436,7 +581,7 @@
 		</section>
 		<!-- Über Uns-->
 		<section id="about">
-			<div class="wrapper style2">
+			<div class="wrapper style3">
 				<article class="container">
 					<header>
 						<h2>Über uns</h2>
@@ -462,7 +607,7 @@
 										<br>
 									</span>
 									<h3>Philipp Knecht</h3>
-									<h4>Gründer und Lead Developer</h4>
+									<h6>Gründer und Lead Developer</h6>
 									<br>
 									<p>Philipp, Gründer der itFlies GmbH, bringt jahrzehntelange Erfahrung in
 										Softwareentwicklung und Geschäftsprozessoptimierung mit. Seine Leidenschaft für
@@ -483,7 +628,7 @@
 										<br>
 									</span>
 									<h3>Marco Koster</h3>
-									<h4> Projektleitung und Administration</h4>
+									<h6>Projektleitung und Administration</h6>
 									<br>
 									<p> Marco ist ein erfahrener IT-Projektleiter, der IT-Projekte effizient und
 										erfolgreich
@@ -514,11 +659,8 @@
 					<header>
 						<h5>Kontakt</h5>
 						<p2>Für Rückfragen oder weitere Informationen stehen wir Ihnen gerne zur Verfügung.<br>
-							Wir freuen uns über ihre Nachricht per E-Mail an: <span class="email-link"
-								style="color:#b4201f;"></span><br>
-
-
-
+							Wir freuen uns über ihre Nachricht per E-Mail an: <span
+								class="email-link contact-email"></span><br>
 							<br>
 							<br>
 							<br>
@@ -554,7 +696,7 @@
 		</section>
 		<!-- Impressum / Datenschutz-->
 		<section id="impressum">
-			<div class="wrapper style3">
+			<div class="wrapper style2">
 				<article class="container">
 					<header>
 						<p>
@@ -573,7 +715,7 @@
 		</section>
 		<!-- Datenschutz-->
 		<section id="datenschutz">
-			<div class="wrapper style2">
+			<div class="wrapper style3">
 				<article class="container">
 					<header>
 						<h3>Datenschutzerklärung</h3>
