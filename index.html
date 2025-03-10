@@ -40,6 +40,17 @@
 			]
 		  }
 	</script>
+	<!-- Skript für Emailadresse -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var email = "info" + "@" + "itflies.ch";
+			var emailLinks = document.querySelectorAll(".email-link"); // Alle Elemente mit der Klasse 'email-link' holen
+
+			emailLinks.forEach(function (link) {
+				link.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -87,21 +98,24 @@
 						<h1>itFlies GmbH</h1>
 						<h2></h2>
 						<!-- <p>Ihre Experten für innovative Digitalisierungslösungen, Softwareentwicklung und -->
-							<!-- Projektmanagement!</p> -->
+						<!-- Projektmanagement!</p> -->
 						<blockquote>
 							<h3>Ihre Experten für innovative Digitalisierungslösungen, Softwareentwicklung und
-							Projektmanagement!
+								Projektmanagement!
 							</h3>
 						</blockquote>
 						<br />
 						<br />
 						<br />
 						<br />
+						<br />
+						<br />
+						<br />
 						<!-- <p>Ihre Experten für innovative Digitalisierungslösungen, Softwareentwicklung und -->
-							<!-- Projektmanagement!</p> -->
+						<!-- Projektmanagement!</p> -->
 						<!-- <blockquote> -->
-							<!-- <h3>«Digitale Effizienz für zukunftsfähige Geschäftsprozesse.» -->
-							<!-- </h3> -->
+						<!-- <h3>«Digitale Effizienz für zukunftsfähige Geschäftsprozesse.» -->
+						<!-- </h3> -->
 						<!-- </blockquote> -->
 					</header>
 					<!-- </div> -->
@@ -493,58 +507,154 @@
 				</article>
 			</div>
 		</section>
-
 		<!-- Kontakt -->
 		<section id="contact">
 			<div class="wrapper style4">
 				<article class="container">
 					<header>
 						<h5>Kontakt</h5>
-						<p2>Für Rückfragen oder weitere Informationen stehen wir Ihnen gerne zur Verfügung.
-							Kontaktieren Sie uns über nachfolgenden Button.</p2>
-					</header>
-					<div id="cnt1" style="visibility:hidden">
-						<!-- <div id="cnt1" style="visibility:hidden"> -->
-						<h6>Wir freuen uns über Ihre Nachricht per E-Mail an:</h6>
-						<a style="font-size: 40px; color:#b4201f;text-shadow: none;" href="#" id="cnt2"></a>
-						<!-- <a href="#" id="cnt2"></a> -->
-					</div>
-					<!-- Mailadresse über Javascript damit Spaming verhindert wird-->
-					<div>
-						<a id="cnt0" onClick="fdcnt()" class="button big">Nehmen Sie hier
-							Kontakt mit uns auf</a>
-					</div>
-					<br>
-					<div>
-						<p2>Besuchen Sie auch unsere LinkedIn-Unternehmensseite</p2>
-						<br>
-						<br>
-						<a href="https://www.linkedin.com/company/itflies-gmbh" target="_blank">
-							<img src="images/about/LI-Bug.svg.original.svg"
-								alt="LinkedIn Unternehmensseite itFlies GmbH" class="image-linkedin"
-								title="LinkedIn Unternehmensseite itFlies GmbH" />
-						</a>
-					</div>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div>
+						<p2>Für Rückfragen oder weitere Informationen stehen wir Ihnen gerne zur Verfügung.<br>
+							Wir freuen uns über ihre Nachricht per E-Mail an: <span class="email-link"
+								style="color:#b4201f;"></span><br>
+
+
+
+							<br>
+							<br>
+							<br>
+							<div>
+								<p2>Besuchen Sie auch unsere LinkedIn-Unternehmensseite</p2>
+								<br>
+								<br>
+								<a href="https://www.linkedin.com/company/itflies-gmbh" target="_blank">
+									<img src="images/about/LI-Bug.svg.original.svg"
+										alt="LinkedIn Unternehmensseite itFlies GmbH" class="image-linkedin"
+										title="LinkedIn Unternehmensseite itFlies GmbH" />
+								</a>
+							</div>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+			</div>
+			<div>
 		</section>
+		<!-- Impressum / Datenschutz-->
+		<section id="impressum">
+			<div class="wrapper style3">
+				<article class="container">
+					<header>
+						<p>
+						<h3>Impressum</h3><br>
+						<h4>itFlies GmbH</h4><br>
+						Hueb 123<br>
+						5465 Mellikon<br>
+						Schweiz<br>
+						E-Mail: <span class="email-link"></span><br>
+						Vertreten durch: Philipp Knecht<br>
+						UID: CHE-203.974.891
+						</p>
+					</header>
+				</article>
+			</div>
+		</section>
+		<!-- Datenschutz-->
+		<section id="datenschutz">
+			<div class="wrapper style2">
+				<article class="container">
+					<header>
+						<h3>Datenschutzerklärung</h3>
+						<h4>1. Verantwortliche Stelle</h4><br>
+						itFlies GmbH, 5465 Mellikon, Schweiz<br>
+						Ansprechperson: Marco Koster</a><br>
+						E-Mail: <span class="email-link"></span><br>
+						</p>
+
+						<p>
+						<h4>2. Erhebung und Nutzung personenbezogener Daten</h4><br>
+						Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung unserer
+						Website und Dienstleistungen erforderlich ist.<br>
+						</p>
+
+						<p>
+						<h4>3. Zwecke und Rechtsgrundlagen</h4><br>
+						Die Verarbeitung erfolgt zur Vertragserfüllung, auf Grundlage Ihrer Einwilligung
+						oder zur Wahrung berechtigter Interessen.
+						</p>
+
+						<p>
+						<h4>4. Weitergabe und Speicherung</h4><br>
+						Daten werden nur weitergegeben, wenn gesetzlich vorgeschrieben oder zur Erbringung
+						unserer Dienste notwendig. Speicherung erfolgt nur solange erforderlich.
+						</p>
+
+						<p>
+						<h4>5. Ihre Rechte</h4><br>
+						Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
+						Verarbeitung und Widerspruch. Kontaktieren Sie uns dazu unter der oben angegebenen
+						Adresse.
+						</p>
+
+						<p>
+						<h4>6. Änderungen</h4><br>
+						Wir behalten uns vor, diese Datenschutzerklärung jederzeit zu ändern. Die jeweils aktuelle
+						Version ist auf unserer Website verfügbar.
+						</p>
+						<!-- <p><small>Letzte Aktualisierung: 10.03.2025</small></p> -->
+		</section>
+		</div>
+
+		</header>
+		</article>
+		</div>
+		</section>
+
 	</main>
+	<!-- <footer
+		style="background-color: #303030; color: white; text-align: center; padding: 5px 10px; position: fixed; bottom: 0; width: 100%; font-size: 12px; height: 20px; line-height: 20px;">
+		<nav>
+			<a href="/impressum" style="color: white; margin: 10px; text-decoration: none;">Impressum</a> |
+			<a href="/datenschutz" style="color: white; margin: 10px; text-decoration: none;">Datenschutz</a>
+		</nav>
+	</footer> -->
+	<footer id="dynamic-footer"
+		style="background-color: #303030; color: white; text-align: center; padding: 5px 10px; 
+    position: fixed; bottom: 0; width: 100%; font-size: 12px; height: 25px; line-height: 25px; transition: opacity 0.3s;">
+		<nav>
+			<a href="#impressum" style="color: white; margin: 10px; text-decoration: none;">Impressum</a> |
+			<a href="#datenschutz" style="color: white; margin: 10px; text-decoration: none;">Datenschutz</a>
+		</nav>
+	</footer>
+
+	<script>
+		let footer = document.getElementById("dynamic-footer");
+		let scrollTimeout;
+
+		window.addEventListener("scroll", function () {
+			footer.style.opacity = "0"; // Footer ausblenden
+			clearTimeout(scrollTimeout);
+
+			// Footer wieder einblenden, wenn das Scrollen stoppt
+			scrollTimeout = setTimeout(() => {
+				footer.style.opacity = "1";
+			}, 5000); // Nach 500ms ohne Scrollen wieder sichtbar
+		});
+	</script>
+
+
 </body>
 <script src="assets/js/navigation.menu.js"></script>
 <script src="assets/js/contactmail.js"></script>
