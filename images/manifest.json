@@ -8,7 +8,7 @@
   "theme_color": "#b4201f",
   "orientation": "portrait",
   "scope": "/",
-  "id": "/"
+  "id": "/",
   "icons": [
     {
       "src": "images/android-icon-36x36.png",
