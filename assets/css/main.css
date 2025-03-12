@@ -276,7 +276,7 @@ p1 {
   font-size: 1.2rem;
   color: #303030;
   line-height: 1.4em;
-  font-weight: 500; /* Oder 600 für etwas mehr Gewicht */
+  font-weight: 450; /* Oder 600 für etwas mehr Gewicht */
 }
 
 p2 {
@@ -416,6 +416,15 @@ button:hover,
   height: 27em;
 }
 
+/* .box.references {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  height: 22.5em;
+} */
+
 .box.references {
   display: flex;
   flex-direction: column;
@@ -423,7 +432,6 @@ button:hover,
   /* justify-content: space-between; */
   box-sizing: border-box;
   background-color: #ffffff;
-  height: 22.5em;
 }
 
 .box.partner {
