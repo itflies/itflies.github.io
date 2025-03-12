@@ -286,29 +286,6 @@ p2 {
   text-shadow: none;
 }
 
-/* a1 {
-  font-size: 2.8rem;
-  color: #b4201f;
-  text-shadow: none;
-} */
-
-/* .test {
-  font-size: 2.8rem;
-  color: #b4201f;
-  text-shadow: none;
-}
-&a {
-  font-size: 12.8rem;
-  color: #b4201f;
-  text-shadow: none;
-}*/
-
-/* .cnt2 {
-  font-size: 2.8rem;
-  color: #b4201f;
-  text-shadow: none;
-} */
-
 p {
   margin-bottom: 1rem;
   font-size: 1.1rem;
@@ -363,7 +340,7 @@ article:last-child {
 
 /* Button */
 
-input[type="button"],
+/* input[type="button"],
 input[type="submit"],
 input[type="reset"],
 button,
@@ -383,7 +360,7 @@ button,
   overflow: hidden;
   box-shadow: inset 0px 0px 0px 1px #303030, inset 0px 2px 1px 0px #ffffff;
   background-color: #b4201f;
-}
+} */
 
 .big {
   padding: 1em 1em;
@@ -525,17 +502,17 @@ button:hover,
 
 .wrapper.style2 {
   background-color: #f4f4f4;
-  text-shadow: 1px 1px 0px #ffffff;
+  /* text-shadow: 1px 1px 0px #ffffff; */
 }
 
 .wrapper.style3 {
   background-color: #fafafa;
-  text-shadow: 1px 1px 0px #f4f4f4;
+  /* text-shadow: 1px 1px 0px #f4f4f4; */
 }
 
 .wrapper.style4 {
   background-color: #303030;
-  text-shadow: 1px 1px 0px #f4f4f4;
+  /* text-shadow: 1px 1px 0px #f4f4f4; */
 }
 
 /*Home-Logo auf Mobile Menu*/
