@@ -338,6 +338,24 @@ article:last-child {
   height: auto;
 }
 
+.refimage {
+  display: flex;
+  justify-content: center; /* Logo horizontal zentrieren */
+  align-items: center; /* Logo vertikal zentrieren */
+  width: 180px; /* Einheitliche Breite für alle Logos */
+  height: 120px; /* Einheitliche Höhe für alle Logos */
+  background-color: #fff; /* Hintergrund für transparente Logos */
+  border: 1px solid #ddd; /* Optional: leichter Rahmen */
+  padding: 10px; /* Abstand zum Rand */
+  overflow: hidden; /* Falls das Logo größer ist, bleibt es in der Box */
+}
+
+.refimage img {
+  max-width: 100%; /* Maximale Breite auf Containergröße anpassen */
+  max-height: 100%; /* Maximale Höhe auf Containergröße anpassen */
+  object-fit: contain; /* Skaliert das Logo proportional ohne Verzerrung */
+}
+
 /* Button */
 
 /* input[type="button"],
@@ -432,6 +450,12 @@ button:hover,
   /* justify-content: space-between; */
   box-sizing: border-box;
   background-color: #ffffff;
+  padding: 16px;
+}
+
+.box.references ul {
+  padding-left: 30px; /* Abstand zwischen Box-Rand und Aufzählung */
+  list-style-position: outside; /* Bulletpoints bleiben außerhalb des Textblocks */
 }
 
 .box.partner {
@@ -594,6 +618,10 @@ button:hover,
 #top p {
   font-size: 1.5em;
   line-height: 1.75em;
+}
+
+#demo {
+  scroll-margin-top: 80px; /* Passt den Scrollabstand an */
 }
 /* .content {
   max-width: 1200px;
