@@ -2,17 +2,17 @@
 <html lang="de">
 
 <head>
-	<title>Portallösungen & digitale Transformation für Unternehmen | itFlies GmbH</title>
+	<title>itFlies GmbH – Portallösungen, Softwareentwicklung, Projektmanagement & IT-Beratung in der Schweiz</title>
 	<meta name="description"
-		content="itFlies GmbH bietet maßgeschneiderte Portal-Lösungen, IT-Projektmanagement & Digitalisierung für Unternehmen. Jetzt Prozesse effizient optimieren!">
+		content="itFlies GmbH bietet massgeschneiderte Portal-Lösungen, IT-Projektmanagement und Beratung für die Digitalisierung Ihrer Geschäftsprozesse.">
 	<meta name="keywords"
 		content="Portallösungen, Softwareentwicklung, IT-Beratung, Projektmanagement, Projektleiter, SAP Business One, Schweiz, PWA, Digitalisierung, Geschäftsprozesse, schnell, individuell">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="page-topic" content="Portallösungen, Softwareentwicklung, IT-Beratung und Digitalisierung">
 	<!-- Content Security Policy (CSP), X-XSS-Protection Header um Cross-Site Scripting (XSS) zu verhindern  -->
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+	<meta http-equiv="Content-Security-Policy"
+		content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
 	<meta http-equiv="X-XSS-Protection" content="1; mode=block">
-	<!-- SEO Optimierung Robots -->
-	<meta name="robots" content="index, follow">
 
 	<!-- START Open Graph-Tags für Social Media Integration -->
 	<meta property="og:title" content="itFlies GmbH – Portallösungen, Softwareentwicklung & IT-Beratung">
@@ -22,6 +22,8 @@
 	<meta property="og:url" content="https://itflies.ch">
 	<!-- END Open Graph-Tags für Social Media Integration -->
 	<meta charset="utf-8">
+	<meta name="description"
+		content="itFlies GmbH – Ihr Partner für innovative Digitalisierungslösungen, Softwareentwicklung, IT-Projektmanagement und Beratung in der Schweiz. Optimieren Sie Ihre Geschäftsprozesse mit massgeschneiderten Lösungen.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link data-rh="true" rel="icon" href="/images/favicon.ico">
 	<link data-rh="true" rel="canonical" href="https://itflies.ch">
@@ -312,7 +314,7 @@
 									src="https://www.youtube-nocookie.com/embed/iyF_B9d9l1Q?rel=0&modestbranding=1"
 									title="CAD-Angebots-Kalkulator" frameborder="0"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									sandbox="allow-scripts allow-same-origin" allowfullscreen>
+									allowfullscreen>
 								</iframe>
 
 								<!-- </div> -->
@@ -344,9 +346,8 @@
 							<!-- Frontend -->
 							<div class="tile">
 								<section class="box technologies">
-									<div
-										style="display: flex; gap: 10px; justify-content: center; align-items: center;">
-										<span class="icon featured fa-desktop"></span>
+									<div style="display: flex; justify-content: center; align-items: center;">
+										<span class="icon featured fa-desktop" style="margin-right: 15px;"></span>
 										<span class="icon featured fa-mobile"></span>
 									</div>
 									<h3>Frontend</h3>
@@ -879,7 +880,7 @@
 		</div>
 	</main>
 
-	<footer id="dynamic-footer"
+	<!-- <footer id="dynamic-footer"
 		style="background-color: #303030; color: white; text-align: center; padding: 5px 10px; 
     position: fixed; bottom: 0; width: 100%; font-size: 12px; height: 25px; line-height: 25px; transition: opacity 0.3s;">
 		<nav>
@@ -901,7 +902,107 @@
 				footer.style.opacity = "1";
 			}, 5000); // Nach 500ms ohne Scrollen wieder sichtbar
 		});
+	</script> -->
+
+	<footer id="dynamic-footer" style="background-color: #303030; color: white; text-align: center; padding: 5px 10px; 
+    position: fixed; bottom: 0; width: 100%; font-size: 12px; height: 30px; 
+    display: flex; flex-direction: column; justify-content: center; align-items: center; 
+    z-index: 9999; transition: opacity 0.3s;">
+
+		<nav>
+			<a href="#impressum"
+				style="color: white; margin: 10px; text-decoration: none; font-size: 12px;">Impressum</a> |
+			<a href="#datenschutz"
+				style="color: white; margin: 10px; text-decoration: none; font-size: 12px;">Datenschutz</a>
+		</nav>
+
+		<span style="color: white; font-size: 10px; margin-top: 5px;">
+			© <span id="year" style="color: white;"></span> itFlies GmbH. Alle Rechte vorbehalten.
+		</span>
+
+	</footer>
+
+	<script>
+		let footer = document.getElementById("dynamic-footer");
+		let scrollTimeout;
+
+		// Automatisches Jahr setzen & sicherstellen, dass es weiß bleibt
+		let yearElement = document.getElementById("year");
+		yearElement.textContent = new Date().getFullYear();
+		yearElement.style.color = "white"; // Falls CSS überschreibt, hier sicherstellen
+
+		// Footer Ein-/Ausblenden beim Scrollen
+		window.addEventListener("scroll", function () {
+			footer.style.opacity = "0"; // Footer ausblenden
+			clearTimeout(scrollTimeout);
+
+			// Footer nach 5 Sekunden ohne Scrollen wieder einblenden
+			scrollTimeout = setTimeout(() => {
+				footer.style.opacity = "1";
+			}, 5000);
+		});
 	</script>
+
+
+
+
+
+
+
+
+	<!-- 
+	<footer id="dynamic-footer" style="background-color: #303030; color: white; text-align: center; padding: 5px 10px; 
+    position: fixed; bottom: 0; width: 100%; font-size: 12px; height: 25px; line-height: 25px; 
+    transition: opacity 0.5s ease-in-out; opacity: 1;">
+		<nav>
+			<a href="#impressum" style="color: white; margin: 10px; text-decoration: none;">Impressum</a> |
+			<a href="#datenschutz" style="color: white; margin: 10px; text-decoration: none;">Datenschutz</a>
+		</nav>
+	</footer>
+
+	<script>
+		let footer = document.getElementById("dynamic-footer");
+		let isScrolling;
+		let fadeOutTimeout;
+
+		// Funktion zum Footer-Ausblenden
+		function hideFooter() {
+			console.log("Footer ausblenden...");
+			footer.style.opacity = "0";
+		}
+
+		// Funktion zum Footer-Einblenden
+		function showFooter() {
+			console.log("Footer einblenden...");
+			footer.style.opacity = "1";
+		}
+
+		window.addEventListener("scroll", function () {
+			showFooter(); // Footer sofort anzeigen, wenn gescrollt wird
+
+			// Falls bereits ein Timeout läuft, lösche ihn
+			clearTimeout(isScrolling);
+			clearTimeout(fadeOutTimeout);
+
+			// 2 Sekunden nach dem letzten Scrollen ausblenden
+			isScrolling = setTimeout(hideFooter, 2000);
+		});
+
+		// Falls die Maus über dem Footer ist, bleibt er sichtbar
+		footer.addEventListener("mouseenter", function () {
+			console.log("Maus über Footer → bleibt sichtbar.");
+			clearTimeout(fadeOutTimeout);
+			showFooter();
+		});
+
+		// Wenn die Maus den Footer verlässt, erneut ausblenden nach 3 Sekunden
+		footer.addEventListener("mouseleave", function () {
+			fadeOutTimeout = setTimeout(hideFooter, 3000);
+		});
+
+		// Debugging: Prüfe, ob das Skript korrekt läuft
+		console.log("Footer-Skript geladen!");
+	</script> -->
 
 </body>
 <script src="assets/js/navigation.menu.js"></script>

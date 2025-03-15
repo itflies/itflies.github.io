@@ -504,7 +504,7 @@ button:hover,
   color: #ea8a95;
   /* color: #b4201f; */
   font-size: 5em;
-  display: block;
+  display: inline-flex;
   margin: 0 0 0 0;
   cursor: default;
 }
