@@ -8,6 +8,10 @@
 	<meta name="keywords"
 		content="Portallösungen, Softwareentwicklung, IT-Beratung, Projektmanagement, Projektleiter, SAP Business One, Schweiz, PWA, Digitalisierung, Geschäftsprozesse, schnell, individuell">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Content Security Policy (CSP), X-XSS-Protection Header um Cross-Site Scripting (XSS) zu verhindern  -->
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+	<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
 	<!-- START Open Graph-Tags für Social Media Integration -->
 	<meta property="og:title" content="itFlies GmbH – Portallösungen, Softwareentwicklung & IT-Beratung">
 	<meta property="og:description"
@@ -308,7 +312,7 @@
 									src="https://www.youtube-nocookie.com/embed/iyF_B9d9l1Q?rel=0&modestbranding=1"
 									title="CAD-Angebots-Kalkulator" frameborder="0"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen>
+									sandbox="allow-scripts allow-same-origin" allowfullscreen>
 								</iframe>
 
 								<!-- </div> -->
