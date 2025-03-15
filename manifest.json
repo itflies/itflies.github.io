@@ -1,7 +1,7 @@
 {
   "name": "itFlies GmbH",
-  "short_name": "itFlies",
-  "description": "Die Webseiten-App der itflies.ch",
+  "short_name": "itFlies GmbH",
+  "description": "Die Webseiten-App der itFlies GmbH",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
