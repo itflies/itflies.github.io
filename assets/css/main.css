@@ -212,7 +212,7 @@ blockquote {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #303030;
   font-weight: bold;
   margin-bottom: 20px;
@@ -290,6 +290,13 @@ p {
   /* margin-bottom: 30.2rem; */
   font-size: 1.2rem;
   color: #ffffff;
+  text-shadow: none;
+}
+
+.titel-p {
+  font-size: 4rem !important;
+  font-weight: bold;
+  color: #303030;
   text-shadow: none;
 }
 
