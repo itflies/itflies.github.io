@@ -97,13 +97,14 @@
 
   .custom-p {
     font-size: 1.1rem;
+    line-height: 2rem;
     color: #303030;
     font-weight: 450;
     /* line-height: 1.8em; */
   }
 
   .contact-p {
-    margin-bottom: 30.2rem;
+    /* margin-bottom: 30.2rem; */
     font-size: 1.1rem;
     color: #ffffff;
     text-shadow: none;
