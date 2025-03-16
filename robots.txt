@@ -1,13 +1,19 @@
-User-agent: *
 Disallow: /assets/
 Disallow: /images/
 
-# Erlaube das Crawlen der Startseite und relevanter Inhalte
-Allow: /index.html
+# Erlaubt Suchmaschinen das Crawlen relevanter Seiten
+Allow: /
 Allow: /services
+Allow: /services/
 Allow: /technologies
+Allow: /technologies/
 Allow: /references
+Allow: /references/
 Allow: /partner
+Allow: /partner/
 Allow: /about
+Allow: /about/
 Allow: /contact
+Allow: /contact/
+
 Sitemap: https://www.itflies.ch/sitemap.xml

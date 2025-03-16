@@ -215,6 +215,7 @@ h1 {
   font-size: 3rem;
   color: #303030;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -272,6 +273,12 @@ h6 {
   }
 }
 
+p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #303030;
+}
+
 .custom-p {
   font-size: 1.3rem;
   color: #303030;
@@ -286,10 +293,13 @@ h6 {
   text-shadow: none;
 }
 
-p {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-  color: #303030;
+.link {
+  color: #ea8a95;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .solutions {
@@ -412,7 +422,7 @@ button:hover,
   /* justify-content: space-between; */
   box-sizing: border-box;
   background-color: #ffffff;
-  height: 40em;
+  height: 38rem;
 }
 
 .box.portal {
@@ -475,7 +485,7 @@ button:hover,
   /* justify-content: space-between; */
   box-sizing: border-box;
   background-color: #ffffff;
-  height: 60rem;
+  height: 56rem;
 }
 
 /* Icons */
@@ -506,6 +516,7 @@ button:hover,
   font-size: 5em;
   display: inline-flex;
   margin: 0 0 0 0;
+  /* margin-bottom: 20px; */
   cursor: default;
 }
 
@@ -553,6 +564,7 @@ button:hover,
   position: absolute;
   left: 1em;
   top: 1em;
+  top: 0.7em;
 }
 
 .home img {
@@ -570,7 +582,7 @@ button:hover,
   display: flex;
   position: absolute;
   right: 0em;
-  top: 1em;
+  top: 0.7em;
 }
 
 .icon.email {
