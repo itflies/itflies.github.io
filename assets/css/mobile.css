@@ -299,6 +299,13 @@
     box-sizing: border-box;
   }
 
+  .box.references img {
+    margin-bottom: 15px; /* Abstand nach unten */
+    margin-top: 20px; /* Optional: Abstand nach oben */
+    max-width: 100%; /* Verhindert, dass Bilder zu groß werden */
+    display: block; /* Entfernt ungewollte Abstände durch Inline-Elementverhalten */
+  }
+
   .box.partner {
     background-color: #ffffff;
     height: auto;
