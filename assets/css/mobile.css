@@ -114,14 +114,16 @@
 
   .titel-p {
     font-size: 2.4rem !important;
-    font-weight: bold;
-    color: #000000;
+    font-weight: bold !important;
+    font-weight: 450;
     text-shadow: none;
   }
 
   .contact-p {
     /* margin-bottom: 30.2rem; */
     font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight: 450;
     color: #ffffff;
     text-shadow: none;
   }
@@ -326,6 +328,37 @@
     align-items: center;
   }
 
+  /* Icons */
+
+  .icon {
+    text-decoration: none;
+  }
+
+  .icon:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 1.25em;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon > .label {
+    display: none;
+  }
+
+  .icon.featured {
+    color: #ea8a95;
+    /* color: #b4201f; */
+    font-size: 3.5rem;
+    display: inline-flex;
+    margin: 0 0 0 0;
+    /* margin-bottom: 20px; */
+    cursor: default;
+  }
   /* Nav */
   /* 
   #nav a {
