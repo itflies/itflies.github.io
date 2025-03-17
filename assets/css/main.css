@@ -412,12 +412,12 @@ p {
 }
 
 .link {
-  color: #ea8a95;
+  color: #b4201f;
   text-decoration: none;
 }
 
 .link:hover {
-  color: #b4201f;
+  color: #ea8a95;
   text-decoration: underline;
 }
 
@@ -786,22 +786,22 @@ button:hover,
   max-width: 1200px;
 } */
 .map-marker {
-  color: #ea8a95;
+  color: #b4201f;
   cursor: pointer;
 }
 
 .map-marker:hover {
-  color: #b4201f;
+  color: #ea8a95;
 }
 
 .email-link a {
-  color: #ea8a95; /* Standardfarbe für alle E-Mail-Links */
+  color: b4201f; /* Standardfarbe für alle E-Mail-Links */
   text-decoration: none; /* Unterstreichung entfernen */
   transition: color 0.3s ease-in-out; /* Weicher Hover-Effekt */
 }
 
 .email-link a:hover {
-  color: #b4201f; /* Dunkleres Rot beim Hover */
+  color: #ea8a95; /* Dunkleres Rot beim Hover */
   text-decoration: underline;
 }
 

@@ -1,4 +1,4 @@
-const CACHE_NAME = "site-cache-v2"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
+const CACHE_NAME = "site-cache-v3"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
 
 const ASSETS = [
   "/", // Startseite
@@ -56,6 +56,10 @@ self.addEventListener("install", (event) => {
 
 // Fetch-Event: Inhalte aus dem Cache abrufen oder aus dem Netzwerk laden
 self.addEventListener("fetch", (event) => {
+  if (!event.request.url.startsWith(self.location.origin)) {
+    return; // Ignoriere alle externen Anfragen (z. B. Chrome-Erweiterungen)
+  }
+
   event.respondWith(
     caches.match(event.request).then((response) => {
       return response || fetch(event.request).then((fetchResponse) => {
@@ -67,6 +71,7 @@ self.addEventListener("fetch", (event) => {
     }).catch(error => console.error("Fetch-Fehler:", error))
   );
 });
+
 
 // Alte Caches bei Aktivierung des neuen Service Workers löschen
 self.addEventListener("activate", (event) => {
