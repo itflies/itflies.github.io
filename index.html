@@ -30,6 +30,7 @@
 	<link data-rh="true" rel="canonical" href="https://itflies.ch">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/mobile.css">
+	<link rel="stylesheet" href="assets/css/all.min.css">
 	<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
@@ -47,6 +48,17 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+	<!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0"> -->
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/service-worker.js')
+				.then(() => console.log("Service Worker registriert!"))
+				.catch(error => console.log("Service Worker Registrierung fehlgeschlagen:", error));
+		}
+	</script>
+	<script defer src="assets/js/all.min.js"></script>
 	<!-- <script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
@@ -60,19 +72,14 @@
 		  }
 	</script> -->
 
+
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 			var email = "info" + "@" + "itflies.ch";
 			var emailLinks = document.querySelectorAll(".email-link"); // Alle E-Mail-Elemente holen
 
 			emailLinks.forEach(function (link) {
-				if (link.classList.contains("contact-email")) {
-					// Falls es sich um die E-Mail unter "Kontakt" handelt
-					link.innerHTML = '<a href="mailto:' + email + '" style="color: #b4201f;">' + email + '</a>';
-				} else {
-					// Standardfarbe für alle anderen E-Mail-Adressen
-					link.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
-				}
+				link.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
 			});
 		});
 	</script>
@@ -94,7 +101,8 @@
 		</div>
 		<div class="email-icon">
 			<a href="#contact" aria-label="Kontakt aufnehmen">
-				<span class="icon email fa-envelope"></span>
+				<!-- <span class="icon email fa-envelope"></span> -->
+				<i class="icon email fa-solid fa-envelope"></i>
 			</a>
 		</div>
 		<!-- Navigation Menu für Desktop-->
@@ -109,6 +117,7 @@
 			<li id="desktop"><a href="#contact">Kontakt</a></li>
 		</ul> -->
 		<ul class="container" id="menu">
+			<li></li>
 			<li class="desktop"><a href="#services">Dienstleistungen</a></li>
 			<li class="desktop"><a href="#portal">Portallösungen</a></li>
 			<li class="desktop"><a href="#demo">Portal-Demo</a></li>
@@ -116,7 +125,8 @@
 			<li class="desktop"><a href="#references">Referenzen</a></li>
 			<li class="desktop"><a href="#partner">Partner</a></li>
 			<li class="desktop"><a href="#about">Über uns</a></li>
-			<li class="desktop"><a href="#contact">Kontakt</a></li>
+			<li></li>
+			<!-- <li class="desktop"><a href="#contact">Kontakt</a></li> -->
 		</ul>
 	</nav>
 	<main class="content">
@@ -126,7 +136,7 @@
 				<article class="container">
 					<!-- <div class="row"> -->
 					<header>
-						<img src="images/home.png" class="head-logo" alt="Logo itFlies GmbH" />
+						<img src="images/home.avif" class="head-logo" alt="Logo itFlies GmbH" />
 						<br>
 						<p class="titel-p">itFlies GmbH</p>
 						<h1>Softwareentwicklung & IT&#8209;Projektmanagement</h1>
@@ -170,7 +180,8 @@
 							<!-- Softwareentwicklung -->
 							<div class="tile">
 								<section class="box services">
-									<span class="icon featured fa-code"></span>
+									<!-- <span class="icon featured fa-code"></span> -->
+									<i class="icon featured fa-solid fa-code"></i>
 									<br>
 									<h3>Softwareentwicklung</h3>
 									<p>Wir entwickeln performante, massgeschneiderte Softwarelösungen die auf Desktop-PC
@@ -186,7 +197,8 @@
 							<!-- Projektmanagement -->
 							<div class="tile">
 								<section class="box services">
-									<span class="icon featured fa-trello"></span>
+									<!-- <span class="icon featured fa-trello"></span> -->
+									<i class="icon featured fa-solid fa-chart-gantt"></i>
 									<br>
 									<h3>Projektmanagement</h3>
 									<p>Wir begleiten Ihr Informatikvorhaben von der ersten Idee bis zum erfolgreichen
@@ -203,7 +215,8 @@
 							<!-- Beratung -->
 							<div class="tile">
 								<section class="box services">
-									<span class="icon featured fa-lightbulb-o"></span>
+									<!-- <span class="icon featured fa-lightbulb-o"></span> -->
+									<i class="icon featured fa-solid fa-user-tie"></i>
 									<br>
 									<h3>Beratung</h3>
 									<p>
@@ -252,7 +265,8 @@
 							<!-- Vorteile Portallösung -->
 							<div class="tile-big">
 								<section class="box portal">
-									<span class="icon featured fa-gears"></span>
+									<!-- <span class="icon featured fa-gears"></span> -->
+									<i class="icon featured fa-solid fa-gears"></i>
 									<br>
 									<h3>Einsatzmöglichkeiten unserer Portallösungen</h3>
 									<ul>
@@ -283,7 +297,8 @@
 							<!-- Einsatzmöglichkeiten Portallösungen -->
 							<div class="tile-big">
 								<section class="box portal">
-									<span class="icon featured fa-thumbs-up"></span>
+									<!-- <span class="icon featured fa-thumbs-up"></span> -->
+									<i class="icon featured fa-solid fa-thumbs-up"></i>
 									<br>
 									<h3>Ihre Vorteile mit unseren Portallösungen</h3>
 									<ul>
@@ -341,7 +356,8 @@
 						<!-- Beispiele -->
 						<div class="tile-big">
 							<section class="box portal" id="demo">
-								<span class="icon featured fa-television"></span>
+								<!-- <span class="icon featured fa-television"></span> -->
+								<i class="icon featured fa-solid fa-television"></i>
 								<br>
 								<h3>Portal - Demo</h3>
 								<p>Der für die Kalt AG entwickelte CAD-Angebots-Kalkulator im Kundenportal beschleunigt
@@ -355,13 +371,34 @@
 
 								<!-- Eingebettetes YouTube-Video -->
 								<!-- <div class="video-container"> -->
-								<iframe style="width: 100%; aspect-ratio: 16/10; max-width: 1000px;"
+								<!-- <iframe style="width: 100%; aspect-ratio: 16/10; max-width: 1000px;"
 									src="https://www.youtube-nocookie.com/embed/iyF_B9d9l1Q?rel=0&modestbranding=1"
 									title="CAD-Angebots-Kalkulator"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 									allowfullscreen>
-								</iframe>
+								</iframe> -->
+								<div class="youtube-placeholder" onclick="loadYouTube()">
+									<img class="youtube-thumbnail"
+										src="images/youtube/video-thumbnail-cad-angebots-kalkulator.jpg"
+										alt="Video Vorschau">
 
+
+									<button class="play-button">▶</button>
+								</div>
+
+								<script>
+									function loadYouTube() {
+										var placeholder = document.querySelector(".youtube-placeholder");
+										var iframe = document.createElement("iframe");
+										iframe.className = "youtube-iframe";  // Hier wird die Klasse gesetzt!
+										iframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/iyF_B9d9l1Q?rel=0&modestbranding=1&autoplay=1");
+										iframe.setAttribute("title", "CAD-Angebots-Kalkulator");
+										iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+										iframe.setAttribute("allowfullscreen", "");
+										placeholder.parentNode.replaceChild(iframe, placeholder);
+									}
+
+								</script>
 
 								<!-- </div> -->
 							</section>
@@ -389,8 +426,10 @@
 								<section class="box technologies">
 									<br>
 									<div style="display: flex; justify-content: center; align-items: center;">
-										<span class="icon featured fa-desktop" style="margin-right: 15px;"></span>
-										<span class="icon featured fa-mobile"></span>
+										<!-- <span class="icon featured fa-desktop" style="margin-right: 15px;"></span> -->
+										<i class="icon featured fa-solid fa-desktop" style="margin-right: 15px;"></i>
+										<!-- <span class="icon featured fa-mobile"></span> -->
+										<i class="icon featured fa-solid fa-mobile-screen"></i>
 									</div>
 									<br>
 									<h3>Frontend</h3>
@@ -406,7 +445,8 @@
 							<div class="tile">
 								<section class="box technologies">
 									<br>
-									<span class="icon featured fa-server"></span>
+									<!-- <span class="icon featured fa-server"></span> -->
+									<i class="icon featured fa-solid fa-server"></i>
 									<br>
 									<h3>Backend</h3>
 									<ul>
@@ -421,7 +461,8 @@
 							<div class="tile">
 								<section class="box technologies">
 									<br>
-									<span class="icon featured fa-list-alt"></span>
+									<!-- <span class="icon featured fa-list-alt"></span> -->
+									<i class="icon featured fa-solid fa-chart-line"></i>
 									<br>
 									<h3>SAP Business One&trade;</h3>
 									<ul>
@@ -743,19 +784,21 @@
 			<div class="wrapper style4">
 				<article class="container">
 					<header>
+						<i class="icon featured fa-solid fa-building"></i>
 						<h5>Kontakt</h5>
-						<p class="contact-p">Für Rückfragen oder weitere Informationen stehen wir Ihnen gerne zur
-							Verfügung.<br>
-							Wir freuen uns über ihre Nachricht per E-Mail an: <span
-								class="email-link contact-email"></span> </p>
-						<!-- <div>
-							<p class="contact-p">Besuchen Sie auch unsere LinkedIn-Unternehmensseite</p>
-							<a href="https://www.linkedin.com/company/itflies-gmbh" target="_blank">
-								<img src="images/about/LI-Bug.svg.original.svg"
-									alt="LinkedIn Unternehmensseite itFlies GmbH" class="image-linkedin"
-									title="LinkedIn Unternehmensseite itFlies GmbH" />
-							</a>
-						</div> -->
+						<p class="contact-p">
+							Für Rückfragen oder weitere Informationen stehen wir Ihnen gerne zur Verfügung.<br>
+							Wir freuen uns über Ihre Nachricht per E-Mail an:
+							<span class="email-link contact-email"></span>
+						</p>
+
+						<p class="contact-p">
+							<i class="fa-solid fa-map-marker-alt map-marker"
+								onclick="window.open('https://www.google.com/maps/search/?api=1&query=Hueb+123,+5465+Mellikon,+Schweiz', '_blank')">
+							</i> Hueb 123, 5465 Mellikon, Schweiz
+
+							<!-- <i class="fa-solid fa-phone"></i> +41 44 123 45 67 -->
+						</p>
 					</header>
 					<br>
 					<br>
@@ -787,6 +830,7 @@
 		<section id="impressum">
 			<div class="wrapper style2">
 				<article class="container">
+					<i class="icon featured fa-solid fa-id-card"></i>
 					<h3>Impressum</h3><br>
 					<h4>itFlies GmbH</h4><br>
 					<p>Hueb 123<br>
@@ -805,6 +849,7 @@
 				<article class="container">
 					<header>
 						<!-- <div style="font-size: 0.2em; line-height: 1.0;"> -->
+						<i class="icon featured fa-solid fa-file-shield"></i>
 						<h3>Datenschutzerklärung</h3>
 						<h4>Verantwortliche Stelle</h4>
 						<p>
@@ -842,18 +887,20 @@
 						</p>
 						<h4>Hosting und Server-Logs</h4>
 						<p>
-							Unsere Website wird über <a href="https://pages.github.com/" target="_blank">GitHub
+							Unsere Website wird über <a href="https://pages.github.com/" class="link"
+								target="_blank">GitHub
 								Pages</a> (GitHub Inc., USA) gehostet. Beim Zugriff werden technische Informationen
 							(z. B. IP-Adresse, Browsertyp, Datum und Uhrzeit des Zugriffs) automatisch erfasst.
 							Weitere Details finden Sie in der <a
 								href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
-								target="_blank">Datenschutzerklärung von GitHub</a>.
+								class="link" target="_blank">Datenschutzerklärung von GitHub</a>.
 						</p>
 						<h4>Einbindung von Diensten und Inhalten Dritter</h4>
 						<p>
 							Unsere Website bindet Dienste Dritter (z. B. YouTube) ein. Diese Anbieter erhalten Ihre
 							IP-Adresse und können Cookies setzen. Weitere Informationen finden Sie in der <a
-								href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung von
+								href="https://policies.google.com/privacy" class="link"
+								target="_blank">Datenschutzerklärung von
 								Google (YouTube)</a>.
 						</p>
 						<p>
@@ -864,7 +911,8 @@
 						<p>
 							Unsere Website nutzt Schriftarten von Fonticons, Inc. (Font Awesome). Dabei wird Ihre
 							IP-Adresse an Font Awesome übermittelt. Mehr dazu finden Sie in der <a
-								href="https://fontawesome.com/privacy" target="_blank">Datenschutzerklärung von Font
+								href="https://fontawesome.com/privacy" class="link" target="_blank">Datenschutzerklärung
+								von Font
 								Awesome</a>.
 						</p>
 
@@ -875,7 +923,8 @@
 							diese Schriftarten direkt von Google-Servern geladen, wodurch Ihre IP-Adresse und
 							Informationen zu Ihrem Browser an Google übermittelt werden. Weitere Informationen zur
 							Datennutzung durch Google finden Sie in der
-							<a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung von
+							<a href="https://policies.google.com/privacy" class="link"
+								target="_blank">Datenschutzerklärung von
 								Google</a>.
 						</p>
 						<h4>Social Media (LinkedIn)</h4>
@@ -883,7 +932,7 @@
 							Unsere Website verlinkt auf LinkedIn. Beim Aufruf dieser Links kann LinkedIn
 							personenbezogene Daten erfassen, insbesondere wenn Sie dort eingeloggt sind. Weitere
 							Informationen finden Sie in der <a href="https://www.linkedin.com/legal/privacy-policy"
-								target="_blank">Datenschutzerklärung von LinkedIn</a>.
+								class="link" target="_blank">Datenschutzerklärung von LinkedIn</a>.
 						</p>
 						<h4>Externe Links</h4>
 						<p>
@@ -922,7 +971,7 @@
 							aktuelle Version finden Sie auf unserer Website.
 						</p>
 					</header>
-					<p><small>Letzte Aktualisierung: 13.03.2025</small></p>
+					<p><small>Letzte Aktualisierung: 17.03.2025</small></p>
 					<!-- </div> -->
 				</article>
 			</div>

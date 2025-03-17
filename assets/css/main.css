@@ -4,9 +4,106 @@
 	16.09.2024 kom: created new
 */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
-@import url("font-awesome.min.css");
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700"); */
+/* open-sans-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/open-sans-v40-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-300italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/open-sans-v40-latin-300italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v40-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v40-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/open-sans-v40-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/open-sans-v40-latin-500italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/open-sans-v40-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/open-sans-v40-latin-600italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v40-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v40-latin-700italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/open-sans-v40-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-800italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../fonts/open-sans-v40-latin-800italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* @import url("font-awesome.min.css"); */
 
+@import url("css/all.min.css");
 /* Reset */
 html,
 body,
@@ -158,8 +255,10 @@ main {
 }
 
 .head-logo {
-  width: 20em;
+  width: auto;
   height: auto;
+  max-width: 18rem;
+  max-height: 18rem;
 }
 
 header {
@@ -217,6 +316,9 @@ h1 {
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
+  white-space: normal; /* Erlaubt Umbrüche */
+  word-wrap: break-word; /* Falls nötig, an Wörtern umbrechen */
+  text-align: center; /* Optional für bessere Optik */
 }
 
 h2 {
@@ -295,11 +397,18 @@ p {
   text-shadow: none;
 }
 
-.titel-p {
+/* .titel-p {
   font-size: 4rem !important;
   font-weight: bold;
   color: #000000;
   text-shadow: none;
+} */
+
+.titel-p {
+  font-size: 4rem !important;
+  line-height: 4.1rem;
+  font-weight: bold;
+  display: block;
 }
 
 .link {
@@ -308,6 +417,7 @@ p {
 }
 
 .link:hover {
+  color: #b4201f;
   text-decoration: underline;
 }
 
@@ -488,7 +598,7 @@ button:hover,
 
 /* Icons */
 
-.icon {
+/* .icon {
   text-decoration: none;
 }
 
@@ -510,12 +620,51 @@ button:hover,
 
 .icon.featured {
   color: #ea8a95;
-  /* color: #b4201f; */
   font-size: 4rem;
   display: inline-flex;
   margin: 0 0 0 0;
-  /* margin-bottom: 20px; */
   cursor: default;
+} */
+
+.icon {
+  display: inline-block;
+  font-size: 1.25em;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Entferne :before, weil <i> das Icon direkt enthält */
+.icon:before {
+  content: none; /* Sicherstellen, dass keine doppelten Icons entstehen */
+}
+
+/* Featured Icons */
+.icon.featured {
+  color: #ea8a95;
+  font-size: 4rem;
+  display: inline-flex;
+  margin: 0;
+  cursor: default;
+}
+
+.email-icon {
+  display: flex;
+  position: absolute;
+  right: 0rem;
+  top: 1rem;
+}
+
+.icon.email {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0rem;
+  right: 1rem;
+  color: #ffffff;
+  /* cursor: default; */
 }
 
 /* Wrappers */
@@ -576,7 +725,7 @@ button:hover,
   display: none;
 } */
 
-.email-icon {
+/* .email-icon {
   display: flex;
   position: absolute;
   right: 0em;
@@ -589,8 +738,8 @@ button:hover,
   top: 0em;
   right: 1em;
   color: #ffffff;
-  /* cursor: default; */
-}
+  /* cursor: default; 
+} */
 
 /* Hamburger-Button Menu für Mobile */
 .hamburger {
@@ -636,3 +785,82 @@ button:hover,
 /* .content {
   max-width: 1200px;
 } */
+.map-marker {
+  color: #ea8a95;
+  cursor: pointer;
+}
+
+.map-marker:hover {
+  color: #b4201f;
+}
+
+.email-link a {
+  color: #ea8a95; /* Standardfarbe für alle E-Mail-Links */
+  text-decoration: none; /* Unterstreichung entfernen */
+  transition: color 0.3s ease-in-out; /* Weicher Hover-Effekt */
+}
+
+.email-link a:hover {
+  color: #b4201f; /* Dunkleres Rot beim Hover */
+  text-decoration: underline;
+}
+
+.youtube-placeholder {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 16/9;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+.youtube-placeholder img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.youtube-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.youtube-iframe {
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 16/10;
+  display: block;
+  border: none;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease-in-out;
+}
+
+.play-button:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}

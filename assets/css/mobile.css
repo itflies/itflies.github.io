@@ -4,6 +4,18 @@
 	16.09.2024 kom: created new
 */
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+@import url("font-awesome.min.css");
+
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v40-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 @media (max-width: 1300px) {
   /* Reset */
 
@@ -31,8 +43,8 @@
   .email-icon {
     display: flex;
     position: absolute;
-    right: 3em;
-    top: 0em;
+    right: 3rem;
+    top: 0.4rem;
   }
   .content {
     padding-top: 10px; /* Höhe des Navigationsmenüs + etwas Puffer */
@@ -66,6 +78,9 @@
     font-size: 1.6rem;
     color: #303030;
     font-weight: bold;
+    white-space: normal; /* Erlaubt Umbrüche */
+    word-wrap: break-word; /* Falls nötig, an Wörtern umbrechen */
+    text-align: center; /* Optional für bessere Optik */
     /* margin-bottom: 20px; */
     /* line-height: 1.25rem; */
   }
@@ -112,11 +127,18 @@
     /* line-height: 1.8em; */
   }
 
-  .titel-p {
-    font-size: 2.4rem !important;
+  /* .titel-p {
+    font-size: 2.5rem !important;
     font-weight: bold !important;
     font-weight: 450;
     text-shadow: none;
+  } */
+
+  .titel-p {
+    font-size: 2.8rem !important;
+    line-height: 2.9rem;
+    font-weight: bold;
+    display: block;
   }
 
   .contact-p {
