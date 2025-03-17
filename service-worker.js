@@ -1,4 +1,4 @@
-const CACHE_NAME = "site-cache-v4"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
+const CACHE_NAME = "site-cache-v5"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
 
 const ASSETS = [
   "/", // Startseite
@@ -38,9 +38,52 @@ const ASSETS = [
   "/assets/fonts/open-sans-v40-latin-regular.woff2",
 
   // Bilder
+  "/images/android-icon-144x144.png",
+  "/images/android-icon-192x192.png",
+  "/images/android-icon-36x36.png",
+  "/images/android-icon-48x48.png",
+  "/images/android-icon-72x72.png",
+  "/images/android-icon-96x96.png",
+  "/images/apple-icon.png",
+  "/images/apple-icon-114x114.png",
+  "/images/apple-icon-144x144.png",
+  "/images/apple-icon-57x57.png",
+  "/images/apple-icon-60x60.png",
+  "/images/apple-icon-72x72.png",
+  "/images/apple-icon-76x76.png",
+  "/images/favicon-16x16.png",
+  "/images/favicon-32x32.png",
+  "/images/favicon-96x96.png",
+  "/images/home.avif",
   "/images/home.png",
+  "/images/logo_itflies_50px.png",
+  "/images/ms-icon-144x144.png",
+  "/images/ms-icon-150x150.png",
+  "/images/ms-icon-310x310.png",
+  "/images/ms-icon-70x70.png",
+  "/images/pic00.png",
   "/images/about/knp.jpg",
-  "/images/logo.png"
+  "/images/about/knp.png",
+  "/images/about/kom.jpg",
+  "/images/about/kom.png",
+  "/images/about/LI-Bug.svg.original.svg",
+  "/images/about/linkedin.svg",
+  "/images/about/logo_itflies_50px.png",
+  "/images/partner/logo_data_unit.png",
+  "/images/partner/logo_mtf.png",
+  "/images/references/logo_bardini.png",
+  "/images/references/logo_diahem.png",
+  "/images/references/logo_emmenegger.png",
+  "/images/references/logo_hedin.png",
+  "/images/references/logo_jungheinrich.png",
+  "/images/references/logo_kalt.png",
+  "/images/references/logo_otto_rohrunterhalt.png",
+  "/images/references/logo_ruedersaege.png",
+  "/images/screenshots/desktop.png",
+  "/images/screenshots/mobile.png",
+  "/images/signature/In-Blue-14.png",
+  "/images/signature/logo_itflies_50px.png",
+  "/images/youtube/video-thumbnail-cad-angebots-kalkulator.jpg"
 ];
 
 // Service Worker installieren und Assets cachen
