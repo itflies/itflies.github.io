@@ -1,6 +1,6 @@
 const CACHE_NAME = "site-cache-v1";
 // const CACHE_NAME = "site-cache-v2"; // Falls du neue Bilder hochlädst und sich der Name nicht ändert, kannst du einfach das CACHE_NAME im service-worker.js aktualisieren. vorher "site-cache-v1"
-const CACHE_NAME = "site-cache-v1";
+
 const ASSETS = [
   "/", // Startseite
   "/index.html",
@@ -8,7 +8,7 @@ const ASSETS = [
   "/robots.txt",
   "/sitemap.xml",
 
-  // CSS-Dateien
+  // CSS-Dateien (angepasst an /assets/css/)
   "/assets/css/all.css",
   "/assets/css/all.min.css",
   "/assets/css/fontawesome.css",
@@ -16,7 +16,7 @@ const ASSETS = [
   "/assets/css/main.css",
   "/assets/css/mobile.css",
 
-  // JavaScript-Dateien
+  // JavaScript-Dateien (angepasst an /assets/js/)
   "/assets/js/all.js",
   "/assets/js/all.min.js",
   "/assets/js/brands.js",
@@ -38,7 +38,7 @@ const ASSETS = [
   "/assets/fonts/open-sans-v40-latin-800.woff2",
   "/assets/fonts/open-sans-v40-latin-regular.woff2",
 
-  // Bilder
+  // Bilder (angepasst an /images/)
   "/images/home.png",
   "/images/about/knp.jpg",
   "/images/logo.png"
@@ -50,7 +50,7 @@ self.addEventListener("install", (event) => {
     caches.open(CACHE_NAME).then((cache) => {
       console.log("Caching assets...");
       return cache.addAll(ASSETS);
-    })
+    }).catch(error => console.error("Cache-Fehler:", error))
   );
 });
 
@@ -67,7 +67,7 @@ self.addEventListener("fetch", (event) => {
           });
         })
       );
-    })
+    }).catch(error => console.error("Fetch-Fehler:", error))
   );
 });
 
@@ -85,4 +85,9 @@ self.addEventListener("activate", (event) => {
       );
     })
   );
+});
+
+// Fehlerbehandlung hinzufügen (hilft beim Debugging)
+self.addEventListener("error", (event) => {
+  console.error("Service Worker Fehler:", event);
 });
