@@ -1,5 +1,4 @@
-const CACHE_NAME = "site-cache-v1";
-// const CACHE_NAME = "site-cache-v2"; // Falls du neue Bilder hochlädst und sich der Name nicht ändert, kannst du einfach das CACHE_NAME im service-worker.js aktualisieren. vorher "site-cache-v1"
+const CACHE_NAME = "site-cache-v2"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
 
 const ASSETS = [
   "/", // Startseite
@@ -8,7 +7,7 @@ const ASSETS = [
   "/robots.txt",
   "/sitemap.xml",
 
-  // CSS-Dateien (angepasst an /assets/css/)
+  // CSS-Dateien
   "/assets/css/all.css",
   "/assets/css/all.min.css",
   "/assets/css/fontawesome.css",
@@ -16,7 +15,7 @@ const ASSETS = [
   "/assets/css/main.css",
   "/assets/css/mobile.css",
 
-  // JavaScript-Dateien (angepasst an /assets/js/)
+  // JavaScript-Dateien
   "/assets/js/all.js",
   "/assets/js/all.min.js",
   "/assets/js/brands.js",
@@ -38,47 +37,45 @@ const ASSETS = [
   "/assets/fonts/open-sans-v40-latin-800.woff2",
   "/assets/fonts/open-sans-v40-latin-regular.woff2",
 
-  // Bilder (angepasst an /images/)
+  // Bilder
   "/images/home.png",
   "/images/about/knp.jpg",
   "/images/logo.png"
 ];
 
-// Service Worker installieren und Dateien cachen
+// Service Worker installieren und Assets cachen
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      console.log("Caching assets...");
+      console.log("Service Worker installiert. Caching folgender Assets:");
+      console.log(ASSETS);
       return cache.addAll(ASSETS);
     }).catch(error => console.error("Cache-Fehler:", error))
   );
 });
 
-// Abrufen der Dateien aus dem Cache oder vom Netzwerk
+// Fetch-Event: Inhalte aus dem Cache abrufen oder aus dem Netzwerk laden
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
-      return (
-        response ||
-        fetch(event.request).then((fetchResponse) => {
-          return caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, fetchResponse.clone());
-            return fetchResponse;
-          });
-        })
-      );
+      return response || fetch(event.request).then((fetchResponse) => {
+        return caches.open(CACHE_NAME).then((cache) => {
+          cache.put(event.request, fetchResponse.clone());
+          return fetchResponse;
+        });
+      });
     }).catch(error => console.error("Fetch-Fehler:", error))
   );
 });
 
-// Cache aktualisieren, wenn eine neue Version verfügbar ist
+// Alte Caches bei Aktivierung des neuen Service Workers löschen
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((keys) => {
       return Promise.all(
         keys.map((key) => {
           if (key !== CACHE_NAME) {
-            console.log("Alten Cache löschen:", key);
+            console.log("Lösche alten Cache:", key);
             return caches.delete(key);
           }
         })
@@ -87,7 +84,7 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-// Fehlerbehandlung hinzufügen (hilft beim Debugging)
+// Fehlerprotokollierung für Debugging
 self.addEventListener("error", (event) => {
   console.error("Service Worker Fehler:", event);
 });
