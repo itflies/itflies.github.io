@@ -150,15 +150,6 @@
     text-shadow: none;
   }
 
-  .link {
-    color: #ea8a95;
-    text-decoration: none;
-  }
-
-  .link:hover {
-    text-decoration: underline;
-  }
-
   li {
     font-size: 1rem;
     /* margin-bottom: 0.5rem; */

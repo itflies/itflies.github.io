@@ -1,4 +1,4 @@
-const CACHE_NAME = "site-cache-v3"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
+const CACHE_NAME = "site-cache-v4"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
 
 const ASSETS = [
   "/", // Startseite
@@ -49,8 +49,20 @@ self.addEventListener("install", (event) => {
     caches.open(CACHE_NAME).then((cache) => {
       console.log("Service Worker installiert. Caching folgender Assets:");
       console.log(ASSETS);
-      return cache.addAll(ASSETS);
-    }).catch(error => console.error("Cache-Fehler:", error))
+
+      return Promise.all(
+        ASSETS.map((url) => {
+          return fetch(url, { cache: "no-store" }) // Prüfen, ob die Datei existiert
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(`Fehler beim Abrufen von ${url}: ${response.statusText}`);
+              }
+              return cache.put(url, response);
+            })
+            .catch((error) => console.warn(`Nicht gecacht: ${url} - ${error.message}`));
+        })
+      );
+    })
   );
 });
 

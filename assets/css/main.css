@@ -795,7 +795,7 @@ button:hover,
 }
 
 .email-link a {
-  color: b4201f; /* Standardfarbe für alle E-Mail-Links */
+  color: #b4201f; /* Standardfarbe für alle E-Mail-Links */
   text-decoration: none; /* Unterstreichung entfernen */
   transition: color 0.3s ease-in-out; /* Weicher Hover-Effekt */
 }
