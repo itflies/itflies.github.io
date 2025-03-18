@@ -379,7 +379,7 @@ p {
   font-size: 1.3rem;
   color: #303030;
   line-height: 2rem;
-  font-weight: 520; /* Oder 600 für etwas mehr Gewicht */
+  font-weight: 500; /* Oder 600 für etwas mehr Gewicht */
 }
 
 .contact-p {
