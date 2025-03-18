@@ -1,4 +1,4 @@
-const CACHE_NAME = "site-cache-v7"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
+const CACHE_NAME = "site-cache-v8"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
 
 const ASSETS = [
   "/", // Startseite
