@@ -1,4 +1,9 @@
-const CACHE_NAME = "site-cache-v10"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
+/*!
+ * itFlies GmbH Website by @itflies.ch - https://itflies.ch
+ * Copyright 2025 itFlies GmbH
+ */
+
+const CACHE_NAME = "site-cache-v11"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
 
 const ASSETS = [
   "/", // Startseite

@@ -1,3 +1,8 @@
+/*!
+ * itFlies GmbH Website by @itflies.ch - https://itflies.ch
+ * Copyright 2025 itFlies GmbH
+ */
+
 /* open-sans-300 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -194,7 +199,8 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   line-height: 1.85em;
-  color: #535353;
+  /* color: #535353; */
+  color: #303030;
   /* background-color: #ffffff; */
 }
 

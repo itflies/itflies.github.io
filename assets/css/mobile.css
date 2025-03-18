@@ -1,5 +1,10 @@
+/*!
+ * itFlies GmbH Website by @itflies.ch - https://itflies.ch
+ * Copyright 2025 itFlies GmbH
+ */
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
