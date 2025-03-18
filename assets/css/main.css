@@ -398,12 +398,12 @@ p {
 }
 
 .link {
-  color: #b4201f;
+  color: #ea8a95;
   text-decoration: none;
 }
 
 .link:hover {
-  color: #ea8a95;
+  color: #b4201f;
   text-decoration: underline;
 }
 
@@ -459,14 +459,14 @@ article:last-child {
   height: 2em;
 }
 
-input[type="button"]:hover,
+/* input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover {
   background-color: #460000;
   color: #ffffff;
-}
+} */
 
 /* Box */
 
@@ -676,22 +676,22 @@ button:hover,
 }
 
 .map-marker {
-  color: #b4201f;
+  color: #ea8a95;
   cursor: pointer;
 }
 
 .map-marker:hover {
-  color: #ea8a95;
+  color: #b4201f;
 }
 
 .email-link a {
-  color: #b4201f; /* Standardfarbe für alle E-Mail-Links */
+  color: #ea8a95; /* Standardfarbe für alle E-Mail-Links */
   text-decoration: none; /* Unterstreichung entfernen */
   transition: color 0.3s ease-in-out; /* Weicher Hover-Effekt */
 }
 
 .email-link a:hover {
-  color: #ea8a95; /* Dunkleres Rot beim Hover */
+  color: #b4201f; /* Dunkleres Rot beim Hover */
   text-decoration: underline;
 }
 
