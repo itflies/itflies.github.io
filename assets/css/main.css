@@ -338,6 +338,8 @@ h3 {
 
 h4 {
   font-size: 1.3rem;
+  line-hight: 1.5rem;
+  margin-bottom: 0.5rem;
   color: #303030;
   font-weight: 600;
   margin: 0 0 0 0;
@@ -408,11 +410,29 @@ p {
 }
 
 .solutions {
-  list-style: circle; /* Entfernt die Standard-Aufzählungszeichen */
+  list-style: none; /* Entfernt die Standard-Aufzählungszeichen */
   padding-left: 100; /* Entfernt den Standard-Abstand links */
   & li {
     text-align: left;
   }
+}
+
+.solutions > li {
+  list-style-type: none; /* Entfernt Bullet Points für Hauptpunkte */
+  margin-top: 15px; /* Fügt Abstand nach oben hinzu */
+}
+
+.solutions .category {
+  font-weight: 550;
+  list-style: none;
+  list-style-type: none; /* Entfernt Bullet Point */
+  margin-top: 10px; /* Optionaler Abstand für bessere Lesbarkeit */
+}
+
+/* Unterpunkte mit Kreis als Bullet Point */
+.solutions ul {
+  margin-left: 20px; /* Einrückung für Unterpunkte */
+  list-style-type: circle; /* Kreise als Marker */
 }
 
 li {
@@ -651,6 +671,7 @@ button:hover,
   height: 4px;
   width: 100%;
   background-color: #ffffff;
+  border-radius: 10px;
 }
 
 /*TOP*/
