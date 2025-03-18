@@ -1,4 +1,4 @@
-const CACHE_NAME = "site-cache-v8"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
+const CACHE_NAME = "site-cache-v9"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
 
 const ASSETS = [
   "/", // Startseite
@@ -21,7 +21,6 @@ const ASSETS = [
   "/assets/js/brands.js",
   "/assets/js/brands.min.js",
   "/assets/js/conflict-detection.js",
-  "/assets/js/contactmail.js",
 
   // Schriftarten (Fonts)
   "/assets/fonts/FontAwesome.otf",
