@@ -29,35 +29,36 @@ Copyright 2025 itFlies GmbH -->
 	<meta property="og:image" content="https://itflies.ch/assets/images/home.jpg">
 	<meta property="og:url" content="https://itflies.ch">
 	<!-- END Open Graph-Tags für Social Media Integration -->
-	<link data-rh="true" rel="icon" href="/assets/images/favicon.ico">
+	<link data-rh="true" rel="icon" href="assets/images/favicon.ico">
 	<link data-rh="true" rel="canonical" href="https://itflies.ch">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/mobile.css">
 	<link rel="stylesheet" href="assets/css/opensans.css">
 	<link rel="stylesheet" href="assets/css/fontawesome.css">
-	<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-	<link rel="manifest" href="/asstes/js/manifest.json">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="assets/images/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+	<link rel="manifest" href="asstes/json/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/assets/images/ms-icon-144x144.png">
+	<meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Expires" content="0"> -->
+	<script src="assets/js/lottie.min.js"></script>
 	<script>
 		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('/assets/js/service-worker.js')
+			navigator.serviceWorker.register('assets/js/service-worker.js')
 				.then(() => console.log("Service Worker erfolgreich registriert."))
 				.catch(error => console.log("Service Worker Registrierung fehlgeschlagen:", error));
 		}
@@ -1017,6 +1018,17 @@ Copyright 2025 itFlies GmbH -->
 	</script>
 	<script src="assets/js/navigation.menu.js"></script>
 	<!-- <script src="assets/js/contactmail.js"></script> -->
+	<div id="fischer-animation"></div>
+
+	<script>
+		var animation = lottie.loadAnimation({
+			container: document.getElementById("fischer-animation"),
+			renderer: "svg",
+			loop: true,
+			autoplay: true,
+			path: "assets/json/fischer_lottie.json"
+		});
+	</script>
 </body>
 
 </html>
