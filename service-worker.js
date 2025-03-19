@@ -4,7 +4,7 @@
  * INFO: service-worker.js wäre für diese Website grundsätzlich nicht erforderlich. Da wir unser Standardprodukt OVL-Portal mit service-worker.js betreiben haben wir diesen auch auf unserer Website eingebunden.
  */
 
-const CACHE_NAME = "site-cache-v14"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
+const CACHE_NAME = "site-cache-v15"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
 
 const ASSETS = [
   "/",

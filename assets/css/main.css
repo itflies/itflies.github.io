@@ -316,30 +316,38 @@ p {
   text-decoration: underline;
 }
 
+/* Behalte die Liste zentriert im Container */
 .solutions {
-  list-style: none; /* Entfernt die Standard-Aufzählungszeichen */
-  padding-left: 100; /* Entfernt den Standard-Abstand links */
-  & li {
-    text-align: left;
-  }
-}
-
-.solutions > li {
-  list-style-type: none; /* Entfernt Bullet Points für Hauptpunkte */
-  margin-top: 15px; /* Fügt Abstand nach oben hinzu */
-}
-
-.solutions .category {
-  font-weight: 550;
   list-style: none;
-  list-style-type: none; /* Entfernt Bullet Point */
-  margin-top: 10px; /* Optionaler Abstand für bessere Lesbarkeit */
+  padding-left: 0;
+  margin: 0 auto; /* Hält die Liste zentriert */
+  text-align: left; /* Der Inhalt der Liste wird linksbündig */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Erzwingt einheitliche linke Ausrichtung */
+  width: 80%; /* Breite anpassen, damit die Listen überall gleich sind */
+  max-width: 400px; /* Einheitliche maximale Breite für Konsistenz */
 }
 
-/* Unterpunkte mit Kreis als Bullet Point */
+/* Hauptkategorien fett, aber ohne Bullet-Point */
+.solutions > li {
+  font-weight: 550;
+  list-style-type: none;
+}
+
+/* Unterpunkte mit einheitlicher Einrückung */
 .solutions ul {
-  margin-left: 20px; /* Einrückung für Unterpunkte */
-  list-style-type: circle; /* Kreise als Marker */
+  list-style-type: circle;
+  padding-left: 30px; /* Einheitliche Einrückung für alle Unterpunkte */
+  margin: 5px 0 0 0;
+  text-align: left;
+  width: 100%; /* Stellt sicher, dass alle Unterpunkte dieselbe Breite nutzen */
+}
+
+/* Normaler Stil für Unterpunkte */
+.solutions ul li {
+  font-weight: normal;
+  display: list-item;
 }
 
 li {
@@ -437,8 +445,8 @@ button:hover,
 .box.references {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* justify-content: space-between; */
+  align-items: center; /* Inhalt linksbündig ausrichten */
+  text-align: center;
   box-sizing: border-box;
   background-color: #ffffff;
   padding: 16px;
