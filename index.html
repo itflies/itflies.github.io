@@ -1028,25 +1028,24 @@ Copyright 2025 itFlies GmbH -->
 	</script>
 	<script src="assets/js/navigation.menu.js"></script>
 	<!-- <script src="assets/js/contactmail.js"></script> -->
-	<div id="fischer-animation"></div>
+
 
 	<div id="fischer-animation" style="width: 300px; height: 300px;"></div>
 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			var animation = lottie.loadAnimation({
-				container: document.getElementById("fischer-animation"), // Container ID
-				renderer: "svg", // Beste Qualität für Vektor-Animationen
+			lottie.loadAnimation({
+				container: document.getElementById("fischer-animation"), // Container-Element
+				renderer: "svg", // "svg" für beste Qualität, alternativ "canvas" oder "html"
 				loop: true, // Endlosschleife
-				autoplay: true, // Animation automatisch starten
-				path: "/assets/json/fischer_lottie.json" // Pfad zur JSON-Datei
-			});
-
-			animation.addEventListener("data_failed", function () {
+				autoplay: true, // Sofort starten
+				path: "assets/json/fischer_lottie.json", // Pfad zur JSON-Datei
+			}).addEventListener("data_failed", function () {
 				console.error("Fehler: Lottie JSON konnte nicht geladen werden!");
 			});
 		});
 	</script>
+
 </body>
 
 </html>
