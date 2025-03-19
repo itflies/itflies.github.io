@@ -3,7 +3,7 @@
  * Copyright 2025 itFlies GmbH
  */
 
-const CACHE_NAME = "site-cache-v11"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
+const CACHE_NAME = "site-cache-v12"; // Versionsnummer erhöhen bei Updates (z.B. neue Bilder)
 
 const ASSETS = [
   "/", // Startseite
