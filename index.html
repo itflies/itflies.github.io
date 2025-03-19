@@ -48,7 +48,7 @@ Copyright 2025 itFlies GmbH -->
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
+	<link rel="manifest" href="manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
@@ -1030,13 +1030,21 @@ Copyright 2025 itFlies GmbH -->
 	<!-- <script src="assets/js/contactmail.js"></script> -->
 	<div id="fischer-animation"></div>
 
+	<div id="fischer-animation" style="width: 300px; height: 300px;"></div>
+
 	<script>
-		var animation = lottie.loadAnimation({
-			container: document.getElementById("fischer-animation"),
-			renderer: "svg",
-			loop: true,
-			autoplay: true,
-			path: "assets/json/fischer_lottie.json"
+		document.addEventListener("DOMContentLoaded", function () {
+			var animation = lottie.loadAnimation({
+				container: document.getElementById("fischer-animation"), // Container ID
+				renderer: "svg", // Beste Qualität für Vektor-Animationen
+				loop: true, // Endlosschleife
+				autoplay: true, // Animation automatisch starten
+				path: "/assets/json/fischer_lottie.json" // Pfad zur JSON-Datei
+			});
+
+			animation.addEventListener("data_failed", function () {
+				console.error("Fehler: Lottie JSON konnte nicht geladen werden!");
+			});
 		});
 	</script>
 </body>
