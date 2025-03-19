@@ -33,9 +33,10 @@
   }
 
   .email-icon {
+    font-size: 1.5rem;
     display: flex;
     position: absolute;
-    right: 3rem;
+    right: 2.5rem;
     top: 0.4rem;
   }
   .content {
