@@ -1,11 +1,17 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/fonts/open-sans-v40-latin-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('/assets/fonts/open-sans-v40-latin-regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Open Sans";
+  src: url("/assets/fonts/open-sans-v40-latin-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
