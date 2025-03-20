@@ -447,6 +447,16 @@ button:hover,
   height: 27em;
 }
 
+.box.project-management {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  box-sizing: border-box;
+  background-color: #ffffff;
+  height: 35em;
+}
+
 .box.references {
   display: flex;
   flex-direction: column;
@@ -544,18 +554,22 @@ button:hover,
 .wrapper.style1 {
   background-image: none;
   background-color: #ffffff;
+  min-height: 900px;
 }
 
 .wrapper.style2 {
   background-color: #f4f4f4;
+  min-height: 900px;
 }
 
 .wrapper.style3 {
   background-color: #fafafa;
+  min-height: 900px;
 }
 
 .wrapper.style4 {
   background-color: #303030;
+  min-height: 900px;
 }
 
 /*Home-Logo auf Mobile Menu*/

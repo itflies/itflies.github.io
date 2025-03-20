@@ -3,13 +3,13 @@
  * Copyright 2025 itFlies GmbH
  */
 
-@font-face {
+/* @font-face {
   font-display: swap;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/open-sans-v40-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+  src: url("../fonts/open-sans-v40-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ 
+} */
 
 @media (max-width: 1300px) {
   /* Reset */
@@ -282,6 +282,16 @@
   }
 
   .box.technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .box.project-management {
     display: flex;
     flex-direction: column;
     align-items: center;
