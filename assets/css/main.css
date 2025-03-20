@@ -352,6 +352,7 @@ p {
 
 .category {
   margin-top: 20px; /* Erhöhe den Abstand nach oben */
+  font-weight: 500;
   display: block; /* Stellt sicher, dass die Kategorie als eigener Block erscheint */
 }
 
