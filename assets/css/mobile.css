@@ -43,6 +43,10 @@
     padding-top: 10px; /* Höhe des Navigationsmenüs + etwas Puffer */
   }
 
+  .desktop {
+    white-space: nowrap;
+  }
+
   .container {
     width: 100%;
     margin-left: auto;

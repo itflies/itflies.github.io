@@ -285,7 +285,7 @@ p {
 }
 
 .custom-p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #303030;
   line-height: 2rem;
   font-weight: 500; /* Oder 600 für etwas mehr Gewicht */
@@ -331,7 +331,7 @@ p {
 
 /* Hauptkategorien fett, aber ohne Bullet-Point */
 .solutions > li {
-  font-weight: 550;
+  font-weight: bold;
   list-style-type: none;
 }
 
