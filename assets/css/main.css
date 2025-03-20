@@ -302,7 +302,7 @@ p {
 .titel-p {
   font-size: 4rem !important;
   line-height: 4.1rem;
-  font-weight: bold;
+  font-weight: 1000;
   display: block;
 }
 
