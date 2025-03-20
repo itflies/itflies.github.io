@@ -285,7 +285,7 @@ p {
 }
 
 .custom-p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #303030;
   line-height: 2rem;
   font-weight: 500; /* Oder 600 für etwas mehr Gewicht */
@@ -352,7 +352,7 @@ p {
 
 .category {
   margin-top: 20px; /* Erhöhe den Abstand nach oben */
-  font-weight: 550;
+  font-weight: bold;
   display: block; /* Stellt sicher, dass die Kategorie als eigener Block erscheint */
 }
 
