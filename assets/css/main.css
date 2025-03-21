@@ -124,7 +124,7 @@ main {
 .navbar a {
   padding: 0.2em 0.2em 0.2em 0.2em;
   margin: 0.2em 0.2em 0.2em 0.2em;
-  font-weight: 600;
+  font-weight: 500;
   color: #ffffff;
 }
 
@@ -245,7 +245,7 @@ h3 {
 
 h4 {
   font-size: 1.3rem;
-  line-hight: 1.5rem;
+  line-height: 1.5rem;
   margin-bottom: 0.5rem;
   color: #303030;
   font-weight: 600;
@@ -486,7 +486,7 @@ button:hover,
   align-items: center;
   box-sizing: border-box;
   background-color: #ffffff;
-  height: 28rem;
+  height: 29rem;
 }
 
 .box.about {
