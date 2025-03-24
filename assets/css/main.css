@@ -522,14 +522,14 @@ button:hover,
   cursor: default;
 }
 
-.email-icon {
+.contact-icon {
   display: flex;
   position: absolute;
   right: 0rem;
   top: 1.2rem;
 }
 
-.icon.email {
+.icon.contact {
   font-size: 2rem;
   position: absolute;
   top: 0rem;
