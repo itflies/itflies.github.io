@@ -5,6 +5,21 @@ Copyright 2025 itFlies GmbH -->
 <html lang="de">
 
 <head>
+<style>
+  @media (max-width: 600px) {
+    footer nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    footer nav a {
+      display: block;
+      margin: 3px 0;
+    }
+  }
+</style>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <base href="https://www.itflies.ch/"> -->
@@ -1128,27 +1143,24 @@ Copyright 2025 itFlies GmbH -->
 		</section>
 	</main>
 
-	<footer id="dynamic-footer" style="background-color: #303030; color: white; text-align: center; padding: 5px 10px; 
-    position: fixed; bottom: 0; width: 100%; font-size: 12px; height: 30px; 
+	
+<footer id="dynamic-footer" style="background-color: #303030; color: white; text-align: center; padding: 5px 10px; 
+    position: fixed; bottom: 0; width: 100%; font-size: 12px; height: auto; 
     display: flex; flex-direction: column; justify-content: center; align-items: center; 
     z-index: 9999; transition: opacity 0.3s;">
 
-		<nav>
-			<a href="#impressum"
-				style="color: white; margin: 5px; text-decoration: none; font-size: 12px;">Impressum</a> |
-			<a href="#nachhaltigkeit"
-				style="color: white; margin: 5px; text-decoration: none; font-size: 12px;">Nachhaltigkeit</a> |
-			<a href="#informationssicherheit"
-				style="color: white; margin: 5px; text-decoration: none; font-size: 12px;">Informationssicherheit</a> |
-			<a href="#datenschutz"
-				style="color: white; margin: 5px; text-decoration: none; font-size: 12px;">Datenschutz</a>
-		</nav>
+  <nav>
+    <a href="#impressum" style="color: white; margin: 5px; text-decoration: none; font-size: 12px;">Impressum</a>
+    <a href="#nachhaltigkeit" style="color: white; margin: 5px; text-decoration: none; font-size: 12px;">Nachhaltigkeit</a>
+    <a href="#informationssicherheit" style="color: white; margin: 5px; text-decoration: none; font-size: 12px;">Informationssicherheit</a>
+    <a href="#datenschutz" style="color: white; margin: 5px; text-decoration: none; font-size: 12px;">Datenschutz</a>
+  </nav>
 
-		<span style="color: white; font-size: 10px; margin-top: 2px;">
-			© <span id="year" style="color: white;"></span> itFlies GmbH. Alle Rechte vorbehalten.
-		</span>
+  <span style="color: white; font-size: 10px; margin-top: 2px;">
+    © <span id="year" style="color: white;">2025</span> itFlies GmbH. Alle Rechte vorbehalten.
+  </span>
+</footer>
 
-	</footer>
 
 	<script>
 		let footer = document.getElementById("dynamic-footer");
