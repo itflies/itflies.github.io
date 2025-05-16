@@ -94,6 +94,15 @@ details,
 } */
 
 
+/*ANALYSIS - Example knp 16.05.2025 */
+/*
+*,
+*::before,
+*::after {
+  outline: 1px dotted rgba(0,0,255,0.5) !important;
+}
+*/
+
 /*DEFINITION*/
 body {
   /* background-color: rgb(16, 185, 53) !important; */
