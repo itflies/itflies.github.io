@@ -202,6 +202,13 @@ ul {
   margin: 1rem;
 }
 
+/* Kacheln */
+.tile-middle {
+  width: 20em;
+  /* clear: none; */
+  margin: 1rem;
+}
+
 .tile-big {
   width: 75em;
   /* clear: none; */
@@ -454,7 +461,7 @@ button:hover,
   /* justify-content: space-between; */
   box-sizing: border-box;
   background-color: #ffffff;
-  height: 27em;
+  height: 27em; 
 }
 
 .box.project-management {
