@@ -37,7 +37,7 @@
     display: flex;
     position: absolute;
     right: 2.6rem;
-    top: 0.4rem;
+    top: 0.5rem;
   }
   .content {
     padding-top: 10px; /* Höhe des Navigationsmenüs + etwas Puffer */
@@ -370,5 +370,17 @@
     width: 10%;
     height: auto;
     margin: 0 auto 1.75em auto;
+  }
+  #top .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%; /* Wichtig */
+    box-sizing: border-box; /* Respektiert Padding */
+  }
+
+  .intro-block,
+  .intro-block-project {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
   }
 }

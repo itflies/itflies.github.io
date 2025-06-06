@@ -164,8 +164,8 @@ main {
 }
 
 .head-logo {
-  width: auto;
-  height: auto;
+  display: block;
+  margin: 0 auto;
   max-width: 18rem;
   max-height: 18rem;
 }
@@ -442,7 +442,7 @@ button:hover,
   /* justify-content: space-between; */
   box-sizing: border-box;
   background-color: #ffffff;
-  height: 38rem;
+  height: 39rem;
 }
 
 .box.portal {
@@ -461,7 +461,7 @@ button:hover,
   /* justify-content: space-between; */
   box-sizing: border-box;
   background-color: #ffffff;
-  height: 27em; 
+  height: 27em;
 }
 
 .box.project-management {
@@ -546,7 +546,7 @@ button:hover,
 }
 
 .icon.contact {
-  font-size: 2rem;
+  font-size: 1.8rem;
   position: absolute;
   top: 0rem;
   right: 1rem;
@@ -630,6 +630,22 @@ button:hover,
   text-align: center;
 }
 
+#top header {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#top .container {
+  max-width: 90rem; /* oder was du brauchst */
+  margin: 0 auto; /* <-- das zentriert den Block */
+  text-align: center;
+}
+
+#top .wrapper {
+  display: block;
+}
+
 #top .image {
   width: 30em;
 }
@@ -641,6 +657,31 @@ button:hover,
 #top p {
   font-size: 1.5em;
   line-height: 1.75em;
+}
+
+.intro-block {
+  background-color: #f4f4f4; /* dezentes Grau */
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 100rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* optionaler Schatten */
+  color: #303030;
+  /* font-size: 1rem; */
+  line-height: 2rem;
+}
+
+.intro-block-project {
+  /* background-color: #f4f4f4; /* dezentes Grau */
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 100rem;
+  /*  border-radius: 0.5rem;
+   /*  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* optionaler Schatten */
+  /*  color: #303030;
+  /* font-size: 1rem; */
+  line-height: 2rem;
+  font-weight: 600;
 }
 
 #demo {
