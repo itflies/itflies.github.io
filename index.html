@@ -149,19 +149,23 @@ Copyright 2025 itFlies GmbH -->
 					<br>
 
 					<div class="intro-block">
+						<h3 style="text-align: center; font-size: 2em; font-weight: bold;">Softwareentwicklung & Portallösungen</h3>
 						<p>
-							Die itFlies GmbH entwickelt massgeschneiderte Lösungen zur Optimierung von
-							Geschäftsprozessen –
-							einschliesslich Individualentwicklungen für SAP Business One.
-							Ein Schwerpunkt liegt auf modernen Portallösungen für Kunden, Partner und Mitarbeitende.
+							Die itFlies GmbH entwickelt massgeschneiderte Lösungen zur Optimierung von Geschäftsprozessen – inklusive individueller Erweiterungen für SAP Business One.
+							Unser Fokus liegt auf modernen Portallösungen für Kunden, Partner und Mitarbeitende.
 						</p>
 					</div>
+					<br>
 					<div class="intro-block-project">
+						<h3 style="text-align: center; font-size: 2em; font-weight: bold;">IT-Projektmanagement</h3>
 						<p>
-							Wir begleiten Unternehmen bei der Planung und Umsetzung ihrer IT-Projekte –
-							unabhängig von eingesetzten Systemen oder Herstellern.
+							Wir begleiten Unternehmen bei der Planung und Umsetzung ihrer IT-Projekte – unabhängig von eingesetzten Systemen oder Herstellern.
 						</p>
 					</div>
+
+					<p style="text-align: center; font-size: 1.5em; margin-top: 30px;">
+						💡 Interesse? <a href="#kontakt" style="color: #b4201f; font-weight: bold; text-decoration: none;">Nehmen Sie Kontakt mit uns auf</a> – wir freuen uns auf Ihre Anfrage.
+					</p>
 				</article>
 			</div>
 		</section>
@@ -1181,48 +1185,60 @@ Copyright 2025 itFlies GmbH -->
 	</main>
 
 
-	<footer id="dynamic-footer" style="background-color: #303030; color: white; text-align: center; padding: 5px 10px; 
-    position: fixed; bottom: 0; width: 100%; font-size: 12px; height: auto; 
-    display: flex; flex-direction: column; justify-content: center; align-items: center; 
-    z-index: 9999; transition: opacity 0.3s;">
+	<footer id="dynamic-footer" style="
+  background-color: #303030;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 12px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.3s;
+">
+  <nav>
+    <a href="#impressum" style="color: white; margin: 5px; text-decoration: none;">Impressum</a>
+    <a href="#nachhaltigkeit" style="color: white; margin: 5px; text-decoration: none;">Nachhaltigkeit</a>
+    <a href="#informationssicherheit" style="color: white; margin: 5px; text-decoration: none;">Informationssicherheit</a>
+    <a href="#datenschutz" style="color: white; margin: 5px; text-decoration: none;">Datenschutz</a>
+	<a href="#datenschutz" style="color: white; margin: 5px; text-decoration: none;">AGB</a>
+  </nav>
 
-		<nav>
-			<a href="#impressum"
-				style="color: white; margin: 5px; text-decoration: none; font-size: 12px;">Impressum</a>
-			<a href="#nachhaltigkeit"
-				style="color: white; margin: 5px; text-decoration: none; font-size: 12px;">Nachhaltigkeit</a>
-			<a href="#informationssicherheit"
-				style="color: white; margin: 5px; text-decoration: none; font-size: 12px;">Informationssicherheit</a>
-			<a href="#datenschutz"
-				style="color: white; margin: 5px; text-decoration: none; font-size: 12px;">Datenschutz</a>
-		</nav>
-
-		<span style="color: white; font-size: 10px; margin-top: 2px;">
-			© <span id="year" style="color: white;">2025</span> itFlies GmbH. Alle Rechte vorbehalten.
-		</span>
+		<span id="footer-text" style="color: white; font-size: 10px; margin-top: 2px;"></span>
 	</footer>
 
 
 	<script>
-		let footer = document.getElementById("dynamic-footer");
-		let scrollTimeout;
+  document.addEventListener("DOMContentLoaded", function () {
+    const footer = document.getElementById("dynamic-footer");
+    const footerText = document.getElementById("footer-text");
+    let scrollTimeout;
 
-		// Automatisches Jahr setzen & sicherstellen, dass es weiss bleibt
-		let yearElement = document.getElementById("year");
-		yearElement.textContent = new Date().getFullYear();
-		yearElement.style.color = "white"; // Falls CSS überschreibt, hier sicherstellen
+    // Dynamischen Footer-Text setzen
+    if (footerText) {
+      const year = new Date().getFullYear();
+      footerText.textContent = `© ${year} itFlies GmbH. Alle Rechte vorbehalten.`;
+    }
 
-		// Footer Ein-/Ausblenden beim Scrollen
-		window.addEventListener("scroll", function () {
-			footer.style.opacity = "0"; // Footer ausblenden
-			clearTimeout(scrollTimeout);
+    // Footer beim Scrollen ausblenden, nach 5s wieder einblenden
+    if (footer) {
+      window.addEventListener("scroll", function () {
+        footer.style.opacity = "0";
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          footer.style.opacity = "1";
+        }, 5000);
+      });
+    }
+  });
+</script>
 
-			// Footer nach 5 Sekunden ohne Scrollen wieder einblenden
-			scrollTimeout = setTimeout(() => {
-				footer.style.opacity = "1";
-			}, 5000);
-		});
-	</script>
 	<script src="assets/js/navigation.menu.js"></script>
 
 </body>
