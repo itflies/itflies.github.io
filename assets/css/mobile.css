@@ -378,9 +378,44 @@
     box-sizing: border-box; /* Respektiert Padding */
   }
 
-  .intro-block,
+
+  #intro .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%; /* Wichtig */
+    box-sizing: border-box; /* Respektiert Padding */
+  }
+
+  .intro-block {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
   .intro-block-project {
     font-size: 0.8rem;
     line-height: 1.5rem;
   }
+
+  .intro-titel {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px; /* optional */
+}
+
+#intro p {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+}
+
+  .kontakt-hinweis {
+    text-align: center;
+    font-size: 1.0em; /* kleiner als vorher 1.8em */
+    margin-top: 30px;
+    line-height: 1.0;
+}
+
+.kontakt-hinweis .icon {
+    font-size: 1.2em;
+}
 }

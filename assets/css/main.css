@@ -659,6 +659,29 @@ button:hover,
   line-height: 1.75em;
 }
 
+#intro .container {
+  max-width: 90rem; /* oder was du brauchst */
+  margin: 0 auto; /* <-- das zentriert den Block */
+  text-align: center;
+}
+
+#intro .wrapper {
+  display: block;
+}
+
+#intro .image {
+  width: 30em;
+}
+
+#intro h1 {
+  margin-top: 0.35em;
+}
+
+#intro p {
+  font-size: 1.5em;
+  line-height: 1.75em;
+}
+
 .intro-block {
   background-color: #f4f4f4; /* dezentes  Grau */
   padding: 2rem;
@@ -683,6 +706,33 @@ button:hover,
   /* font-size: 1rem; */
   line-height: 2rem;
   font-size: 1rem;
+}
+
+.intro-titel {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px; /* optional */
+}
+
+.titel-link {
+    color: #b4201f; /* Beispiel: dein Firmenrot */
+    text-decoration: none;
+}
+
+.titel-link:hover {
+    color: #8f3a35; /* dunklere Variante beim Hover */
+    text-decoration: underline;
+}
+
+.kontakt-hinweis {
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+
+.kontakt-hinweis .icon {
+    font-size: 1.2em;
 }
 
 #demo {
