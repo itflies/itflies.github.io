@@ -683,7 +683,7 @@ button:hover,
 }
 
 .intro-block {
-  background-color: #f4f4f4; /* dezentes  Grau */
+  background-color: #fdf3f4; /* dezentes  Grau */
   padding: 2rem;
   margin: 2rem auto;
   max-width: 100rem;
@@ -696,7 +696,7 @@ button:hover,
 }
 
 .intro-block-project {
-  background-color: #f4f4f4; /* dezentes Grau */
+  background-color: #fdf3f4; /* dezentes Grau */
   padding: 2rem;
   margin: 2rem auto;
   max-width: 100rem;
@@ -709,6 +709,7 @@ button:hover,
 }
 
 .intro-titel {
+    color: #b4201f;
     text-align: center;
     font-size: 2em;
     font-weight: bold;
