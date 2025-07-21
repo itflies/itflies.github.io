@@ -442,7 +442,7 @@ button:hover,
   /* justify-content: space-between; */
   box-sizing: border-box;
   background-color: #ffffff;
-  height: 39rem;
+  height: 50rem;
 }
 
 .box.portal {
@@ -709,31 +709,31 @@ button:hover,
 }
 
 .intro-titel {
-    color: #b4201f;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 10px; /* optional */
+  color: #b4201f;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px; /* optional */
 }
 
 .titel-link {
-    color: #b4201f; /* Beispiel: dein Firmenrot */
-    text-decoration: none;
+  color: #b4201f; /* Beispiel: dein Firmenrot */
+  text-decoration: none;
 }
 
 .titel-link:hover {
-    color: #8f3a35; /* dunklere Variante beim Hover */
-    text-decoration: underline;
+  color: #8f3a35; /* dunklere Variante beim Hover */
+  text-decoration: underline;
 }
 
 .kontakt-hinweis {
-    text-align: center;
-    font-size: 1.8em;
-    margin-top: 30px;
+  text-align: center;
+  font-size: 1.8em;
+  margin-top: 30px;
 }
 
 .kontakt-hinweis .icon {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 #demo {
