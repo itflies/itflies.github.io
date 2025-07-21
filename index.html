@@ -5,64 +5,66 @@ Copyright 2025 itFlies GmbH -->
 <html lang="de">
 
 <head>
-    <!-- Content Security Policy (CSP), X-XSS-Protection Header um Cross-Site Scripting (XSS) zu verhindern -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.youtube.com https://www.youtube-nocookie.com https://maps.googleapis.com; style-src 'self' 'unsafe-inline'; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com/maps;">
+	<!-- Content Security Policy (CSP), X-XSS-Protection Header um Cross-Site Scripting (XSS) zu verhindern -->
+	<meta http-equiv="Content-Security-Policy"
+		content="default-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.youtube.com https://www.youtube-nocookie.com https://maps.googleapis.com; style-src 'self' 'unsafe-inline'; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com/maps;">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <base href="https://www.itflies.ch/"> -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <base href="https://www.itflies.ch/"> -->
 
-    <title>itFlies GmbH – Softwareentwicklung & IT-Projektmanagement | itFlies GmbH</title>
-    <meta name="keywords"
-          content="itFlies GmbH, Digitalisierungsberatung, Cloud-Lösungen, Mobile Appas, Portallösungen, Partnerportal, Businessportal, Kundenportal, Zeiterfassungsportal, Softwareentwicklung, IT-Beratung, Projektmanagement, Projektleitung, ERP, Hermes, SAP Business One, Schweiz, Digitalisierung, Dokumentation, AsciiDoc, Antora, Asciidoctor, CSS, HTML, JavaScript, TypeScript, C#, .NET, REST-API, Nachhaltigkeit, Datenschutz, Informationssicherheit">
-    <meta name="description"
-          content="Effiziente Softwareentwicklung und professionelles Projektmanagement für Unternehmen. Wir kombinieren klassische und agile Methoden für massgeschneiderte Lösungen.">
+	<title>itFlies GmbH – Softwareentwicklung & IT-Projektmanagement | itFlies GmbH</title>
+	<meta name="keywords"
+		content="itFlies GmbH, Digitalisierungsberatung, Cloud-Lösungen, Mobile Appas, Portallösungen, Partnerportal, Businessportal, Kundenportal, Zeiterfassungsportal, Softwareentwicklung, IT-Beratung, Projektmanagement, Projektleitung, ERP, Hermes, SAP Business One, Schweiz, Digitalisierung, Dokumentation, AsciiDoc, Antora, Asciidoctor, CSS, HTML, JavaScript, TypeScript, C#, .NET, REST-API, Nachhaltigkeit, Datenschutz, Informationssicherheit">
+	<meta name="description"
+		content="Effiziente Softwareentwicklung und professionelles Projektmanagement für Unternehmen. Wir kombinieren klassische und agile Methoden für massgeschneiderte Lösungen.">
 
-    <!-- START Open Graph-Tags für Social Media Integration -->
-    <meta property="og:title" content="Softwareentwicklung & IT-Projektmanagement | itFlies GmbH">
-    <meta property="og:description"
-          content="Softwareentwicklung & IT-Projektmanagement – Digitalisierung mit Portalen. Die itFlies GmbH entwickelt massgeschneiderte Lösungen zur Optimierung von Geschäftsprozessen – einschliesslich Individualentwicklungen für SAP Business One. Ein Schwerpunkt liegt auf modernen Portallösungen für Kunden, Partner und Mitarbeitende. Wir begleiten Unternehmen bei der Planung und Umsetzung ihrer IT-Projekte – unabhängig von eingesetzten Systemen oder Herstellern.">
-    <meta property="og:image" content="https://itflies.ch/assets/images/home.jpg">
-    <meta property="og:url" content="https://itflies.ch">
-    <!-- END Open Graph-Tags für Social Media Integration -->
+	<!-- START Open Graph-Tags für Social Media Integration -->
+	<meta property="og:title" content="Softwareentwicklung & IT-Projektmanagement | itFlies GmbH">
+	<meta property="og:description"
+		content="Softwareentwicklung & IT-Projektmanagement – Digitalisierung mit Portalen. Die itFlies GmbH entwickelt massgeschneiderte Lösungen zur Optimierung von Geschäftsprozessen – einschliesslich Individualentwicklungen für SAP Business One. Ein Schwerpunkt liegt auf modernen Portallösungen für Kunden, Partner und Mitarbeitende. Wir begleiten Unternehmen bei der Planung und Umsetzung ihrer IT-Projekte – unabhängig von eingesetzten Systemen oder Herstellern.">
+	<meta property="og:image" content="https://itflies.ch/assets/images/home.jpg">
+	<meta property="og:url" content="https://itflies.ch">
+	<!-- END Open Graph-Tags für Social Media Integration -->
 
-    <!-- Inline-Styles (jetzt erlaubt durch CSP) -->
-    <style>
-        @media (max-width: 600px) {
-            footer nav {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            footer nav a {
-                display: block;
-                margin: 3px 0;
-            }
-        }
-    </style>
+	<!-- Inline-Styles (jetzt erlaubt durch CSP) -->
+	<style>
+		@media (max-width: 600px) {
+			footer nav {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
 
-    <!-- CSS-Dateien -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/mobile.css">
-    <link rel="stylesheet" href="assets/css/opensans.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
+			footer nav a {
+				display: block;
+				margin: 3px 0;
+			}
+		}
+	</style>
 
-    <!-- Favicon und Manifest -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="https://www.itflies.ch/" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="manifest" href="manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+	<!-- CSS-Dateien -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/mobile.css">
+	<link rel="stylesheet" href="assets/css/opensans.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.css">
 
-    <!-- JS -->
-    <script defer src="assets/js/fontawesome.js"></script>
+	<!-- Favicon und Manifest -->
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="canonical" href="https://www.itflies.ch/" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="manifest" href="manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
-    <!-- JSON-LD Schema für Organisation -->
-    <script type="application/ld+json">
+	<!-- JS -->
+	<script defer src="assets/js/fontawesome.js"></script>
+
+	<!-- JSON-LD Schema für Organisation -->
+	<script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Organization",
@@ -75,16 +77,16 @@ Copyright 2025 itFlies GmbH -->
         }
     </script>
 
-    <!-- JavaScript für E-Mail-Auflösung -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var email = "info" + "@" + "itflies.ch";
-            var emailLinks = document.querySelectorAll(".email-link");
-            emailLinks.forEach(function (link) {
-                link.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
-            });
-        });
-    </script>
+	<!-- JavaScript für E-Mail-Auflösung -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var email = "info" + "@" + "itflies.ch";
+			var emailLinks = document.querySelectorAll(".email-link");
+			emailLinks.forEach(function (link) {
+				link.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
+			});
+		});
+	</script>
 </head>
 
 
@@ -149,29 +151,36 @@ Copyright 2025 itFlies GmbH -->
 		<section id="intro">
 			<div class="wrapper style1 first">
 				<article class="container">
-					<a href="#portal" class="intro-block-project" style="display: block; text-decoration: none; color: inherit;">
-  						<h3 class="intro-titel">Moderne Portallösungen für Ihr Unternehmen</h3>
-  						<p>
-    						Wir entwickeln webbasierte Portallösungen für die nahtlose Interaktion mit Kunden, Partnern und Mitarbeitenden – sowohl für Desktop als auch mobil. Unsere Lösungen sind offlinefähig und integrieren sich flexibel in bestehende Systeme wie SAP Business One.
+					<a href="#portal" class="intro-block-project"
+						style="display: block; text-decoration: none; color: inherit;">
+						<h3 class="intro-titel">Moderne Portallösungen für Ihr Unternehmen</h3>
+						<p>
+							Wir entwickeln webbasierte Portallösungen für die nahtlose Interaktion mit Kunden, Partnern
+							und Mitarbeitenden – sowohl für Desktop als auch mobil. Unsere Lösungen sind offlinefähig
+							und integrieren sich flexibel in bestehende Systeme wie SAP Business One.
 							So digitalisieren Sie Ihre Geschäftsabläufe einfach, effizient und zukunftssicher.
-  						</p>
+						</p>
 					</a>
 					<br>
-					<a href="#project-management" class="intro-block-project" style="display: block; text-decoration: none; color: inherit;">
-  						<h3 class="intro-titel">IT-Projekte erfolgreich steuern</h3>
-  						<p>
-   							Wir begleiten Unternehmen bei der Planung und Umsetzung ihrer IT-Projekte – unabhängig von Systemen oder Herstellern.
-    						Mit klarer Struktur, agiler Denkweise und viel Erfahrung sorgen wir für reibungslose Abläufe und nachhaltigen Projekterfolg.
-  						</p>
+					<a href="#project-management" class="intro-block-project"
+						style="display: block; text-decoration: none; color: inherit;">
+						<h3 class="intro-titel">IT-Projekte erfolgreich steuern</h3>
+						<p>
+							Wir begleiten Unternehmen bei der Planung und Umsetzung ihrer IT-Projekte – unabhängig von
+							Systemen oder Herstellern.
+							Mit klarer Struktur, agiler Denkweise und viel Erfahrung sorgen wir für reibungslose Abläufe
+							und nachhaltigen Projekterfolg.
+						</p>
 					</a>
 
-                    <!-- <p style="text-align: center; font-size: 1.8em; margin-top: 30px;">
+					<!-- <p style="text-align: center; font-size: 1.8em; margin-top: 30px;">
                         <i class="icon featured fa-solid fa-envelope-open-text" style="font-size: 1.2em;"></i>
                         Interesse? <a href="#contact" class="link">Nehmen Sie Kontakt mit uns auf</a> – wir freuen uns auf Ihre Anfrage.
                     </p> -->
 					<p class="kontakt-hinweis">
-   						 <i class="icon featured fa-solid fa-envelope-open-text"></i>
-						 Interesse? <a href="#contact" class="link">Nehmen Sie Kontakt mit uns auf</a> – wir freuen uns auf Ihre Anfrage.
+						<i class="icon featured fa-solid fa-envelope-open-text"></i>
+						Interesse? <a href="#contact" class="link">Nehmen Sie Kontakt mit uns auf</a> – wir freuen uns
+						auf Ihre Anfrage.
 					</p>
 				</article>
 			</div>
@@ -255,6 +264,10 @@ Copyright 2025 itFlies GmbH -->
 							Unsere Portale vernetzen Systeme, Anwendungen und Nutzer auf einer zentralen, intuitiven
 							Plattform – flexibel nutzbar auf Desktop und mobil. Dank unseres skalierbaren Frameworks
 							passen sie sich individuell an, optimieren Abläufe und senken Kosten.
+							<br>
+							Unsere Portallösung ist modular aufgebaut. Sie entscheiden individuell, welche Module und
+							Umsysteme Sie für Ihr Unternehmen benötigen und stimmen den Leistungsumfang der Software auf
+							Ihre betrieblichen Anforderungen ab.
 							<br>
 							Als <a href="https://de.wikipedia.org/wiki/Progressive_Web_App" class="link" target="_blank"
 								rel="noopener noreferrer">Progressive Web App (PWA)</a> bieten sie plattformunabhängigen
@@ -1036,7 +1049,12 @@ Copyright 2025 itFlies GmbH -->
 						</p>
 						<h4>Technische und organisatorische Massnahmen</h4>
 						<p>
-							Wir setzen bewährte Sicherheitsmassnahmen ein, um die Vertraulichkeit, Integrität und Verfügbarkeit unserer Systeme und Daten zu gewährleisten. Dazu gehören unter anderem der Einsatz einer Web Application Firewall (WAF) und eines DDoS-Schutzes durch unseren Partner Cloudflare, Zugriffskontrollen nach dem Least Privilege-Prinzip, eine durchgehende Verschlüsselung von Datenübertragungen (SSL/TLS) sowie regelmässige Sicherheitsupdates unserer Systeme
+							Wir setzen bewährte Sicherheitsmassnahmen ein, um die Vertraulichkeit, Integrität und
+							Verfügbarkeit unserer Systeme und Daten zu gewährleisten. Dazu gehören unter anderem der
+							Einsatz einer Web Application Firewall (WAF) und eines DDoS-Schutzes durch unseren Partner
+							Cloudflare, Zugriffskontrollen nach dem Least Privilege-Prinzip, eine durchgehende
+							Verschlüsselung von Datenübertragungen (SSL/TLS) sowie regelmässige Sicherheitsupdates
+							unserer Systeme
 						</p>
 						<h4>Entwicklung und Betrieb unserer Lösungen</h4>
 						<p>
@@ -1118,14 +1136,21 @@ Copyright 2025 itFlies GmbH -->
 						</p>
 						<h4>Einsatz von Cloudflare</h4>
 						<p>
-							Wir nutzen die Dienste der Cloudflare, Inc. (101 Townsend St, San Francisco, CA 94107, USA), um die Sicherheit und die Auslieferungsgeschwindigkeit unserer Website zu erhöhen. Cloudflare fungiert als Content Delivery Network (CDN) und Web Application Firewall (WAF) und agiert dabei als Reverse Proxy zwischen unseren Besuchern und unserem Server.
-							
-							Dabei können die IP-Adresse und weitere technische Daten der Besucher erfasst und zur Abwehr von Angriffen und zur Optimierung der Ladezeiten verarbeitet werden. Die Rechtsgrundlage für den Einsatz von Cloudflare ist unser berechtigtes Interesse an einem sicheren und performanten Betrieb unserer Website.
-							
-							Cloudflare ist Teilnehmer des Swiss-U.S. Data Privacy Frameworks, wodurch ein angemessenes Datenschutzniveau für die Übermittlung von Personendaten in die USA sichergestellt wird. Weitere Informationen finden Sie in der <a
-								href="https://www.cloudflare.com/privacypolicy/"
+							Wir nutzen die Dienste der Cloudflare, Inc. (101 Townsend St, San Francisco, CA 94107, USA),
+							um die Sicherheit und die Auslieferungsgeschwindigkeit unserer Website zu erhöhen.
+							Cloudflare fungiert als Content Delivery Network (CDN) und Web Application Firewall (WAF)
+							und agiert dabei als Reverse Proxy zwischen unseren Besuchern und unserem Server.
+
+							Dabei können die IP-Adresse und weitere technische Daten der Besucher erfasst und zur Abwehr
+							von Angriffen und zur Optimierung der Ladezeiten verarbeitet werden. Die Rechtsgrundlage für
+							den Einsatz von Cloudflare ist unser berechtigtes Interesse an einem sicheren und
+							performanten Betrieb unserer Website.
+
+							Cloudflare ist Teilnehmer des Swiss-U.S. Data Privacy Frameworks, wodurch ein angemessenes
+							Datenschutzniveau für die Übermittlung von Personendaten in die USA sichergestellt wird.
+							Weitere Informationen finden Sie in der <a href="https://www.cloudflare.com/privacypolicy/"
 								class="link" target="_blank">Datenschutzerklärung von Cloudflare</a>.
-						</p>						
+						</p>
 						<h4>Nutzung von Font Awesome und Google Fonts</h4>
 						<p>
 							Unsere Website verwendet Schriftarten von Fonticons, Inc. (Font Awesome) sowie Google Fonts
@@ -1213,14 +1238,16 @@ Copyright 2025 itFlies GmbH -->
   z-index: 9999;
   transition: opacity 0.3s;
 ">
-  <nav>
-    <a href="#impressum" style="color: white; margin: 5px; text-decoration: none;">Impressum</a>
-    <a href="#nachhaltigkeit" style="color: white; margin: 5px; text-decoration: none;">Nachhaltigkeit</a>
-    <a href="#informationssicherheit" style="color: white; margin: 5px; text-decoration: none;">Informationssicherheit</a>
-    <a href="#datenschutz" style="color: white; margin: 5px; text-decoration: none;">Datenschutz</a>
-	<a href="assets/pdf/itf_agb_de.pdf" style="color: white; margin: 5px; text-decoration: none;" target="_blank">AGB</a>
+		<nav>
+			<a href="#impressum" style="color: white; margin: 5px; text-decoration: none;">Impressum</a>
+			<a href="#nachhaltigkeit" style="color: white; margin: 5px; text-decoration: none;">Nachhaltigkeit</a>
+			<a href="#informationssicherheit"
+				style="color: white; margin: 5px; text-decoration: none;">Informationssicherheit</a>
+			<a href="#datenschutz" style="color: white; margin: 5px; text-decoration: none;">Datenschutz</a>
+			<a href="assets/pdf/itf_agb_de.pdf" style="color: white; margin: 5px; text-decoration: none;"
+				target="_blank">AGB</a>
 
-  </nav>
+		</nav>
 
 		<span id="footer-text" style="color: white; font-size: 10px; margin-top: 2px;"></span>
 	</footer>
