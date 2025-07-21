@@ -11,7 +11,8 @@
   src: url("../fonts/open-sans-v40-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ 
 } */
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) { */
+@media (max-width: 1124px) {
   /* Reset */
 
   body {
