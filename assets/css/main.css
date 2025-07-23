@@ -191,7 +191,7 @@ ul {
 }
 
 .row > * {
-  float: left;
+  float: center;
   box-sizing: border-box;
 }
 
