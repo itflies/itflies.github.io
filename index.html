@@ -6,9 +6,6 @@ Copyright 2025 itFlies GmbH -->
 
 <head>
 	<!-- Content Security Policy (CSP), X-XSS-Protection Header um Cross-Site Scripting (XSS) zu verhindern -->
-	<meta http-equiv="Content-Security-Policy"
-		content="default-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.youtube.com https://www.youtube-nocookie.com https://maps.googleapis.com; style-src 'self' 'unsafe-inline'; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com/maps;">
-
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <base href="https://www.itflies.ch/"> -->
@@ -79,15 +76,7 @@ Copyright 2025 itFlies GmbH -->
     </script>
 
 	<!-- JavaScript für E-Mail-Auflösung -->
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			var email = "info" + "@" + "itflies.ch";
-			var emailLinks = document.querySelectorAll(".email-link");
-			emailLinks.forEach(function (link) {
-				link.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
-			});
-		});
-	</script>
+	
 </head>
 
 
@@ -153,16 +142,7 @@ Copyright 2025 itFlies GmbH -->
 		<section id="intro">
 			<div class="wrapper style1 first">
 				<article class="container">
-					<a href="#project-management" class="intro-block-project"
-						style="display: block; text-decoration: none; color: inherit;">
-						<h3 class="intro-titel">Ihr IT-Projekt. Im Zeitplan. Im Budget</h3>
-						<p>
-							Wir führen Ihr IT-Projekt sicher ins Ziel. Als Ihr unabhängiger Partner sorgen wir dafür,
-							dass typische Fallstricke vermieden, Budgets eingehalten und Termine erreicht werden.
-							Mit pragmatischer Planung und agiler Steuerung garantieren wir für einen reibungslosen
-							Ablauf und ein Ergebnis, das Ihren Geschäftserfolg nachhaltig sichert.
-						</p>
-					</a>
+					<h2>Willkommen bei itFlies GmbH</h2>
 					<br>
 					<a href="#portal" class="intro-block-project"
 						style="display: block; text-decoration: none; color: inherit;">
@@ -174,6 +154,17 @@ Copyright 2025 itFlies GmbH -->
 							One – für automatisierte Abläufe und zukunftssichere Prozesse.
 						</p>
 
+					</a>
+					<br>
+					<a href="#project-management" class="intro-block-project"
+						style="display: block; text-decoration: none; color: inherit;">
+						<h3 class="intro-titel">Ihr IT-Projekt. Im Zeitplan. Im Budget</h3>
+						<p>
+							Wir führen Ihr IT-Projekt sicher ins Ziel. Als Ihr unabhängiger Partner sorgen wir dafür,
+							dass typische Fallstricke vermieden, Budgets eingehalten und Termine erreicht werden.
+							Mit pragmatischer Planung und agiler Steuerung garantieren wir für einen reibungslosen
+							Ablauf und ein Ergebnis, das Ihren Geschäftserfolg nachhaltig sichert.
+						</p>
 					</a>
 
 					<!-- <p style="text-align: center; font-size: 1.8em; margin-top: 30px;">
@@ -416,11 +407,8 @@ Copyright 2025 itFlies GmbH -->
 										</li>
 										<li>
 											<h6>Mehrsprachigkeit</h6>
-											<p>
-												Benutzeroberflächen und Inhalte mehrsprachig verfügbar – inklusive
-												kundenspezifischer Übersetzungen.<br>
-												Standardsprachen:
-											</p>
+											<p>Benutzeroberflächen und Inhalte mehrsprachig verfügbar – inklusive kundenspezifischer Übersetzungen.<br>
+											Bereits unterstützte Standardsprachen:</p>
 											<div class="language-list">
 												<span class="lang-badge">DE</span>Deutsch
 												<span class="lang-badge">FR</span>Français
@@ -429,7 +417,7 @@ Copyright 2025 itFlies GmbH -->
 												<span class="lang-badge">ES</span>Español
 												<span class="lang-badge">PL</span>Polski
 											</div>
-											</p>
+											<p>Erweiterung um zusätzliche Sprachen ist jederzeit möglich.</p>
 										</li>
 										<li>
 											<h6>Sicherheit & Datenschutz</h6>
@@ -495,25 +483,14 @@ Copyright 2025 itFlies GmbH -->
 										Verfügung.</em>
 								</p>
 
-								<div class="youtube-placeholder" onclick="loadYouTube()">
+								<div class="youtube-placeholder" id="yt-placeholder">
 									<img class="youtube-thumbnail"
 										src="assets/images/youtube/video-thumbnail-cad-angebots-kalkulator.jpg"
 										alt="Video Vorschau">
 									<button class="play-button">▶</button>
 								</div>
 
-								<script>
-									function loadYouTube() {
-										var placeholder = document.querySelector(".youtube-placeholder");
-										var iframe = document.createElement("iframe");
-										iframe.className = "youtube-iframe";
-										iframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/iyF_B9d9l1Q?rel=0&modestbranding=1&autoplay=1");
-										iframe.setAttribute("title", "CAD-Angebots-Kalkulator");
-										iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
-										iframe.setAttribute("allowfullscreen", "");
-										placeholder.parentNode.replaceChild(iframe, placeholder);
-									}
-								</script>
+								
 							</section>
 						</div>
 					</div>
@@ -913,16 +890,13 @@ Copyright 2025 itFlies GmbH -->
 							<div class="tile">
 								<section class="box partner">
 									<span class="image">
-										<a href="https://www.mtf.ch/" target="_blank">
+										<a href="https://www.b1-consulting.ch/" target="_blank">
 											<img src="assets/images/partner/logo_mtf.png" alt="Logo MTF"
-												title="MTF Solutions AG" />
+												title="MTF B1 Consulting AG" />
 											<br>
 										</a>
 									</span>
-									<p> MTF ist eines der grössten IT-Gesamtlösungsanbieter für KMU und
-										Enterprise-Kunden in
-										der
-										Schweiz und im Fürstentum Liechtenstein.</p>
+									<p> Die MTF B1 Consulting AG ist spezialisierter Partner für Beratung, Implementierung und Betreuung von SAP Business One-Lösungen.</p>
 								</section>
 							</div>
 						</div>
@@ -1004,7 +978,7 @@ Copyright 2025 itFlies GmbH -->
 
 						<p class="contact-p">
 							<i class="fa-solid fa-map-marker-alt map-marker"
-								onclick="window.open('https://www.google.com/maps/search/?api=1&query=Hueb+123,+5465+Mellikon,+Schweiz', '_blank')">
+								id="map-marker">
 							</i> Hueb 123, 5465 Mellikon, Schweiz
 							<br>
 							<!-- <i class="fa-solid fa-phone"></i> +41 44 123 45 67 -->
@@ -1332,6 +1306,7 @@ Copyright 2025 itFlies GmbH -->
 	<script src="assets/js/footer.js"></script>
 
 	<script src="assets/js/navigation.menu.js"></script>
+	<script defer src="assets/js/main.js"></script>
 
 </body>
 
