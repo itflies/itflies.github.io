@@ -29,8 +29,10 @@
   }
 
   .head-logo {
-    width: 10em;
-    height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 25rem;
+  max-height:25rem;
   }
 
   .contact-icon {

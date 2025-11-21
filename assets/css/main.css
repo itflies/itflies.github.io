@@ -166,8 +166,8 @@ main {
 .head-logo {
   display: block;
   margin: 0 auto;
-  max-width: 18rem;
-  max-height: 18rem;
+  max-width: 70rem;
+  max-height: 70rem;
 }
 
 header {
@@ -227,7 +227,7 @@ blockquote {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #303030;
   font-weight: bold;
   margin-top: 20px;
