@@ -301,7 +301,7 @@ p {
 }
 
 .custom-p {
-  font-size: 1.1rem;
+  font-size: 1.7rem;
   color: #303030;
   line-height: 2rem;
   font-weight: 500; /* Oder 600 für etwas mehr Gewicht */
@@ -684,7 +684,6 @@ button:hover,
 }
 
 #top p {
-  font-size: 1.5em;
   line-height: 1.75em;
 }
 
@@ -923,4 +922,24 @@ button:hover,
 #footer-dynamic .footer-link:hover,
 #footer-dynamic .footer-link:focus {
   text-decoration: underline;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 8px;             /* Breite des Streifens – anpassbar */
+    background-color: #303030; /* dein dunkles Grau */
+    z-index: 999;           /* vor allem Content, aber unter Menü/Footer wenn nötig */
+    pointer-events: none;   /* verhindert Klickprobleme */
+}
+
+body::before {
+    left: 0; /* linker Streifen */
+}
+
+body::after {
+    right: 0; /* rechter Streifen */
 }
