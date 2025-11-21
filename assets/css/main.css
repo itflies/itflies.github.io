@@ -315,6 +315,14 @@ p {
   text-shadow: none;
 }
 
+
+.titel-pi {
+  font-size: 3.5rem !important;
+  line-height: 4.1rem;
+  font-weight: 800;
+  display: block;
+}
+
 .titel-p {
   font-size: 4.5rem !important;
   line-height: 4.1rem;

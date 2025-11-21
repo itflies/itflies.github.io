@@ -129,6 +129,13 @@
     /* line-height: 1.8em; */
   }
 
+  .titel-pi {
+    font-size: 2rem !important;
+    line-height: 2.9rem;
+    font-weight: bold;
+    display: block;
+  }
+
   .titel-p {
     font-size: 2.8rem !important;
     line-height: 2.9rem;
