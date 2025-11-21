@@ -78,11 +78,10 @@
   }
 
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #303030;
-    font-weight: bold;
+    font-weight: 600;
     white-space: normal; /* Erlaubt Umbrüche */
-    word-wrap: break-word; /* Falls nötig, an Wörtern umbrechen */
     text-align: center; /* Optional für bessere Optik */
   }
 
@@ -255,7 +254,7 @@
   }
 
   .wrapper.first {
-    padding-top: 5em;
+    padding-top: 2em;
   }
 
   /* Button */
