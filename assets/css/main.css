@@ -319,14 +319,14 @@ p {
 .titel-pi {
   font-size: 3.5rem !important;
   line-height: 4.1rem;
-  font-weight: 700;
+  font-weight: 600;
   display: block;
 }
 
 .titel-p {
   font-size: 4.5rem !important;
   line-height: 4.1rem;
-  font-weight: 1400;
+  font-weight: 900;
   display: block;
 }
 
