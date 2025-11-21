@@ -883,7 +883,7 @@ button:hover,
   text-align: center;
   padding: 2px 10px;
   font-size: 10px;
-  border-top: 1px solid #505050;
+  border-top: none;
   pointer-events: auto;
 }
 
