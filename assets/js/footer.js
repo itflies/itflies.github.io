@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Footer z.B. nach 4 Sekunden das erste Mal einblenden
   initialTimeout = setTimeout(() => {
     footer.style.opacity = "1";
-  }, 4000);
+  }, 6000);
 
   // Footer beim Scrollen ausblenden, nach 5s wieder einblenden
   window.addEventListener("scroll", function () {
