@@ -871,4 +871,56 @@ button:hover,
 
 #dynamic-footer {
   transition: opacity 0.5s ease;
+  width: 100%;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+
+#footer-static {
+  padding: 8px 0;
+  background-color: #303030;
+  color: #ffffff;
+  text-align: center;
+  padding: 2px 10px;
+  font-size: 10px;
+  border-top: 1px solid #505050;
+  pointer-events: auto;
+}
+
+#footer-static #footer-text {
+  color: #ffffff !important;
+}
+
+#footer-dynamic {
+  transition: opacity 0.5s ease;
+  background-color: #303030;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 12px;
+  transition: opacity 0.3s;
+  pointer-events: auto;
+}
+/* Navigation im Footer */
+#footer-dynamic .footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Abstand zwischen Links */
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+#footer-dynamic .footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* Hover-Zustand */
+#footer-dynamic .footer-link:hover,
+#footer-dynamic .footer-link:focus {
+  text-decoration: underline;
 }

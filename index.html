@@ -1266,39 +1266,34 @@ Copyright 2025 itFlies GmbH -->
 	</main>
 
 
-	<footer id="dynamic-footer" style="
-  background-color: #303030;
-  color: white;
-  text-align: center;
-  padding: 5px 10px;
+    <footer id="site-footer" style="
   position: fixed;
   bottom: 0;
   width: 100%;
-  font-size: 12px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   z-index: 9999;
-  transition: opacity 0.3s;
+  pointer-events: none; /* Events nur auf den inneren Leisten */
 ">
-		<nav>
-			<a href="#impressum" style="color: white; margin: 5px; text-decoration: none;">Impressum</a>
-			<a href="#nachhaltigkeit" style="color: white; margin: 5px; text-decoration: none;">Nachhaltigkeit</a>
-			<a href="#informationssicherheit"
-				style="color: white; margin: 5px; text-decoration: none;">Informationssicherheit</a>
-			<a href="#datenschutz" style="color: white; margin: 5px; text-decoration: none;">Datenschutz</a>
-			<a href="assets/pdf/itf_agb_de.pdf" style="color: white; margin: 5px; text-decoration: none;"
-				target="_blank">AGB</a>
+        <!-- Dynamische Leiste: wird per JS ein-/ausgeblendet -->
+        <div id="footer-dynamic">
+            <nav class="footer-nav">
+                <a href="assets/pdf/itf_agb_de.pdf" class="footer-link" target="_blank">AGB</a>
+                <a href="#impressum" class="footer-link">Impressum</a>
+                <a href="#informationssicherheit" class="footer-link">Informationssicherheit</a>
+                <a href="#datenschutz" class="footer-link">Datenschutz</a>
+                <a href="#nachhaltigkeit" class="footer-link">Nachhaltigkeit</a>
+            </nav>
+        </div>
 
-		</nav>
+        <!-- Schmale Copyright-Leiste ganz unten -->
+        <div id="footer-static">
+            <span id="footer-text"></span>
+        </div>
+    </footer>
 
-		<span id="footer-text" style="color: white; font-size: 10px; margin-top: 2px;"></span>
-	</footer>
 
 
-	<script src="assets/js/footer.js"></script>
+
+    <script src="assets/js/footer.js"></script>
 
 	<script src="assets/js/navigation.menu.js"></script>
 	<script defer src="assets/js/main.js"></script>
