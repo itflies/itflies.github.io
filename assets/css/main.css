@@ -166,17 +166,11 @@ main {
 .head-logo {
   display: block;
   margin: 0 auto;
-  max-width: 70rem;
-  max-height: 70rem;
-}
-
-.head-logo-img {
-    max-width: 250px; /* Die maximale Grösse auf Desktop */
-    height: auto;
+  max-width: 18rem;
+  max-height: 18rem;
 }
 
 header {
-  padding: 1em 1em 1em 1em;
   text-align: center;
   max-width: 100rem;
 }
@@ -625,8 +619,9 @@ button:hover,
 
 
 .home img {
-  max-height: 35px;
-  height: auto;
+  height: 2.3em;
+  position: absolute;
+  left: 0.5em;
 }
 
 /* Hamburger-Button Menu für Mobile */
@@ -962,7 +957,10 @@ body::after {
 
 /* Hero */
 .hero {
-  padding: 4rem 1rem 3.5rem;
+    margin-top: 0;
+    padding-top: 0;
+    /* optional: Entfernt auch den unteren Abstand, falls vorhanden */
+    margin-bottom: 0;
   text-align: left;
 }
 
@@ -1041,6 +1039,7 @@ body::after {
 
 .hero-subtitle {
   font-size: 1.3rem;
+  letter-spacing: 0.02em;
   color: #666;
   margin: 0 0 2.5rem;
 }
@@ -1052,13 +1051,13 @@ body::after {
   justify-content: center;
   gap: 2rem;
   margin: 1rem auto 1rem;
-  max-width: 100rem;
+  max-width: 200rem;
 }
 
 /* Einzelne Karte */
 .hero-card {
   flex: 1 1 250px;
-  max-width: 32rem;
+  max-width: 42rem;
   background: #f4f4f4;
   padding: 2rem 2.5rem;
   border-radius: 0.75rem;
@@ -1077,8 +1076,14 @@ body::after {
   font-size: 1.3rem;
   line-height: 1.7;
   margin: 0;
-  color: #535353 !important;
+  color: #666;
   text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.hero-card-text strong {
+    color: #b4201f;
+    font-weight: 600;
 }
 
 .logo {
@@ -1087,25 +1092,15 @@ body::after {
   max-width: 400px;
   height: auto;
   /* Zentriert das Logo auf dem Desktop mit dem gewünschten linken Rand (z.B. 5rem) */
-  margin: 10em auto 1em 5rem;
+  margin: 10em 0em 1em 5rem;
 }
 
 /* Zentriert die Call-to-Action Buttons unter den Hero-Karten */
 .hero-buttons-container {
     display: flex;             /* Aktiviert Flexbox */
     justify-content: center;   /* Zentriert die Buttons horizontal */
-    gap: 1.5rem;               /* Fügt Abstand zwischen den Buttons hinzu */
-    margin-top: 3rem;          /* Abstand nach oben (zur Abtrennung von den Boxen) */
-    margin-bottom: 5rem;       /* Abstand nach unten (zur Abtrennung vom nächsten Inhalt) */
-}
-/* Container für die zwei Leistungen */
-.hero-services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin: 1rem auto 1rem;
-  max-width: 100rem;
+    margin-top: 1.5rem;          /* Abstand nach oben (zur Abtrennung von den Boxen) */
+    margin-bottom: 1rem;       /* Abstand nach unten (zur Abtrennung vom nächsten Inhalt) */
 }
 /* ... */
 /* Zentriert die Call-to-Action Buttons unter den Hero-Karten */
@@ -1114,5 +1109,5 @@ body::after {
     justify-content: center;
     gap: 1.5rem;
     margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }

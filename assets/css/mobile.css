@@ -259,7 +259,7 @@
   }
 
   .wrapper.first {
-    padding-top: 2em;
+    padding-top: 0em;
   }
 
   /* Button */
@@ -440,7 +440,8 @@
   }
 
   .hero-title {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
   }
 
   .hero-actions {
@@ -457,6 +458,28 @@
   max-width: 100%;
   height: auto;
 }*/
+
+.hero-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+white-space: nowrap;
+        font-size: 0.9rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+  color: #666;
+  margin: 0 0 0.75rem;
+}
+
+.hero-subtitle {
+white-space: nowrap;
+        font-size: 0.9rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+  color: #666;
+  margin: 0 0 0.75rem;
+}
 
 .hero-services {
   margin-top: 2rem;
@@ -478,7 +501,7 @@
         height: auto;
         /* Zentriert das Block-Element und überschreibt den störenden Inline-Style */
         /* margin: 2em auto; setzt oben/unten 2em und links/rechts auto (Zentrierung) */
-         margin: 10em 2em 2em 2rem;
+         margin: 5em 2em 2em 2rem;
         /*margin: 6em auto !important;*/
     }
 
