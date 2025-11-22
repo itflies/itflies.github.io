@@ -28,12 +28,15 @@
     top: 0em;
   }
 
-  .head-logo {
-  display: block;
-  margin: 0 auto;
-  max-width: 25rem;
-  max-height:25rem;
-  }
+.head-logo {
+        display: block;
+        width: 100%; /* WICHTIG: Erlaubt dem Container, volle Breite zu nehmen */
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 20px; /* Optional: Fügt etwas Platz links und rechts hinzu */
+        padding-right: 20px;
+    }
 
   .contact-icon {
     font-size: 1.3rem;
@@ -43,7 +46,7 @@
     top: 0.5rem;
   }
   .content {
-    padding-top: 10px; /* Höhe des Navigationsmenüs + etwas Puffer */
+    padding-top: 1px; /* Höhe des Navigationsmenüs + etwas Puffer */
   }
 
   .desktop {
@@ -431,4 +434,52 @@
   .kontakt-hinweis .icon {
     font-size: 1.2em;
   }
+
+  .hero {
+    padding: 3rem 1.25rem 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+.logo-wrapper {
+  background: rgba(255, 255, 0, 0.3) !important;
+  border: 1px solid red !important;
+}
+
+/* .logo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}*/
+
+.hero-services {
+  margin-top: 2rem;
+}
+
+.hero-card {
+    max-width: 100%;
+}
+
+.hero-card-title {
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+.logo {
+        display: block; /* Wichtig: Macht das Bild zu einem Block-Element */
+        width: 80%; /* Skaliert auf 100% Breite */
+        max-width: 80%;
+        height: auto;
+        /* Zentriert das Block-Element und überschreibt den störenden Inline-Style */
+        /* margin: 2em auto; setzt oben/unten 2em und links/rechts auto (Zentrierung) */
+         margin: 10em 2em 2em 2rem;
+        /*margin: 6em auto !important;*/
+    }
+
 }

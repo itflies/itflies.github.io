@@ -160,7 +160,7 @@ main {
 }
 
 main {
-  padding-top: 5em; /* Platz für das fixe Menü schaffen */
+  padding-top: 1em; /* Platz für das fixe Menü schaffen */
 }
 
 .head-logo {
@@ -168,6 +168,11 @@ main {
   margin: 0 auto;
   max-width: 70rem;
   max-height: 70rem;
+}
+
+.head-logo-img {
+    max-width: 250px; /* Die maximale Grösse auf Desktop */
+    height: auto;
 }
 
 header {
@@ -593,7 +598,7 @@ button:hover,
 }
 
 .wrapper.first {
-  padding: 2em 0 7em 0; /*vergrössert wrapper*/
+  padding: 0em 0 7em 0; /*vergrössert wrapper*/
   box-shadow: none;
 }
 
@@ -618,19 +623,10 @@ button:hover,
   min-height: 900px;
 }
 
-/*Home-Logo auf Mobile Menu*/
-.home {
-  display: flex;
-  position: absolute;
-  left: 1em;
-  top: 1em;
-  top: 0.7em;
-}
 
 .home img {
-  height: 2.3em;
-  position: absolute;
-  left: 0.5em;
+  max-height: 35px;
+  height: auto;
 }
 
 /* Hamburger-Button Menu für Mobile */
@@ -942,4 +938,181 @@ body::before {
 
 body::after {
     right: 0; /* rechter Streifen */
+}
+
+.dropdown-content {
+    /* Wichtig: Versteckt den Inhalt standardmäßig */
+    display: none;
+    background-color: #303030;
+
+    /* Der Rest des Stylings, wie Position, Hintergrund, etc. */
+    position: absolute;
+    /* ... andere Stile ... */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+:root {
+  --itf-red: #b4201f;
+  --itf-red-dark: #460000;
+  --itf-grey: #303030;
+}
+
+/* Hero */
+.hero {
+  padding: 4rem 1rem 3.5rem;
+  text-align: left;
+}
+
+.hero-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 1.8rem;
+  color: #666;
+  margin: 0 0 0.75rem;
+}
+
+.hero-title {
+  font-size: 2.3rem;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  color: var(--itf-grey);
+}
+
+.hero-text {
+  font-size: 1.8rem;
+  line-height: 2.3;
+  margin: 0 0 2rem;
+  color: #444;
+}
+
+/* Buttons */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+    margin: 1rem auto 1rem;
+    max-width: 250rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary {
+  background-color: var(--itf-red);
+  color: #fff;
+  border-color: var(--itf-red);
+}
+
+.btn-primary:hover {
+  background-color: var(--itf-red-dark);
+  border-color: var(--itf-red-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+}
+
+.btn-secondary {
+  background: #fff;
+  color: var(--itf-grey);
+  border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+  border-color: var(--itf-red);
+  color: var(--itf-red);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #666;
+  margin: 0 0 2.5rem;
+}
+
+/* Container für die zwei Leistungen */
+.hero-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem auto 1rem;
+  max-width: 100rem;
+}
+
+/* Einzelne Karte */
+.hero-card {
+  flex: 1 1 250px;
+  max-width: 32rem;
+  background: #f4f4f4;
+  padding: 2rem 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+.hero-card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  text-align: center;
+}
+
+.hero-card-text {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin: 0;
+  color: #535353 !important;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  /* Setzt eine vernünftige Maximalbreite für das Logo auf Desktop */
+  max-width: 400px;
+  height: auto;
+  /* Zentriert das Logo auf dem Desktop mit dem gewünschten linken Rand (z.B. 5rem) */
+  margin: 10em auto 1em 5rem;
+}
+
+/* Zentriert die Call-to-Action Buttons unter den Hero-Karten */
+.hero-buttons-container {
+    display: flex;             /* Aktiviert Flexbox */
+    justify-content: center;   /* Zentriert die Buttons horizontal */
+    gap: 1.5rem;               /* Fügt Abstand zwischen den Buttons hinzu */
+    margin-top: 3rem;          /* Abstand nach oben (zur Abtrennung von den Boxen) */
+    margin-bottom: 5rem;       /* Abstand nach unten (zur Abtrennung vom nächsten Inhalt) */
+}
+/* Container für die zwei Leistungen */
+.hero-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem auto 1rem;
+  max-width: 100rem;
+}
+/* ... */
+/* Zentriert die Call-to-Action Buttons unter den Hero-Karten */
+.hero-buttons-container { /* NEUE REGEL */
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
 }

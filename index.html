@@ -94,96 +94,183 @@ Copyright 2025 itFlies GmbH -->
 				<img src="assets/images/home.png" alt="Logo itFlies GmbH">
 			</a>
 		</div>
-		<div class="contact-icon">
-			<a href="#contact" aria-label="Kontakt aufnehmen">
-				<!-- <span class="icon email fa-envelope"></span> -->
-				<i class="icon contact fa-solid fa-contact-card"></i>
-			</a>
-		</div>
+<!--		<div class="contact-icon">-->
+<!--			<a href="#contact" aria-label="Kontakt aufnehmen">-->
+<!--				&lt;!&ndash; <span class="icon email fa-envelope"></span> &ndash;&gt;-->
+<!--				<i class="icon contact fa-solid fa-contact-card"></i>-->
+<!--			</a>-->
+<!--		</div>-->
+        <ul class="container" id="menu">
+            <li></li>
 
-		<ul class="container" id="menu">
-			<li></li>
-			<li class="desktop"><a href="#services">Dienstleistungen</a></li>
-			<li class="desktop"><a href="#project-management">IT-Projektmanagement</a></li>
-			<li class="desktop"><a href="#portal">Portallösungen</a></li>
-			<li class="desktop"><a href="#demo">Portal-Demo</a></li>
-			<!-- <li class="desktop"><a href="#technologies">Technologien</a></li> -->
-			<li class="desktop"><a href="#references">Referenzen</a></li>
-			<!-- <li class="desktop"><a href="#partner">Partner</a></li> -->
-			<li class="desktop"><a href="#about">Über uns</a></li>
-			<li class="desktop"><a href="assets/pdf/itf_agb_de.pdf" target="_blank">AGB</a></li>
-			<li></li>
-		</ul>
+            <li class="dropdown desktop">
+                <a href="#" class="dropdown-label">Dienstleistungen <i class="fa-solid fa-angle-down"></i></a>
+
+                <ul class="dropdown-content">
+                    <li><a href="#project-management">Projektmanagement</a></li>
+                    <li><a href="#portal">Portallösungen</a></li>
+                    <li><a href="#demo">Portal-Demo</a></li>
+                </ul>
+            </li>
+            <li class="desktop"><a href="#references">Referenzen</a></li>
+            <li class="desktop"><a href="#about">Über uns</a></li>
+            <li class="desktop contact-button"><a href="#contact">Kontakt</a></li>
+            <li></li>
+        </ul>
+
+<!--		<ul class="container" id="menu">-->
+<!--			<li></li>-->
+<!--			<li class="desktop"><a href="#services">Dienstleistungen</a></li>-->
+<!--			<li class="desktop"><a href="#project-management">Projektmanagement</a></li>-->
+<!--			<li class="desktop"><a href="#portal">Portallösungen</a></li>-->
+<!--			<li class="desktop"><a href="#demo">Portal-Demo</a></li>-->
+<!--			&lt;!&ndash; <li class="desktop"><a href="#technologies">Technologien</a></li> &ndash;&gt;-->
+<!--			<li class="desktop"><a href="#references">Referenzen</a></li>-->
+<!--			&lt;!&ndash; <li class="desktop"><a href="#partner">Partner</a></li> &ndash;&gt;-->
+<!--			<li class="desktop"><a href="#about">Über uns</a></li>-->
+<!--&lt;!&ndash;			<li class="desktop"><a href="assets/pdf/itf_agb_de.pdf" target="_blank">AGB</a></li>&ndash;&gt;-->
+<!--			<li></li>-->
+<!--		</ul>-->
 	</nav>
-	<main class="content">
-		<!-- Home - Top -->
-		<section id="top">
-			<div class="wrapper first">
-				<article class="container">
-					<!-- <div class="row"> -->
-					<header>
-						<br>
-						<br>
-						<!-- <p class="titel-pi">Willkommen bei</p> -->
-						<img src="assets/images/logo/logo.png" class="head-logo" alt="Logo itFlies GmbH" />
-						<br>
-						<br>
-						<br>
-						<h1>Ihr Partner für individuelle Portallösungen und IT&#8209;Projektmanagement.</h1>
-						<blockquote>
-							<p class="custom-p">Wir unterstützen Unternehmen dabei, Prozesse zu vereinfachen und digitale Abläufe zuverlässig umzusetzen.
-							</p>
-						</blockquote>
-					</header>
-				</article>
-			</div>
-		</section>
-		<br>
-		<br>
-		<br>
-		<br>
-		<section id="intro">
-			<div class="wrapper style1 first">
-				<article class="container">
-					<a href="#portal" class="intro-block-project"
-						style="display: block; text-decoration: none; color: inherit;">
-						<h3 class="intro-titel">Moderne Portallösungen für Ihr Unternehmen</h3>
-                        <p>
-                            Wir entwickeln smarte Webportale, die genau zu Ihren Anforderungen passen.
-                            Ob für Kunden, Partner oder Mitarbeitende – unsere Lösungen unterstützen die Zusammenarbeit
-                            nahtlos auf Desktop und mobil.
+    <img src="assets/images/logo/logo.png" alt="itFlies" class="logo">
+
+    <main class="content">
+        <!-- Home - Top -->
+        <section id="top">
+            <div class="wrapper first">
+                <article class="container">
+                    <header class="hero">
+                        <p class="hero-kicker">
+                            swiss portal solutions &amp; it project leadership
                         </p>
 
-                        <p>
-                            Unsere Portale sind auf Wunsch offline nutzbar und als moderne Progressive Web App (PWA)
-                            installierbar. Zudem lassen sie sich vollständig in bestehende Systeme wie SAP Business One
-                            integrieren. So automatisieren Sie Abläufe, reduzieren manuellen Aufwand und machen Ihre
-                            digitalen Prozesse zukunftssicher.
+                        <h1 class="hero-title">
+                            Wir machen Ihre digitalen Prozesse zukunftssicher.
+                        </h1>
+
+                        <p class="hero-subtitle">
+                            Portallösungen und IT-Projektleitung aus einer Hand
                         </p>
 
-					</a>
-					<br>
-					<a href="#project-management" class="intro-block-project"
-						style="display: block; text-decoration: none; color: inherit;">
-						<h3 class="intro-titel">Ihr IT-Projekt. Im Zeitplan. Im Budget</h3>
-						<p>
-                            Wir führen Ihr IT-Projekt zuverlässig zum Ziel. Als unabhängiger Partner achten wir darauf, dass typische Stolpersteine vermieden, Kosten im Rahmen bleiben und Termine realistisch eingehalten werden.
-                            Mit klarer Planung und einer pragmatischen Vorgehensweise sorgen wir für einen reibungslosen Ablauf und ein Ergebnis, das Ihren Geschäftserfolg langfristig unterstützt.
-						</p>
-					</a>
+                        <div class="hero-services">
+                            <div class="hero-services">
 
-					<!-- <p style="text-align: center; font-size: 1.8em; margin-top: 30px;">
-                        <i class="icon featured fa-solid fa-envelope-open-text" style="font-size: 1.2em;"></i>
-                        Interesse? <a href="#contact" class="link">Nehmen Sie Kontakt mit uns auf</a> – wir freuen uns auf Ihre Anfrage.
-                    </p> -->
-					<p class="kontakt-hinweis">
-						<i class="icon featured-intro fa-solid fa-envelope-open-text"></i>
-						Interesse? <a href="#contact" class="link-intro">Nehmen Sie Kontakt mit uns auf</a> – wir freuen uns
-						auf Ihre Anfrage.
-					</p>
-				</article>
-			</div>
-		</section>
+                                <div class="hero-card">
+                                    <h2 class="hero-card-title">Massgeschneiderte Portallösungen</h2>
+                                    <p class="hero-card-text">
+                                        <strong>Ihre Prozesse endlich automatisiert.</strong> Wir entwickeln Webportale, die genau zu Ihnen passen und Ihren <strong>administrativen Aufwand messbar reduzieren</strong>. Mobil, PWA-fähig und nahtlos in Ihre Systeme (z.B. SAP Business One) integriert.
+                                    </p>
+                                </div>
+
+                                <div class="hero-card">
+                                    <h2 class="hero-card-title">Senior IT-Projektleitung</h2>
+                                    <p class="hero-card-text">
+                                        <strong>Erfahrene Führung für Ihre IT-Zukunft.</strong> Sichern Sie den Erfolg Ihrer komplexen Projekte. Unser Senior-Experte garantiert <strong>strukturierte Planung, Steuerung und einen termingerechten Abschluss</strong> – völlig neutral und unabhängig.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="hero-buttons-container">
+                                <a href="#" class="btn btn-primary">Portallösungen entdecken</a>
+                                <a href="#" class="btn btn-secondary">Projektleitung anfragen</a>
+                            </div>
+                        </div>
+                    </header>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!--    <br>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <img src="assets/images/logo/logo.png"-->
+<!--         alt="itFlies"-->
+<!--         class="logo"-->
+<!--         style="margin-left: 7rem;">-->
+<!--	<main class="content">-->
+<!--		&lt;!&ndash; Home - Top &ndash;&gt;-->
+<!--		<section id="top">-->
+<!--			<div class="wrapper first">-->
+<!--				<article class="container">-->
+<!--					&lt;!&ndash; <div class="row"> &ndash;&gt;-->
+<!--                    <header class="hero">-->
+<!--&lt;!&ndash;                        <p class="hero-kicker">&ndash;&gt;-->
+<!--&lt;!&ndash;                            swiss portal solutions &amp; it project leadership&ndash;&gt;-->
+<!--&lt;!&ndash;                        </p>&ndash;&gt;-->
+<!--                        <p class="hero-kicker">-->
+<!--                            Portallösungen & IT-Projektleitung aus der Schweiz-->
+<!--                        </p>-->
+<!--                        <h1 class="hero-title">-->
+<!--                            Wir entwickeln Portallösungen, die Ihre Geschäftsprozesse automatisieren.-->
+<!--                        </h1>-->
+
+<!--                        <p class="hero-text">-->
+<!--                            Wir bauen Webportale, die sich nahtlos in Ihre bestehenden Abläufe einfügen.-->
+<!--                            Damit arbeiten Sie einfacher, schneller und mit weniger Fehlern.-->
+<!--                        </p>-->
+<!--                        <p class="hero-text">-->
+<!--                            <strong>Ihr Vorteil:</strong> Automatisierte Abläufe, reduzierte Aufwände und zukunftssichere digitale Prozesse-->
+<!--                        </p>-->
+<!--                        <br>-->
+<!--                        <div class="hero-actions">-->
+<!--                            <a href="#demo" class="btn-primary">Portallösungen entdecken</a>-->
+<!--                            <a href="#contact" class="btn-secondary">Kontakt aufnehmen</a>-->
+<!--                        </div>-->
+<!--                    </header>-->
+
+<!--                </article>-->
+<!--			</div>-->
+<!--		</section>-->
+
+		<br>
+		<br>
+		<br>
+		<br>
+<!--		<section id="intro">-->
+<!--			<div class="wrapper style1 first">-->
+<!--				<article class="container">-->
+<!--					<a href="#portal" class="intro-block-project"-->
+<!--						style="display: block; text-decoration: none; color: inherit;">-->
+<!--						<h3 class="intro-titel">Moderne Portallösungen für Ihr Unternehmen</h3>-->
+<!--&lt;!&ndash;                        <p>&ndash;&gt;-->
+<!--&lt;!&ndash;                            Wir entwickeln smarte Webportale, die genau zu Ihren Anforderungen passen.&ndash;&gt;-->
+<!--&lt;!&ndash;                            Ob für Kunden, Partner oder Mitarbeitende – unsere Lösungen unterstützen die Zusammenarbeit&ndash;&gt;-->
+<!--&lt;!&ndash;                            nahtlos auf Desktop und mobil.&ndash;&gt;-->
+<!--&lt;!&ndash;                        </p>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        <p>&ndash;&gt;-->
+<!--&lt;!&ndash;                            Unsere Portale sind auf Wunsch offline nutzbar und als moderne Progressive Web App (PWA)&ndash;&gt;-->
+<!--&lt;!&ndash;                            installierbar. Zudem lassen sie sich vollständig in bestehende Systeme wie SAP Business One&ndash;&gt;-->
+<!--&lt;!&ndash;                            integrieren. So automatisieren Sie Abläufe, reduzieren manuellen Aufwand und machen Ihre&ndash;&gt;-->
+<!--&lt;!&ndash;                            digitalen Prozesse zukunftssicher.&ndash;&gt;-->
+<!--&lt;!&ndash;                        </p>&ndash;&gt;-->
+
+<!--					</a>-->
+<!--					<br>-->
+<!--					<a href="#project-management" class="intro-block-project"-->
+<!--						style="display: block; text-decoration: none; color: inherit;">-->
+<!--						<h3 class="intro-titel">Ihr IT-Projekt. Im Zeitplan. Im Budget</h3>-->
+<!--						<p>-->
+<!--                            Wir führen Ihr IT-Projekt zuverlässig zum Ziel. Als unabhängiger Partner achten wir darauf, dass typische Stolpersteine vermieden, Kosten im Rahmen bleiben und Termine realistisch eingehalten werden.-->
+<!--                            Mit klarer Planung und einer pragmatischen Vorgehensweise sorgen wir für einen reibungslosen Ablauf und ein Ergebnis, das Ihren Geschäftserfolg langfristig unterstützt.-->
+<!--						</p>-->
+<!--					</a>-->
+
+<!--					&lt;!&ndash; <p style="text-align: center; font-size: 1.8em; margin-top: 30px;">-->
+<!--                        <i class="icon featured fa-solid fa-envelope-open-text" style="font-size: 1.2em;"></i>-->
+<!--                        Interesse? <a href="#contact" class="link">Nehmen Sie Kontakt mit uns auf</a> – wir freuen uns auf Ihre Anfrage.-->
+<!--                    </p> &ndash;&gt;-->
+<!--					<p class="kontakt-hinweis">-->
+<!--						<i class="icon featured-intro fa-solid fa-envelope-open-text"></i>-->
+<!--						Interesse? <a href="#contact" class="link-intro">Nehmen Sie Kontakt mit uns auf</a> – wir freuen uns-->
+<!--						auf Ihre Anfrage.-->
+<!--					</p>-->
+<!--				</article>-->
+<!--			</div>-->
+<!--		</section>-->
 
 		<section id="services">
 			<div class="wrapper style2">
@@ -1276,7 +1363,6 @@ Copyright 2025 itFlies GmbH -->
 				</article>
 			</div>
 		</section>
-	</main>
 
 
     <footer id="site-footer" style="
