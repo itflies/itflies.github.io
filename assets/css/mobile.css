@@ -247,6 +247,12 @@
     text-align: center;
   }
 
+    header.hero {
+      /* width: 100dvw; */
+      padding: 0em 0em 0em 0em;
+      text-align: center;
+    }
+
   article {
     margin-bottom: 3em;
   }
@@ -453,7 +459,7 @@
 .hero-kicker {
   text-transform: uppercase;
   letter-spacing: 0em;
-  font-size: 0.6em;
+  font-size: 0.8em;
   text-align: center;
   color: #666;
   margin: 0 0 0.75rem;
@@ -480,9 +486,8 @@ font-weight: bold;
 
 .hero-subtitle {
   letter-spacing: 0.1em;
-  font-size: 0.6em;
+  font-size: 0.8em;
   text-align: center;
-  color: #666;
   margin: 0 0 0rem;
 }
 
