@@ -475,7 +475,7 @@ white-space: nowrap;
 .hero-kicker {
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 0.8em;
+  font-size: 0.6em;
   text-align: center;
   color: #666;
   margin: 0 0 0.75rem;
@@ -483,11 +483,9 @@ white-space: nowrap;
 
 
 .hero-subtitle {
-white-space: nowrap;
-        font-size: 0.8em;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 0.6em;
+  text-align: center;
   color: #666;
   margin: 0 0 0.75rem;
 }
@@ -509,8 +507,8 @@ white-space: nowrap;
 
 .hero-card-title {
     font-size: 1em;
-    line-height: 1.em;
-    margin-bottom: 0em;
+    line-height: 1.1em;
+    margin-bottom: 0.5em;
 }
 
 .hero-card-text {
@@ -520,7 +518,7 @@ white-space: nowrap;
 
 .logo {
         display: block; /* Wichtig: Macht das Bild zu einem Block-Element */
-        width: 50%; /* Skaliert auf 100% Breite */
+        width: 70%; /* Skaliert auf 100% Breite */
         max-width: 80%;
         height: auto;
         /* Zentriert das Block-Element und überschreibt den störenden Inline-Style */
@@ -528,8 +526,6 @@ white-space: nowrap;
          margin: 5em 0em 0.5em 2rem;
         /*margin: 6em auto !important;*/
     }
-
-}
 
 .btn-primary,
 .btn-secondary {
@@ -577,4 +573,6 @@ white-space: nowrap;
     justify-content: center;
     margin-top: 0.5em;
     margin-bottom: 0.2em;
+}
+
 }
