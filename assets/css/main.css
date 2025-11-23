@@ -617,6 +617,13 @@ button:hover,
   min-height: 900px;
 }
 
+.home {
+  display: flex;
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  top: 0.7em;
+}
 
 .home img {
   height: 2.3em;
