@@ -907,7 +907,7 @@ button:hover,
 #footer-dynamic .footer-link {
   color: #ffffff;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 10px;
 }
 
 /* Hover-Zustand */
