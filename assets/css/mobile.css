@@ -270,7 +270,7 @@
   button,
   .button {
     text-align: center;
-    font-size: 1em;
+    font-size: 0.5em;
     width: 90%;
     padding: 1em 0 1em 0;
   }
@@ -440,8 +440,9 @@
   }
 
   .hero-title {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: 1em;
+    line-height: 1.2em;
+      margin: 0 0 1rem;
   }
 
   .hero-actions {
@@ -459,21 +460,31 @@
   height: auto;
 }*/
 
-.hero-kicker {
+/*.hero-kicker {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 white-space: nowrap;
-        font-size: 0.9rem;
+        font-size: 0.8em;
         overflow: hidden;
         text-overflow: ellipsis;
         text-align: center;
   color: #666;
   margin: 0 0 0.75rem;
+}*/
+
+.hero-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+  text-align: center;
+  color: #666;
+  margin: 0 0 0.75rem;
 }
+
 
 .hero-subtitle {
 white-space: nowrap;
-        font-size: 0.9rem;
+        font-size: 0.8em;
         overflow: hidden;
         text-overflow: ellipsis;
         text-align: center;
@@ -482,27 +493,88 @@ white-space: nowrap;
 }
 
 .hero-services {
-  margin-top: 2rem;
+  margin-top: 1em;
 }
 
 .hero-card {
-    max-width: 80%;
+  max-width: 95%;
+  background: #f4f4f4;
+  padding: 0.8em 0.8em;
+  border-radius: 0.75em;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  text-align: left;
 }
 
+
+
 .hero-card-title {
-    font-size: 2rem;
-    line-height: 1.3;
+    font-size: 1em;
+    line-height: 1.em;
+    margin-bottom: 0em;
+}
+
+.hero-card-text {
+    font-size: 0.8em;
+    line-height: 1.em;
 }
 
 .logo {
         display: block; /* Wichtig: Macht das Bild zu einem Block-Element */
-        width: 80%; /* Skaliert auf 100% Breite */
+        width: 50%; /* Skaliert auf 100% Breite */
         max-width: 80%;
         height: auto;
         /* Zentriert das Block-Element und überschreibt den störenden Inline-Style */
         /* margin: 2em auto; setzt oben/unten 2em und links/rechts auto (Zentrierung) */
-         margin: 5em 2em 2em 2rem;
+         margin: 5em 0em 0.5em 2rem;
         /*margin: 6em auto !important;*/
     }
 
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4em 0.8em;
+  border-radius: 999px;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary {
+  background-color: var(--itf-red);
+  color: #fff;
+  border-color: var(--itf-red);
+}
+
+.btn-primary:hover {
+  background-color: var(--itf-red-dark);
+  border-color: var(--itf-red-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+}
+
+.btn-secondary {
+  background: #fff;
+  color: var(--itf-grey);
+  border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+  border-color: var(--itf-red);
+  color: var(--itf-red);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.hero-buttons-container { /* NEUE REGEL */
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
 }
