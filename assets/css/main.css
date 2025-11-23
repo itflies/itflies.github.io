@@ -528,14 +528,18 @@ button:hover,
 }
 
 .box.partner .image {        /* nicht nur inline-block */
+  display: block;        /* nicht nur inline-block */
+  margin: 0 auto 1rem;   /* links/rechts auto = zentriert */
   max-width: 18rem;      /* optional Begrenzung der Bildbreite */
 }
 
 .box.partner .image img {
+  display: block;
   width: 80%;
   height: auto;
+  margin: 0 auto;
 }
-}
+
 
 .box.about {
   display: flex;
