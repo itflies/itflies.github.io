@@ -500,6 +500,12 @@ button:hover,
   padding: 16px;
 }
 
+.box.references .image {
+  display: block;        /* nicht nur inline-block */
+  margin: 0 auto 1rem;   /* links/rechts auto = zentriert */
+  max-width: 18rem;      /* optional Begrenzung der Bildbreite */
+}
+
 .box.references img {
   margin-bottom: 15px; /* Abstand nach unten */
   margin-top: 20px; /* Optional: Abstand nach oben */
@@ -521,6 +527,16 @@ button:hover,
   height: 29rem;
 }
 
+.box.partner .image {        /* nicht nur inline-block */
+  max-width: 18rem;      /* optional Begrenzung der Bildbreite */
+}
+
+.box.partner .image img {
+  width: 80%;
+  height: auto;
+}
+}
+
 .box.about {
   display: flex;
   flex-direction: column;
@@ -528,6 +544,18 @@ button:hover,
   box-sizing: border-box;
   background-color: #ffffff;
   height: 56rem;
+}
+
+.box.about .image {
+  display: block;        /* nicht nur inline-block */
+  margin: 0 auto 1rem;   /* links/rechts auto = zentriert */
+  max-width: 18rem;      /* optional Begrenzung der Bildbreite */
+}
+
+.box.about .image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .icon {
