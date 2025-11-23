@@ -895,7 +895,8 @@ button:hover,
 /* Navigation im Footer */
 #footer-dynamic .footer-nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  /* flex-wrap: wrap;*/
   justify-content: center;
   gap: 10px; /* Abstand zwischen Links */
   margin: 0;
@@ -906,7 +907,7 @@ button:hover,
 #footer-dynamic .footer-link {
   color: #ffffff;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 1em;
 }
 
 /* Hover-Zustand */
@@ -967,22 +968,21 @@ body::after {
 .hero-kicker {
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   color: #666;
-  margin: 0 0 0.75rem;
+  margin: 0 0 1em;
 }
 
 .hero-title {
-  font-size: 2.3rem;
-  line-height: 1.2;
-  margin: 0 0 3rem;
+  font-size: 2.6em;
+  margin: 0 0 0.4em;
   color: var(--itf-grey);
 }
 
 .hero-text {
   font-size: 1.8rem;
   line-height: 2.3;
-  margin: 0 0 2rem;
+  margin: 0 0 2.5em;
   color: #444;
 }
 
@@ -1001,9 +1001,9 @@ body::after {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem 1.6rem;
+  padding: 1.0rem 1.6rem;
   border-radius: 999px;
-  font-size: 1.2rem;
+  font-size: 1.4em;
   font-weight: 500;
   text-decoration: none;
   border: 1px solid transparent;
@@ -1041,7 +1041,7 @@ body::after {
   font-size: 1.3rem;
   letter-spacing: 0.02em;
   color: #666;
-  margin: 0 0 0.75rem;
+  margin: 0 0 2.75rem;
 }
 
 /* Container für die zwei Leistungen */
@@ -1089,10 +1089,10 @@ body::after {
 .logo {
   display: block;
   /* Setzt eine vernünftige Maximalbreite für das Logo auf Desktop */
-  max-width: 400px;
+  max-width: 600px;
   height: auto;
   /* Zentriert das Logo auf dem Desktop mit dem gewünschten linken Rand (z.B. 5rem) */
-  margin: 10em 0em 1em 5rem;
+  margin: 10em 0em 0em 5rem;
 }
 
 /* Zentriert die Call-to-Action Buttons unter den Hero-Karten */

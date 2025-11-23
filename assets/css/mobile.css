@@ -516,16 +516,14 @@ white-space: nowrap;
     line-height: 1.em;
 }
 
-.logo {
-        display: block; /* Wichtig: Macht das Bild zu einem Block-Element */
-        width: 70%; /* Skaliert auf 100% Breite */
-        max-width: 80%;
-        height: auto;
-        /* Zentriert das Block-Element und überschreibt den störenden Inline-Style */
-        /* margin: 2em auto; setzt oben/unten 2em und links/rechts auto (Zentrierung) */
-         margin: 5em 0em 0.5em 2rem;
-        /*margin: 6em auto !important;*/
-    }
+
+   .logo {
+     display: block;
+     width: 70%;       /* oder 80%, wie du willst */
+     max-width: 50%; /* optional Begrenzung */
+     height: auto;
+     margin: 5em auto 0.5em auto; /* oben, rechts=auto, unten, links=auto → zentriert */
+   }
 
 .btn-primary,
 .btn-secondary {
