@@ -260,6 +260,7 @@
 
   .wrapper.first {
     padding-top: 0em;
+    width: 100%;
   }
 
   /* Button */
@@ -436,13 +437,7 @@
   }
 
   .hero {
-    padding: 3rem 1.25rem 2.5rem;
-  }
-
-  .hero-title {
-    font-size: 1em;
-    line-height: 1.2em;
-      margin: 0 0 1rem;
+    padding: 1em 1em 1em;
   }
 
   .hero-actions {
@@ -454,33 +449,33 @@
   border: 1px solid red !important;
 }
 
-/* .logo img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}*/
-
-/*.hero-kicker {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-white-space: nowrap;
-        font-size: 0.8em;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        text-align: center;
-  color: #666;
-  margin: 0 0 0.75rem;
-}*/
-
 .hero-kicker {
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0em;
   font-size: 0.6em;
   text-align: center;
   color: #666;
   margin: 0 0 0.75rem;
 }
 
+.hero-title {
+  /* Erklärung:
+     min(5vw, 1.6rem) -> Nimm 5% der Breite, aber maximal 1.6rem.
+     max(0.5rem, ...) -> Aber werde niemals kleiner als 0.5rem.
+  */
+  font-size: max(0.8rem, min(3.5vw, 1.6rem));
+font-weight: bold;
+  white-space: nowrap;
+  overflow: visible; /* oder hidden, falls du ganz sicher gehen willst */
+  text-overflow: clip;
+
+  /* Rest bleibt gleich */
+  letter-spacing: 0em;
+  line-height: 1.2em;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
 
 .hero-subtitle {
   letter-spacing: 0.1em;
@@ -495,12 +490,13 @@ white-space: nowrap;
 }
 
 .hero-card {
-  max-width: 95%;
+  max-width: 100%;
   background: #f4f4f4;
-  padding: 0.8em 0.8em;
   border-radius: 0.75em;
+  padding: 1em 1em;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
   text-align: left;
+  margin: 0;
 }
 
 
