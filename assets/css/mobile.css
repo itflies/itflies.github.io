@@ -340,6 +340,7 @@
     display: block; /* Entfernt ungewollte Abstände durch Inline-Elementverhalten */
   }
 
+
   .box.partner {
     background-color: #ffffff;
     height: auto;
@@ -385,7 +386,7 @@
   }
 
   #top .image {
-    width: 10%;
+    width: 50%;
     height: auto;
     margin: 0 auto 1.75em auto;
   }
@@ -474,7 +475,7 @@ font-weight: bold;
   line-height: 1.2em;
   text-align: center;
   color: #000000;
-  margin: 0;
+  margin: 0 0 0.2em;
 }
 
 .hero-subtitle {
@@ -482,11 +483,12 @@ font-weight: bold;
   font-size: 0.6em;
   text-align: center;
   color: #666;
-  margin: 0 0 0.75rem;
+  margin: 0 0 0rem;
 }
 
 .hero-services {
   margin-top: 1em;
+    gap: 1em;
 }
 
 .hero-card {
@@ -515,10 +517,10 @@ font-weight: bold;
 
    .logo {
      display: block;
-     width: 70%;       /* oder 80%, wie du willst */
-     max-width: 50%; /* optional Begrenzung */
+     width: 80%;       /* oder 80%, wie du willst */
+     max-width: 70%; /* optional Begrenzung */
      height: auto;
-     margin: 5em auto 0.5em auto; /* oben, rechts=auto, unten, links=auto → zentriert */
+     margin: 4em auto 0em auto; /* oben, rechts=auto, unten, links=auto → zentriert */
    }
 
 .btn-primary,
