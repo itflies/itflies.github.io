@@ -352,8 +352,7 @@ p {
 /* Behalte die Liste zentriert im Container */
 .solutions {
   list-style: none;
-  padding-left: 0;
-  margin: 0 auto; /* Hält die Liste zentriert */
+  padding: 0 0 0 0;
   text-align: left; /* Der Inhalt der Liste wird linksbündig */
   display: flex;
   flex-direction: column;
@@ -371,7 +370,7 @@ p {
 /* Unterpunkte mit einheitlicher Einrückung */
 .solutions ul {
   list-style-type: circle;
-  padding-left: 30px; /* Einheitliche Einrückung für alle Unterpunkte */
+  padding-left: 10px; /* Einheitliche Einrückung für alle Unterpunkte */
   margin: 5px 0 0 0;
   text-align: left;
   width: 100%; /* Stellt sicher, dass alle Unterpunkte dieselbe Breite nutzen */
@@ -1109,13 +1108,4 @@ body::after {
     gap: 1.5rem;
     margin-top: 3rem;
     margin-bottom: 0rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  img {
-    background-color: #ffffff;
-    padding: 8px 12px;    /* optional: etwas Abstand um das Bild */
-    border-radius: 4px;   /* optional: abgerundete Ecken */
-    display: inline-block;/* damit Hintergrund + Padding sauber wirken */
-  }
 }
