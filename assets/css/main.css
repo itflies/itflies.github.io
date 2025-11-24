@@ -1048,6 +1048,9 @@ body::after {
   border: 1px solid transparent;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+  background-color: var(--itf-red) !important;
+      color: #fff !important;
+      border-color: var(--itf-red) !important;
 }
 
 .btn-primary {
@@ -1057,10 +1060,13 @@ body::after {
 }
 
 .btn-primary:hover {
-  background-color: var(--itf-red-dark);
-  border-color: var(--itf-red-dark);
   transform: translateY(-1px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+  background-color: #8f3a35 !important;
+      border-color: #8f3a35 !important;
+      color: #fff !important;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 16px rgba(180, 32, 31, 0.2);
 }
 
 .btn-secondary {
@@ -1070,10 +1076,13 @@ body::after {
 }
 
 .btn-secondary:hover {
-  border-color: var(--itf-red);
-  color: var(--itf-red);
   transform: translateY(-1px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  background-color: #8f3a35 !important;
+      border-color: #8f3a35 !important;
+      color: #fff !important;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 16px rgba(180, 32, 31, 0.2);
 }
 
 .hero-subtitle {
