@@ -1442,14 +1442,24 @@ Copyright 2025 itFlies GmbH -->
                 </a>
 
                 <!-- Kurzformular -->
-                <form id="kufo">
+                <!-- Kurzformular -->
+                <form id="kufo"
+                      action="https://formspree.io/f/myzaydqp"
+                      method="POST">
                     <label for="kufo-msg">Ihre Nachricht:</label>
-                    <textarea id="kufo-msg" name="message" required placeholder="Ihre Anfrage…"></textarea>
+                    <textarea id="kufo-msg"
+                              name="message"
+                              required
+                              placeholder="Ihre Anfrage…"></textarea>
+
+                    <!-- Betreff für die Mail bei Formspree -->
+                    <input type="hidden" name="_subject" value="Kurzanfrage Projektleitung (Website)">
 
                     <button type="submit" class="popup-btn-primary">
                         Abschicken
                     </button>
                 </form>
+
 
 
                 <div id="kufo-status" class="kufo-status" style="display:none;"></div>
