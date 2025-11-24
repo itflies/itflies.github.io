@@ -1131,7 +1131,7 @@ body::after {
   max-width: 600px;
   height: auto;
   /* Zentriert das Logo auf dem Desktop mit dem gewünschten linken Rand (z.B. 5rem) */
-  margin: 10em 0em 0em 5rem;
+  margin: 6em 0em 0em 5rem;
 }
 
 /* Zentriert die Call-to-Action Buttons unter den Hero-Karten */

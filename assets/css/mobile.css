@@ -542,8 +542,8 @@ font-weight: bold;
 
    .logo {
      display: block;
-     width: 80%;       /* oder 80%, wie du willst */
-     max-width: 70%; /* optional Begrenzung */
+     width: 90%;       /* oder 80%, wie du willst */
+     max-width: 100%; /* optional Begrenzung */
      height: auto;
      margin: 4em auto 0em auto; /* oben, rechts=auto, unten, links=auto → zentriert */
    }
