@@ -29,14 +29,44 @@ function closeContactPopup() {
     popup.style.display = 'none';
 }
 
-// aktuell nur Status-Text, kein echter Versand
+// Versand
 function submitKurzanfrage(e) {
+    e.preventDefault(); // verhindert den Seitenwechsel zu formspree.io
+
+    const form = e.target;
     const status = document.getElementById('kufo-status');
     if (status) {
         status.style.display = 'block';
-        status.textContent = "Vielen Dank für Ihre Nachricht. Wir melden uns in Kürze.";
+        status.textContent = "Ihre Nachricht wird gesendet…";
     }
+
+    const formData = new FormData(form);
+
+    fetch("https://formspree.io/f/myzaydqp", {
+        method: "POST",
+        headers: { "Accept": "application/json" },
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            if (status) {
+                status.textContent = "Vielen Dank! Die Nachricht wurde gesendet.";
+            }
+            form.reset();
+        } else {
+            if (status) {
+                status.textContent = "Es gab ein Problem beim Senden. Bitte später erneut versuchen.";
+            }
+        }
+    })
+    .catch(error => {
+        console.error(error);
+        if (status) {
+            status.textContent = "Fehler beim Senden. Bitte später erneut versuchen.";
+        }
+    });
 }
+
 
 // Events NACH dem Parsen des DOMs binden
 document.addEventListener('DOMContentLoaded', () => {
