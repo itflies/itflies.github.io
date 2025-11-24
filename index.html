@@ -186,10 +186,11 @@ Copyright 2025 itFlies GmbH -->
                                         Strukturiert, unabhängig, zuverlässig. Damit Ihre IT-Projekte sicher zum Ziel kommen.
                                     </p>
                                     <div class="hero-buttons-container">
-                                        <button class="btn btn-secondary">
+                                        <button class="btn btn-secondary" id="btn-projektleitung">
                                             Projektleitung anfragen
                                         </button>
                                     </div>
+
                                 </div>
 
                             </div>
@@ -1436,14 +1437,15 @@ Copyright 2025 itFlies GmbH -->
                 </a>
 
                 <!-- Kurzformular -->
-                <form id="kufo" onsubmit="submitKurzanfrage(event)">
-                <label for="kufo-msg">Ihre Nachricht:</label>
+                <form id="kufo">
+                    <label for="kufo-msg">Ihre Nachricht:</label>
                     <textarea id="kufo-msg" name="msg" required placeholder="Ihre Anfrage…"></textarea>
 
                     <button type="submit" class="popup-btn-primary">
                         Abschicken
                     </button>
                 </form>
+
 
                 <div id="kufo-status" class="kufo-status" style="display:none;"></div>
             </div>

@@ -42,7 +42,7 @@ function submitKurzanfrage(e) {
 // Events NACH dem Parsen des DOMs binden
 document.addEventListener('DOMContentLoaded', () => {
     // Öffnen-Button (Hero)
-    const openBtn = document.querySelector('.hero-buttons-container .btn.btn-secondary');
+    const openBtn = document.getElementById('btn-projektleitung');
     if (openBtn) {
         openBtn.addEventListener('click', openContactPopup);
     }
@@ -59,3 +59,4 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', submitKurzanfrage);
     }
 });
+
