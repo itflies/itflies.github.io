@@ -1062,7 +1062,7 @@ body::after {
 .btn-primary:hover {
   transform: translateY(-1px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.18);
-  background-color: #8f3a35 !important;
+  background-color: #b4201f !important;
       border-color: #8f3a35 !important;
       color: #fff !important;
       transform: translateY(-1px);
@@ -1078,7 +1078,7 @@ body::after {
 .btn-secondary:hover {
   transform: translateY(-1px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.12);
-  background-color: #8f3a35 !important;
+  background-color: #b4201f !important;
       border-color: #8f3a35 !important;
       color: #fff !important;
       transform: translateY(-1px);
