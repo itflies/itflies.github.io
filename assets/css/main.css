@@ -414,6 +414,7 @@ article:last-child {
 .image {
   display: inline-block;
   position: relative;
+  margin: 0 auto 0em auto;
 }
 
 .image img {
@@ -502,7 +503,7 @@ button:hover,
 
 .box.references .image {
   display: block;        /* nicht nur inline-block */
-  margin: 0 auto 1rem;   /* links/rechts auto = zentriert */
+  margin: 0 auto 0rem;   /* links/rechts auto = zentriert */
   max-width: 18rem;      /* optional Begrenzung der Bildbreite */
 }
 
@@ -529,7 +530,7 @@ button:hover,
 
 .box.partner .image {        /* nicht nur inline-block */
   display: block;        /* nicht nur inline-block */
-  margin: 0 auto 1rem;   /* links/rechts auto = zentriert */
+  margin: 0 auto 0rem;   /* links/rechts auto = zentriert */
   max-width: 18rem;      /* optional Begrenzung der Bildbreite */
 }
 
@@ -552,7 +553,7 @@ button:hover,
 
 .box.about .image {
   display: block;        /* nicht nur inline-block */
-  margin: 0 auto 1rem;   /* links/rechts auto = zentriert */
+  margin: 0 auto 0rem;   /* links/rechts auto = zentriert */
   max-width: 18rem;      /* optional Begrenzung der Bildbreite */
 }
 

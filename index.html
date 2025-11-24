@@ -186,7 +186,7 @@ Copyright 2025 itFlies GmbH -->
                                         Strukturiert, unabhängig, zuverlässig. Damit Ihre IT-Projekte sicher zum Ziel kommen.
                                     </p>
                                     <div class="hero-buttons-container">
-                                        <button class="btn btn-secondary" onclick="openContactPopup()">
+                                        <button class="btn btn-secondary">
                                             Projektleitung anfragen
                                         </button>
                                     </div>
@@ -1418,7 +1418,8 @@ Copyright 2025 itFlies GmbH -->
     <!-- Forumlar 24.11.25 -->
     <div id="contact-popup" class="contact-popup-overlay" style="display:none;">
         <div class="contact-popup">
-            <button class="close-btn" onclick="closeContactPopup()">×</button>
+            <button class="close-btn">×</button>
+
 
             <h3>Kontakt aufnehmen</h3>
             <p>Wie möchten Sie uns erreichen?</p>
@@ -1438,7 +1439,7 @@ Copyright 2025 itFlies GmbH -->
 
                 <!-- Kurzformular -->
                 <form id="kufo" onsubmit="submitKurzanfrage(event)">
-                    <label for="kufo-msg">Ihre Nachricht:</label>
+                <label for="kufo-msg">Ihre Nachricht:</label>
                     <textarea id="kufo-msg" name="msg" required placeholder="Ihre Anfrage…"></textarea>
 
                     <button type="submit" class="popup-btn-primary">

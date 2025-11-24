@@ -1,7 +1,10 @@
-// assets/js/contact-popup-kom.js
+// contact-popup-kom.js
 
 function openContactPopup() {
-    document.getElementById('contact-popup').style.display = 'flex';
+    const popup = document.getElementById('contact-popup');
+    if (!popup) return;
+
+    popup.style.display = 'flex';
 
     // Telefonnummer sicher zusammensetzen (nicht direkt im HTML)
     const p1 = "+41 ";
@@ -13,19 +16,46 @@ function openContactPopup() {
     const number = p1 + p2 + p3 + p4 + p5;
 
     const phoneLink = document.getElementById('phone-link');
-    phoneLink.textContent = "📞 Telefon: " + number;
-    phoneLink.href = "tel:" + number.replace(/[^+\d]/g, "");
+    if (phoneLink) {
+        phoneLink.textContent = "📞 Telefon: " + number;
+        phoneLink.href = "tel:" + number.replace(/[^+\d]/g, "");
+    }
 }
 
 function closeContactPopup() {
-    document.getElementById('contact-popup').style.display = 'none';
+    const popup = document.getElementById('contact-popup');
+    if (!popup) return;
+
+    popup.style.display = 'none';
 }
 
-// Kurzformular – aktuell nur Bestätigungstext, kein Versand
 function submitKurzanfrage(e) {
     e.preventDefault();
 
     const status = document.getElementById('kufo-status');
-    status.style.display = 'block';
-    status.textContent = "Vielen Dank für Ihre Nachricht. Wir melden uns in Kürze.";
+    if (status) {
+        status.style.display = 'block';
+        status.textContent = "Vielen Dank für Ihre Nachricht. Wir melden uns in Kürze.";
+    }
 }
+
+// Events NACH dem Parsen des DOMs binden
+document.addEventListener('DOMContentLoaded', () => {
+    // Öffnen-Button (Hero)
+    const openBtn = document.querySelector('.hero-buttons-container .btn.btn-secondary');
+    if (openBtn) {
+        openBtn.addEventListener('click', openContactPopup);
+    }
+
+    // Schliessen-Button im Popup
+    const closeBtn = document.querySelector('#contact-popup .close-btn');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeContactPopup);
+    }
+
+    // Formular-Submit
+    const form = document.getElementById('kufo');
+    if (form) {
+        form.addEventListener('submit', submitKurzanfrage);
+    }
+});

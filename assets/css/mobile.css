@@ -415,7 +415,7 @@
   #top .image {
     width: 80%;
     height: auto;
-    margin: 0 auto 0.75em auto;
+    margin: 0 auto 0em auto;
   }
   #top .container {
     padding-left: 1rem;
