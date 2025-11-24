@@ -1452,15 +1452,22 @@ Copyright 2025 itFlies GmbH -->
                               required
                               placeholder="Ihre Anfrage…"></textarea>
 
-                    <!-- Betreff für die Mail bei Formspree -->
-                    <input type="hidden" name="_subject" value="Kurzanfrage Projektleitung (Website)">
+                    <label for="kufo-email">Ihre E-Mail-Adresse:</label>
+                    <input id="kufo-email"
+                           type="email"
+                           name="email"
+                           required
+                           placeholder="name@firma.ch">
+
+                    <!-- Betreff für die Mail von Formspree -->
+                    <input type="hidden"
+                           name="_subject"
+                           value="Anfrage itFlies GmbH">
 
                     <button type="submit" class="popup-btn-primary">
                         Abschicken
                     </button>
                 </form>
-
-
 
                 <div id="kufo-status" class="kufo-status" style="display:none;"></div>
             </div>

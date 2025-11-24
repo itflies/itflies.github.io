@@ -31,8 +31,6 @@ function closeContactPopup() {
 
 // aktuell nur Status-Text, kein echter Versand
 function submitKurzanfrage(e) {
-    e.preventDefault();
-
     const status = document.getElementById('kufo-status');
     if (status) {
         status.style.display = 'block';
@@ -42,19 +40,19 @@ function submitKurzanfrage(e) {
 
 // Events NACH dem Parsen des DOMs binden
 document.addEventListener('DOMContentLoaded', () => {
-    // ALLE sekundären Hero-Buttons (Projektleitung + Unverbindlich Anfragen)
-    const heroSecondaryButtons = document.querySelectorAll('.hero-buttons-container .btn.btn-secondary');
-    heroSecondaryButtons.forEach(btn => {
+    // Alle Hero-Buttons, die das Popup öffnen sollen
+    const heroButtons = document.querySelectorAll('.hero-buttons-container .btn.btn-secondary');
+    heroButtons.forEach(btn => {
         btn.addEventListener('click', openContactPopup);
     });
 
-    // Schliessen-Button im Popup
+    // Schliessen-Button
     const closeBtn = document.querySelector('#contact-popup .close-btn');
     if (closeBtn) {
         closeBtn.addEventListener('click', closeContactPopup);
     }
 
-    // Formular-Submit
+    // Formular-Submit: nur Status anzeigen, Browser darf normal absenden
     const form = document.getElementById('kufo');
     if (form) {
         form.addEventListener('submit', submitKurzanfrage);
