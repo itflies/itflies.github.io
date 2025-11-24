@@ -73,13 +73,13 @@
   .tile {
     width: 100%;
     margin: 1rem auto;
-    padding: 0em 1em 0em 1em;
+    padding: 0em 0em 0em 0em;
   }
 
   .tile-big {
     width: 100%;
     margin: 1rem auto;
-    padding: 0em 1em 0em 1em;
+    padding: 0em 0em 0em 0em;
   }
 
   h1 {
@@ -93,7 +93,6 @@
   h2 {
     font-size: 1.9rem;
     color: #303030;
-    line-height: 1.25rem;
   }
 
   h3 {
@@ -414,9 +413,9 @@
   }
 
   #top .image {
-    width: 50%;
+    width: 80%;
     height: auto;
-    margin: 0 auto 1.75em auto;
+    margin: 0 auto 0.75em auto;
   }
   #top .container {
     padding-left: 1rem;
@@ -492,7 +491,7 @@
      min(5vw, 1.6rem) -> Nimm 5% der Breite, aber maximal 1.6rem.
      max(0.5rem, ...) -> Aber werde niemals kleiner als 0.5rem.
   */
-  font-size: max(0.8rem, min(3.5vw, 1.6rem));
+  font-size: max(0.8em, min(3.8vw, 1.6em));
 font-weight: bold;
   white-space: nowrap;
   overflow: visible; /* oder hidden, falls du ganz sicher gehen willst */
@@ -510,7 +509,7 @@ font-weight: bold;
   letter-spacing: 0.1em;
   font-size: 0.8em;
   text-align: center;
-  margin: 0 0 0rem;
+  margin: 0 0 0em;
 }
 
 .hero-services {

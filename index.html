@@ -10,15 +10,15 @@ Copyright 2025 itFlies GmbH -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <base href="https://www.itflies.ch/"> -->
 
-	<title>itFlies GmbH | PWA-Portale & IT-Projektmanagement</title>
+	<title>itFlies GmbH | PWA-Portale & IT-Projektleitung</title>
 	<!-- <meta name="keywords"
 		content="itFlies GmbH, Cloud-Lösungen, Mobile Apps, Portallösungen, Partnerportal, Businessportal, Kundenportal, Zeiterfassungsportal, Individual-Software, Softwareentwicklung, IT-Beratung, Projektmanagement, Projektleitung, ERP, Hermes, SAP Business One, Schweiz, Digitalisierung, Dokumentation, AsciiDoc, Antora, Asciidoctor, CSS, HTML, JavaScript, TypeScript, C#, .NET, REST-API, Nachhaltigkeit, Datenschutz, Informationssicherheit, Gemini CLI, KI, KI-Beratung, Digitalisierungsstrategie, KI-Workshop, Anwendungsfallanalyse, PWA">
 	 -->
 	<meta name="description"
-		content="Prozesse digitalisieren mit strategischem IT Projektmanagement und massgeschneiderten Portallösungen. Ihr Schweizer Partner für innovative, Software Lösungen.">
+		content="Wir bringen Ihre IT zum Fliegen. Massgeschneiderte Webportale und erfahrene IT-Projektleitung für klare Prozesse und erfolgreiche Projekte.">
 
 	<!-- START Open Graph-Tags für Social Media Integration -->
-	<meta property="og:title" content="itFlies GmbH |  IT-Projektmanagement & Softwareentwicklung">
+	<meta property="og:title" content="itFlies GmbH | PWA-Portale & IT-Projektleitung">
 	<meta property="og:description"
 		content="Prozesse digitalisieren mit strategischem IT-Projektmanagement und massgeschneiderten Portallösungen. Ihr Schweizer Partner für innovative, Software Lösungen.">
 	<meta property="og:image" content="https://itflies.ch/assets/images/home.jpg">
@@ -152,7 +152,8 @@ Copyright 2025 itFlies GmbH -->
                 <article class="container">
                     <header class="hero">
                         <p class="hero-kicker">
-                            swiss portal solutions &amp; it project leadership
+<!--                            swiss portal solutions &amp; it project leadership-->
+                            Wir bringen Ihre IT zum Fliegen
                         </p>
 
                         <h1 class="hero-title">
@@ -185,8 +186,12 @@ Copyright 2025 itFlies GmbH -->
                                         Strukturiert, unabhängig, zuverlässig. Damit Ihre IT-Projekte sicher zum Ziel kommen.
                                     </p>
                                     <div class="hero-buttons-container">
-                                        <a href="#contact" class="btn btn-secondary">Projektleitung anfragen</a>
+                                        <button class="btn btn-secondary" onclick="openContactPopup()">
+                                            Projektleitung anfragen
+                                        </button>
                                     </div>
+
+
                                 </div>
 
                             </div>
@@ -771,7 +776,7 @@ Copyright 2025 itFlies GmbH -->
 									<ul class="solutions">
 										<li><span class="category">Produktionsportal:</span>
 											<ul>
-												<li>Sortierung von Obst (z.B. Äpfeln, Birnen, Kirschen etc.)</li>
+												<li>Sortierung von Obst</li>
 												<li>Chargenbasierte Bestandsverwaltung im Produktionsprozess</li>
 											</ul>
 										</li>
@@ -905,7 +910,7 @@ Copyright 2025 itFlies GmbH -->
 							</div>
 						</div>
 						<!-- Mühldorfer-->
-						<!-- <div class="row">
+						<div class="row">
 							<div class="tile-big">
 								<section class="box references">
 									<span class="image">
@@ -918,13 +923,12 @@ Copyright 2025 itFlies GmbH -->
 										<li><span class="category">Portal:</span>
 											<ul>
 												<li>Bettwaren Konfigurator</li>
-												<li>TBD</li>
 											</ul>
 										</li>
 									</ul>
 								</section>
 							</div>
-						</div> -->
+						</div>
 						<!-- Otto Rohrunterhalt GmbH-->
 						<div class="row">
 							<div class="tile-big">
@@ -1410,6 +1414,45 @@ Copyright 2025 itFlies GmbH -->
 
 	<script src="assets/js/navigation.menu.js"></script>
 	<script defer src="assets/js/main.js"></script>
+
+    <!-- Forumlar 24.11.25 -->
+    <div id="contact-popup" class="contact-popup-overlay" style="display:none;">
+        <div class="contact-popup">
+            <button class="close-btn" onclick="closeContactPopup()">×</button>
+
+            <h3>Kontakt aufnehmen</h3>
+            <p>Wie möchten Sie uns erreichen?</p>
+
+            <div class="contact-options">
+
+                <!-- Telefon (per JS zusammengesetzt, nicht crawlbar) -->
+                <a id="phone-link" class="contact-link"></a>
+
+                <!-- Mail -->
+                <a
+                        href="mailto:kom@itflies.ch?subject=Anfrage%20Projektleitung"
+                        class="contact-link"
+                >
+                    ✉️ E-Mail schreiben
+                </a>
+
+                <!-- Kurzformular -->
+                <form id="kufo" onsubmit="submitKurzanfrage(event)">
+                    <label for="kufo-msg">Ihre Nachricht:</label>
+                    <textarea id="kufo-msg" name="msg" required placeholder="Ihre Anfrage…"></textarea>
+
+                    <button type="submit" class="popup-btn-primary">
+                        Abschicken
+                    </button>
+                </form>
+
+                <div id="kufo-status" class="kufo-status" style="display:none;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/contact-popup-kom.js" defer></script>
+
+
 
 </body>
 
