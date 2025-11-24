@@ -553,15 +553,16 @@ font-weight: bold;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.4em 0.8em;
+  padding: 0.35rem 0.9rem;  /* etwas schmaler & kompakter */
   border-radius: 999px;
-  font-size: 0.8em;
+  font-size: 0.9rem;        /* kleiner als Desktop, aber noch gut lesbar */
   font-weight: 500;
   text-decoration: none;
   border: 1px solid transparent;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
+
 
 .btn-primary {
   background-color: var(--itf-red);
@@ -595,5 +596,27 @@ font-weight: bold;
     margin-top: 0.5em;
     margin-bottom: 0.2em;
 }
+
+.hero-buttons-container .btn-primary,
+.hero-buttons-container .btn-secondary {
+  width: 100%;
+  white-space: nowrap;
+}
+
+/* NUR "Unverbindlich Anfragen" in Mobile rot machen */
+#btn-kontakt {
+    background-color: var(--itf-red) !important;
+    color: #fff !important;
+    border-color: var(--itf-red) !important;
+}
+
+/* Höhe & Breite angleichen wie btn-primary */
+#btn-kontakt {
+    width: auto !important;
+    padding: 0.4em 0.8em !important;
+    font-size: 1.2em !important;
+    white-space: nowrap !important;
+}
+
 
 }

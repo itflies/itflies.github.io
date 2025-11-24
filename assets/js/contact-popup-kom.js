@@ -78,11 +78,11 @@ function submitKurzanfrage(e) {
 
 // Events NACH dem Laden des DOMs registrieren
 document.addEventListener("DOMContentLoaded", () => {
-    // Öffnen-Button (Hero)
-    const openBtn = document.querySelector(".hero-buttons-container .btn.btn-secondary");
-    if (openBtn) {
-        openBtn.addEventListener("click", openContactPopup);
-    }
+    // Öffnen-Buttons (alle Hero/Kontakt-Buttons mit .btn.btn-secondary)
+    const openButtons = document.querySelectorAll(".hero-buttons-container .btn.btn-secondary");
+    openButtons.forEach(btn => {
+        btn.addEventListener("click", openContactPopup);
+    });
 
     // Schliessen-Button im Popup
     const closeBtn = document.querySelector("#contact-popup .close-btn");
@@ -96,3 +96,4 @@ document.addEventListener("DOMContentLoaded", () => {
         form.addEventListener("submit", submitKurzanfrage);
     }
 });
+

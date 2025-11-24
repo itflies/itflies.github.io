@@ -1269,3 +1269,26 @@ body::after {
     font-size: 0.9rem;
     color: #303030;
 }
+
+/* NUR "Unverbindlich Anfragen" in Mobile rot machen */
+#btn-kontakt {
+    background-color: var(--itf-red) !important;
+    color: #fff !important;
+    border-color: var(--itf-red) !important;
+}
+
+/* Höhe & Breite angleichen wie btn-primary */
+#btn-kontakt {
+    width: auto !important;
+    padding: 0.4em 0.8em !important;
+    font-size: 1.6em !important;
+    white-space: nowrap !important;
+}
+
+#btn-kontakt:hover {
+    background-color: #8f3a35 !important;
+    border-color: #8f3a35 !important;
+    color: #fff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(180, 32, 31, 0.2);
+}
