@@ -1,6 +1,5 @@
 // contact-popup-kom.js
 
-// Popup öffnen
 function openContactPopup() {
     const popup = document.getElementById('contact-popup');
     if (!popup) return;
@@ -23,7 +22,6 @@ function openContactPopup() {
     }
 }
 
-// Popup schliessen
 function closeContactPopup() {
     const popup = document.getElementById('contact-popup');
     if (!popup) return;
@@ -31,69 +29,35 @@ function closeContactPopup() {
     popup.style.display = 'none';
 }
 
-// Formular absenden (an Formspree)
+// aktuell nur Status-Text, kein echter Versand
 function submitKurzanfrage(e) {
     e.preventDefault();
 
-    const textarea = document.getElementById('kufo-msg');
     const status = document.getElementById('kufo-status');
-
-    if (!textarea || !status) return;
-
-    const msg = textarea.value.trim();
-    if (!msg) {
+    if (status) {
         status.style.display = 'block';
-        status.textContent = "Bitte eine Nachricht eingeben.";
-        return;
+        status.textContent = "Vielen Dank für Ihre Nachricht. Wir melden uns in Kürze.";
     }
-
-    status.style.display = 'block';
-    status.textContent = "Wird gesendet...";
-
-    // HIER deine Formspree-URL eintragen:
-    const formspreeUrl = "https://formspree.io/f/myzaydqp";
-
-
-    fetch(formspreeUrl, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-        },
-        body: JSON.stringify({ message: msg })
-    })
-    .then(response => {
-        if (response.ok) {
-            status.textContent = "Vielen Dank! Die Nachricht wurde gesendet.";
-            textarea.value = "";
-        } else {
-            status.textContent = "Es gab ein Problem beim Senden. Bitte später erneut versuchen.";
-        }
-    })
-    .catch(error => {
-        console.error(error);
-        status.textContent = "Fehler beim Senden. Bitte später erneut versuchen.";
-    });
 }
 
-// Events NACH dem Laden des DOMs registrieren
-document.addEventListener("DOMContentLoaded", () => {
-    // Öffnen-Buttons (alle Hero/Kontakt-Buttons mit .btn.btn-secondary)
-    const openButtons = document.querySelectorAll(".hero-buttons-container .btn.btn-secondary");
-    openButtons.forEach(btn => {
-        btn.addEventListener("click", openContactPopup);
+// Events NACH dem Parsen des DOMs binden
+document.addEventListener('DOMContentLoaded', () => {
+    // ALLE sekundären Hero-Buttons (Projektleitung + Unverbindlich Anfragen)
+    const heroSecondaryButtons = document.querySelectorAll('.hero-buttons-container .btn.btn-secondary');
+    heroSecondaryButtons.forEach(btn => {
+        btn.addEventListener('click', openContactPopup);
     });
 
     // Schliessen-Button im Popup
-    const closeBtn = document.querySelector("#contact-popup .close-btn");
+    const closeBtn = document.querySelector('#contact-popup .close-btn');
     if (closeBtn) {
-        closeBtn.addEventListener("click", closeContactPopup);
+        closeBtn.addEventListener('click', closeContactPopup);
     }
 
     // Formular-Submit
-    const form = document.getElementById("kufo");
+    const form = document.getElementById('kufo');
     if (form) {
-        form.addEventListener("submit", submitKurzanfrage);
+        form.addEventListener('submit', submitKurzanfrage);
     }
 });
 
