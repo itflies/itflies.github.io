@@ -553,41 +553,65 @@ font-weight: bold;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.35rem 0.9rem;  /* etwas schmaler & kompakter */
-  border-radius: 999px;
-  font-size: 0.9rem;        /* kleiner als Desktop, aber noch gut lesbar */
+  padding: 1.0rem 1.0rem;      /* etwas höher & breiter */
+  border-radius: 20px;
+  font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+
+  /* dezenter 3D-Effekt */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
 
 
+/* Farbdefinitionen – an dein Design anpassen */
 .btn-primary {
-  background-color: var(--itf-red);
+  background: linear-gradient(135deg, #b4201f, #e24a45);
   color: #fff;
-  border-color: var(--itf-red);
 }
 
-.btn-primary:hover {
-  background-color: var(--itf-red-dark);
-  border-color: var(--itf-red-dark);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
-}
 
 .btn-secondary {
-  background: #fff;
-  color: var(--itf-grey);
-  border: 1px solid #ccc;
+  background: #ffffff;
+  color: #b4201f;
+  border-color: #b4201f;
 }
 
+/* Hover: leicht anheben + etwas stärkerer Schatten */
+.btn-primary:hover,
 .btn-secondary:hover {
-  border-color: var(--itf-red);
-  color: var(--itf-red);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+/* Active: wieder etwas nach unten, damit es sich klickbar anfühlt */
+.btn-primary:active,
+.btn-secondary:active {
+  transform: translateY(1px) scale(0.99);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+}
+
+/* Tastaturfokus klar sichtbar machen */
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible {
+  outline: 2px solid #ffb347;
+  outline-offset: 2px;
+}
+
+/* Disabled-Zustand (falls du das nutzt) */
+.btn-primary:disabled,
+.btn-secondary:disabled {
+  opacity: 0.6;
+  cursor: default;
+  transform: none;
+  box-shadow: none;
 }
 
 .hero-buttons-container { /* NEUE REGEL */
