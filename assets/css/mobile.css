@@ -1,79 +1,131 @@
-/*!
- * itFlies GmbH Website by @itflies.ch - https://itflies.ch
- * Copyright 2025 itFlies GmbH
- */
-
-/* @font-face {
-  font-display: swap;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/open-sans-v40-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ 
-} */
-
-/* @media (max-width: 1300px) { */
 @media (max-width: 1124px) {
-  /* Reset */
+  /* -------------------------------------------------------- */
+  /* 1. Reset / Basis-Styles & Allgemeines Framing             */
+  /* -------------------------------------------------------- */
 
   body {
-          background-color: #303030;
-          font-family: "Open Sans", sans-serif;
-          line-height: 1.85em;
-          color: #535353;
-          /* WICHTIG: Sollte keinen padding-top oder margin-top haben, der die fixe Leiste stört. */
-          padding-top: 0 !important;
-      }
-
-body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 10px; /* Die schmale Leiste */
-        background-color: #303030;
-        z-index: 9999; /* Muss unter der Nav (z.B. 10000) liegen */
-    }
-  /* Der Inhalt (.logo und .content) wird weiss und in der Breite begrenzt */
-      .logo, .content {
-          max-width: 95%; /* Erzeugt den linken und rechten Rahmen */
-          margin-left: auto;
-          margin-right: auto;
-          background-color: #ffffff; /* Weisser Hintergrund für den Inhalt */
-      }
-
-.logo {
-    display: block;
-    max-width: 95%;
-    margin: 0 auto;
-
-    /* Bestehender oberer Rand für Leiste + Navigationshöhe */
-    margin-top: calc(10px + 3.5em + 20px) !important;
-
-    /* NEU: Seitliches Padding hinzufügen, um den Inhalt von den 95%-Rändern fernzuhalten */
-    padding: 20px 15px 0 15px; /* 20px oben (Rahmen-Abstand), 15px links/rechts (Innen-Abstand) */
-
-    background-color: #ffffff;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.content {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.85em;
+    color: #535353;
+    /* NEU: Dunkelgrauer Hintergrund (Rahmenfarbe) */
+    background-color: #303030;
     padding-top: 0 !important;
-    max-width: 95%;
+  }
 
-    /* Nach dem Logo soll kein Abstand sein (margin-top: 0) */
-    margin: 0 auto 20px auto;
-    background-color: #ffffff;
+  /* -------------------------------------------------------- */
+  /* 2. Fix: Schmale, dunkelgraue Leiste oben & Menü überlappt */
+  /* -------------------------------------------------------- */
 
-    /* NEU: Seitliches Padding hinzufügen (muss mit .logo übereinstimmen) */
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box; /* Stellt sicher, dass das Padding zur 95% Breite hinzugefügt wird */
+  /* Fügt eine 10px hohe, fixe Leiste am oberen Rand hinzu (muss unter der Nav liegen) */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px; /* Die schmale Leiste */
+    background-color: #303030;
+    z-index: 9999;
+  }
 
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
+  /* Navigationsleiste: Verschiebt die Nav um 10px nach unten und setzt hohen z-index */
+  .navbar, #nav {
+      top: 10px !important; /* Startet 10px unter dem oberen Bildschirmrand */
+      width: 100vw;
+      z-index: 10000;
+  }
+
+  /* Menü (Dropdown): Startet bei 0, um die Leiste zu überdecken, wenn geöffnet */
+  #menu.active {
+      top: 0 !important;
+      z-index: 10002 !important;
+      transform: translateY(0);
+      text-align: right;
+  }
+
+  /* -------------------------------------------------------- */
+  /* 3. Framing für alle Inhaltsbereiche (Logo, Content, Wrapper) */
+  /* Dies löst das Problem des verschwundenen/schmalen Rahmens */
+  /* -------------------------------------------------------- */
+
+  /* Alle zentralen Inhaltscontainer erhalten den weissen Block mit dem 95%-Limit. */
+  .logo,
+  .content,
+  .wrapper {
+      max-width: 95%; /* Erzeugt den linken und rechten Rahmen */
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #ffffff; /* Weisser Hintergrund für den Inhalt */
+      box-sizing: border-box;
+
+      /* NEU: Konsistentes seitliches Padding für den inneren Inhalt,
+             damit nichts an den Rand des weissen Blocks stösst. */
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+
+  /* Logo-Bereich (oberster Block) */
+   .logo {
+     display: block;
+     max-width: 100%;
+     height: auto;
+     /* margin-top: Leiste (10px) + Nav-Höhe (3.2em) + Rahmen-Abstand (20px) */
+     margin-top: calc(10px + 3.2em + 20px) !important;
+     padding-top: 20px; /* Innenabstand oben */
+     margin-bottom: 0; /* Kein Abstand zum .content oder dem nächsten .wrapper */
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+   }
+
+  /* Haupt-Content-Bereich (Hero Section) */
+  .content {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    /* Der untere Rahmen-Abstand wird vom letzten .wrapper (oder falls .content der letzte ist) übernommen */
+    margin-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  /* Wrapper (für alle weiteren Sektionen, z.B. Dienstleistungen, Impressum) */
+  .wrapper {
+      /* Stellt das vertikale Padding des Wrappers wieder her (3.5em 0 3.5em 0 aus original mobile.css) */
+      padding-top: 3.5em;
+      padding-bottom: 3.5em;
+      margin-bottom: 0;
+  }
+
+  /* Der unterste Rahmen-Abstand wird am letzten Inhalts-Container angebracht.
+     In Ihrer Struktur ist dies der letzte .wrapper (z.B. Impressum). */
+  .wrapper:last-child {
+      margin-bottom: 20px; /* Erzeugt den dunkelgrauen Rahmen unten */
+  }
+
+  /* -------------------------------------------------------- */
+  /* 4. Anpassung innerer Container (verhindert Bleeding) */
+  /* -------------------------------------------------------- */
+
+  /* Stellt sicher, dass .container und .row ihre Breite auf 100% des weissen Blocks begrenzen */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0 !important; /* Entfernt jegliches störendes seitliches Padding */
+    padding-right: 0 !important;
+  }
+
+  /* Stellt sicher, dass das Padding im .wrapper respektiert wird,
+     auch wenn die Tiles 100% Breite haben */
+  .tile, .tile-big {
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0em 0em 0em 0em;
+    box-sizing: border-box;
+  }
+
+  /* -------------------------------------------------------- */
+  /* 5. Restliche Styles (beibehalten) */
+  /* -------------------------------------------------------- */
 
   .home {
     display: flex;
@@ -83,11 +135,11 @@ body::before {
 
 .head-logo {
         display: block;
-        width: 100%; /* WICHTIG: Erlaubt dem Container, volle Breite zu nehmen */
+        width: 100%;
         max-width: 100%;
         height: auto;
         margin: 0 auto;
-        padding-left: 20px; /* Optional: Fügt etwas Platz links und rechts hinzu */
+        padding-left: 20px;
         padding-right: 20px;
     }
 
@@ -99,18 +151,13 @@ body::before {
     top: 0.5rem;
   }
   .content {
-    padding-top: 1px; /* Höhe des Navigationsmenüs + etwas Puffer */
+    /* padding-top: 1px; -> bereits oben entfernt/korrigiert */
   }
 
   .desktop {
     white-space: nowrap;
   }
 
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   /* .row {
     display: block;
@@ -123,7 +170,7 @@ body::before {
     align-items: center;
   }
 
-  .tile {
+  /* .tile {
     width: 100%;
     margin: 1rem auto;
     padding: 0em 0em 0em 0em;
@@ -133,14 +180,14 @@ body::before {
     width: 100%;
     margin: 1rem auto;
     padding: 0em 0em 0em 0em;
-  }
+  } */
 
   h1 {
     font-size: 1.3rem;
     color: #303030;
     font-weight: 600;
-    white-space: normal; /* Erlaubt Umbrüche */
-    text-align: center; /* Optional für bessere Optik */
+    white-space: normal;
+    text-align: center;
   }
 
   h2 {
@@ -208,39 +255,45 @@ body::before {
     text-shadow: none;
   }
 
+  .contact-popup { 
+    position: relative; /* sicherstellen */
+  }
+
+  .contact-popup .close-btn {
+    right: 12px;
+    top: -4px;
+
+    left: auto !important;
+    transform: none !important;
+    margin: 0 !important;
+
+    display: block;
+    z-index: 1000;
+  }
+
   li {
     font-size: 1rem;
     color: #303030;
   }
 
-.navbar, #nav {
-        top: 10px !important; /* Startet 10px unter dem oberen Bildschirmrand */
-        left: 0;
-        width: 100vw;
-        z-index: 10000; /* Muss über der Leiste (9999) liegen */
-    }
-
-#nav {
-    height: 3.2em;
-    background-color: #303030;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-
-    /* wichtig für das Ein-/Ausfahren */
-    transform: translateY(-100%);
-    transition: transform 0.3s ease;
-  }
+  /* Anpassung der Nav-Position (war in #nav enthalten, aber wird jetzt oben separat behandelt) */
+  /* #nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+  } */
 
   /* wird per JS gesetzt, sobald der User scrollt / tippt / klickt */
   #nav.nav-visible {
     transform: translateY(0);
   }
 
-  /* Dropdown-Menü unter der Leiste */
-  #menu {
+  /* Anpassung der Menü-Position (war in #menu enthalten, aber wird jetzt oben separat behandelt) */
+  /* #menu {
     position: fixed;
     top: 3.2em;
     left: 0;
@@ -254,15 +307,12 @@ body::before {
     transition: transform 0.3s ease;
     z-index: 1001;
     display: block;
-  }
+  } */
 
-  #menu.active {
-  top: 0 !important;
-          height: 100vh !important;
-          z-index: 10002 !important; /* Muss über der Nav (10000) liegen */
+  /* #menu.active {
     transform: translateY(0);
     text-align: right;
-  }
+  } */
 
   .hamburger {
     display: flex;
@@ -298,10 +348,10 @@ body::before {
 
   /* Wrappers */
 
-  .wrapper {
-    padding: 3.5em 0 3.5em 0; /*vergrössert wrapper*/
+  /* .wrapper {
+    padding: 3.5em 0 3.5em 0; vergrössert wrapper
     text-align: center;
-  }
+  } */
 
   .wrapper.first {
     padding-top: 0em;
@@ -579,27 +629,40 @@ font-weight: bold;
     line-height: 1.em;
 }
 
+.hero-card-text strong {
+    color: #b4201f;
+    font-size: 1.1em;
+    font-weight: 630;
+      display: inline-block;
+  margin-bottom: 0.15rem;
+}
 
-   .logo {
+   /* Anpassung des Logos bereits im Block 'Framing für alle Inhaltsbereiche' */
+   /* .logo {
      display: block;
-     width: 90%;       /* oder 80%, wie du willst */
-     max-width: 100%; /* optional Begrenzung */
+     width: 90%;
+     max-width: 100%;
      height: auto;
-     margin: 4em auto 0em auto; /* oben, rechts=auto, unten, links=auto → zentriert */
-   }
+     margin: 4em auto 0em auto;
+   } */
 
 .btn-primary,
+.row .btn-primary, /* Höhere Spezifität falls nötig */
 .btn-secondary {
-  display: inline-flex;
+  display: flex;             /* Ändern von inline-flex auf flex */
+  flex-wrap: wrap;           /* Erlaubt dem Text, in die nächste Zeile zu springen */
   align-items: center;
   justify-content: center;
-  padding: 1.0rem 1.0rem;      /* etwas höher & breiter */
+  text-align: center;        /* Zentriert den Text, falls er umbricht */
+  padding: 0.8rem 1.2rem;    /* Etwas weniger Höhe, mehr Breite für Mobile */
   border-radius: 20px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;         /* Leicht reduziert für extrem schmale Screens */
   font-weight: 500;
   text-decoration: none;
   border: 1px solid transparent;
   cursor: pointer;
+  white-space: normal;       /* Wichtig: Hebt das Umbruchverbot auf */
+  word-break: break-word;    /* Schützt vor extrem langen Wörtern */
   transition:
     transform 0.15s ease,
     box-shadow 0.15s ease,
@@ -608,6 +671,11 @@ font-weight: bold;
 
   /* dezenter 3D-Effekt */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  
+  /* Breite auf Mobile optimieren */
+  width: 100%;               /* Nimmt auf schmalen Handys die volle Breite ein */
+  max-width: 400px;          /* Verhindert, dass er auf Tablets riesig wird */
+  margin: 0 auto;            /* Zentriert den Button-Block selbst */
 }
 
 
