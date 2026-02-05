@@ -36,12 +36,23 @@
   }
 
   /* Menü (Dropdown): Startet bei 0, um die Leiste zu überdecken, wenn geöffnet */
-  #menu.active {
-      top: 0 !important;
-      z-index: 10002 !important;
-      transform: translateY(0);
-      text-align: right;
+#menu.active {
+    display: block;            /* wichtig */
+    position: absolute;        /* Dropdown relativ zur Nav */
+    top: 60px !important;      /* << hier Höhe der Leiste (anpassen) */
+    left: 0;
+    right: 0;
+
+    z-index: 10002 !important;
+    transform: translateY(0);
+    text-align: right;
+}
+
+  #menu.active a {
+    color: #ffffff;
+    background-color: #303030;
   }
+
 
   /* -------------------------------------------------------- */
   /* 3. Framing für alle Inhaltsbereiche (Logo, Content, Wrapper) */
@@ -70,7 +81,7 @@
      max-width: 100%;
      height: auto;
      /* margin-top: Leiste (10px) + Nav-Höhe (3.2em) + Rahmen-Abstand (20px) */
-     margin-top: calc(10px + 3.2em + 20px) !important;
+     margin-top: calc(10px + 3.20em + 20px) !important;
      padding-top: 20px; /* Innenabstand oben */
      margin-bottom: 0; /* Kein Abstand zum .content oder dem nächsten .wrapper */
      border-top-left-radius: 5px;
@@ -318,10 +329,10 @@
     display: flex;
   }
 
-  /* das UL in der Leiste selbst wird auf Mobile nicht als klassische Desktop-Navi benutzt */
-  #nav .container {
-    display: none;
-  }
+#menu {
+  display: none;
+}
+
 
   .navbar .container li a {
     color: #ffffff;

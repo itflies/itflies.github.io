@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const toggleMenu = (e) => {
   if (e) {
     e.preventDefault();
-    e.stopPropagation();
+    //e.stopPropagation();
   }
 
   // NEU: Navigation sofort sichtbar machen
