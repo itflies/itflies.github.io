@@ -10,17 +10,21 @@ document.addEventListener('DOMContentLoaded', () => {
   // -----------------------------
   // 1. Hamburger-Menü
   // -----------------------------
-  const toggleMenu = (e) => {
-    if (e) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    menu.classList.toggle('active');
-  };
+const toggleMenu = (e) => {
+  if (e) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
 
-  ['click', 'touchstart'].forEach(evt => {
-    hamburger.addEventListener(evt, toggleMenu, { passive: false });
-  });
+  // NEU: Navigation sofort sichtbar machen
+  nav.classList.add('nav-visible');
+
+  // Menü öffnen/schliessen
+  menu.classList.toggle('active');
+};
+
+
+  hamburger.addEventListener('click', toggleMenu);
 
   // Menü schliessen, wenn ein Link geklickt wird
   menu.querySelectorAll('a').forEach(link => {

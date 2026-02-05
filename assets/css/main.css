@@ -1291,10 +1291,10 @@ body::after {
 
 /* Höhe & Breite angleichen wie btn-primary */
 #btn-kontakt {
-    width: auto !important;
-    padding: 0.4em 0.8em !important;
-    font-size: 1.6em !important;
-    white-space: nowrap !important;
+    width: auto;
+    padding: 0.7em 1.4em;
+    font-size: 1.4em;
+    letter-spacing: 0.03em;
 }
 
 #btn-kontakt:hover {
