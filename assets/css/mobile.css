@@ -87,7 +87,7 @@
      max-width: 100%;
      height: auto;
      /* margin-top: Leiste (10px) + Nav-Höhe (3.2em) + Rahmen-Abstand (20px) */
-     margin-top: calc(10px + 3.20em + 20px) !important;
+     margin-top: calc(10px + 3.20em) !important;
      padding-top: 20px; /* Innenabstand oben */
      margin-bottom: 0; /* Kein Abstand zum .content oder dem nächsten .wrapper */
      border-top-left-radius: 5px;
