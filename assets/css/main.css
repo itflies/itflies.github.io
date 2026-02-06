@@ -108,7 +108,7 @@ body {
   /* background-color: rgb(16, 185, 53) !important; */
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  line-height: 2.85em;
+  line-height: 1.5em;
   /* color: #535353; */
   color: #303030;
   /* background-color: #ffffff; */
@@ -1146,6 +1146,12 @@ body::after {
   margin: 6em 0em 0em 5rem;
 }
 
+/* Versteckt den mobilen Text standardmässig */
+.logo-mobile-text {
+    display: none;
+}
+
+
 /* Zentriert die Call-to-Action Buttons unter den Hero-Karten */
 .hero-buttons-container { /* NEUE REGEL */
     display: flex;
@@ -1304,3 +1310,37 @@ body::after {
     transform: translateY(-1px);
     box-shadow: 0 8px 16px rgba(180, 32, 31, 0.2);
 }
+
+/* Grunddesign der Nav: Flexbox */
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;        /* Erlaubt Umbruch, falls nötig */
+    flex-direction: column; /* Mobile: Untereinander */
+    align-items: center;
+    gap: 8px;               /* Abstand zwischen den Elementen */
+    padding: 10px;
+}
+
+/* Desktop-Ansicht (ab Tablet-Breite) */
+@media screen and (min-width: 736px) {
+    .footer-nav {
+        flex-direction: row; /* Nebeneinander */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Optionale Trennstriche zwischen den Links auf Desktop */
+    .footer-link:not(:last-child):after {
+        content: "|";
+        margin-left: 15px;
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* Trick: Lange Wörter auf ganz kleinen Handys kürzen */
+@media screen and (max-width: 480px) {
+    .footer-link {
+        font-size: 0.85em; /* Etwas kleinere Schrift auf Mobile */
+    }
+}
+

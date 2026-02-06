@@ -89,11 +89,12 @@ Copyright 2025 itFlies GmbH -->
 			<span></span>
 			<span></span>
 		</div>
-		<div class="home">
-			<a href="https://www.itflies.ch/">
-				<img src="assets/images/home.png" alt="Icon itFlies GmbH">
-			</a>
-		</div>
+        <div class="home">
+            <a href="#top" class="logo">
+                <img src="assets/images/home.png" alt="Icon itFlies GmbH" class="logo-icon" />
+            </a>
+            <span class="logo-mobile-text">itFlies GmbH</span>
+        </div>
 		<div class="contact-icon">
 			<a href="#contact" aria-label="Kontakt aufnehmen">
 				<!-- <span class="icon email fa-envelope"></span> -->
@@ -115,15 +116,15 @@ Copyright 2025 itFlies GmbH -->
             <li class="dropdown desktop">
                 <a href="#references" class="dropdown-label">Referenzen <i class="fa-solid fa-angle-down"></i></a>
                 <ul class="dropdown-content">
-                    <li><a href="#bar">BARDINI + KELLER AG</a></li>
-                    <li><a href="#bof">BoFru AG</a></li>
-                    <li><a href="#dia">DiaHem AG</a></li>
-                    <li><a href="#feg">Felix Emmenegger AG</a></li>
-                    <li><a href="#hed">Hedin Automotive AG</a></li>
-                    <li><a href="#jun">Jungheinrich AG</a></li>
-                    <li><a href="#klt">Kalt AG</a></li>
-                    <li><a href="#oru">Otto Rohrunterhalt GmbH</a></li>
-                    <li><a href="#rue">Ruedersäge AG</a></li>
+                    <li><a href="#bar">BARDINI + KELLER AG </a></li>
+                    <li><a href="#bof">BoFru AG </a></li>
+                    <li><a href="#dia">DiaHem AG </a></li>
+                    <li><a href="#feg">Felix Emmenegger AG </a></li>
+                    <li><a href="#hed">Hedin Automotive AG </a></li>
+                    <li><a href="#jun">Jungheinrich AG </a></li>
+                    <li><a href="#klt">Kalt AG </a></li>
+                    <li><a href="#oru">Otto Rohrunterhalt GmbH </a></li>
+                    <li><a href="#rue">Ruedersäge AG </a></li>
                 </ul>
             </li>
             <li class="desktop"><a href="#about">Über uns <i class="fa-solid fa-angle-down"></i></a></li>
@@ -135,7 +136,10 @@ Copyright 2025 itFlies GmbH -->
 	</nav>
 
     <main class="content">
-        <img src="assets/images/logo/logo.png" alt="itFlies" class="logo">
+        <a href="#top" class="logo">
+            <img src="assets/images/logo/logo.png" alt="itFlies" class="logo">
+            <span class="logo-mobile-text">itFlies GmbH</span>
+        </a>
         <!-- Home - Top -->
         <section>
             <div class="wrapper first">
@@ -1292,6 +1296,41 @@ Copyright 2025 itFlies GmbH -->
 			</div>
 		</section>
 
+    <section id="disclaimer">
+        <div class="wrapper style2">
+            <article class="container">
+                <header>
+                    <i class="icon featured fa-solid fa-scale-balanced"></i>
+                    <h3>Rechtliche Hinweise</h3>
+
+                    <h4>Markenschutz</h4>
+                    <p>
+                        ITFLIES&reg;(registriert als Wortmarke) sowie das Firmenlogo sind rechtlich geschützte Kennzeichen der itFlies GmbH.
+                        Die Marke ist beim Eidgenössischen Institut für Geistiges Eigentum (IGE) unter der Nummer 784042 eingetragen.
+                        Jegliche Verwendung der Bezeichnung ITFLIES&reg; oder itFlies&reg; für kommerzielle Zwecke im Bereich der Softwareentwicklung und IT-Beratung ist ohne ausdrückliche Genehmigung untersagt.
+                    </p>
+
+                    <h4>Urheberrecht & Eigentum</h4>
+                    <p>
+                        Das Copyright &copy; itFlies GmbH gilt für alle Inhalte dieser Website.
+                        Gemäss unseren Allgemeinen Geschäftsbedingungen (AGB) bleiben sämtliche Konzepte, Projektergebnisse, Software-Add-ons und technischen Unterlagen alleiniges Eigentum von itFlies.
+                    </p>
+
+                    <h4>Haftungsausschluss</h4>
+                    <p>
+                        Die Inhalte unserer Website wurden mit grösstmöglicher Sorgfalt erstellt. Gemäss unseren AGB übernehmen wir keine Gewähr für die Richtigkeit oder Vollständigkeit der Informationen.
+                        Eine Haftung für indirekte Schäden, Folgeschäden oder entgangenen Gewinn ist im gesetzlich zulässigen Umfang ausgeschlossen.
+                    </p>
+
+                    <h4>Anwendbares Recht & Gerichtsstand</h4>
+                    <p>
+                        Es gilt ausschliesslich schweizerisches Recht. Gerichtsstand für sämtliche Streitigkeiten ist der Sitz der itFlies GmbH in 5465 Mellikon, Schweiz.
+                    </p>
+                </header>
+            </article>
+        </div>
+    </section>
+
 
     <footer id="site-footer" style="
   position: fixed;
@@ -1303,11 +1342,12 @@ Copyright 2025 itFlies GmbH -->
         <!-- Dynamische Leiste: wird per JS ein-/ausgeblendet -->
         <div id="footer-dynamic">
             <nav class="footer-nav">
-                <a href="assets/pdf/itf_agb_de.pdf" class="footer-link" target="_blank">AGB</a>
                 <a href="#impressum" class="footer-link">Impressum</a>
                 <a href="#informationssicherheit" class="footer-link">Informationssicherheit</a>
                 <a href="#datenschutz" class="footer-link">Datenschutz</a>
                 <a href="#nachhaltigkeit" class="footer-link">Nachhaltigkeit</a>
+                <a href="#disclaimer" class="footer-link">Rechtliche Hinweise</a>
+                <a href="assets/pdf/itf_agb_de.pdf" class="footer-link" target="_blank">AGB</a>
             </nav>
         </div>
 

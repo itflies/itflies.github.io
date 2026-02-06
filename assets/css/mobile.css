@@ -81,18 +81,63 @@
       padding-right: 15px;
   }
 
-  /* Logo-Bereich (oberster Block) */
+  /* Logo Mobile ausblenden */
    .logo {
-     display: block;
-     max-width: 100%;
-     height: auto;
-     /* margin-top: Leiste (10px) + Nav-Höhe (3.2em) + Rahmen-Abstand (20px) */
-     margin-top: calc(10px + 3.20em) !important;
-     padding-top: 20px; /* Innenabstand oben */
-     margin-bottom: 0; /* Kein Abstand zum .content oder dem nächsten .wrapper */
-     border-top-left-radius: 5px;
-     border-top-right-radius: 5px;
+     display: none;
    }
+
+
+
+    /* Den Link-Container aufräumen */
+    #nav .logo {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: auto !important;
+        height: 44px !important; /* Passt sich der Nav-Höhe an */
+        padding: 0 10px !important;
+        background: transparent !important; /* Entfernt den weissen Block */
+    }
+
+    /* Das Icon bändigen */
+    #nav .logo .logo-icon {
+        position: static !important;    /* Holt das Icon aus der Überlagerung */
+        display: block !important;
+        height: 40px !important;        /* Kleine, feste Höhe */
+        width: auto !important;
+        margin-right: 0px !important;  /* Platz zum Text */
+        margin-left: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+    }
+
+    /* Den Text sauber daneben setzen */
+    .logo-mobile-text {
+        display: block !important;
+        color: #ffffff !important;
+        font-weight: 600 !important;
+        font-size: 1.6rem !important;
+        text-decoration: none !important;
+        border-bottom: none !important;
+        white-space: nowrap !important;
+        background: transparent !important;
+        margin-top: 12px !important; /* Passt den Text an die Rundung des Icons an */
+        line-height: 1 !important;
+    }
+
+    /* Schiebt den gesamten Hero-Bereich nach unten, damit nichts überdeckt wird */
+        #banner, .hero, section.wrapper.style1.fullscreen {
+            padding-top: 80px !important; /* Erhöhen, falls es immer noch klebt */
+        }
+
+        /* Speziell für den Slogan "Wir bringen Ihre IT zum Fliegen" */
+        .hero h2, .banner h2 {
+            margin-top: 20px !important;
+            line-height: 1.4em !important;
+        }
 
   /* Haupt-Content-Bereich (Hero Section) */
   .content {
@@ -622,14 +667,6 @@ font-weight: bold;
   margin-bottom: 0.15rem;
 }
 
-   /* Anpassung des Logos bereits im Block 'Framing für alle Inhaltsbereiche' */
-   /* .logo {
-     display: block;
-     width: 90%;
-     max-width: 100%;
-     height: auto;
-     margin: 4em auto 0em auto;
-   } */
 
 .btn-primary,
 .row .btn-primary, /* Höhere Spezifität falls nötig */
