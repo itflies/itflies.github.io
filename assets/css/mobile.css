@@ -106,7 +106,7 @@
     #nav .logo .logo-icon {
         position: static !important;    /* Holt das Icon aus der Überlagerung */
         display: block !important;
-        height: 40px !important;        /* Kleine, feste Höhe */
+        height: 35px !important;        /* Kleine, feste Höhe */
         width: auto !important;
         margin-right: 0px !important;  /* Platz zum Text */
         margin-left: 0 !important;
@@ -119,12 +119,12 @@
         display: block !important;
         color: #ffffff !important;
         font-weight: 600 !important;
-        font-size: 1.6rem !important;
+        font-size: 1.2rem !important;
         text-decoration: none !important;
         border-bottom: none !important;
         white-space: nowrap !important;
         background: transparent !important;
-        margin-top: 12px !important; /* Passt den Text an die Rundung des Icons an */
+        margin-top: 14px !important; /* Passt den Text an die Rundung des Icons an */
         line-height: 1 !important;
     }
 
