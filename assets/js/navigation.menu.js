@@ -8,43 +8,97 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!nav || !hamburger || !menu) return;
 
   // -----------------------------
+  // Helpers
+  // -----------------------------
+  const isMobile = () => window.innerWidth <= 1124;
+
+  const closeAllDropdowns = () => {
+    menu.querySelectorAll('.open').forEach(li => li.classList.remove('open'));
+  };
+
+  // Findet die direkte Unterliste (egal ob du ul oder .dropdown-content nutzt)
+  const getDirectSubmenu = (li) => {
+    return (
+      li.querySelector(':scope > ul') ||
+      li.querySelector(':scope > .dropdown-content')
+    );
+  };
+
+  // -----------------------------
   // 1. Hamburger-Menü
   // -----------------------------
-const toggleMenu = (e) => {
-  if (e) {
-    e.preventDefault();
-    //e.stopPropagation();
-  }
+  const toggleMenu = (e) => {
+    if (e) {
+      e.preventDefault();
+    }
 
-  // NEU: Navigation sofort sichtbar machen
-  nav.classList.add('nav-visible');
+    // Navigation sofort sichtbar machen
+    nav.classList.add('nav-visible');
 
-  // Menü öffnen/schliessen
-  menu.classList.toggle('active');
-};
+    // Menü öffnen/schliessen
+    menu.classList.toggle('active');
 
+    // Wenn Menü geschlossen wird, auch Dropdowns schliessen
+    if (!menu.classList.contains('active')) {
+      closeAllDropdowns();
+    }
+  };
 
   hamburger.addEventListener('click', toggleMenu);
 
-  // Menü schliessen, wenn ein Link geklickt wird
-  menu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      menu.classList.remove('active');
-    });
-  });
+  // -----------------------------
+  // 2. Dropdown Verhalten (Mobile)
+  //    - Parent mit Unterpunkten: nur öffnen/schliessen, NICHT navigieren
+  // -----------------------------
+  const bindMobileDropdownToggles = () => {
+    // Wir binden auf alle direkten Links im Menü
+    menu.querySelectorAll('li > a').forEach(a => {
+      const li = a.parentElement;
+      if (!li) return;
 
-  // Menü schliessen, wenn ausserhalb geklickt wird
+      const submenu = getDirectSubmenu(li);
+      const hasSubmenu = !!submenu;
+
+      a.addEventListener('click', (e) => {
+        // Desktop: normales Verhalten (Hover/CSS oder Klick wie bisher)
+        if (!isMobile()) return;
+
+        // Wenn kein Submenu: normales Link-Verhalten -> Menü schliessen
+        if (!hasSubmenu) {
+          menu.classList.remove('active');
+          closeAllDropdowns();
+          return;
+        }
+
+        // Hat Submenu: NICHT navigieren, sondern toggeln
+        e.preventDefault();
+        e.stopPropagation();
+
+        // Optional: nur ein Dropdown gleichzeitig offen
+        menu.querySelectorAll('li.open').forEach(openLi => {
+          if (openLi !== li) openLi.classList.remove('open');
+        });
+
+        li.classList.toggle('open');
+      });
+    });
+  };
+
+  bindMobileDropdownToggles();
+
+  // -----------------------------
+  // 3. Menü schliessen, wenn ausserhalb geklickt wird
+  // -----------------------------
   document.addEventListener('click', (event) => {
     if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
       menu.classList.remove('active');
+      closeAllDropdowns();
     }
   });
 
   // -----------------------------
-  // 2. Nav erst bei Interaktion einblenden (Mobile)
+  // 4. Nav erst bei Interaktion einblenden (Mobile)
   // -----------------------------
-  const isMobile = () => window.innerWidth <= 1124;
-
   const showNavOnce = () => {
     nav.classList.add('nav-visible');
     removeInteractionListeners();
@@ -64,13 +118,15 @@ const toggleMenu = (e) => {
 
   const applyMode = () => {
     if (isMobile()) {
-      // Mobile: erst nach Interaktion anzeigen
       nav.classList.remove('nav-visible');
       addInteractionListeners();
     } else {
-      // Desktop: immer sichtbar
       nav.classList.add('nav-visible');
       removeInteractionListeners();
+
+      // Desktop: Dropdown-Status aufräumen
+      closeAllDropdowns();
+      menu.classList.remove('active');
     }
   };
 

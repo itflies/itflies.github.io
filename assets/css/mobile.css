@@ -774,6 +774,9 @@ font-weight: bold;
 
   #menu.active {
     background-color: #303030;
+        top: 56px !important;   /* exakt Header-Höhe */
+        margin: 0 !important;
+        padding: 0 !important;
   }
 
   /* Lücken entfernen, die durch .navbar a { margin: 0.2em } entstehen */
@@ -791,6 +794,30 @@ font-weight: bold;
 
   html {
     scroll-padding-top: 80px; /* ggf. 70–100px feinjustieren */
+  }
+
+    .footer-link {
+        font-size: 0.85em; /* Etwas kleinere Schrift auf Mobile */
+    }
+
+    #menu .dropdown-content { display: none; }
+    #menu .dropdown.open > .dropdown-content { display: block; }
+
+  #menu li > ul,
+  #menu li > .dropdown-content {
+    display: none;
+  }
+
+  #menu li.open > ul,
+  #menu li.open > .dropdown-content {
+    display: block;
+  }
+  /* Submenu-Einträge (z.B. BARDINI + KELLER AG) grösser */
+  #menu.active .dropdown-content a {
+    font-size: 1.1rem !important;   /* z.B. 1.1–1.25rem */
+    line-height: 1.35 !important;
+    padding: 10px 18px !important;  /* bessere Touch-Fläche */
+    display: block;
   }
 
 

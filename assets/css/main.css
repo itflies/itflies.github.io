@@ -1337,10 +1337,13 @@ body::after {
     }
 }
 
-/* Trick: Lange Wörter auf ganz kleinen Handys kürzen */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/* Trick: Lange Wörter auf ganz kleinen Handys kürzen
 @media screen and (max-width: 480px) {
     .footer-link {
         font-size: 0.85em; /* Etwas kleinere Schrift auf Mobile */
-    }
+    }*/
 }
 
