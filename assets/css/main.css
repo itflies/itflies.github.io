@@ -300,9 +300,9 @@ p {
 }
 
 .custom-p {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: #303030;
-  line-height: 2rem;
+  line-height: 1.6rem;
   font-weight: 500; /* Oder 600 für etwas mehr Gewicht */
 }
 
