@@ -1263,6 +1263,27 @@ body::after {
     box-shadow: 0 0 0 1px rgba(180, 32, 31, 0.2);
 }
 
+  #kufo,
+  #kufo #kufo-msg,
+  #kufo #kufo-email,
+  #kufo button.popup-btn-primary {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #kufo #kufo-msg {
+    display: block;
+    min-height: 160px;
+    resize: vertical;
+  }
+
+  #kufo-email {
+    height: 30px;          /* z.B. 44–56px je nach Geschmack */
+    padding: 10px 14px;
+    font-size: 1rem;       /* optional etwas grösser */
+    box-sizing: border-box;
+  }
+
 .popup-btn-primary {
     margin-top: 8px;
     display: inline-block;
