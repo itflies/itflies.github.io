@@ -12,23 +12,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!footerDynamic) return;
 
+  // Hilfsfunktionen für Sichtbarkeit und Klickbarkeit
+  function showFooter() {
+    footerDynamic.style.opacity = "1";
+    footerDynamic.style.pointerEvents = "auto"; // Klicks erlauben, wenn sichtbar
+  }
+
+  function hideFooter() {
+    footerDynamic.style.opacity = "0";
+    footerDynamic.style.pointerEvents = "none"; // Klicks "durchlassen", wenn unsichtbar
+  }
+
   // Dynamischer Teil beim Start ausblenden
-  footerDynamic.style.opacity = "0";
+  hideFooter();
 
   // Nach 6 Sekunden einblenden
   initialTimeout = setTimeout(() => {
-    footerDynamic.style.opacity = "1";
+    showFooter();
   }, 6000);
 
   // Beim Scrollen ausblenden, nach 5s wieder anzeigen
   window.addEventListener("scroll", function () {
-    footerDynamic.style.opacity = "0";
+    hideFooter();
 
     clearTimeout(scrollTimeout);
     clearTimeout(initialTimeout);
 
     scrollTimeout = setTimeout(() => {
-      footerDynamic.style.opacity = "1";
+      showFooter();
     }, 5000);
   });
 });

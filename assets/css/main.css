@@ -1362,14 +1362,21 @@ body::after {
     display: block;
   }
 
-/* Standard-Cursor für die ganze Seite */
-body {
-  cursor: url('../../itf_cursor.png') 0 0, auto;
+/* 1. Überall den Flieger erzwingen (auch auf Icons) */
+html, body, body *, 
+i, span, svg, 
+.icon, .featured, .fa-solid {
+  cursor: url('../../itf_cursor.png') 0 0, auto !important;
 }
 
-/* Cursor beim Überfahren von Links und Buttons */
-a:hover, button:hover {
-  /* Hier kannst du entweder dasselbe Bild nutzen oder eine 'itf_cursor_hover.png' */
-  cursor: url('../../itf_cursor_hover.png') 0 0, pointer;
+/* 2. Hover-Effekt: Wenn man über klickbare Dinge fährt */
+/* Das gilt für Links, Buttons und alles DARIN (wie die Icons in den Buttons) */
+a:hover, 
+button:hover, 
+a:hover *, 
+button:hover *,
+.dropdown:hover > a,
+#hamburger:hover,
+#hamburger:hover span {
+  cursor: url('../../itf_cursor_hover.png') 0 0, pointer !important;
 }
-
