@@ -1361,10 +1361,15 @@ body::after {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-/* Trick: Lange Wörter auf ganz kleinen Handys kürzen
-@media screen and (max-width: 480px) {
-    .footer-link {
-        font-size: 0.85em; /* Etwas kleinere Schrift auf Mobile */
-    }*/
+
+/* Standard-Cursor für die ganze Seite */
+body {
+  cursor: url('../../itf_cursor.png') 0 0, auto;
+}
+
+/* Cursor beim Überfahren von Links und Buttons */
+a:hover, button:hover {
+  /* Hier kannst du entweder dasselbe Bild nutzen oder eine 'itf_cursor_hover.png' */
+  cursor: url('../../itf_cursor_hover.png') 0 0, pointer;
 }
 
