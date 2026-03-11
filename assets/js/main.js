@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mapMarker = document.getElementById('map-marker');
   if (mapMarker) {
     mapMarker.addEventListener('click', () => {
-      window.open('https://www.google.com/maps/search/?api=1&query=Hueb+123,+5465+Mellikon,+Schweiz', '_blank');
+      window.open('https://www.google.com/maps/search/?api=1&query=Dorfstrasse+66,+5465+Mellikon,+Schweiz', '_blank');
     });
   }
 

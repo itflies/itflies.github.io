@@ -258,6 +258,11 @@ h3 {
   }
 }
 
+.contact-h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
 h4 {
   font-size: 1.3rem;
   line-height: 1.5rem;
@@ -270,6 +275,7 @@ h4 {
     color: inherit;
   }
 }
+
 
 h5 {
   font-size: 2.5rem;
@@ -298,6 +304,7 @@ p {
   font-size: 1.1rem;
   color: #303030;
 }
+
 
 .custom-p {
   font-size: 1.3rem;

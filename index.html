@@ -8,9 +8,18 @@ Copyright 2025 itFlies GmbH -->
 	<!-- Content Security Policy (CSP), X-XSS-Protection Header um Cross-Site Scripting (XSS) zu verhindern -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4HZ6KTHHXR"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4HZ6KTHHXR');
+	</script>
 	<!-- <base href="https://www.itflies.ch/"> -->
 
-	<title>itFlies GmbH | PWA-Portale & IT-Projektleitung</title>
+	<title>itFlies GmbH | Business-Apps & IT-Projektleitung</title>
 	<!-- <meta name="keywords"
 		content="itFlies GmbH, Cloud-Lösungen, Mobile Apps, Portallösungen, Partnerportal, Businessportal, Kundenportal, Zeiterfassungsportal, Individual-Software, Softwareentwicklung, IT-Beratung, Projektmanagement, Projektleitung, ERP, Hermes, SAP Business One, Schweiz, Digitalisierung, Dokumentation, AsciiDoc, Antora, Asciidoctor, CSS, HTML, JavaScript, TypeScript, C#, .NET, REST-API, Nachhaltigkeit, Datenschutz, Informationssicherheit, Gemini CLI, KI, KI-Beratung, Digitalisierungsstrategie, KI-Workshop, Anwendungsfallanalyse, PWA">
 	 -->
@@ -179,7 +188,7 @@ Copyright 2025 itFlies GmbH -->
                             </div>
                         </div>
 							<div class="hero-buttons-container">
-                                <button class="btn btn-secondary" id="btn-kontakt">
+                                <button class="btn btn-secondary" id="btn-anfrage">
                                         Erstgespräch anfragen
                                 </button>
                             </div>
@@ -994,23 +1003,41 @@ Copyright 2025 itFlies GmbH -->
 							Wir freuen uns über Ihre Nachricht per E-Mail an:
 							<span class="email-link contact-email"></span>
 						</p>
+						<a href="https://www.linkedin.com/company/itflies-gmbh/" target="_blank">
+							<img src="assets/images/about/LI-Bug.svg.original.svg" alt="LinkedIn Profil itFlies GmbH"
+								 class="image-linkedin" title="LinkedIn Profil itFlies GmbH" />
+						</a>
                         <div class="hero-buttons-container">
                             <button class="btn btn-secondary" id="btn-kontakt">
-                                Unverbindlich Anfragen
+                                Unverbindliche Kontaktaufnahme
                             </button>
                         </div>
                         <br>
-						<p class="contact-p">
-							<i class="fa-solid fa-map-marker-alt map-marker"
-								id="map-marker">
-							</i> Hueb 123, 5465 Mellikon, Schweiz
-							<br>
-							<!-- <i class="fa-solid fa-phone"></i> +41 44 123 45 67 -->
+						<br>
+						<br>
+						<i class="icon featured fa-solid fa-building"></i><br>
+						<br>
+						<h3 class="contact-h3">Büro</h3>
+						<p class="contact-p">Dorfstrasse 26<br>
+							5465 Mellikon<br>
+							Schweiz<br>
 						</p>
-						<a href="https://www.linkedin.com/company/itflies-gmbh/" target="_blank">
-							<img src="assets/images/about/LI-Bug.svg.original.svg" alt="LinkedIn Profil itFlies GmbH"
-								class="image-linkedin" title="LinkedIn Profil itFlies GmbH" />
-						</a>
+						<h3 class="contact-h3">Anfahrtsplan</h3><br>
+						<br>
+						<p class="contact-p">
+							Für die Anfahrt zum Gebäude und Besuche vor Ort verwenden Sie bitte
+							<i class="fa-solid fa-map-marker-alt map-marker"
+							   id="map-marker"></i> Dorfstrasse 66, 5465 Mellikon.
+						</p><br>
+						<iframe
+								src="https://www.google.com/maps?q=Dorfstrasse+66,+5465+Mellikon,+Schweiz&z=16&output=embed"
+								width="75%"
+								height="420"
+								style="border:0;"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade">
+						</iframe>
 					</header>
 				</article>
 			</div>
@@ -1020,7 +1047,7 @@ Copyright 2025 itFlies GmbH -->
 			<div class="wrapper style2">
 				<article class="container">
 					<i class="icon featured fa-solid fa-file-alt"></i>
-					<h3>Impressum</h3><br>
+					<h3>Impressum / Firmensitz</h3><br>
 					<h4>itFlies GmbH</h4><br>
 					<p>Hueb 123<br>
 						5465 Mellikon<br>
@@ -1029,6 +1056,15 @@ Copyright 2025 itFlies GmbH -->
 						Vertreten durch: Philipp Knecht<br>
 						UID: CHE-203.974.891<br>
 						DUNS: 48-013-1770<br>
+					</p>
+					<br>
+					<br>
+					<i class="icon featured fa-solid fa-building"></i>
+					<br>
+					<h3>Büro / Besucheradresse</h3><br>
+					<p>Dorfstrasse 26<br>
+						5465 Mellikon<br>
+						Schweiz<br>
 					</p>
 				</article>
 			</div>
@@ -1040,11 +1076,14 @@ Copyright 2025 itFlies GmbH -->
 					<header>
 						<i class="icon featured fa-solid fa-leaf"></i>
 						<h3>Nachhaltigkeitserklärung</h3>
-						<h4>Verantwortliche Stelle</h4>
+						<h4>Verantwortliche Stelle / Sitz:</h4>
 						<p>
 							itFlies GmbH<br>
-							5465 Mellikon, Schweiz<br>
+							Hueb 123<br>
+							5465 Mellikon<br>
+							Schweiz<br>
 							Ansprechperson: Marco Koster<br>
+							Büro / Korrespondenz / Kontakt: Dorfstrasse 26, 5465 Mellikon
 							E-Mail: <span class="email-link"></span>
 						</p>
 						<h4>Unser Engagement</h4>
@@ -1099,11 +1138,14 @@ Copyright 2025 itFlies GmbH -->
 					<header>
 						<i class="icon featured fa-solid fa-lock"></i>
 						<h3>Informationssicherheit</h3>
-						<h4>Verantwortliche Stelle</h4>
+						<h4>Verantwortliche Stelle / Sitz:</h4>
 						<p>
 							itFlies GmbH<br>
-							5465 Mellikon, Schweiz<br>
+							Hueb 123<br>
+							5465 Mellikon<br>
+							Schweiz<br>
 							Ansprechperson: Marco Koster<br>
+							Büro / Korrespondenz / Kontakt: Dorfstrasse 26, 5465 Mellikon
 							E-Mail: <span class="email-link"></span>
 						</p>
 						<h4>Unser Verständnis von Informationssicherheit</h4>
@@ -1164,11 +1206,14 @@ Copyright 2025 itFlies GmbH -->
 					<header>
 						<i class="icon featured fa-solid fa-file-shield"></i>
 						<h3>Datenschutzerklärung</h3>
-						<h4>Verantwortliche Stelle</h4>
+						<h4>Verantwortliche Stelle / Sitz</h4>
 						<p>
 							itFlies GmbH<br>
-							5465 Mellikon, Schweiz<br>
+							Dorfstrasse 26<br>
+							5465 Mellikon<br>
+							Schweiz<br>
 							Ansprechperson: Marco Koster<br>
+							Büro / Korrespondenz / Kontakt: Dorfstrasse 26, 5465 Mellikon
 							E-Mail: <span class="email-link"></span>
 						</p>
 						<h4>Erhebung und Nutzung personenbezogener Daten</h4>
