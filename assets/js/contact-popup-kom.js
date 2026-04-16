@@ -7,11 +7,11 @@ function openContactPopup() {
     popup.style.display = 'flex';
 
     // Telefonnummer sicher zusammensetzen (nicht direkt im HTML)
-    const p1 = "0041 ";
-    const p2 = "76 ";
-    const p3 = "463 ";
-    const p4 = "11 ";
-    const p5 = "80";
+    const p1 = "+41 ";
+    const p2 = "(0)56 ";
+    const p3 = "525 ";
+    const p4 = "88 ";
+    const p5 = "12";
 
     const number = p1 + p2 + p3 + p4 + p5;
 

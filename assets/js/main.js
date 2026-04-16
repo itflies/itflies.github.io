@@ -5,6 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
     link.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
   });
 
+  // Telefon Auflösung
+  const phoneCountryCode = '+41';
+  const phoneAreaCode = '56';
+  const phonePart1 = '525';
+  const phonePart2 = '88';
+  const phonePart3 = '12';
+
+  const phoneHref = phoneCountryCode + phoneAreaCode + phonePart1 + phonePart2 + phonePart3;
+  const phoneDisplay = phoneCountryCode + ' (0)' + phoneAreaCode + ' ' + phonePart1 + ' ' + phonePart2 + ' ' + phonePart3;
+
+  document.querySelectorAll('.phone-link').forEach(link => {
+    link.innerHTML = '<a href="tel:' + phoneHref + '">' + phoneDisplay + '</a>';
+  });
+
   // Map Marker Click
   const mapMarker = document.getElementById('map-marker');
   if (mapMarker) {
