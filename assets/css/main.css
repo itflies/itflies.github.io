@@ -1421,7 +1421,7 @@ button:hover *,
 
 .map-image {
 	display: block;
-	width: 620px; /* kleiner */
+	width: 640px; /* kleiner */
 	max-width: 100%;
 	height: auto;
 	border-radius: 16px;
