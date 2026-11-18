@@ -809,7 +809,7 @@ button:hover,
 }
 
 #demo {
-  scroll-margin-top: 80px; /* Passt den Scrollabstand an */
+  scroll-margin-top: 0; /* Passt den Scrollabstand an */
 }
 
 .map-marker {
