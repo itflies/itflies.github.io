@@ -1,43 +1,45 @@
 <!-- itFlies GmbH Website by @itflies.ch - https://itflies.ch
 Copyright 2025 itFlies GmbH -->
-
 <!DOCTYPE HTML>
-<html lang="de">
 
+<html lang="de">
 <head>
 	<!-- Content Security Policy (CSP), X-XSS-Protection Header um Cross-Site Scripting (XSS) zu verhindern -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 	<!-- Google tag (gtag.js) Auskommentiert, falls wieder rein braucht es Cookie Policy! wir verzichten bewusst stand 20.04.2026-->
 	<!--
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4HZ6KTHHXR"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4HZ6KTHHXR"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        gtag('config', 'G-4HZ6KTHHXR');
-	</script>-->
+            gtag('config', 'G-4HZ6KTHHXR');
+        </script>-->
 	<!-- <base href="https://www.itflies.ch/"> -->
-
-	<title>itFlies GmbH | Business-Apps & IT-Projektleitung</title>
 	<!-- <meta name="keywords"
-		content="itFlies GmbH, Cloud-Lösungen, Mobile Apps, Portallösungen, Partnerportal, Businessportal, Kundenportal, Zeiterfassungsportal, Individual-Software, Softwareentwicklung, IT-Beratung, Projektmanagement, Projektleitung, ERP, Hermes, SAP Business One, Schweiz, Digitalisierung, Dokumentation, AsciiDoc, Antora, Asciidoctor, CSS, HTML, JavaScript, TypeScript, C#, .NET, REST-API, Nachhaltigkeit, Datenschutz, Informationssicherheit, Gemini CLI, KI, KI-Beratung, Digitalisierungsstrategie, KI-Workshop, Anwendungsfallanalyse, PWA">
-	 -->
+            content="itFlies GmbH, Cloud-Lösungen, Mobile Apps, Portallösungen, Partnerportal, Businessportal, Kundenportal, Zeiterfassungsportal, Individual-Software, Softwareentwicklung, IT-Beratung, Projektmanagement, Projektleitung, ERP, Hermes, SAP Business One, Schweiz, Digitalisierung, Dokumentation, AsciiDoc, Antora, Asciidoctor, CSS, HTML, JavaScript, TypeScript, C#, .NET, REST-API, Nachhaltigkeit, Datenschutz, Informationssicherheit, Gemini CLI, KI, KI-Beratung, Digitalisierungsstrategie, KI-Workshop, Anwendungsfallanalyse, PWA">
+         -->
+
+	<title>itFlies GmbH | Businessportale für SAP Business One®</title>
+
 	<meta name="description"
-		content="Wir bringen Ihre IT zum Fliegen. Massgeschneiderte Business-Apps, Portallösungen und erfahrene, strukturierte IT-Projektleitung für klare Prozesse und erfolgreiche Projekte.">
+		  content="Massgeschneiderte Businessportale für SAP Business One®. Geschäftsprozesse digitalisieren und Mitarbeitende, Kunden und Lieferanten effizient einbinden." />
 
 	<!-- START Open Graph-Tags für Social Media Integration -->
-	<meta property="og:title" content="itFlies GmbH | Business-Apps, Portallösungen & IT-Projektleitung">
-	<meta property="og:description"
-		content="Prozesse digitalisieren mit professionellem IT-Projektmanagement, massgeschneiderten Business-Apps und Portallösungen. Ihr Schweizer Partner für innovative, Software Lösungen.">
-	<meta property="og:image" content="https://itflies.ch/assets/images/home.jpg">
-	<meta property="og:url" content="https://itflies.ch">
-	<!-- END Open Graph-Tags für Social Media Integration -->
+	<meta property="og:title"
+		  content="itFlies GmbH | Businessportale für SAP Business One" />
 
+	<meta property="og:description"
+		  content="Wir entwickeln massgeschneiderte Businessportale für SAP Business One. Für Mitarbeitende, Kunden und Geschäftspartner – abgestimmt auf Ihre Prozesse, mobil nutzbar und bei Bedarf offlinefähig." />
+
+	<meta content="https://itflies.ch/assets/images/home.jpg" property="og:image"/>
+	<meta content="https://itflies.ch" property="og:url"/>
+	<!-- END Open Graph-Tags für Social Media Integration -->
 	<!-- Inline-Styles (jetzt erlaubt durch CSP) -->
-    <style>
-        @media (max-width: 600px) {
+	<style>
+		@media (max-width: 600px) {
           footer nav:not(.footer-nav) {
             display: flex;
             flex-direction: column;
@@ -49,1469 +51,1280 @@ Copyright 2025 itFlies GmbH -->
             margin: 3px 0;
           }
         }
-    </style>
-
+	</style>
 	<!-- CSS-Dateien -->
-	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="assets/css/mobile.css">
-	<link rel="stylesheet" href="assets/css/opensans.css">
-	<link rel="stylesheet" href="assets/css/fontawesome.css">
-
+	<link href="assets/css/main.css" rel="stylesheet"/>
+	<link href="assets/css/mobile.css" rel="stylesheet"/>
+	<link href="assets/css/opensans.css" rel="stylesheet"/>
+	<link href="assets/css/fontawesome.css" rel="stylesheet"/>
 	<!-- Favicon und Manifest -->
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="canonical" href="https://www.itflies.ch/" />
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-	<link rel="manifest" href="manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-
+	<link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+	<link href="https://www.itflies.ch/" rel="canonical">
+	<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+	<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+	<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+	<link href="manifest.json" rel="manifest"/>
+	<meta content="#ffffff" name="msapplication-TileColor"/>
+	<meta content="assets/images/ms-icon-144x144.png" name="msapplication-TileImage"/>
+	<meta content="#ffffff" name="theme-color"/>
 	<!-- JS -->
-	<script defer src="assets/js/fontawesome.js"></script>
-
+	<script defer="" src="assets/js/fontawesome.js"></script>
 	<!-- JSON-LD Schema für Organisation -->
 	<script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "itFlies GmbH",
-            "url": "https://www.itflies.ch",
-            "logo": "https://www.itflies.ch/assets/images/home.png",
-            "sameAs": [
-                "https://www.linkedin.com/company/itflies-gmbh/"
-            ]
-        }
-    </script>
-
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "itFlies GmbH",
+			"url": "https://www.itflies.ch",
+			"logo": "https://www.itflies.ch/assets/images/home.png",
+			"sameAs": [
+				"https://www.linkedin.com/company/itflies-gmbh/"
+			]
+		}
+	</script>
 	<!-- JavaScript für E-Mail-Auflösung -->
-	
 </head>
-
-
 <body id="top">
-	<!-- Navigation Menu -->
-	<nav class="navbar" id="nav">
-		<!-- Hamburger Navigation Menu für Mobile-->
-		<div class="hamburger" id="hamburger" aria-label="Menü öffnen/schliessen">
-			<span></span>
-			<span></span>
-			<span></span>
+<!-- Navigation Menu -->
+<nav class="navbar" id="nav">
+	<!-- Hamburger Navigation Menu für Mobile-->
+	<div aria-label="Menü öffnen/schliessen" class="hamburger" id="hamburger">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="home">
+		<a class="logo" href="#top">
+			<img alt="Icon itFlies GmbH" class="logo-icon" src="assets/images/home.png"/>
+		</a>
+		<span class="logo-mobile-text">itFlies GmbH</span>
+	</div>
+	<div class="contact-icon">
+		<a aria-label="Kontakt aufnehmen" href="#contact">
+			<!-- <span class="icon email fa-envelope"></span> -->
+			<i class="icon contact fa-solid fa-contact-card"></i>
+		</a>
+	</div>
+	<ul class="container" id="menu"><li></li><li class="desktop"><a href="#services">Leistungen</a></li><li class="desktop"><a href="#portal">Portale</a></li><li class="desktop"><a href="#demo">Portal-Demo</a></li><li class="desktop"><a href="#references">Referenzen</a></li><li class="desktop"><a href="#about">Über uns</a></li><li class="desktop contact-button"><a href="#contact">Kontakt</a></li><li></li></ul>
+</nav>
+<main class="content">
+	<a class="logo" href="#top">
+		<img alt="itFlies" class="logo" src="assets/images/logo/logo.png"/>
+		<span class="logo-mobile-text">itFlies GmbH</span>
+	</a>
+	<!-- Home - Top -->
+	<section>
+
+		<div class="wrapper first">
+			<article class="container">
+				<header class="hero">
+					<p class="hero-kicker">
+						Wir bringen Ihre IT zum Fliegen
+					</p>
+
+					<h1 class="hero-title">
+						Mehr Möglichkeiten für Ihr SAP Business One®.
+					</h1>
+
+					<p class="hero-subtitle">
+						Massgeschneiderte Businessportale, die Ihre Geschäftsprozesse vereinfachen und Mitarbeitende sowie Geschäftspartner miteinander verbinden.
+					</p>
+
+					<div class="hero-services">
+						<div class="hero-card">
+							<h2 class="hero-card-title">
+								Businessportale für SAP Business One
+							</h2>
+							<p class="hero-card-text">
+								<strong>
+									Ein Portal. Vielfältige Möglichkeiten.
+								</strong><br>
+								Ob für interne Abläufe oder die Zusammenarbeit
+								mit Kunden und Lieferanten – wir entwickeln
+								Businessportale, die sich flexibel an Ihre
+								Geschäftsprozesse anpassen.
+							</p>
+						</div>
+
+						<div class="hero-card">
+							<h2 class="hero-card-title">
+								Prozesse einfach digitalisieren
+							</h2>
+							<p class="hero-card-text">
+								<strong>
+									Weniger Aufwand. Mehr Effizienz.
+								</strong><br>
+								Wir vermeiden Medienbrüche, automatisieren
+								wiederkehrende Aufgaben und schaffen intuitive
+								Anwendungen für Desktop, Tablet und Smartphone.
+							</p>
+						</div>
+					</div>
+
+					<div class="hero-buttons-container">
+						<button class="btn btn-secondary" id="btn-anfrage">
+							Portalprojekt besprechen
+						</button>
+					</div>
+				</header>
+			</article>
 		</div>
-        <div class="home">
-            <a href="#top" class="logo">
-                <img src="assets/images/home.png" alt="Icon itFlies GmbH" class="logo-icon" />
-            </a>
-            <span class="logo-mobile-text">itFlies GmbH</span>
-        </div>
-		<div class="contact-icon">
-			<a href="#contact" aria-label="Kontakt aufnehmen">
-				<!-- <span class="icon email fa-envelope"></span> -->
-				<i class="icon contact fa-solid fa-contact-card"></i>
-			</a>
-		</div>
-        <ul class="container" id="menu">
-            <li></li>
-            <li class="dropdown desktop">
-                <a href="#services" class="dropdown-label">Dienstleistungen <i class="fa-solid fa-angle-down"></i></a>
-                    <ul class="dropdown-content">
-                        <li><a href="#project-management">Projektmanagement</a></li>
-                        <li><a href="#portal">Portallösungen</a></li>
-                    </ul>
-            </li>
-            <li class="dropdown desktop">
-                <a href="#demo">Portal-Demo <i class="fa-solid fa-angle-down"> </i></a>
-            </li>
-            <li class="dropdown desktop">
-                <a href="#references" class="dropdown-label">Referenzen <i class="fa-solid fa-angle-down"></i></a>
-                <ul class="dropdown-content">
-                    <li><a href="#bar">BARDINI + KELLER AG </a></li>
-                    <li><a href="#bof">BoFru AG </a></li>
-                    <li><a href="#dia">DiaHem AG </a></li>
-                    <li><a href="#feg">Felix Emmenegger AG </a></li>
-                    <li><a href="#hed">Hedin Automotive AG </a></li>
-					<li><a href="#hpw">HPW AG </a></li>
-                    <li><a href="#jun">Jungheinrich AG </a></li>
-                    <li><a href="#klt">Kalt AG </a></li>
-                    <li><a href="#oru">Otto Rohrunterhalt GmbH </a></li>
-                    <li><a href="#rue">Ruedersäge AG </a></li>
-                </ul>
-            </li>
-            <li class="desktop"><a href="#about">Über uns <i class="fa-solid fa-angle-down"></i></a></li>
-            <li class="desktop contact-button"><a href="#contact">Kontakt <i class="fa-solid fa-angle-down"></i></a></li>
-            <li></li>
-        </ul>
+	</section>
+</main>
 
+<section id="services">
+	<div class="wrapper style2">
+		<article class="container">
+			<header>
+				<h2>Unsere Leistungen</h2>
+				<p class="custom-p">
+					Wir erweitern SAP Business One mit individuellen
+					Businessportalen und machen Geschäftsprozesse
+					einfacher, effizienter und ortsunabhängig zugänglich.
+				</p>
+			</header>
 
-	</nav>
-
-    <main class="content">
-        <a href="#top" class="logo">
-            <img src="assets/images/logo/logo.png" alt="itFlies" class="logo">
-            <span class="logo-mobile-text">itFlies GmbH</span>
-        </a>
-        <!-- Home - Top -->
-        <section>
-            <div class="wrapper first">
-                <article class="container">
-                    <header class="hero">
-                        <p class="hero-kicker">
-<!--                            swiss portal solutions &amp; it project leadership-->
-                            Wir bringen Ihre IT zum Fliegen
-                        </p>
-
-                        <h1 class="hero-title">
-                            Digitalisierung, die Abläufe wirklich vereinfacht.
-                        </h1>
-
-                        <p class="hero-subtitle">
-                            Business-Apps und IT-Projektleitung aus einer Hand
-                        </p>
-
-                        <div class="hero-services">
-                            <div class="hero-services">
-
-                                <div class="hero-card">
-                                    <h2 class="hero-card-title">Business-Apps</h2>
-                                    <p class="hero-card-text">
-                                        <strong>Ihre Prozesse digital, klar und effizient.</strong><br>
-                                        Wir entwickeln Portal-Apps, die Medienbrüche eliminieren, Abläufe verbinden und administrativen Aufwand messbar reduzieren.
-                                    </p>
-                                </div>
-
-                                <div class="hero-card">
-    								<h2 class="hero-card-title">IT-Projektleitung</h2>
-    								<p class="hero-card-text">
-        								<strong>Komplexität reduzieren, Ziele erreichen.</strong><br>
-        								Wir führen Ihre IT-Projekte mit Weitblick und Struktur, koordinieren Beteiligte und führen sie zum erfolgreichen Abschluss.
-    </p>
-</div>
-                            </div>
-                        </div>
-							<div class="hero-buttons-container">
-                                <button class="btn btn-secondary" id="btn-anfrage">
-                                        Jetzt Anfrage senden
-                                </button>
-                            </div>
-                    </header>
-                </article>
-            </div>
-        </section>
-    </main>
-		<section id="services">
-			<div class="wrapper style2">
-				<article class="container">
-					<header>
-						<h2>Dienstleistungen</h2>
-						<p class="custom-p">Profitieren Sie von unserer Erfahrung und Kompetenz in der IT-Welt und lassen Sie uns gemeinsam Ihre digitalen Herausforderungen meistern.</p>
-					</header>
-					<div>
-						<div class="row">
-							<!-- Beratung -->
-							<div class="tile">
-								<section class="box services">
-									<i class="icon featured fa-solid fa-user-tie"></i>
-									<br>
-									<h3>Digitale Beratung & Strategie</h3>
-									<p>
-										Mit unserem umfassenden Know-how verhelfen wir Ihnen zu entscheidenden
-										Wettbewerbsvorteilen und unterstützen Sie bei der durchgängigen Digitalisierung
-										Ihrer Geschäftsprozesse. Wir analysieren Ihre individuellen Anforderungen,
-										optimieren bestehende Strukturen und entwickeln massgeschneiderte Strategien für
-										eine nachhaltige, zukunftssichere IT-Landschaft, die sich optimal in Ihre
-										Unternehmensprozesse integriert.
-										Unsere Beratung umfasst auch den strategischen Einsatz von künstlicher
-										Intelligenz, um Ihre Prozesse zukunftssicher zu gestalten.
-									</p>
-								</section>
-							</div>
-							<!-- Projektmanagement -->
-							<div class="tile">
-								<section class="box services">
-									<i class="icon featured fa-solid fa-chart-gantt"></i>
-									<br>
-									<h3>Professionelles IT-Projektmanagement</h3>
-									<p>
-										Wir begleiten Ihr Informatikvorhaben von der ersten Idee bis zum erfolgreichen
-										Abschluss. Dabei übernehmen wir die volle Verantwortung für die Planung,
-										Steuerung und das Controlling von Zeit, Budget und Qualität. Wir stellen eine
-										transparente Kommunikation zwischen allen Stakeholdern sicher und sorgen für
-										einen reibungslosen Ablauf. Durch den Einsatz bewährter Methoden wie <a
-											href="https://www.hermes.admin.ch/" class="link" target="_blank"
-											rel="noopener noreferrer">HERMES</a> oder agiler Vorgehensmodelle
-										garantieren wir eine strukturierte und messbar effiziente Umsetzung Ihres
-										Projekts.
-									</p>
-								</section>
-							</div>
-							<!-- Portallösung & Softwareentwicklung -->
-							<div class="tile">
-								<section class="box services">
-									<i class="icon featured fa-solid fa-code"></i>
-									<br>
-									<h3>Business-Apps & Portale</h3>
-									<p>
-										Wir entwickeln massgeschneiderte Digitalisierungs-Lösungen zur Optimierung von
-										Geschäftsprozessen, einschliesslich Individualentwicklungen für SAP Business
-										One. Unser Spezialgebiet sind performante Softwarelösungen, die auf Desktop-PCs
-										und mobilen Geräten effizient laufen – auch offline. Unsere <a href="#portal"
-											class="link">Portallösungen</a> integrieren sich nahtlos in Ihre bestehende
-										IT-Landschaft, inklusive ERP-Schnittstellen.<br>
-										Moderne KI-Tools wie Gemini CLI beschleunigen unsere Entwicklung und erhöhen die
-										Code-Qualität.
-									</p>
-								</section>
-							</div>
-						</div>
-					</div>
-				</article>
-			</div>
-		</section>
-		<!-- Projektmanagement -->
-		<section id="project-management">
-			<div class="wrapper style3">
-				<article class="container">
-					<header>
-						<h2>IT-Projektmanagement</h2>
-						<p class="custom-p">
-							Unsere Projektsteuerung folgt etablierten Best Practices und bewährten Methoden, um eine
-							effiziente, transparente und zielorientierte Zusammenarbeit zwischen Stakeholdern, Kunden
-							und Lieferanten sicherzustellen. Dabei legen wir besonderen Wert auf klare Strukturen, agile
-							Anpassungsfähigkeit und nachhaltigen Projekterfolg. Dank unserer ausgeprägten Erfahrung in
-							der ERP-Projektleitung und im Betrieb sind wir zudem in der Lage, komplexe Anforderungen
-							souverän umzusetzen und langfristig erfolgreiche Projektergebnisse zu erzielen.
+			<div class="row">
+				<!-- Businessportale -->
+				<div class="tile">
+					<section class="box services">
+						<i class="icon featured fa-solid fa-window-maximize"></i>
+						<br>
+						<h3>Individuelle Businessportale</h3>
+						<p>
+							Ob für Mitarbeitende, Kunden oder
+							Geschäftspartner – wir entwickeln
+							massgeschneiderte Lösungen, die
+							Informationen und Funktionen
+							bedarfsgerecht bereitstellen.
 						</p>
-					</header>
-					<div>
-						<div class="row">
-							<!-- Vorgehensmethode -->
-							<!-- Vorgehensmethode -->
-							<div class="tile">
-								<section class="box project-management">
-<!--									<br>-->
-									<i class="icon featured fa-solid fa-cubes"></i>
-									<br>
-									<h3>Vorgehensmethode</h3>
-									<p>Wir kombinieren eine strukturierte Herangehensweise mit pragmatischer
-										Flexibilität, um Projekte effizient und kundenorientiert umzusetzen. Dabei
-										nutzen wir die bewährte <a href="https://www.hermes.admin.ch/" class="link"
-											target="_blank">HERMES-Projektmanagement-Methode</a> gezielt und
-										anpassungsfähig, um klare Rollen, definierte Phasen und nachvollziehbare
-										Meilensteine sicherzustellen.</p>
+					</section>
+				</div>
 
-								</section>
-							</div>
-							<!-- Anforderungsmanagement -->
-							<div class="tile">
-								<section class="box project-management">
-<!--									<br>-->
-									<i class="icon featured fa-solid fa-list-check"></i>
-									<br>
-									<h3>Anforderungsmanagement</h3>
-									<p>Durch eine systematische Erfassung und Verwaltung aller Anforderungen schaffen
-										wir eine solide Planungsgrundlage. Gemeinsam mit Stakeholdern definieren wir
-										präzise Ziele, vermeiden Unklarheiten durch strukturierte Spezifikationen und
-										setzen auf Prototyping für eine schnelle und verlässliche Konzeptvalidierung.
-									</p>
-								</section>
-							</div>
-
-							<!-- Agile Methoden -->
-							<div class="tile">
-								<section class="box project-management">
-<!--									<br>-->
-									<i class="icon featured fa-solid fa-arrows-spin"></i>
-									<br>
-									<h3>Agile Ansätze</h3>
-									<p>Wir kombinieren klassische und agile Methoden für flexible und effiziente
-										Projekte. Durch iterative Entwicklung mit kontinuierlichem Feedback reagieren
-										wir schnell auf neue Anforderungen und sichern die Qualität durch regelmässige
-										Reviews. Das Pareto-Prinzip (80/20-Regel) hilft uns, mit minimalem Aufwand
-										maximalen Nutzen zu erzielen.</p>
-								</section>
-							</div>
-						</div>
-                    </div>
-				</article>
-			</div>
-		</section>
-		<!-- Portallösungen -->
-		<section id="portal">
-			<div class="wrapper style2">
-				<article class="container">
-					<header>
-						<h2>Portallösungen</h2>
-						<p class="custom-p">
-							Unsere modularen Portale vernetzen Systeme, Anwendungen und Nutzer auf einer zentralen
-							Plattform – intuitiv bedienbar auf Desktop und mobil.
-							Sie definieren den Bedarf, wir integrieren Ihre Umsysteme passgenau.
-							<br>
-							Als <a href="https://de.wikipedia.org/wiki/Progressive_Web_App" class="link" target="_blank"
-								rel="noopener noreferrer">Progressive Web App (PWA)</a> sind unsere Lösungen
-							plattformunabhängig nutzbar.
-							Dank moderner <a href="https://de.wikipedia.org/wiki/Single-Page-Webanwendung" class="link"
-								target="_blank" rel="noopener noreferrer">Single Page Application (SPA)</a>-Architektur
-							erfolgt die Navigation ohne Seiten-Neuladen – für ein nahtloses, app-ähnliches
-							Nutzungserlebnis.
+				<!-- Geschäftsprozesse -->
+				<div class="tile">
+					<section class="box services">
+						<i class="icon featured fa-solid fa-gears"></i>
+						<br>
+						<h3>Digitalisierung von Geschäftsprozessen</h3>
+						<p>
+							Vom Angebot über die Auftragsabwicklung, Aktivitäten und
+							Zeiterfassung bis zur Abrechnung: Wir digitalisieren Ihre
+							individuellen Abläufe durchgängig.
 						</p>
-					</header>
-					<div>
-						<div class="row">
-							<!-- Vorteile Portallösung -->
-							<div class="tile-big">
-								<section class="box portal">
-									<i class="icon featured fa-solid fa-gears"></i>
-									<br>
-									<h3>Einsatzmöglichkeiten unserer Portallösungen</h3>
-									<ul>
-										<li>
-											<h6>Partnerportal</h6>
-											<p>Effiziente Zusammenarbeit mit Lieferanten und Dienstleistern</p>
-										</li>
-										<li>
-											<h6>Businessportal</h6>
-											<p>Individuelle Portale für spezifische Geschäftsprozesse</p>
-										</li>
-										<li>
-											<h6>Kundenportal</h6>
-											<p>Automatisierte Angebotserstellung mit wenigen Klicks, nahtlose Anbindung an bestehende Systeme</p>
-										</li>
-                                        <li>
-                                            <h6>Produktionsportal</h6>
-                                            <p>Sortierung von Obst (z.B. Äpfeln) und chargenbasierte Bestandsverwaltung im Produktionsprozess</p>
-                                        </li>
-										<li>
-											<h6>Zeiterfassungsportal</h6>
-											<p>Arbeitszeiten erfassen und nahtlos in ERP-System übertragen</p>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-						<div class="row">
-							<br>
-							<!-- Einsatzmöglichkeiten Portallösungen -->
-							<div class="tile-big">
-								<section class="box portal">
-									<i class="icon featured fa-solid fa-thumbs-up"></i>
-									<br>
-									<h3>Ihre Vorteile mit unseren Portallösungen</h3>
-									<ul>
-										<li>
-											<h6>Erhöhte Effizienz</h6>
-											<p>Automatisierte Abläufe und Self-Service-Funktionen reduzieren manuellen
-												Aufwand und steigern die Produktivität.</p>
-										</li>
-										<li>
-											<h6>Kalkulierbare Kosten</h6>
-											<p>Transparente Wartungskosten auf Basis des tatsächlichen
-												Entwicklungsaufwands – keine versteckten Lizenzgebühren pro Benutzer.
-											</p>
-										</li>
-										<li>
-											<h6>Integration bestehender Systeme</h6>
-											<p>Nahtlose Anbindung an ERP, CRM und weitere Anwendungen – betreibbar auf
-												Ihrem eigenen Webserver, intern oder mit externem Zugriff.</p>
-										</li>
-										<li>
-											<h6>Zentrale Steuerung</h6>
-											<p>Alle wichtigen Funktionen und Informationen gebündelt auf einer
-												Plattform.</p>
-										</li>
-										<li>
-											<h6>Benutzerverwaltung & Funktionssteuerung</h6>
-											<p>Individuelle Zugriffsrechte für Kunden, Mitarbeitende und Partner – exakt
-												nach Bedarf.</p>
-										</li>
-										<li>
-											<h6>Mehrsprachigkeit</h6>
-											<p>Benutzeroberflächen und Inhalte mehrsprachig verfügbar – inklusive kundenspezifischer Übersetzungen.<br>
-											Bereits unterstützte Standardsprachen:</p>
-											<div class="language-list">
-												<span class="lang-badge">DE</span>Deutsch
-												<span class="lang-badge">FR</span>Français
-												<span class="lang-badge">EN</span>English
-												<span class="lang-badge">IT</span>Italiano
-												<span class="lang-badge">ES</span>Español
-												<span class="lang-badge">PL</span>Polski
-											</div>
-											<p>Erweiterung um zusätzliche Sprachen ist jederzeit möglich.</p>
-										</li>
-										<li>
-											<h6>Sicherheit & Datenschutz</h6>
-											<p>Aktuelle Sicherheitsstandards sowie DSGVO(EU)- und revDSG(CH)-konforme
-												Datenverarbeitung sorgen für maximalen Schutz Ihrer Informationen.</p>
-										</li>
+					</section>
+				</div>
 
-										<li>
-											<h6>Flüssige Benutzererfahrung</h6>
-											<p>
-												Schnelle Navigation ohne Seiten-Neuladen – für ein modernes,
-												app-ähnliches Nutzungserlebnis.
-											</p>
-										</li>
-										<li>
-											<h6>Offline nutzbar</h6>
-											<p>Die Portale funktionieren auch bei fehlender Internetverbindung – ideal
-												für den mobilen Einsatz.</p>
-										</li>
-										<li>
-											<h6>App-ähnliche Nutzung</h6>
-											<p>Installierbar auf Smartphones, Tablets und PCs – direkt aus dem Browser
-												heraus.</p>
-										</li>
-										<li>
-											<h6>Plattformunabhängigkeit</h6>
-											<p>Lauffähig auf allen gängigen Geräten – unabhängig von Betriebssystem oder
-												Hersteller.</p>
-										</li>
-										<li>
-											<h6>Basierend auf unserem Framework</h6>
-											<p>Individuell erweiterbare Architektur mit hoher Flexibilität und
-												Zukunftssicherheit.</p>
-										</li>
-										<li>
-											<h6>Volle Kontrolle durch Eigenentwicklung</h6>
-											<p>Unser Framework ist vollständig selbst entwickelt – ohne Abhängigkeiten
-												von weiteren Systemherstellern. So bleiben Sie flexibel und profitieren
-												von kurzen Entscheidungswegen und direkter Weiterentwicklung durch uns.
-											</p>
-										</li>
-
-									</ul>
-
-								</section>
-
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<!-- Portal Demo -->
-						<div class="tile-big">
-							<section class="box portal" id="demo">
-								<i class="icon featured fa-solid fa-television"></i>
-								<br>
-								<h3>Portal - Demo</h3>
-								<p>Der für die Kalt AG entwickelte CAD-Angebots-Kalkulator im Kundenportal beschleunigt
-									die Angebotserstellung durch automatisierte Berechnungen und eine nahtlose SAP
-									Business One-Integration. Die Umsetzung erfolgte in Zusammenarbeit mit unserem
-									Partner DATA UNIT AG und der Cadwork Holz AG.
-									<br><br>
-									<em>Das Video zur Demo wurde von der DATA UNIT AG (ehemals Itegrity AG) erstellt und steht uns zur Nutzung zur Verfügung.</em>
-								</p>
-
-								<div class="youtube-placeholder" id="yt-placeholder">
-									<img class="youtube-thumbnail"
-										src="assets/images/youtube/video-thumbnail-cad-angebots-kalkulator.jpg"
-										alt="Video Vorschau">
-									<button class="play-button">▶</button>
-								</div>
-
-								
-							</section>
-						</div>
-					</div>
-				</article>
+				<!-- Integration -->
+				<div class="tile">
+					<section class="box services">
+						<i class="icon featured fa-solid fa-link"></i>
+						<br>
+						<h3>Integration und Weiterentwicklung</h3>
+						<p>
+							Unsere Lösung ist direkt in SAP Business One integriert und lässt
+							sich bei Bedarf per API an weitere Systeme anbinden. Wir begleiten
+							Sie von der Analyse über die Umsetzung bis zum laufenden Betrieb.
+						</p>
+					</section>
+				</div>
 			</div>
-		</section>
+		</article>
+	</div>
+</section>
 
-		<!-- Technologie -->
-		<section id="technologies">
-			<div class="wrapper style3">
-				<article class="container">
-					<header>
-						<h2>Technologien</h2>
-						<p class="custom-p">Unsere höchste Produktivität erreichen wir durch den Einsatz folgender
-							Technologien und
-							Programmierprachen: </p>
-					</header>
-					<div>
-						<div class="row">
-							<!-- Frontend -->
-							<div class="tile-middle">
-								<section class="box technologies">
-<!--									<br>-->
-									<div style="display: flex; justify-content: center; align-items: center;">
-										<i class="icon featured fa-solid fa-desktop" style="margin-right: 15px;"></i>
-										<i class="icon featured fa-solid fa-mobile-screen"></i>
+<!-- Portallösungen -->
+
+<section id="portal">
+	<div class="wrapper style3">
+		<article class="container">
+			<header>
+				<h2>Portallösungen</h2>
+				<p class="custom-p">
+					Unsere modularen Businessportale vernetzen Systeme,
+					Anwendungen und Nutzer auf einer zentralen Plattform.
+					Sie definieren Ihre Anforderungen, wir integrieren
+					Ihre Umsysteme passgenau.
+				</p>
+				<p class="custom-p">
+					Ob Desktop, Tablet oder Smartphone – unsere Portale
+					sind auf allen gängigen Geräten und Betriebssystemen
+					wie Windows, macOS, Linux, Android und iOS nutzbar.
+					Als Progressive Web App (PWA) bieten sie ein modernes,
+					app-ähnliches Nutzungserlebnis direkt im Browser – ganz ohne
+					aufwendige Installation über App-Stores.
+				</p>
+				<p class="custom-p">
+					Dank moderner Single Page Application (SPA)-Architektur
+					erfolgt die Navigation ohne vollständiges Neuladen
+					der Seite – für eine schnelle und flüssige Bedienung.
+				</p>
+
+			</header>
+
+			<div>
+				<div class="row">
+					<!-- Einsatzmöglichkeiten -->
+					<div class="tile-big">
+						<section class="box portal">
+							<i class="icon featured fa-solid fa-gears"></i>
+							<br>
+							<h3>Einsatzmöglichkeiten unserer Businessportale</h3>
+							<ul>
+								<li>
+									<h6>Vertrieb und Auftragsabwicklung</h6>
+									<p>
+										Angebote erstellen, Bestellungen
+										erfassen und Aufträge sowie
+										Rechnungen einsehen.
+									</p>
+								</li>
+								<li>
+									<h6>Kunden- und Partnermanagement</h6>
+									<p>
+										Geschäftspartner verwalten,
+										Aktivitäten dokumentieren und
+										die Zusammenarbeit mit Kunden,
+										Lieferanten und Dienstleistern
+										vereinfachen.
+									</p>
+								</li>
+								<li>
+									<h6>Produktion und Lager</h6>
+									<p>
+										Produktionsabläufe unterstützen,
+										Warenbewegungen erfassen und
+										Chargen sowie Bestände verwalten.
+									</p>
+								</li>
+								<li>
+									<h6>Qualitäts- und Zertifikatsmanagement</h6>
+									<p>
+										Zertifikate verwalten, Fristen
+										überwachen und externe
+										Zertifizierungssysteme einbinden.
+									</p>
+								</li>
+								<li>
+									<h6>Zeit- und Leistungserfassung</h6>
+									<p>
+										Arbeitszeiten und Leistungen
+										einfach erfassen und direkt
+										in die nachgelagerten
+										Geschäftsprozesse übernehmen.
+									</p>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+
+				<div class="row">
+					<!-- Vorteile -->
+					<div class="tile-big">
+						<section class="box portal">
+							<i class="icon featured fa-solid fa-thumbs-up"></i>
+							<br>
+							<h3>Ihre Vorteile mit unseren Businessportalen</h3>
+							<ul>
+								<li>
+									<h6>Effiziente Geschäftsprozesse</h6>
+									<p>
+										Automatisierte Abläufe und
+										Self-Service-Funktionen reduzieren
+										manuellen Aufwand, vermeiden
+										Medienbrüche und steigern
+										die Produktivität.
+									</p>
+								</li>
+								<li>
+									<h6>Nahtlose Integration</h6>
+									<p>
+										Direkte Anbindung an SAP Business One
+										und bei Bedarf an weitere Systeme.
+										Bestehende Daten und Prozesse
+										werden gezielt eingebunden.
+									</p>
+								</li>
+								<li>
+									<h6>Flexible Benutzer- und Rechteverwaltung</h6>
+									<p>
+										Rollenbasierte Zugriffsrechte
+										stellen sicher, dass Mitarbeitende,
+										Kunden und Geschäftspartner
+										nur die für sie vorgesehenen
+										Informationen und Funktionen erhalten.
+									</p>
+								</li>
+								<li>
+									<h6>Mobil und plattformunabhängig</h6>
+									<p>
+										Moderne Progressive Web Apps
+										ermöglichen eine intuitive,
+										app-ähnliche Nutzung auf
+										Desktop, Tablet und Smartphone –
+										direkt über den Browser.
+									</p>
+								</li>
+								<li>
+									<h6>Offline-Funktionen nach Bedarf</h6>
+									<p>
+										Für geeignete Anwendungsfälle
+										können ausgewählte Funktionen
+										auch ohne aktive Internetverbindung
+										genutzt werden.
+									</p>
+								</li>
+								<li>
+									<h6>Mehrsprachigkeit</h6>
+									<p>
+										Mehrsprachige Benutzeroberflächen
+										mit kundenspezifischen Übersetzungen.
+										Bereits unterstützte Sprachen:
+									</p>
+									<div class="language-list">
+										<span class="lang-badge">DE</span>Deutsch
+										<span class="lang-badge">FR</span>Français
+										<span class="lang-badge">EN</span>English
+										<span class="lang-badge">IT</span>Italiano
+										<span class="lang-badge">ES</span>Español
+										<span class="lang-badge">PL</span>Polski
 									</div>
-									<br>
-									<h3>Frontend</h3>
-									<ul>
-										<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="link"
-												target="_blank">CSS</a></li>
-										<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="link"
-												target="_blank">HTML</a></li>
-										<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-												class="link" target="_blank">JavaScript</a></li>
-										<li><a href="https://www.typescriptlang.org/" class="link"
-												target="_blank">TypeScript</a></li>
-									</ul>
-
-								</section>
-							</div>
-							<!-- Backend -->
-							<div class="tile-middle">
-								<section class="box technologies">
-<!--									<br>-->
-									<i class="icon featured fa-solid fa-server"></i>
-									<br>
-									<h3>Backend</h3>
-									<ul>
-										<li><a href="https://www.iis.net/" class="link" target="_blank">Microsoft
-												IIS&trade;</a></li>
-										<li><a href="https://www.microsoft.com/en-us/sql-server/" class="link"
-												target="_blank">MS SQL Server&trade;</a></li>
-										<li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/" class="link"
-												target="_blank">C#</a></li>
-										<li><a href="https://dotnet.microsoft.com/" class="link"
-												target="_blank">.NET</a></li>
-										<li><a href="https://restfulapi.net/" class="link" target="_blank">REST-API</a>
-										</li>
-									</ul>
-								</section>
-							</div>
-							<!-- KI -->
-							<!-- <div class="tile-middle">
-								<section class="box technologies">
-									<br>
-									<i class="icon featured fa-solid fa-robot"></i>
-									<br>
-									<h3>KI</h3>
-									<ul>
-										<li><a href="https://deepmind.google/technologies/gemini/" class="link"
-												target="_blank">Google Gemini CLI</a></li>
-										<li>Automatisierte Code-Analyse</li>
-										<li>Beschleunigung der Entwicklung</li>
-									</ul>
-								</section>
-							</div> -->
-							<!-- Dokumentation -->
-							<div class="tile-middle">
-								<section class="box technologies">
-<!--									<br>-->
-									<i class="icon featured fa-solid fa-book"></i>
-									<br>
-									<h3>Dokumentation</h3>
-									<ul>
-										<li><a href="https://asciidoc.org/" class="link" target="_blank">AsciiDoc</a>
-										</li>
-										<li><a href="https://antora.org/" class="link" target="_blank">Antora</a></li>
-										<li><a href="https://docs.asciidoctor.org/pdf-converter/latest/" class="link"
-												target="_blank">Asciidoctor PDF</a></li>
-										<li><a href="https://deepmind.google/technologies/gemini/" class="link"
-												target="_blank">Google Gemini CLI</a></li>
-									</ul>
-								</section>
-							</div>
-							<!-- SAP B1 -->
-							<div class="tile-middle">
-								<section class="box technologies">
-<!--									<br>-->
-									<i class="icon featured fa-solid fa-chart-line"></i>
-									<br>
-									<h3>SAP Business One&trade;</h3>
-									<ul>
-										<li>AddOn Entwicklung auf Basis des <a
-												href="https://helpdesk.coresystems.ch/hc/en-us/articles/201845082-Coresuite-Country-Package"
-												class="link" target="_blank">
-												coresuite country package</a>&trade;</li>
-										<li>Customizing & Reporting & Printing</li>
-									</ul>
-								</section>
-							</div>
-						</div>
+									<p>
+										Weitere Sprachen können
+										bei Bedarf ergänzt werden.
+									</p>
+								</li>
+								<li>
+									<h6>Sicherheit und Datenschutz</h6>
+									<p>
+										Sichere Authentifizierung,
+										rollenbasierte Zugriffe und
+										eine auf Ihre Infrastruktur
+										abgestimmte Bereitstellung
+										unterstützen den Schutz Ihrer Daten.
+									</p>
+								</li>
+								<li>
+									<h6>Flexible Bereitstellung</h6>
+									<p>
+										Betrieb auf Ihrer eigenen
+										Serverinfrastruktur – für die
+										interne Nutzung oder mit
+										gesichertem externem Zugriff.
+									</p>
+								</li>
+								<li>
+									<h6>Transparente Kosten</h6>
+									<p>
+										Keine Benutzerlizenzen für
+										unsere Portallösungen.
+										Nachvollziehbare Entwicklungs-
+										und Wartungskosten sorgen
+										für Planungssicherheit.
+									</p>
+								</li>
+								<li>
+									<h6>Eigenes, modulares Framework</h6>
+									<p>
+										Unsere Portale basieren auf
+										einem selbst entwickelten Framework.
+										Die modulare Architektur ermöglicht
+										individuelle Erweiterungen,
+										kurze Entscheidungswege und
+										eine kontinuierliche Weiterentwicklung.
+									</p>
+								</li>
+							</ul>
+						</section>
 					</div>
-				</article>
+				</div>
 			</div>
-		</section>
+		</article>
+	</div>
+</section>
+<!-- Praxisbeispiel -->
 
-		<!-- Referenzen -->
-		<section id="references">
-			<div class="wrapper style2">
-				<article class="container">
-					<header>
-						<h2>Referenzen</h2>
-						<p class="custom-p">Die folgenden Kunden profitieren bereits von unseren Lösungen: </p>
-					</header>
-					<div>
-						<!-- Bardini-->
-						<div class="row">
-							<div class="tile-big">
-								<section class="box references" id="bar">
-									<span class="image">
-										<a href="https://www.bardiniverde.ch/" target="_blank">
-											<img src="assets/images/references/logo_bardini.png"
-												alt="Logo Bardini & Verde" title="Bardini & Verde" />
-										</a>
-									</span>
-									<ul class="solutions">
-										<li>
-											<span class="category">Partnerportal (SAP Business One):</span>
-											<ul>
-												<li>Aktivitätenmanagement
-													<ul>
-														<li>Zusammenarbeit mit externen Partnern</li>
-													</ul>
-												</li>
-												<li>Zertifikatsmanagement
-													<ul>
-														<li>Automatische Zertifikatserneuerung</li>
-														<li>AgriPlace-Integration</li>
-													</ul>
-												</li>
-												<li>Kampagnenmanagement</li>
-												<li>Dokumentenzugriff</li>
-												<li>Direkte Integration in SAP Business One</li>
-											</ul>
-										</li>
+<section id="demo">
+	<div class="wrapper style2">
+		<article class="container">
+			<header>
+				<h2>Portal Demo</h2>
+			</header>
+			<!--					<div class="row">-->
+			<!--				<div class="tile-big">-->
+			<!--					<section class="box portal" id="demo">-->
+			<!--						<i class="icon featured fa-solid fa-television"></i>-->
+			<!--						<br>-->
+			<h3>Businessportal in der Praxis</h3>
+			<p>
+				Für die KALT AG haben wir einen
+				CAD-Angebots-Kalkulator entwickelt,
+				der die Angebotserstellung durch
+				automatisierte Berechnungen und
+				die direkte Integration in
+				SAP Business One vereinfacht.
+				<br>
+				<br>
+				Die Umsetzung erfolgte in Zusammenarbeit
+				mit unseren Partnern DATA UNIT AG
+				und Cadwork Holz AG.
+				<br>
+				<br>
+				<em>
+					Das Demovideo wurde von der
+					DATA UNIT AG (ehemals Itegrity AG)
+					erstellt und steht uns zur
+					Nutzung zur Verfügung.
+				</em>
+			</p>
 
-										<li>
-											<span class="category">SAP Business One Add-ons:</span>
-											<ul>
-												<li>Containerdisposition</li>
-												<li>Projektübersicht</li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-						<!-- BoFru-->
-						<div class="row">
-							<div class="tile-big">
-								<section class="box references" id="bof">
-									<span class="image">
-										<a href="https://www.bofruag.ch/" target="_blank">
-											<img src="assets/images/references/logo_bofru.png"
-												alt="Logo BoFru AG" title="BoFru AG" />
-										</a>
-									</span>
-									<ul class="solutions">
-										<li><span class="category">Produktionsportal:</span>
-											<ul>
-												<li>Sortierung von Obst</li>
-												<li>Chargenbasierte Bestandsführung (SAP unabhängig)</li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-						<!-- Diahem-->
-						<div class="row">
-							<div class="tile-big">
-								<section class="box references" id="dia">
-									<span class="image">
-										<a href="https://www.diahem.com/" target="_blank">
-											<img src="assets/images/references/logo_diahem.png" alt="Logo DiaHem AG"
-												title="DiaHem AG" />
-										</a>
-									</span>
-									<ul class="solutions">
-										<li><span class="category">Businessportal (Portal):</span>
-											<ul>
-												<li>Intralogistik-System</li>
-												<li>SAP B1 Integration</li>
-											</ul>
-										</li>
-										<li><span class="category">SAP Business One Add-ons:</span>
-											<ul>
-												<li>Chargenverwaltung</li>
-												<li>Lotmanager</li>
-                                                <li>Ankündigungsmanager</li>
-												<li>Materialbedarfsplanung</li>
-											</ul>
-										</li>
-									</ul>
+			<div class="youtube-placeholder" id="yt-placeholder">
+				<img
+						alt="CAD-Angebots-Kalkulator der KALT AG – Videovorschau"
+						class="youtube-thumbnail"
+						src="assets/images/youtube/video-thumbnail-cad-angebots-kalkulator.jpg">
+				<button class="play-button"
+						aria-label="Demovideo abspielen">
+					▶
+				</button>
+			</div>
+			<!--					</section>-->
+			<!--				</div>-->
+			<!--			</div>-->
+		</article>
+	</div>
+</section>
 
-								</section>
-							</div>
+<!-- Technologie -->
+
+<section id="technologies">
+	<div class="wrapper style3">
+		<article class="container">
+			<header>
+				<h2>Technologien</h2>
+				<p class="custom-p">
+					Bewährte Webtechnologien, Microsoft .NET und
+					die direkte Anbindung an SAP Business One
+					bilden die Grundlage unserer individuell
+					entwickelten Businessportale.
+				</p>
+			</header>
+
+			<div class="row">
+				<!-- Frontend -->
+				<div class="tile-middle">
+					<section class="box technologies">
+						<div style="display: flex; justify-content: center; align-items: center;">
+							<i class="icon featured fa-solid fa-desktop"
+							   style="margin-right: 15px;"></i>
+							<i class="icon featured fa-solid fa-mobile-screen"></i>
 						</div>
-						<!-- Emmenegger-->
-						<div class="row">
-							<div class="tile-big">
-								<section class="box references" id="feg">
-									<span class="image">
-										<a href="https://www.emmeneggerag.ch/" target="_blank">
-											<img src="assets/images/references/logo_emmenegger.png"
-												alt="Logo Felix Emmenegger AG" title="Felix Emmenegger AG" />
-										</a>
-									</span>
-									<ul class="solutions">
-										<li><span class="category">Businessportal (ProvSys):</span>
+						<br>
+						<h3>Frontend</h3>
+						<ul>
+							<li><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">CSS</a></li>
+							<li><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">HTML</a></li>
+							<li><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">JavaScript</a></li>
+							<li><a class="link" href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">TypeScript</a></li>
+						</ul>
+					</section>
+				</div>
+
+				<!-- Backend -->
+				<div class="tile-middle">
+					<section class="box technologies">
+						<i class="icon featured fa-solid fa-server"></i>
+						<br>
+						<h3>Backend</h3>
+						<ul>
+							<li><a class="link" href="https://www.iis.net/" target="_blank" rel="noopener noreferrer">Microsoft IIS</a></li>
+							<li><a class="link" href="https://www.microsoft.com/en-us/sql-server/" target="_blank" rel="noopener noreferrer">Microsoft SQL Server</a></li>
+							<li><a class="link" href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noopener noreferrer">C#</a></li>
+							<li><a class="link" href="https://dotnet.microsoft.com/" target="_blank" rel="noopener noreferrer">.NET</a></li>
+							<li><a class="link" href="https://restfulapi.net/" target="_blank" rel="noopener noreferrer">REST-API</a></li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</article>
+	</div>
+</section>
+
+<!-- Referenzen -->
+<section id="references">
+	<div class="wrapper style2">
+		<article class="container">
+			<header>
+				<h2>Referenzen</h2>
+				<p class="custom-p">Ein Auszug aus unseren Projekten: SAP-Business-One-Portale, ERP-Integrationen und weitere individuelle Business-Anwendungen.</p>
+			</header>
+			<div>
+				<!-- Bardini-->
+				<div class="row">
+					<div class="tile-big">
+						<section class="box references" id="bar">
+<span class="image">
+<a href="https://www.bardiniverde.ch/" target="_blank">
+<img alt="Logo Bardini &amp; Verde" src="assets/images/references/logo_bardini.png" title="Bardini &amp; Verde">
+</a>
+</span>
+							<ul class="solutions">
+								<li>
+									<span class="category">Partnerportal (SAP Business One):</span>
+									<ul>
+										<li>Aktivitätenmanagement
 											<ul>
-												<li>Provisionssystem</li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-						<!-- Hedin-->
-						<div class="row">
-							<div class="tile-big">
-								<section class="box references" id="hed">
-									<span class="image">
-										<a href="https://www.hedinautomotive.ch/" target="_blank">
-											<img src="assets/images/references/logo_hedin.png"
-												alt="Logo Hedin Automotive Schweiz AG"
-												title="Hedin Automotive Schweiz AG" />
-										</a>
-									</span>
-									<ul class="solutions">
-										<li><span class="category">Businessportal (PRS-Portal):</span>
-											<ul>
-												<li>Provisionssystem</li>
-											</ul>
-										</li>
-										<li><span class="category">Businessportal (RPT-Portal):</span>
-											<ul>
-												<li>Retail Planning Tool</li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-						<!-- HPW-->
-						<div class="row">
-							<div class="tile-big">
-								<section class="box references" id="hpw">
-									<span class="image">
-										<a href="https://www.hpwag.com/" target="_blank">
-											<img src="assets/images/references/logo_hpw.png"
-												 alt="Logo HPW AG"
-												 title="HPW AG" />
-										</a>
-									</span>
-									<ul class="solutions">
-										<li>
-											<span class="category">Businessportal (SAP Business One):</span>
-											<ul>
-												<li>CRM und Kundenbetreuung</li>
-												<li>Lead- und Geschäftspartnerverwaltung</li>
-												<li>Reklamationsmanagement</li>
-												<li>Projektmanagement</li>
 												<li>Zusammenarbeit mit externen Partnern</li>
-												<li>Direkte Integration in SAP Business One</li>
 											</ul>
 										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-						<!-- Jungheinrich-->
-						<div class="row">
-							<div class="tile-big">
-								<section class="box references" id="jun">
-									<span class="image">
-										<a href="https://www.jungheinrich.ch/" target="_blank">
-											<img src="assets/images/references/logo_jungheinrich.png"
-												alt="Logo Jungheinrich AG" title="Jungheinrich AG" />
-										</a>
-									</span>
-									<ul class="solutions">
-										<li><span class="category">Businessportal (Online-Konfigurator):</span>
+										<li>Zertifikatsmanagement
 											<ul>
-												<li>Produktekonfigurator</li>
+												<li>Automatische Zertifikatserneuerung</li>
+												<li>AgriPlace-Integration</li>
 											</ul>
 										</li>
+										<li>Kampagnenmanagement</li>
+										<li>Dokumentenzugriff</li>
+										<li>Direkte Integration in SAP Business One</li>
 									</ul>
-								</section>
-							</div>
-						</div>
-						<!-- Kalt AG-->
-						<div class="row">
-							<div class="tile-big">
-								<section class="box references" id="klt">
-									<span class="image">
-										<a href="https://www.kaltag.ch/" target="_blank">
-											<img src="assets/images/references/logo_kalt.png" alt="Logo Kalt AG"
-												title="Kalt AG" />
-										</a>
-									</span>
-									<ul class="solutions">
-										<li><span class="category">Kundenportal (Portal):</span>
-											<ul>
-												<li>Angebote, Aufträge und Rechnungen</li>
-												<li>CAD-Angebots-Kalkulator</li>
-												<li>Zuschnitt-Angebots-Kalkulator</li>
-												<li>SAP B1 Integration</li>
-												<li>K-pik Integration</li>
-											</ul>
-										</li>
-										<li><span class="category">Zeiterfassungsportal (Time):</span>
-											<ul>
-												<li>Leistungserfassung</li>
-												<li>SAP B1 Integration</li>
-											</ul>
-										</li>
+								</li>
+								<li>
+									<span class="category">SAP Business One Add-ons:</span>
+									<ul>
+										<li>Containerdisposition</li>
+										<li>Projektübersicht</li>
 									</ul>
-								</section>
-							</div>
-						</div>
-						<!-- Mühldorfer-->
-						<div class="row">
-							<div class="tile-big">
-								<section class="box references">
-									<span class="image">
-										<a href="https://www.muehldorfer.com/" target="_blank">
-											<img src="assets/images/references/logo_muehldorfer.png"
-												alt="Logo Mühldorfer GmbH & Co. KG" title="Mühldorfer GmbH & Co. KG" />
-										</a>
-									</span>
-									<ul class="solutions">
-										<li><span class="category">Portal:</span>
-											<ul>
-												<li>Bettwaren Konfigurator</li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-						<!-- Otto Rohrunterhalt GmbH-->
-						<div class="row">
-							<div class="tile-big">
-								<section class="box references" id="oru">
-									<span class="image">
-										<a href="https://www.otto-rohrunterhalt.ch/" target="_blank">
-											<img src="assets/images/references/logo_otto_rohrunterhalt.png "
-												alt="Logo Otto Rohrunterhalt GmbH" title="Otto Rohrunterhalt GmbH" />
-										</a>
-									</span>
-									<ul class="solutions">
-										<li><span class="category">Businessportal (Serviceportal):</span>
-											<ul>
-												<li>Serviceanfragen</li>
-												<li>SAP B1 Integration</li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-						<!-- Ruedersäge AG-->
-						<div class="row">
-							<div class="tile-big">
-								<section class="box references" id="rue">
-									<span class="image">
-										<a href="https://www.ruedersaege.ch/" target="_blank">
-											<img src="assets/images/references/logo_ruedersaege.png "
-												alt="Logo Ruedersäge AG" title="Ruedersäge AG" />
-										</a>
-									</span>
-									<ul class="solutions">
-										<li><span class="category">SAP Business One Add-ons:</span>
-											<ul>
-												<li>Rundholz-Import</li>
-												<li>Anbindung Telefonanlage</li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
+								</li>
+							</ul>
+						</section>
 					</div>
-				</article>
-			</div>
-		</section>
-		<!-- Partner -->
-		<section id="partner">
-			<div class="wrapper style3">
-				<article class="container">
-					<header>
-						<h2>Partner</h2>
-						<p class="custom-p">Wir kooperieren mit den folgenden Partnerfirmen:</p>
-					</header>
-					<div>
-						<div class="row">
-							<!-- DATA-UNIT-->
-							<div class="tile">
-								<section class="box partner">
-									<span class="image">
-										<a href="https://www.dataunit.ch/" target="_blank">
-											<img src="assets/images/partner/logo_data_unit.png" alt="Logo Data Unit AG"
-												title="DATA UNIT AG"  />
-											<br>
-										</a>
-									</span>
-									<p>Die DATA UNIT AG ist das Schweizer Competence Center für starke KMU Lösungen von
-										SAP.
-								</section>
-							</div>
-							<!-- MTF-->
-							<div class="tile">
-								<section class="box partner">
-									<span class="image">
-                                        <a href="https://www.b1-consulting.ch/" target="_blank">
-											<img src="assets/images/partner/logo_mtf.png" alt="Logo MTF"
-												title="MTF B1 Consulting AG" />
-											<br>
-                                        </a>
-									</span>
-									<p> Die MTF B1 Consulting AG ist spezialisierter Partner für Beratung, Implementierung und Betreuung von SAP Business One-Lösungen.</p>
-								</section>
-							</div>
-						</div>
+				</div>
+				<!-- BoFru-->
+				<div class="row">
+					<div class="tile-big">
+						<section class="box references" id="bof">
+<span class="image">
+<a href="https://www.bofruag.ch/" target="_blank">
+<img alt="Logo BoFru AG" src="assets/images/references/logo_bofru.png" title="BoFru AG">
+</a>
+</span>
+							<ul class="solutions">
+								<li><span class="category">Produktionsportal:</span>
+									<ul>
+										<li>Sortierung von Obst</li>
+										<li>Chargenbasierte Bestandsführung (SAP unabhängig)</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
 					</div>
-				</article>
-			</div>
-		</section>
-		<!-- Über Uns-->
-		<section id="about">
-			<div class="wrapper style2">
-				<article class="container">
-					<header>
-						<h2>Über uns</h2>
-						<p class="custom-p">
-							Wir sind die itFlies GmbH, ein engagiertes Team von IT-Experten, das massgeschneiderte
-							Lösungen für Ihre technologischen Herausforderungen entwickelt.
-							Mit fundierter Erfahrung und einem lösungsorientierten Ansatz meistern wir Ihre
-							IT-Herausforderungen – zielgerichtet, effizient und nachhaltig.
-						</p>
-					</header>
-					<div class="row">
-						<!-- Philipp -->
-						<div class="tile">
-							<section class="box about">
-								<span class="image">
-									<img src="assets/images/about/knp.png" alt="Foto Philipp Knecht" style="border-radius: 10px;" />
-									<br>
-								</span>
-								<h3>Philipp Knecht</h3>
-								<h6>Inhaber und Lead Developer</h6>
-								<br>
-								<p>Philipp, Gründer der itFlies GmbH, ist ein erfahrener Softwareentwickler mit einem
-									tiefen Verständnis für Geschäftsprozesse und massgeschneiderte IT-Lösungen.
-									Seine Leidenschaft für innovative Technologien und sein Gespür für effiziente
-									Architekturen treiben die Entwicklung leistungsstarker Software voran.
-								</p>
-							</section>
-						</div>
-						<!-- Marco -->
-						<div class="tile">
-							<section class="box about">
-								<span class="image">
-									<img src="assets/images/about/kom.png" alt="Foto Marco Koster" title="Marco Koster" style="border-radius: 10px;" />
-									<br>
-								</span>
-								<h3>Marco Koster</h3>
-								<h6>Projektleiter und Administration</h6>
-								<br>
-								<p> Marco ist ein erfahrener IT-Projektleiter und Entwickler, der sowohl IT-Projekte
-									effizient steuert als auch aktiv an der technischen Umsetzung beteiligt ist. Mit
-									tiefem Fachwissen und einer praxisorientierten Herangehensweise sorgt er dafür, dass
-									Lösungen nicht nur geplant, sondern auch erfolgreich implementiert werden.
-								</p>
-								<a href="https://www.linkedin.com/in/marco-koster-7b418619/" target="_blank">
-									<img src="assets/images/about/LI-Bug.svg.original.svg"
-										alt="LinkedIn Profil Marco Koster" class="image-linkedin"
-										title="LinkedIn Profil Marco Koster" />
-								</a>
-							</section>
-						</div>
+				</div>
+				<!-- Diahem-->
+				<div class="row">
+					<div class="tile-big">
+						<section class="box references" id="dia">
+<span class="image">
+<a href="https://www.diahem.com/" target="_blank">
+<img alt="Logo DiaHem AG" src="assets/images/references/logo_diahem.png" title="DiaHem AG"/>
+</a>
+</span>
+							<ul class="solutions">
+								<li><span class="category">Businessportal (Portal):</span>
+									<ul>
+										<li>Intralogistik-System</li>
+										<li>SAP B1 Integration</li>
+									</ul>
+								</li>
+								<li><span class="category">SAP Business One Add-ons:</span>
+									<ul>
+										<li>Chargenverwaltung</li>
+										<li>Lotmanager</li>
+										<li>Ankündigungsmanager</li>
+										<li>Materialbedarfsplanung</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
 					</div>
-				</article>
+				</div>
+				<!-- Emmenegger-->
+				<div class="row">
+					<div class="tile-big">
+						<section class="box references" id="feg">
+<span class="image">
+<a href="https://www.emmeneggerag.ch/" target="_blank">
+<img alt="Logo Felix Emmenegger AG" src="assets/images/references/logo_emmenegger.png" title="Felix Emmenegger AG"/>
+</a>
+</span>
+							<ul class="solutions">
+								<li><span class="category">Businessportal (ProvSys):</span>
+									<ul>
+										<li>Provisionssystem</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+				<!-- Hedin-->
+				<div class="row">
+					<div class="tile-big">
+						<section class="box references" id="hed">
+<span class="image">
+<a href="https://www.hedinautomotive.ch/" target="_blank">
+<img alt="Logo Hedin Automotive Schweiz AG" src="assets/images/references/logo_hedin.png" title="Hedin Automotive Schweiz AG"/>
+</a>
+</span>
+							<ul class="solutions">
+								<li><span class="category">Businessportal (PRS-Portal):</span>
+									<ul>
+										<li>Provisionssystem</li>
+									</ul>
+								</li>
+								<li><span class="category">Businessportal (RPT-Portal):</span>
+									<ul>
+										<li>Retail Planning Tool</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+				<!-- HPW-->
+				<div class="row">
+					<div class="tile-big">
+						<section class="box references" id="hpw">
+<span class="image">
+<a href="https://www.hpwag.com/" target="_blank">
+<img alt="Logo HPW AG" src="assets/images/references/logo_hpw.png" title="HPW AG"/>
+</a>
+</span>
+							<ul class="solutions">
+								<li>
+									<span class="category">Businessportal (SAP Business One):</span>
+									<ul>
+										<li>CRM und Kundenbetreuung</li>
+										<li>Lead- und Geschäftspartnerverwaltung</li>
+										<li>Reklamationsmanagement</li>
+										<li>Projektmanagement</li>
+										<li>Zusammenarbeit mit externen Partnern</li>
+										<li>Direkte Integration in SAP Business One</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+				<!-- Jungheinrich-->
+				<div class="row">
+					<div class="tile-big">
+						<section class="box references" id="jun">
+<span class="image">
+<a href="https://www.jungheinrich.ch/" target="_blank">
+<img alt="Logo Jungheinrich AG" src="assets/images/references/logo_jungheinrich.png" title="Jungheinrich AG"/>
+</a>
+</span>
+							<ul class="solutions">
+								<li><span class="category">Businessportal (Online-Konfigurator):</span>
+									<ul>
+										<li>Produktekonfigurator</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+				<!-- Kalt AG-->
+				<div class="row">
+					<div class="tile-big">
+						<section class="box references" id="klt">
+<span class="image">
+<a href="https://www.kaltag.ch/" target="_blank">
+<img alt="Logo Kalt AG" src="assets/images/references/logo_kalt.png" title="Kalt AG"/>
+</a>
+</span>
+							<ul class="solutions">
+								<li><span class="category">Kundenportal (Portal):</span>
+									<ul>
+										<li>Angebote, Aufträge und Rechnungen</li>
+										<li>CAD-Angebots-Kalkulator</li>
+										<li>Zuschnitt-Angebots-Kalkulator</li>
+										<li>SAP B1 Integration</li>
+										<li>K-pik Integration</li>
+									</ul>
+								</li>
+								<li><span class="category">Zeiterfassungsportal (Time):</span>
+									<ul>
+										<li>Leistungserfassung</li>
+										<li>SAP B1 Integration</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+				<!-- Mühldorfer-->
+				<div class="row">
+					<div class="tile-big">
+						<section class="box references">
+<span class="image">
+<a href="https://www.muehldorfer.com/" target="_blank">
+<img alt="Logo Mühldorfer GmbH &amp; Co. KG" src="assets/images/references/logo_muehldorfer.png" title="Mühldorfer GmbH &amp; Co. KG"/>
+</a>
+</span>
+							<ul class="solutions">
+								<li><span class="category">Portal:</span>
+									<ul>
+										<li>Bettwaren Konfigurator</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+				<!-- Otto Rohrunterhalt GmbH-->
+				<div class="row">
+					<div class="tile-big">
+						<section class="box references" id="oru">
+<span class="image">
+<a href="https://www.otto-rohrunterhalt.ch/" target="_blank">
+<img alt="Logo Otto Rohrunterhalt GmbH" src="assets/images/references/logo_otto_rohrunterhalt.png " title="Otto Rohrunterhalt GmbH"/>
+</a>
+</span>
+							<ul class="solutions">
+								<li><span class="category">Businessportal (Serviceportal):</span>
+									<ul>
+										<li>Serviceanfragen</li>
+										<li>SAP B1 Integration</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+				<!-- Ruedersäge AG-->
+				<div class="row">
+					<div class="tile-big">
+						<section class="box references" id="rue">
+<span class="image">
+<a href="https://www.ruedersaege.ch/" target="_blank">
+<img alt="Logo Ruedersäge AG" src="assets/images/references/logo_ruedersaege.png " title="Ruedersäge AG"/>
+</a>
+</span>
+							<ul class="solutions">
+								<li><span class="category">SAP Business One Add-ons:</span>
+									<ul>
+										<li>Rundholz-Import</li>
+										<li>Anbindung Telefonanlage</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
 			</div>
-		</section>
-		<!-- Kontakt -->
-		<section id="contact">
-			<div class="wrapper style4">
-				<article class="container">
-					<header>
-						<i class="icon featured fa-solid fa-contact-card"></i>
-						<h5>Kontakt</h5>
-						<p class="contact-p">
-							Fragen oder Interesse? Wir freuen uns auf Ihre Nachricht.<br>
-							<br>
-							E-Mail<br>
-							<span class="email-link contact-email"></span><br>
-						</p>
-						<p class="contact-p">
-							Telefon<br>
-							<span class="phone-link contact-phone"></span>
-						</p>
-						<div class="hero-buttons-container">
-							<button class="btn btn-secondary" id="btn-kontakt">
-								Jetzt Anfrage senden
-							</button>
-						</div>
-						<br>
-						<p class="contact-a">
-							Wir antworten in der Regel innerhalb eines Arbeitstags.<br>
-							<br>
-						<br>
-						<i class="icon featured fa-solid fa-building"></i><br>
-						<br>
-						<h3 class="contact-h3">Adresse</h3>
-						<p class="contact-p">Dorfstrasse 26<br>
-							5465 Mellikon<br>
-							Schweiz<br>
-						</p>
-						<br>
-						<h3 class="contact-h3">Anfahrtsplan <i class="fa-solid fa-map-marker-alt map-marker"
-															   id="map-marker"></i></h3>
-						<p class="contact-p">
-							Für die Anfahrt verwenden Sie bitte Dorfstrasse 66, 5465 Mellikon.<br>
-							Unser Büro befindet sich in unmittelbarer Nähe zum Bahnhof (ca. 2 Minuten zu Fuss).
-						</p><br>
-						<div class="map-container">
-							<a href="https://www.google.com/maps/search/?api=1&query=Dorfstrasse+66,+5465+Mellikon,+Schweiz" target="_blank" class="map-link">
-								<img src="assets/images/map/map-itflies.png" alt="Standort itFlies GmbH" class="map-image">
-								<div class="map-overlay">In Google Maps öffnen</div>
-							</a>
-						</div>
-					</header>
-				</article>
+		</article>
+	</div>
+</section>
+<!-- Partner -->
+<section id="partner">
+	<div class="wrapper style3">
+		<article class="container">
+			<header>
+				<h2>Partner</h2>
+				<p class="custom-p">Wir kooperieren mit den folgenden Partnerfirmen:</p>
+			</header>
+			<div>
+				<div class="row">
+					<!-- DATA-UNIT-->
+					<div class="tile">
+						<section class="box partner">
+<span class="image">
+<a href="https://www.dataunit.ch/" target="_blank">
+<img alt="Logo Data Unit AG" src="assets/images/partner/logo_data_unit.png" title="DATA UNIT AG"/>
+<br/>
+</a>
+</span>
+							<p>Die DATA UNIT AG ist das Schweizer Competence Center für starke KMU Lösungen von
+								SAP.
+							</p></section>
+					</div>
+					<!-- MTF-->
+					<div class="tile">
+						<section class="box partner">
+<span class="image">
+<a href="https://www.b1-consulting.ch/" target="_blank">
+<img alt="Logo MTF" src="assets/images/partner/logo_mtf.png" title="MTF B1 Consulting AG"/>
+<br/>
+</a>
+</span>
+							<p> Die MTF B1 Consulting AG ist spezialisierter Partner für Beratung, Implementierung und Betreuung von SAP Business One-Lösungen.</p>
+						</section>
+					</div>
+				</div>
 			</div>
-		</section>
-		<!-- Impressum -->
-		<section id="impressum">
-			<div class="wrapper style2">
-				<article class="container">
-					<i class="icon featured fa-solid fa-file-alt"></i>
-					<h3>Impressum / Firmensitz</h3><br>
-					<h4>itFlies GmbH</h4><br>
-					<p>Hueb 123<br>
-						5465 Mellikon<br>
-						Schweiz<br>
-						E-Mail: <span class="email-link"></span><br>
-						Vertreten durch: Philipp Knecht<br>
-						UID: CHE-203.974.891<br>
-						DUNS: 48-013-1770<br>
-					</p>
-					<br>
-					<br>
-					<i class="icon featured fa-solid fa-building"></i>
-					<br>
-					<h3>Büro / Besucheradresse</h3><br>
-					<p>Dorfstrasse 26<br>
-						5465 Mellikon<br>
-						Schweiz<br>
-					</p>
-				</article>
+		</article>
+	</div>
+</section>
+<!-- Über Uns-->
+<section id="about">
+	<div class="wrapper style2">
+		<article class="container">
+			<header>
+				<h2>Über uns</h2>
+				<p class="custom-p">itFlies GmbH entwickelt und betreut individuelle Webportale mit Schwerpunkt SAP Business One. Wir verbinden technisches Know-how mit einem praxisnahen Verständnis für Geschäftsprozesse und setzen auf langfristige, direkte Zusammenarbeit.</p>
+			</header>
+			<div class="row">
+				<!-- Philipp -->
+				<div class="tile">
+					<section class="box about">
+<span class="image">
+<img alt="Foto Philipp Knecht" src="assets/images/about/knp.png" style="border-radius: 10px;"/>
+<br/>
+</span>
+						<h3>Philipp Knecht</h3>
+						<h6>Inhaber und Lead Developer</h6>
+						<br/>
+						<p>Philipp, Gründer der itFlies GmbH, ist ein erfahrener Softwareentwickler mit einem
+							tiefen Verständnis für Geschäftsprozesse und massgeschneiderte IT-Lösungen.
+							Seine Leidenschaft für innovative Technologien und sein Gespür für effiziente
+							Architekturen treiben die Entwicklung leistungsstarker Software voran.
+						</p>
+					</section>
+				</div>
+				<!-- Marco -->
+
 			</div>
-		</section>
-		<!-- Nachhaltigkeitserklärung -->
-		<section id="nachhaltigkeit">
-			<div class="wrapper style3">
-				<article class="container">
-					<header>
-						<i class="icon featured fa-solid fa-leaf"></i>
-						<h3>Nachhaltigkeitserklärung</h3>
-						<h4>Verantwortliche Stelle / Sitz:</h4>
-						<p>
-							itFlies GmbH<br>
-							Hueb 123<br>
-							5465 Mellikon<br>
-							Schweiz<br>
-							Ansprechperson: Marco Koster<br>
-							Büro / Korrespondenz / Kontakt: Dorfstrasse 26, 5465 Mellikon
-							E-Mail: <span class="email-link"></span>
-						</p>
-						<h4>Unser Engagement</h4>
-						<p>
-							Nachhaltigkeit ist für uns ein zentraler Bestandteil unseres unternehmerischen Handelns.
-							Wir streben danach, ökologische, soziale und ökonomische Aspekte in Einklang zu bringen.
-							Dabei setzen wir auf ressourcenschonende Prozesse, verantwortungsvollen Umgang mit Energie
-							und Materialien sowie auf langfristige Partnerschaften.
-						</p>
-						<h4>Umsetzung im Unternehmen</h4>
-						<p>
-							Wir achten auf einen sparsamen Energieverbrauch, bevorzugen digitale Arbeitsprozesse zur
-							Reduzierung von Papierverbrauch und wählen Partner und Dienstleister unter Berücksichtigung
-							nachhaltiger Kriterien aus. Unsere Serverinfrastruktur basiert auf energieeffizienten
-							Lösungen.
-						</p>
-						<h4>Produkte und Dienstleistungen</h4>
-						<p>
-							Unsere Softwarelösungen werden so entwickelt, dass sie möglichst ressourcenschonend
-							betrieben werden können.
-							Durch optimierte Technologien unterstützen wir unsere Kunden dabei, Energie und Ressourcen
-							effizient einzusetzen.
-							Unser Standard-Framework ist gezielt ressourcenschonend aufgebaut: Es lädt beispielsweise
-							nur tatsächlich benötigte Daten.
-							Dies trägt nicht nur zu schnelleren Antwortzeiten bei, sondern verringert auch den Bedarf an
-							Rechenleistung
-							und reduziert damit den Energieverbrauch.
-						</p>
+		</article>
+	</div>
+</section>
+<!-- Kontakt -->
+<section id="contact">
+	<div class="wrapper style4">
+		<article class="container">
+			<header>
+				<i class="icon featured fa-solid fa-contact-card"></i>
+				<h5>Kontakt</h5>
+				<p class="contact-p">
+					Fragen oder Interesse? Wir freuen uns auf Ihre Nachricht.<br/>
+					<br/>
+					E-Mail<br/>
+					<span class="email-link contact-email"></span><br/>
+				</p>
+				<p class="contact-p">
+					Telefon<br/>
+					<span class="phone-link contact-phone"></span>
+				</p>
+				<div class="hero-buttons-container">
+					<button class="btn btn-secondary" id="btn-kontakt">
+						Jetzt Anfrage senden
+					</button>
+				</div>
+				<br/>
+				<p class="contact-a">Wir antworten in der Regel innerhalb eines Arbeitstags.</p>
+				<br/>
+				<i class="icon featured fa-solid fa-building"></i><br/>
+				<br/>
+				<h3 class="contact-h3">Adresse</h3>
+				<p class="contact-p">Dorfstrasse 26<br/>
+					5465 Mellikon<br/>
+					Schweiz<br/>
+				</p>
+				<br/>
+				<h3 class="contact-h3">Anfahrtsplan <i class="fa-solid fa-map-marker-alt map-marker" id="map-marker"></i></h3>
+				<p class="contact-p">
+					Für die Anfahrt verwenden Sie bitte Dorfstrasse 66, 5465 Mellikon.<br/>
+					Unser Büro befindet sich in unmittelbarer Nähe zum Bahnhof (ca. 2 Minuten zu Fuss).
+				</p><br/>
+				<div class="map-container">
+					<a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Dorfstrasse+66,+5465+Mellikon,+Schweiz" target="_blank">
+						<img alt="Standort itFlies GmbH" class="map-image" src="assets/images/map/map-itflies.png"/>
+						<div class="map-overlay">In Google Maps öffnen</div>
+					</a>
+				</div>
+			</header>
+		</article>
+	</div>
+</section>
+<!-- Impressum -->
+<section id="impressum">
+	<div class="wrapper style2">
+		<article class="container">
+			<i class="icon featured fa-solid fa-file-alt"></i>
+			<h3>Impressum / Firmensitz</h3><br/>
+			<h4>itFlies GmbH</h4><br/>
+			<p>Hueb 123<br/>
+				5465 Mellikon<br/>
+				Schweiz<br/>
+				E-Mail: <span class="email-link"></span><br/>
+				Vertreten durch: Philipp Knecht<br/>
+				UID: CHE-203.974.891<br/>
+				DUNS: 48-013-1770<br/>
+			</p>
+			<br/>
+			<br/>
+			<i class="icon featured fa-solid fa-building"></i>
+			<br/>
+			<h3>Büro / Besucheradresse</h3><br/>
+			<p>Dorfstrasse 26<br/>
+				5465 Mellikon<br/>
+				Schweiz<br/>
+			</p>
+		</article>
+	</div>
+</section>
+<!-- Nachhaltigkeitserklärung -->
+<section id="nachhaltigkeit">
+	<div class="wrapper style3">
+		<article class="container">
+			<header>
+				<i class="icon featured fa-solid fa-leaf"></i>
+				<h3>Nachhaltigkeitserklärung</h3>
+				<h4>Verantwortliche Stelle / Sitz:</h4>
+				<p>
+					itFlies GmbH<br/>
+					Hueb 123<br/>
+					5465 Mellikon<br/>
+					Schweiz<br/>
+					Ansprechperson: Philipp Knecht<br/>
+					Büro / Korrespondenz / Kontakt: Dorfstrasse 26, 5465 Mellikon
+					E-Mail: <span class="email-link"></span>
+				</p>
+				<h4>Unser Engagement</h4>
+				<p>
+					Nachhaltigkeit ist für uns ein zentraler Bestandteil unseres unternehmerischen Handelns.
+					Wir streben danach, ökologische, soziale und ökonomische Aspekte in Einklang zu bringen.
+					Dabei setzen wir auf ressourcenschonende Prozesse, verantwortungsvollen Umgang mit Energie
+					und Materialien sowie auf langfristige Partnerschaften.
+				</p>
+				<h4>Umsetzung im Unternehmen</h4>
+				<p>
+					Wir achten auf einen sparsamen Energieverbrauch, bevorzugen digitale Arbeitsprozesse zur
+					Reduzierung von Papierverbrauch und wählen Partner und Dienstleister unter Berücksichtigung
+					nachhaltiger Kriterien aus. Unsere Serverinfrastruktur basiert auf energieeffizienten
+					Lösungen.
+				</p>
+				<h4>Produkte und Dienstleistungen</h4>
+				<p>
+					Unsere Softwarelösungen werden so entwickelt, dass sie möglichst ressourcenschonend
+					betrieben werden können.
+					Durch optimierte Technologien unterstützen wir unsere Kunden dabei, Energie und Ressourcen
+					effizient einzusetzen.
+					Unser Standard-Framework ist gezielt ressourcenschonend aufgebaut: Es lädt beispielsweise
+					nur tatsächlich benötigte Daten.
+					Dies trägt nicht nur zu schnelleren Antwortzeiten bei, sondern verringert auch den Bedarf an
+					Rechenleistung
+					und reduziert damit den Energieverbrauch.
+				</p>
+				<h4>Verantwortung und kontinuierliche Verbesserung</h4>
+				<p>
+					Nachhaltigkeit verstehen wir als kontinuierlichen Prozess. Wir überprüfen regelmässig unsere
+					Aktivitäten
+					und passen unsere Massnahmen an neue Anforderungen und Möglichkeiten an. Anregungen und
+					Hinweise
+					zur Verbesserung unserer Nachhaltigkeitsleistung nehmen wir gerne entgegen.
+				</p>
+				<h4>Kontakt</h4>
+				<p>
+					Wenn Sie Fragen oder Anregungen zu unserem Nachhaltigkeitsengagement haben, können Sie sich
+					gerne an uns wenden: siehe Kontaktangaben oben.
+				</p>
+			</header>
+			<!-- <p><small>Letzte Aktualisierung: 28.04.2025</small></p> -->
+		</article>
+	</div>
+</section>
+<!-- informationssicherheit-->
 
-						<h4>Verantwortung und kontinuierliche Verbesserung</h4>
-						<p>
-							Nachhaltigkeit verstehen wir als kontinuierlichen Prozess. Wir überprüfen regelmässig unsere
-							Aktivitäten
-							und passen unsere Massnahmen an neue Anforderungen und Möglichkeiten an. Anregungen und
-							Hinweise
-							zur Verbesserung unserer Nachhaltigkeitsleistung nehmen wir gerne entgegen.
-						</p>
-						<h4>Kontakt</h4>
-						<p>
-							Wenn Sie Fragen oder Anregungen zu unserem Nachhaltigkeitsengagement haben, können Sie sich
-							gerne an uns wenden: siehe Kontaktangaben oben.
-						</p>
-					</header>
-					<!-- <p><small>Letzte Aktualisierung: 28.04.2025</small></p> -->
-				</article>
-			</div>
-		</section>
-		<!-- informationssicherheit-->
-		<section id="informationssicherheit">
-			<div class="wrapper style2">
-				<article class="container">
-					<header>
-						<i class="icon featured fa-solid fa-lock"></i>
-						<h3>Informationssicherheit</h3>
-						<h4>Verantwortliche Stelle / Sitz:</h4>
-						<p>
-							itFlies GmbH<br>
-							Hueb 123<br>
-							5465 Mellikon<br>
-							Schweiz<br>
-							Ansprechperson: Marco Koster<br>
-							Büro / Korrespondenz / Kontakt: Dorfstrasse 26, 5465 Mellikon
-							E-Mail: <span class="email-link"></span>
-						</p>
-						<h4>Unser Verständnis von Informationssicherheit</h4>
-						<p>
-							Wir schützen sämtliche Informationen – unabhängig davon, ob sie personenbezogen sind oder
-							nicht – vor
-							Verlust, unbefugtem Zugriff, Veränderung oder Offenlegung. Informationssicherheit ist für
-							uns ein
-							fundamentaler Bestandteil unserer Unternehmensverantwortung.
-						</p>
-						<h4>Strukturiertes Vorgehen</h4>
-						<p>
-							Wir haben ein schlankes, intern dokumentiertes Informationssicherheits-Managementsystem
-							(ISMS) etabliert, das sich an bewährten Standards wie ISO 27001 orientiert. Es regelt
-							Verantwortlichkeiten, Prozesse und technische wie organisatorische Schutzmassnahmen auf
-							pragmatische Weise – passend zur Grösse unseres Unternehmens.
-						</p>
-						<h4>Technische und organisatorische Massnahmen</h4>
-						<p>
-							Wir setzen bewährte Sicherheitsmassnahmen ein, um die Vertraulichkeit, Integrität und
-							Verfügbarkeit unserer Systeme und Daten zu gewährleisten. Dazu gehören unter anderem der
-							Einsatz einer Web Application Firewall (WAF) und eines DDoS-Schutzes durch unseren Partner
-							Cloudflare, Zugriffskontrollen nach dem Least Privilege-Prinzip, eine durchgehende
-							Verschlüsselung von Datenübertragungen (SSL/TLS) sowie regelmässige Sicherheitsupdates
-							unserer Systeme
-						</p>
-						<h4>Entwicklung und Betrieb unserer Lösungen</h4>
-						<p>
-							Unsere Softwarelösungen werden mit einem klaren Fokus auf Sicherheit entwickelt und
-							betrieben.
-							Bereits in der Planungsphase berücksichtigen wir Sicherheitsanforderungen (Security by
-							Design) und
-							passen diese kontinuierlich an neue Bedrohungslagen an.
-						</p>
-						<h4>Kontinuierliche Verbesserung</h4>
-						<p>
-							Wir überprüfen und optimieren laufend unsere Sicherheitsmassnahmen, um auf aktuelle
-							Bedrohungen und
-							neue Technologien reagieren zu können. Informationssicherheit verstehen wir als dynamischen
-							Prozess,
-							der alle Bereiche unseres Unternehmens betrifft.
-						</p>
-						<h4>Kontakt</h4>
-						<p>
-							Bei Fragen zur Informationssicherheit stehen wir Ihnen gerne zur Verfügung: siehe
-							Kontaktangaben oben.
-						</p>
-					</header>
-					<!-- <p><small>Letzte Aktualisierung: 28.04.2025</small></p> -->
-				</article>
-			</div>
-			
-		</section>
-		<!-- Datenschutz-->
-		<section id="datenschutz">
-			<div class="wrapper style3">
-				<article class="container">
-					<header>
-						<i class="icon featured fa-solid fa-file-shield"></i>
-						<h3>Datenschutzerklärung</h3>
-						<h4>Verantwortliche Stelle / Sitz</h4>
-						<p>
-							itFlies GmbH<br>
-							Dorfstrasse 26<br>
-							5465 Mellikon<br>
-							Schweiz<br>
-							Ansprechperson: Marco Koster<br>
-							Büro / Korrespondenz / Kontakt: Dorfstrasse 26, 5465 Mellikon
-							E-Mail: <span class="email-link"></span>
-						</p>
-						<h4>Erhebung und Nutzung personenbezogener Daten</h4>
-						<p>
-							Wir erheben keine personenbezogenen Daten wie Namen oder Kontaktdaten auf unserer Website.
-							Beim Besuch unserer Website können jedoch technisch notwendige Daten wie IP-Adresse und
-							Browsertyp temporär gespeichert werden, um den Betrieb und die Sicherheit der Website zu
-							gewährleisten.
-							Diese Daten werden nicht für eine personenbezogene Auswertung genutzt.
-						</p>
-						<h4>Cookies und Speicherung von Daten</h4>
-						<p>
-							Unsere Website verwendet ausschliesslich technisch notwendige Cookies, um die grundlegende
-							Funktionalität der Seite sicherzustellen.
-							Wir setzen keine Tracking-, Analyse- oder Werbecookies ein. Daher ist keine
-							Cookie-Einwilligung erforderlich.
-						</p>
-						<h4>Zwecke und Rechtsgrundlagen der Datenverarbeitung</h4>
-						<p>
-							Wir verarbeiten Daten zur Vertragserfüllung, aufgrund Ihrer Einwilligung sowie zur
-							Wahrung berechtigter Interessen, etwa zur Verbesserung unserer Angebote und
-							Gewährleistung der Sicherheit.
-						</p>
-						<h4>Weitergabe und Speicherung von Daten</h4>
-						<p>
-							Eine Weitergabe personenbezogener Daten erfolgt nur, wenn dies gesetzlich vorgeschrieben
-							oder zur Erbringung unserer Dienste erforderlich ist. Wir speichern Ihre Daten nur
-							solange, wie dies notwendig ist oder gesetzliche Aufbewahrungspflichten bestehen.
-						</p>
-						<h4>Hosting und Server-Logs</h4>
-						<p>
-							Unsere Website wird über <a href="https://pages.github.com/" class="link"
-								target="_blank">GitHub
-								Pages</a> gehostet. Anbieter ist die GitHub Inc. (88 Colin P. Kelly Jr. Street, San
-							Francisco, CA 94107, USA). Beim Zugriff werden technische Informationen
-							(z.B. IP-Adresse, Browsertyp, Datum und Uhrzeit des Zugriffs) automatisch erfasst.
-							Weitere Details finden Sie in der <a
-								href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
-								class="link" target="_blank">Datenschutzerklärung von GitHub</a>.
-						</p>
-						<h4>Einsatz von Cloudflare</h4>
-						<p>
-							Wir nutzen die Dienste der Cloudflare, Inc. (101 Townsend St, San Francisco, CA 94107, USA),
-							um die Sicherheit und die Auslieferungsgeschwindigkeit unserer Website zu erhöhen.
-							Cloudflare fungiert als Content Delivery Network (CDN) und Web Application Firewall (WAF)
-							und agiert dabei als Reverse Proxy zwischen unseren Besuchern und unserem Server.
+<section id="informationssicherheit">
+	<div class="wrapper style2">
+		<article class="container">
+			<header>
+				<i class="icon featured fa-solid fa-lock"></i>
+				<h3>Informationssicherheit</h3>
+				<p>
+					Der verantwortungsvolle Umgang mit Informationen
+					und Daten ist für uns selbstverständlich.
+					Wir setzen angemessene technische und
+					organisatorische Sicherheitsmassnahmen ein,
+					um Vertraulichkeit, Integrität und
+					Verfügbarkeit zu schützen.
+				</p>
+				<p>
+					Sicherheitsanforderungen berücksichtigen wir
+					bereits bei der Entwicklung unserer
+					Businessportale und überprüfen unsere
+					Schutzmassnahmen regelmässig.
+				</p>
+			</header>
+		</article>
+	</div>
+</section>
 
-							Dabei können die IP-Adresse und weitere technische Daten der Besucher erfasst und zur Abwehr
-							von Angriffen und zur Optimierung der Ladezeiten verarbeitet werden. Die Rechtsgrundlage für
-							den Einsatz von Cloudflare ist unser berechtigtes Interesse an einem sicheren und
-							performanten Betrieb unserer Website.
+<section id="datenschutz">
+	<div class="wrapper style3">
+		<article class="container">
+			<header>
+				<i class="icon featured fa-solid fa-file-shield"></i>
+				<h3>Datenschutzerklärung</h3>
 
-							Cloudflare ist Teilnehmer des Swiss-U.S. Data Privacy Frameworks, wodurch ein angemessenes
-							Datenschutzniveau für die Übermittlung von Personendaten in die USA sichergestellt wird.
-							Weitere Informationen finden Sie in der <a href="https://www.cloudflare.com/privacypolicy/"
-								class="link" target="_blank">Datenschutzerklärung von Cloudflare</a>.
-						</p>
-                        <h4>Kontaktformular (Formspree)</h4>
-                        <p>
-                            Wenn Sie unser Kontaktformular verwenden, werden die von Ihnen eingegebenen Angaben
-                            (insbesondere E-Mail-Adresse und Nachrichtentext) zur Bearbeitung Ihrer Anfrage verarbeitet.
-                            Der Versand der Formulardaten erfolgt über den Dienst Formspree, Anbieter ist
-                            Formspree, Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA.
-                            Formspree erhält Ihre Formulardaten als Auftragsbearbeiter und speichert sie für die
-                            Zustellung der Nachricht an uns sowie für die Fehlersuche und Spam-Abwehr.
-                            Dabei kann es zu einer Übermittlung von Personendaten in die USA kommen.
-                            Weitere Informationen finden Sie in der
-                            <a href="https://formspree.io/legal/privacy-policy" class="link" target="_blank">
-                                Datenschutzerklärung von Formspree</a>.
-                            Rechtsgrundlage für die Verarbeitung ist unser berechtigtes Interesse an einer einfachen
-                            und sicheren Kontaktmöglichkeit sowie – sofern sich Ihre Anfrage auf ein bestehendes oder
-                            mögliches Vertragsverhältnis bezieht – die Durchführung vorvertraglicher oder
-                            vertraglicher Massnahmen.
-                        </p>
-						<h4>Nutzung von Font Awesome und Google Fonts</h4>
-						<p>
-							Unsere Website verwendet Schriftarten von Fonticons, Inc. (Font Awesome) sowie Google Fonts
-							(Open Sans).
-							Diese sind direkt auf unserem Webserver bei GitHub gespeichert, sodass keine Verbindung zu
-							den Servern von Font Awesome oder Google hergestellt wird.
-						</p>
+				<p>
+					Der Schutz Ihrer Personendaten ist uns wichtig.
+					In dieser Datenschutzerklärung informieren wir
+					Sie darüber, wie wir Personendaten beim Besuch
+					unserer Website und bei der Kontaktaufnahme
+					bearbeiten.
+				</p>
 
-						<h4>Externe Links</h4>
-						<p>
-							Unsere Website enthält Links zu externen Websites Dritter. Für diese
-							fremden Inhalte übernehmen wir keine Haftung. Für die Verarbeitung Ihrer personenbezogenen
-							Daten auf externen Websites sind ausschliesslich deren Betreiber verantwortlich. Bitte
-							beachten Sie die Datenschutzerklärungen der jeweiligen Websites.
-						</p>
-						<h4>Nutzung von YouTube-Videos und Google Maps</h4>
-						<p>
-							Unsere Website bindet YouTube-Videos und Links zu Google Maps ein. Diese Inhalte werden erst
-							nach einem aktiven Klick geladen.
-							Anbieter ist die Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA).
-							Beim Laden der Inhalte können Ihre IP-Adresse und Browser-Informationen an Google
-							übermittelt werden.
-							Weitere Informationen zur Datenverarbeitung durch Google finden Sie in der
-							<a href="https://policies.google.com/privacy" class="link"
-								target="_blank">Datenschutzerklärung von Google</a>.
-						</p>
-						<h4>Social Media (LinkedIn)</h4>
-						<p>
-							Unsere Website verlinkt auf LinkedIn. Beim Aufruf dieser Links kann LinkedIn
-							personenbezogene Daten erfassen, insbesondere wenn Sie dort eingeloggt sind. Weitere
-							Informationen finden Sie in der <a href="https://www.linkedin.com/legal/privacy-policy"
-								class="link" target="_blank">Datenschutzerklärung von LinkedIn</a>.
-						</p>
-						<h4>Ihre Rechte</h4>
-						<p>
-							Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung
-							und Widerspruch gegen die Verarbeitung Ihrer Daten. Zudem haben Sie das Recht auf
-							Datenübertragbarkeit und das Recht, sich bei einer Datenschutzbehörde zu beschweren.
-							Kontaktieren Sie uns dazu über die oben genannte Adresse.
-						</p>
-						<h4>Datensicherheit</h4>
-						<p>
-							Wir treffen technische und organisatorische Massnahmen, um Ihre Daten gegen unbefugten
-							Zugriff zu schützen.
-						</p>
-						<h4>SSL-Verschlüsselung (HTTPS)</h4>
-						<p>
-							Unsere Website nutzt eine SSL-Verschlüsselung, um Ihre Daten sicher und geschützt zu
-							übertragen. Sie erkennen diese verschlüsselte Verbindung am Präfix „https://“ in der
-							Adresszeile Ihres Browsers.
-						</p>
-						<h4>Kontaktaufnahme per E-Mail</h4>
-						<p>
-							Wenn Sie per E-Mail Kontakt mit uns aufnehmen, speichern wir Ihre Angaben zur Bearbeitung
-							Ihrer Anfrage sowie für mögliche Anschlussfragen. Diese Daten geben wir nicht ohne Ihre
-							Einwilligung weiter.
-						</p>
-						<h4>Änderungen</h4>
-						<p>
-							Wir behalten uns vor, diese Datenschutzerklärung jederzeit zu ändern. Die jeweils
-							aktuelle Version finden Sie auf unserer Website.
-						</p>
-					</header>
-				</article>
-			</div>
-		</section>
+				<h4>Verantwortliche Stelle</h4>
+				<p>
+					itFlies GmbH<br>
+					Dorfstrasse 26<br>
+					5465 Mellikon<br>
+					Schweiz<br>
+					Ansprechperson: Philipp Knecht<br>
+					E-Mail: <span class="email-link"></span>
+				</p>
 
-    <section id="disclaimer">
-        <div class="wrapper style2">
-            <article class="container">
-                <header>
-                    <i class="icon featured fa-solid fa-scale-balanced"></i>
-                    <h3>Rechtliche Hinweise</h3>
+				<h4>Bearbeitung von Personendaten</h4>
+				<p>
+					Wir bearbeiten Personendaten, soweit dies
+					für den Betrieb unserer Website, die
+					Bearbeitung von Anfragen oder die
+					Erbringung unserer Dienstleistungen
+					erforderlich ist. Dazu gehören insbesondere
+					technische Zugriffsdaten sowie Angaben,
+					die Sie uns freiwillig übermitteln.
+				</p>
+				<p>
+					Wir verwenden diese Daten ausschliesslich
+					für die jeweiligen Zwecke und bewahren
+					sie nur so lange auf, wie dies erforderlich
+					ist oder gesetzliche Pflichten bestehen.
+				</p>
 
-                    <h4>Markenschutz</h4>
-                    <p>
-                        ITFLIES&reg;(registriert als Wortmarke) sowie das Firmenlogo sind rechtlich geschützte Kennzeichen der itFlies GmbH.
-                        Die Marke ist beim Eidgenössischen Institut für Geistiges Eigentum (IGE) unter der Nummer 784042 eingetragen.
-                        Jegliche Verwendung der Bezeichnung ITFLIES&reg; oder itFlies&reg; für kommerzielle Zwecke im Bereich der Softwareentwicklung und IT-Beratung ist ohne ausdrückliche Genehmigung untersagt.
-                    </p>
+				<h4>Hosting und Sicherheit</h4>
+				<p>
+					Unsere Website wird über
+					<a class="link"
+					   href="https://pages.github.com/"
+					   target="_blank"
+					   rel="noopener noreferrer">GitHub Pages</a>
+					bereitgestellt. Zusätzlich nutzen wir
+					<a class="link"
+					   href="https://www.cloudflare.com/privacypolicy/"
+					   target="_blank"
+					   rel="noopener noreferrer">Cloudflare</a>
+					zur sicheren und zuverlässigen Auslieferung
+					unserer Website.
+				</p>
+				<p>
+					Dabei können technische Daten wie IP-Adresse,
+					Browserinformationen und Zugriffszeitpunkt
+					verarbeitet werden. Die Übertragung
+					unserer Website erfolgt verschlüsselt
+					über HTTPS.
+				</p>
 
-                    <h4>Urheberrecht & Eigentum</h4>
-                    <p>
-                        Das Copyright &copy; itFlies GmbH gilt für alle Inhalte dieser Website.
-                        Gemäss unseren Allgemeinen Geschäftsbedingungen (AGB) bleiben sämtliche Konzepte, Projektergebnisse, Software-Add-ons und technischen Unterlagen alleiniges Eigentum von itFlies.
-                    </p>
+				<h4>Kontaktformular und E-Mail</h4>
+				<p>
+					Wenn Sie uns kontaktieren, bearbeiten
+					wir Ihre Angaben zur Beantwortung
+					Ihrer Anfrage und gegebenenfalls zur
+					Vorbereitung oder Durchführung
+					einer Geschäftsbeziehung.
+				</p>
+				<p>
+					Für unser Kontaktformular verwenden wir
+					<a class="link"
+					   href="https://formspree.io/legal/privacy-policy"
+					   target="_blank"
+					   rel="noopener noreferrer">Formspree</a>.
+					Die eingegebenen Daten werden zur
+					Übermittlung und Bearbeitung Ihrer
+					Nachricht an diesen Dienst weitergegeben.
+				</p>
 
-                    <h4>Haftungsausschluss</h4>
-                    <p>
-                        Die Inhalte unserer Website wurden mit grösstmöglicher Sorgfalt erstellt. Gemäss unseren AGB übernehmen wir keine Gewähr für die Richtigkeit oder Vollständigkeit der Informationen.
-                        Eine Haftung für indirekte Schäden, Folgeschäden oder entgangenen Gewinn ist im gesetzlich zulässigen Umfang ausgeschlossen.
-                    </p>
+				<h4>Externe Dienste und Inhalte</h4>
+				<p>
+					Auf unserer Website verwenden wir lokal
+					gespeicherte Schriftarten und Symbole.
+					Dadurch ist für deren Darstellung
+					keine Verbindung zu externen
+					Schriftanbietern erforderlich.
+				</p>
+				<p>
+					Eingebundene YouTube-Videos werden erst
+					nach Ihrer aktiven Auswahl geladen.
+					Dabei können Daten an Google
+					übermittelt werden.
+					Weitere Informationen finden Sie in der
+					<a class="link"
+					   href="https://policies.google.com/privacy"
+					   target="_blank"
+					   rel="noopener noreferrer">Datenschutzerklärung von Google</a>.
+				</p>
+				<p>
+					Unsere Website enthält zudem Links
+					zu externen Angeboten, beispielsweise
+					Google Maps oder LinkedIn.
+					Beim Aufruf dieser Links gelten die
+					Datenschutzbestimmungen der
+					jeweiligen Anbieter.
+				</p>
 
-                    <h4>Anwendbares Recht & Gerichtsstand</h4>
-                    <p>
-                        Es gilt ausschliesslich schweizerisches Recht. Gerichtsstand für sämtliche Streitigkeiten ist der Sitz der itFlies GmbH in 5465 Mellikon, Schweiz.
-                    </p>
-                    <h4>
-                    <a href="assets/pdf/itf_agb_de.pdf" class="link" target="_blank">Allgemeine Geschäftsbedingungen (AGB) der itFlies GmbH</a>
-                    </h4>
-                </header>
-            </article>
-        </div>
-    </section>
+				<h4>Cookies und Tracking</h4>
+				<p>
+					Wir verwenden keine eigenen Analyse-
+					oder Werbetracking-Dienste.
+					Technisch notwendige Cookies oder
+					vergleichbare Technologien können
+					durch die eingesetzten Dienste
+					verwendet werden.
+				</p>
 
+				<h4>Datenbearbeitung im Ausland</h4>
+				<p>
+					Bei der Nutzung unserer Dienstleister
+					können Personendaten auch in den USA
+					bearbeitet werden. Wir beachten dabei
+					die geltenden datenschutzrechtlichen
+					Anforderungen an die Bekanntgabe
+					von Personendaten ins Ausland.
+				</p>
 
-    <footer id="site-footer" style="
+				<h4>Ihre Rechte</h4>
+				<p>
+					Im Rahmen des anwendbaren Datenschutzrechts
+					haben Sie insbesondere das Recht auf
+					Auskunft über Ihre Personendaten sowie
+					gegebenenfalls auf deren Berichtigung
+					oder Löschung.
+					Für entsprechende Anliegen können
+					Sie uns über die oben angegebenen
+					Kontaktdaten erreichen.
+				</p>
+
+				<h4>Datensicherheit</h4>
+				<p>
+					Wir treffen angemessene technische
+					und organisatorische Massnahmen,
+					um Ihre Personendaten vor unbefugtem
+					Zugriff, Verlust und Missbrauch
+					zu schützen.
+				</p>
+
+				<h4>Änderungen</h4>
+				<p>
+					Wir können diese Datenschutzerklärung
+					bei Bedarf anpassen. Es gilt die
+					jeweils auf unserer Website
+					veröffentlichte Fassung.
+				</p>
+			</header>
+		</article>
+	</div>
+</section>
+
+<section id="disclaimer">
+	<div class="wrapper style2">
+		<article class="container">
+			<header>
+				<i class="icon featured fa-solid fa-scale-balanced"></i>
+				<h3>Rechtliche Hinweise</h3>
+				<h4>Markenschutz</h4>
+				<p>
+					ITFLIES®(registriert als Wortmarke) sowie das Firmenlogo sind rechtlich geschützte Kennzeichen der itFlies GmbH.
+					Die Marke ist beim Eidgenössischen Institut für Geistiges Eigentum (IGE) unter der Nummer 784042 eingetragen.
+					Jegliche Verwendung der Bezeichnung ITFLIES® oder itFlies® für kommerzielle Zwecke im Bereich der Softwareentwicklung und IT-Beratung ist ohne ausdrückliche Genehmigung untersagt.
+				</p>
+				<h4>Marken Dritter</h4>
+				<p>
+					SAP und SAP Business One sind Marken oder eingetragene Marken
+					der SAP SE oder ihrer verbundenen Unternehmen in Deutschland
+					und anderen Ländern. Die Nennung dient ausschliesslich der
+					Beschreibung der Kompatibilität und Integration unserer Lösungen
+					und stellt keine Aussage über eine offizielle SAP-Partnerschaft dar.
+				</p>
+				<h4>Urheberrecht &amp; Eigentum</h4>
+				<p>
+					Das Copyright © itFlies GmbH gilt für alle Inhalte dieser Website.
+					Gemäss unseren Allgemeinen Geschäftsbedingungen (AGB) bleiben sämtliche Konzepte, Projektergebnisse, Software-Add-ons und technischen Unterlagen alleiniges Eigentum von itFlies.
+				</p>
+				<h4>Haftungsausschluss</h4>
+				<p>
+					Die Inhalte unserer Website wurden mit grösstmöglicher Sorgfalt erstellt. Gemäss unseren AGB übernehmen wir keine Gewähr für die Richtigkeit oder Vollständigkeit der Informationen.
+					Eine Haftung für indirekte Schäden, Folgeschäden oder entgangenen Gewinn ist im gesetzlich zulässigen Umfang ausgeschlossen.
+				</p>
+				<h4>Anwendbares Recht &amp; Gerichtsstand</h4>
+				<p>
+					Es gilt ausschliesslich schweizerisches Recht. Gerichtsstand für sämtliche Streitigkeiten ist der Sitz der itFlies GmbH in 5465 Mellikon, Schweiz.
+				</p>
+				<h4>
+					<a class="link" href="assets/pdf/itf_agb_de.pdf" target="_blank">Allgemeine Geschäftsbedingungen (AGB) der itFlies GmbH</a>
+				</h4>
+			</header>
+		</article>
+	</div>
+</section>
+<footer id="site-footer" style="
   position: fixed;
   bottom: 0;
   width: 100%;
   z-index: 9999;
   pointer-events: none; /* Events nur auf den inneren Leisten */
 ">
-        <!-- Dynamische Leiste: wird per JS ein-/ausgeblendet -->
-        <div id="footer-dynamic">
-            <nav class="footer-nav">
-                <a href="#impressum" class="footer-link">Impressum</a>
-                <a href="#informationssicherheit" class="footer-link">Informationssicherheit</a>
-                <a href="#datenschutz" class="footer-link">Datenschutz</a>
-                <a href="#nachhaltigkeit" class="footer-link">Nachhaltigkeit</a>
-                <a href="#disclaimer" class="footer-link">Rechtliche Hinweise</a>
-                <a href="assets/pdf/itf_agb_de.pdf" class="footer-link" target="_blank">AGB</a>
-            </nav>
-        </div>
-
-        <!-- Schmale Copyright-Leiste ganz unten -->
-        <div id="footer-static">
-            <span id="footer-text"></span>
-        </div>
-    </footer>
-
-
-
-
-
-
-
-    <!-- Forumlar 24.11.25 -->
-    <div id="contact-popup" class="contact-popup-overlay" style="display:none;">
-        <div class="contact-popup">
-            <button class="close-btn">×</button>
-
-
-            <h3>Kontakt aufnehmen</h3>
-            <p>Wie möchten Sie uns erreichen?</p>
-
-            <div class="contact-options">
-
-                <!-- Telefon (per JS zusammengesetzt, nicht crawlbar) -->
-                <a id="phone-link" class="contact-link"></a>
-
-                <!-- Mail -->
-                <a
-                        href="mailto:info@itflies.ch?subject=Anfrage%20Erstgespräch"
-                        class="contact-link"
-                >
-                    ✉️ E-Mail schreiben
-                </a>
-
-                <!-- Kurzformular -->
-                <form id="kufo" action="https://formspree.io/f/myzaydqp" method="POST">
-                    <label for="kufo-msg">Ihre Nachricht:</label>
-                    <textarea id="kufo-msg"
-                              name="message"
-                              required
-                              placeholder="Ihre Anfrage…"></textarea>
-
-                    <label for="kufo-email">Ihre E-Mail-Adresse:</label>
-                    <input id="kufo-email"
-                           type="email"
-                           name="email"
-                           required
-                           placeholder="name@firma.ch">
-
-                    <input type="hidden"
-                           name="_subject"
-                           value="Kontaktaufnahme über Website itFlies.ch)">
-
-                    <button type="submit" class="popup-btn-primary">
-                        Nachricht senden
-                    </button>
-                </form>
-
-                <div id="kufo-status" class="kufo-status" style="display:none;"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Navigation + Header-Logik -->
-    <script defer src="assets/js/navigation.menu.js"></script>
-
-    <!-- (optional) Sonstiges JS, z.B. E-Mail-Auflösung -->
-    <script defer src="assets/js/main.js"></script>
-
-    <!-- Kontakt-Popup -->
-    <script src="assets/js/contact-popup-kom.js" defer></script>
-
-    <script src="assets/js/footer.js"></script>
-
+	<!-- Dynamische Leiste: wird per JS ein-/ausgeblendet -->
+	<div id="footer-dynamic">
+		<nav class="footer-nav">
+			<a class="footer-link" href="#impressum">Impressum</a>
+			<a class="footer-link" href="#informationssicherheit">Informationssicherheit</a>
+			<a class="footer-link" href="#datenschutz">Datenschutz</a>
+			<a class="footer-link" href="#nachhaltigkeit">Nachhaltigkeit</a>
+			<a class="footer-link" href="#disclaimer">Rechtliche Hinweise</a>
+			<a class="footer-link" href="assets/pdf/itf_agb_de.pdf" target="_blank">AGB</a>
+		</nav>
+	</div>
+	<!-- Schmale Copyright-Leiste ganz unten -->
+	<div id="footer-static">
+		<span id="footer-text"></span>
+	</div>
+</footer>
+<!-- Kontaktformular -->
+<div class="contact-popup-overlay" id="contact-popup" style="display:none;">
+	<div class="contact-popup">
+		<button class="close-btn">×</button>
+		<h3>Kontakt aufnehmen</h3>
+		<p>Wie möchten Sie uns erreichen?</p>
+		<div class="contact-options">
+			<!-- Telefon (per JS zusammengesetzt, nicht crawlbar) -->
+			<a class="contact-link" id="phone-link"></a>
+			<!-- Mail -->
+			<a class="contact-link" href="mailto:info@itflies.ch?subject=Anfrage%20Erstgespräch">
+				✉️ E-Mail schreiben
+			</a>
+			<!-- Kurzformular -->
+			<form action="https://formspree.io/f/myzaydqp" id="kufo" method="POST">
+				<label for="kufo-msg">Ihre Nachricht:</label>
+				<textarea id="kufo-msg" name="message" placeholder="Ihre Anfrage…" required=""></textarea>
+				<label for="kufo-email">Ihre E-Mail-Adresse:</label>
+				<input id="kufo-email" name="email" placeholder="name@firma.ch" required="" type="email"/>
+				<input name="_subject" type="hidden" value="Kontaktaufnahme über Website itflies.ch"/>
+				<button class="popup-btn-primary" type="submit">
+					Nachricht senden
+				</button>
+			</form>
+			<div class="kufo-status" id="kufo-status" style="display:none;"></div>
+		</div>
+	</div>
+</div>
+<!-- Navigation + Header-Logik -->
+<script defer="" src="assets/js/navigation.menu.js"></script>
+<!-- (optional) Sonstiges JS, z.B. E-Mail-Auflösung -->
+<script defer="" src="assets/js/main.js"></script>
+<!-- Kontakt-Popup -->
+<script defer="" src="assets/js/contact-popup-kom.js"></script>
+<script src="assets/js/footer.js"></script>
 </body>
 </html>
