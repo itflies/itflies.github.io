@@ -305,6 +305,16 @@ p {
   color: #303030;
 }
 
+.hero-integration-title {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.hero-integration-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+}
 
 .custom-p {
   font-size: 1.3rem;
@@ -1182,7 +1192,7 @@ body::after {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 0rem;
 }
 
