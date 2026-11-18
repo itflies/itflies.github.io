@@ -286,6 +286,16 @@
     font-size: 0.9rem;
     /* line-height: 1.7em; */
   }
+  .hero-integration-title {
+      font-size: 1em;
+      font-weight: 600;
+  }
+
+  .hero-integration-text {
+      font-size: 0.8em;
+      font-weight: 400;
+      color: #666;
+  }
 
   .custom-p {
     font-size: 0.9rem;
